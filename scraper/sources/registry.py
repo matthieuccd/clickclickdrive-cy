@@ -3,6 +3,11 @@
 Decouples `run.py` from the concrete source classes. Adding a new source =
 add an entry to `SOURCE_FACTORIES`. Each factory takes no args and returns
 something with a `.fetch() -> Iterator[RawListing]` method.
+
+Factories are intentionally lazy: a heavy source (e.g. Scrapling, which
+pulls in browser engines) is only imported when its name is actually
+requested via `--sources`. That way `--sources google_places` works on
+a machine that doesn't have Scrapling's optional fetcher deps installed.
 """
 
 from __future__ import annotations
@@ -11,8 +16,6 @@ from collections.abc import Callable, Iterator
 from typing import Protocol
 
 from scraper.models import RawListing, SourceName
-from scraper.sources.directory_spider import DirectorySpider
-from scraper.sources.places import GooglePlacesSource
 
 
 class Source(Protocol):
@@ -24,9 +27,21 @@ class Source(Protocol):
 SourceFactory = Callable[[], Source]
 
 
+def _make_google_places() -> Source:
+    from scraper.sources.places import GooglePlacesSource
+
+    return GooglePlacesSource()
+
+
+def _make_directory() -> Source:
+    from scraper.sources.directory_spider import DirectorySpider
+
+    return DirectorySpider()
+
+
 SOURCE_FACTORIES: dict[SourceName, SourceFactory] = {
-    SourceName.GOOGLE_PLACES: GooglePlacesSource,
-    SourceName.DIRECTORY: DirectorySpider,
+    SourceName.GOOGLE_PLACES: _make_google_places,
+    SourceName.DIRECTORY: _make_directory,
 }
 
 

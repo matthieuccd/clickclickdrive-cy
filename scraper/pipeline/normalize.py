@@ -143,20 +143,37 @@ def _clean_text(s: str | None) -> str | None:
 
 
 def _split_name_by_script(name: str) -> tuple[str | None, str | None]:
-    """If the name contains both Greek and Latin halves separated by a delimiter,
-    split them. Otherwise return (greek_or_None, latin_or_None) based on script.
+    """Return (name_el, name_en).
+
+    If the name has two halves separated by a delimiter, route each to the
+    script bucket it matches (so input order doesn't matter). Otherwise
+    assign the single name to whichever script it's written in.
     """
     for sep in (" / ", " — ", " - ", " | "):
         if sep in name:
             left, right = name.split(sep, 1)
-            return _by_script(left), _by_script(right)
-    only_one = _by_script(name)
-    if _GREEK_RE.search(name):
+            return _assign_by_script(_clean(left), _clean(right))
+    only_one = _clean(name)
+    if only_one and _GREEK_RE.search(only_one):
         return only_one, None
     return None, only_one
 
 
-def _by_script(s: str) -> str | None:
+def _assign_by_script(
+    a: str | None, b: str | None
+) -> tuple[str | None, str | None]:
+    """Sort two name halves into (greek, latin) buckets by script."""
+    a_greek = bool(a and _GREEK_RE.search(a))
+    b_greek = bool(b and _GREEK_RE.search(b))
+    if a_greek and not b_greek:
+        return a, b
+    if b_greek and not a_greek:
+        return b, a
+    # Both Greek or both Latin — can't disambiguate, keep input order.
+    return a, b
+
+
+def _clean(s: str) -> str | None:
     s = s.strip()
     return s or None
 

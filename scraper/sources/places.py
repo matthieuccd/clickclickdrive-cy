@@ -22,6 +22,7 @@ from dataclasses import dataclass
 
 import googlemaps
 import structlog
+from googlemaps.exceptions import ApiError
 from tenacity import retry, stop_after_attempt, wait_exponential
 
 from scraper.models import RawListing, RoC_BBOX, SourceName
@@ -120,12 +121,31 @@ class GooglePlacesSource:
         # Google paginates with next_page_token (up to 3 pages, ~60 results).
         next_token = resp.get("next_page_token")
         while next_token:
-            # Token isn't valid immediately — Google requires a short delay.
-            time.sleep(2)
-            resp = self.client.places(query=full_query, page_token=next_token)
-            for result in resp.get("results", []):
+            page = self._fetch_next_page(full_query, next_token)
+            if page is None:
+                break
+            for result in page.get("results", []):
                 yield result["place_id"]
-            next_token = resp.get("next_page_token")
+            next_token = page.get("next_page_token")
+
+    def _fetch_next_page(self, query: str, token: str) -> dict | None:
+        """Fetch the next Text Search page.
+
+        Google requires a short delay between issuing a `next_page_token` and
+        using it — typically 2 s, but sometimes longer. The error surfaces as
+        an `INVALID_REQUEST`, which we treat as "token not ripe yet" and
+        retry with backoff. Returns None when the token never matures.
+        """
+        for delay in (2.0, 3.0, 5.0, 8.0):
+            time.sleep(delay)
+            try:
+                return self.client.places(query=query, page_token=token)
+            except ApiError as exc:
+                if "INVALID_REQUEST" not in str(exc):
+                    raise
+                log.info("places.page_token_not_ready", waited=delay)
+        log.warning("places.page_token_exhausted", query=query)
+        return None
 
     @retry(stop=stop_after_attempt(3), wait=wait_exponential(min=1, max=10))
     def _fetch_details(self, place_id: str) -> RawListing | None:
