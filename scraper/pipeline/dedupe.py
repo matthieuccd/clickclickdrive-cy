@@ -6,8 +6,8 @@ Matching ladder (first hit wins):
   3. Fuzzy name similarity >= NAME_THRESHOLD AND within GEO_THRESHOLD_KM.
 
 When two records collide we merge: union of sources, prefer non-null fields,
-sum review counts conservatively (max, not sum, to avoid double-counting
-Google reviews that surface in multiple sources).
+take max review_count (not sum — avoids double-counting Google reviews that
+surface in multiple sources).
 """
 
 from __future__ import annotations
@@ -90,23 +90,17 @@ def _merge(existing: DrivingSchool, incoming: DrivingSchool) -> DrivingSchool:
     sources = list({*existing.sources, *incoming.sources})
     source_ids: dict[SourceName, str] = {**existing.source_ids, **incoming.source_ids}
 
-    merged_reviews = existing.reviews + [
-        r for r in incoming.reviews if r not in existing.reviews
-    ]
-
     return existing.model_copy(
         update={
             "name_el": existing.name_el or incoming.name_el,
             "name_en": existing.name_en or incoming.name_en,
             "phone_e164": existing.phone_e164 or incoming.phone_e164,
             "website": existing.website or incoming.website,
-            "email": existing.email or incoming.email,
             "rating": _pick_rating(existing, incoming),
             "review_count": max(
                 existing.review_count or 0, incoming.review_count or 0
             ) or None,
-            "reviews": merged_reviews,
-            "languages": sorted({*existing.languages, *incoming.languages}),
+            "opening_hours": existing.opening_hours or list(incoming.opening_hours),
             "sources": sources,
             "source_ids": source_ids,
         }

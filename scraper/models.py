@@ -3,11 +3,19 @@
 Two layers:
   - `RawListing`: whatever a source emits before normalization.
   - `DrivingSchool`: the canonical, deduped marketplace record.
+
+Captured fields per school (locked scope):
+  - name (raw, plus name_el and name_en when both scripts present)
+  - formatted address + categorical city
+  - lat / lon
+  - phone (E.164)
+  - website
+  - Google rating + review count
+  - opening hours (weekday lines)
 """
 
 from __future__ import annotations
 
-from datetime import datetime
 from enum import Enum
 from typing import Literal
 
@@ -36,23 +44,14 @@ class Location(BaseModel):
 
     lat: float
     lon: float
-    address: str | None = None
+    formatted_address: str | None = None
     city: CyprusCity | None = None
-    postal_code: str | None = None
 
     def is_in_republic_of_cyprus(self) -> bool:
         return (
             RoC_BBOX["min_lat"] <= self.lat <= RoC_BBOX["max_lat"]
             and RoC_BBOX["min_lon"] <= self.lon <= RoC_BBOX["max_lon"]
         )
-
-
-class Review(BaseModel):
-    author: str | None = None
-    rating: float = Field(ge=0, le=5)
-    text: str | None = None
-    language: str | None = None
-    created_at: datetime | None = None
 
 
 class RawListing(BaseModel):
@@ -63,14 +62,12 @@ class RawListing(BaseModel):
     name: str
     phone: str | None = None
     website: str | None = None
-    email: str | None = None
     address_text: str | None = None
     lat: float | None = None
     lon: float | None = None
     rating: float | None = None
     review_count: int | None = None
-    reviews: list[Review] = Field(default_factory=list)
-    languages: list[str] = Field(default_factory=list)
+    opening_hours: list[str] = Field(default_factory=list)
     raw: dict = Field(default_factory=dict)
 
 
@@ -83,11 +80,9 @@ class DrivingSchool(BaseModel):
     name_en: str | None = None
     phone_e164: str | None = None
     website: HttpUrl | None = None
-    email: str | None = None
     location: Location
     rating: float | None = Field(default=None, ge=0, le=5)
     review_count: int | None = Field(default=None, ge=0)
-    reviews: list[Review] = Field(default_factory=list)
-    languages: list[str] = Field(default_factory=list)
+    opening_hours: list[str] = Field(default_factory=list)
     sources: list[SourceName] = Field(default_factory=list)
     source_ids: dict[SourceName, str] = Field(default_factory=dict)

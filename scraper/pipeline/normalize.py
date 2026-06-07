@@ -5,6 +5,7 @@ Responsibilities:
   - Drop entries outside Republic of Cyprus bbox (TRNC, mis-geocoded).
   - Infer city from lat/lon (nearest of the 5 target cities).
   - Pick Greek and English names where available.
+  - Pass opening_hours through.
 
 Note: dedup happens in `pipeline.dedupe` AFTER normalize, so this stage
 keeps one DrivingSchool per RawListing.
@@ -68,9 +69,8 @@ def normalize_one(raw: RawListing) -> DrivingSchool | None:
     location = Location(
         lat=raw.lat,
         lon=raw.lon,
-        address=_clean_text(raw.address_text),
+        formatted_address=_clean_text(raw.address_text),
         city=city,
-        postal_code=_extract_postal_code(raw.address_text),
     )
 
     phone_e164 = to_e164(raw.phone)
@@ -84,12 +84,10 @@ def normalize_one(raw: RawListing) -> DrivingSchool | None:
         name_en=name_en,
         phone_e164=phone_e164,
         website=raw.website if raw.website else None,
-        email=raw.email,
         location=location,
         rating=raw.rating,
         review_count=raw.review_count,
-        reviews=raw.reviews,
-        languages=raw.languages,
+        opening_hours=list(raw.opening_hours),
         sources=[raw.source],
         source_ids={raw.source: raw.source_id},
     )
@@ -142,14 +140,6 @@ def _clean_text(s: str | None) -> str | None:
         return None
     cleaned = " ".join(s.split())
     return cleaned or None
-
-
-def _extract_postal_code(address: str | None) -> str | None:
-    # Cyprus postal codes are 4 digits.
-    if not address:
-        return None
-    match = re.search(r"\b(\d{4})\b", address)
-    return match.group(1) if match else None
 
 
 def _split_name_by_script(name: str) -> tuple[str | None, str | None]:

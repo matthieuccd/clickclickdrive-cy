@@ -4,17 +4,21 @@ Pipeline:
   1. Iterate every enabled source (registry).
   2. Normalize each RawListing -> DrivingSchool.
   3. Dedupe across sources.
-  4. Emit JSONL to stdout or to --out path.
+  4. Emit JSONL to --out path (default scraper/output/schools.jsonl).
+     Pass `--out -` to write to stdout instead.
+
+Each output line is a single DrivingSchool record serialized via
+pydantic's model_dump_json(). See scraper/models.py for the schema.
 
 Usage:
     uv run python -m scraper.run
-    uv run python -m scraper.run --sources google_places --out output/schools.jsonl
+    uv run python -m scraper.run --sources google_places
+    uv run python -m scraper.run --out -    # stdout
 """
 
 from __future__ import annotations
 
 import argparse
-import json
 import sys
 from collections.abc import Iterator
 from pathlib import Path
@@ -28,6 +32,8 @@ from scraper.pipeline.normalize import normalize_all
 from scraper.sources.registry import iter_sources
 
 log = structlog.get_logger(__name__)
+
+DEFAULT_OUT_PATH = "scraper/output/schools.jsonl"
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -56,8 +62,8 @@ def _collect(enabled: set[SourceName] | None) -> Iterator[RawListing]:
         log.info("source.done", source=source.name.value, count=count)
 
 
-def _emit(schools: list[DrivingSchool], out_path: str | None) -> None:
-    if out_path is None:
+def _emit(schools: list[DrivingSchool], out_path: str) -> None:
+    if out_path == "-":
         for school in schools:
             sys.stdout.write(school.model_dump_json() + "\n")
         return
@@ -92,8 +98,8 @@ def _parse_args(argv: list[str] | None) -> argparse.Namespace:
     )
     p.add_argument(
         "--out",
-        help="Write JSONL output to this path. Defaults to stdout.",
-        default=None,
+        help=f"JSONL output path. Use '-' for stdout. Default: {DEFAULT_OUT_PATH}",
+        default=DEFAULT_OUT_PATH,
     )
     return p.parse_args(argv)
 

@@ -4,8 +4,9 @@ Strategy:
   - For each Cyprus city centroid, do a Text Search with Greek query
     ("σχολή οδηγών <city>") and English fallback ("driving school <city>").
   - Page through results (Google returns up to 60 per query in 3 pages).
-  - For each unique place_id, fetch Place Details for phone, website, hours,
-    and reviews.
+  - For each unique place_id, fetch Place Details for the locked schema:
+    name, formatted address, lat/lng, phone, website, rating, review count,
+    opening hours.
   - Yield RawListing objects. Filter out anything outside the Republic of
     Cyprus bounding box (i.e. Northern Cyprus / TRNC).
 
@@ -23,7 +24,7 @@ import googlemaps
 import structlog
 from tenacity import retry, stop_after_attempt, wait_exponential
 
-from scraper.models import RawListing, Review, RoC_BBOX, SourceName
+from scraper.models import RawListing, RoC_BBOX, SourceName
 
 log = structlog.get_logger(__name__)
 
@@ -48,20 +49,21 @@ QUERIES_BY_LANG: tuple[tuple[str, str], ...] = (
     ("en", "driving school"),
 )
 
-# Place Details fields we actually use. Keeps quota cost predictable.
+# Place Details field mask — locked to the captured schema.
+# Basic SKU: name, formatted_address, geometry/location, opening_hours.
+# Contact SKU: international_phone_number, formatted_phone_number, website.
+# Atmosphere SKU: rating, user_ratings_total.
 DETAIL_FIELDS = (
     "place_id",
     "name",
     "formatted_address",
-    "formatted_phone_number",
-    "international_phone_number",
-    "website",
     "geometry/location",
+    "opening_hours",
+    "international_phone_number",
+    "formatted_phone_number",
+    "website",
     "rating",
     "user_ratings_total",
-    "reviews",
-    "opening_hours",
-    "address_components",
 )
 
 
@@ -147,15 +149,7 @@ class GooglePlacesSource:
             log.info("places.skip_out_of_bbox", place_id=place_id, lat=lat, lon=lon)
             return None
 
-        reviews = [
-            Review(
-                author=r.get("author_name"),
-                rating=float(r.get("rating", 0)),
-                text=r.get("text"),
-                language=r.get("language"),
-            )
-            for r in (result.get("reviews") or [])
-        ]
+        opening_hours = (result.get("opening_hours") or {}).get("weekday_text") or []
 
         return RawListing(
             source=SourceName.GOOGLE_PLACES,
@@ -169,6 +163,6 @@ class GooglePlacesSource:
             lon=lon,
             rating=result.get("rating"),
             review_count=result.get("user_ratings_total"),
-            reviews=reviews,
+            opening_hours=list(opening_hours),
             raw=result,
         )

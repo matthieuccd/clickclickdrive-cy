@@ -42,7 +42,6 @@ class DirectorySite:
     detail_phone_selector: str | None = None
     detail_website_selector: str | None = None
     detail_address_selector: str | None = None
-    detail_email_selector: str | None = None
 
     headers: dict[str, str] = field(default_factory=dict)
 
@@ -130,7 +129,6 @@ class DirectorySpider:
             name=name,
             phone=self._text(page, site.detail_phone_selector),
             website=self._text(page, site.detail_website_selector),
-            email=self._text(page, site.detail_email_selector),
             address_text=self._text(page, site.detail_address_selector),
             raw={"url": url, "site_id": site.site_id},
         )
