@@ -35,6 +35,14 @@ export const routing = defineRouting({
       el: "/scholes-odigon/[slug]",
       en: "/driving-schools/[slug]",
     },
+    "/arthra": {
+      el: "/arthra",
+      en: "/blog",
+    },
+    "/arthra/[slug]": {
+      el: "/arthra/[slug]",
+      en: "/blog/[slug]",
+    },
     "/aporrito": {
       el: "/aporrito",
       en: "/privacy",

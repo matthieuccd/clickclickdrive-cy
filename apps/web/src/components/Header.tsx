@@ -31,6 +31,12 @@ export function Header() {
             {t("nav.schools")}
           </Link>
           <Link
+            href="/arthra"
+            className="hidden text-sm font-semibold text-text-primary hover:text-brand sm:inline"
+          >
+            {t("nav.blog")}
+          </Link>
+          <Link
             href="/"
             locale={otherLocale}
             className="rounded-full border border-border-strong px-3 py-1.5 text-sm font-semibold text-text-primary hover:border-brand hover:text-brand transition-colors"

@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
+import { ArticleCard } from "@/components/ArticleCard";
 import { CityChip } from "@/components/CityChip";
 import { JsonLd } from "@/components/JsonLd";
 import { SchoolCard } from "@/components/SchoolCard";
 import { SearchBar } from "@/components/SearchBar";
 import { Link } from "@/i18n/navigation";
+import { blogIndexHref, getLatestArticles } from "@/lib/blog";
 import {
   getAllSchools,
   getCityCounts,
@@ -56,6 +58,7 @@ export default async function HomePage({
   const total = getAllSchools().length;
   const counts = getCityCounts();
   const featured = getFeaturedSchools(5);
+  const latestArticles = getLatestArticles(3);
   const jsonLd = buildWebSiteJsonLd(locale);
 
   return (
@@ -116,6 +119,32 @@ export default async function HomePage({
           <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {featured.map((s) => (
               <SchoolCard key={s.id} school={s} />
+            ))}
+          </div>
+        </section>
+      )}
+
+      {latestArticles.length > 0 && (
+        <section className="mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-16">
+          <div className="flex items-baseline justify-between">
+            <div>
+              <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">
+                {t("home.latestArticles")}
+              </h2>
+              <p className="mt-2 text-text-secondary">
+                {t("home.latestArticlesLead")}
+              </p>
+            </div>
+            <a
+              href={blogIndexHref(locale)}
+              className="text-sm font-bold text-brand hover:text-brand-dark"
+            >
+              {t("home.viewAllArticles")} →
+            </a>
+          </div>
+          <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {latestArticles.map((a) => (
+              <ArticleCard key={a.id} article={a} locale={locale} />
             ))}
           </div>
         </section>

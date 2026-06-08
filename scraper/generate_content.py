@@ -59,6 +59,7 @@ from scraper.slugs import (
 log = structlog.get_logger(__name__)
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
+DOTENV_PATH = PROJECT_ROOT / ".env"
 ENRICHED = PROJECT_ROOT / "scraper" / "output" / "schools_enriched.jsonl"
 CONTENT_DIR = PROJECT_ROOT / "scraper" / "data" / "content"
 GENERATED_DIR = PROJECT_ROOT / "scraper" / "data" / "generated"
@@ -253,7 +254,11 @@ def _format_hours(hours: list[str]) -> str:
 
 
 def main(argv: list[str] | None = None) -> int:
-    load_dotenv()
+    # Anchor .env lookup to the project root so this works regardless of CWD.
+    # `override=False` lets a shell `export ANTHROPIC_API_KEY=...` take
+    # precedence over whatever is in .env — common when rotating keys.
+    if DOTENV_PATH.exists():
+        load_dotenv(DOTENV_PATH, override=False)
     args = _parse_args(argv)
 
     schools = _load_schools()
@@ -343,11 +348,18 @@ def _make_client():  # noqa: ANN202 - import inside to keep --prompts-only worki
         raise SystemExit(
             "anthropic SDK not installed. Run `uv add anthropic` or use --prompts-only."
         ) from exc
-    if not os.environ.get("ANTHROPIC_API_KEY"):
+    api_key = os.environ.get("ANTHROPIC_API_KEY")
+    if not api_key:
         raise SystemExit(
-            "ANTHROPIC_API_KEY not set. Add it to .env or export it."
+            "ANTHROPIC_API_KEY not set.\n"
+            f"  Looked for .env at: {DOTENV_PATH} "
+            f"({'present' if DOTENV_PATH.exists() else 'missing'})\n"
+            "  Either add a non-empty ANTHROPIC_API_KEY=... line to that file,\n"
+            "  or `export ANTHROPIC_API_KEY=...` in the shell before running."
         )
-    return anthropic.Anthropic()
+    # Pass explicitly so the SDK doesn't have to round-trip through os.environ
+    # itself; equivalent in behaviour but makes the source of truth obvious.
+    return anthropic.Anthropic(api_key=api_key)
 
 
 def _call_anthropic(*, client, model: str, system_prompt: str, user_prompt: str) -> str:

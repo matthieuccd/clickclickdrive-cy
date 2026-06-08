@@ -1,5 +1,9 @@
 import type { MetadataRoute } from "next";
 
+import {
+  BLOG_ARTICLES,
+  BLOG_CATEGORIES,
+} from "@/lib/blog";
 import { getAllSchools } from "@/lib/schools";
 import { SITE_HOST } from "@/lib/seo";
 import { citySlug } from "@/lib/slugs";
@@ -71,6 +75,47 @@ export default function sitemap(): MetadataRoute.Sitemap {
       alternates: {
         languages: { "x-default": el, el, en },
       },
+    });
+  }
+
+  // Blog index
+  entries.push({
+    url: `${SITE_HOST}/arthra`,
+    lastModified: updated,
+    changeFrequency: "weekly",
+    priority: 0.7,
+    alternates: {
+      languages: {
+        "x-default": `${SITE_HOST}/arthra`,
+        el: `${SITE_HOST}/arthra`,
+        en: `${SITE_HOST}/en/blog`,
+      },
+    },
+  });
+
+  // Blog categories
+  for (const c of BLOG_CATEGORIES) {
+    const el = `${SITE_HOST}/arthra/${c.slug_el}`;
+    const en = `${SITE_HOST}/en/blog/${c.slug_en}`;
+    entries.push({
+      url: el,
+      lastModified: updated,
+      changeFrequency: "weekly",
+      priority: 0.5,
+      alternates: { languages: { "x-default": el, el, en } },
+    });
+  }
+
+  // Blog articles
+  for (const a of BLOG_ARTICLES) {
+    const el = `${SITE_HOST}/arthra/${a.slug_el}`;
+    const en = `${SITE_HOST}/en/blog/${a.slug_en}`;
+    entries.push({
+      url: el,
+      lastModified: new Date(a.modifiedDate),
+      changeFrequency: "monthly",
+      priority: 0.6,
+      alternates: { languages: { "x-default": el, el, en } },
     });
   }
 

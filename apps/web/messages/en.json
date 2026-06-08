@@ -7,6 +7,7 @@
     "schools": "Driving schools",
     "cities": "Cities",
     "about": "About",
+    "blog": "Blog",
     "switchLanguage": "Ελληνικά"
   },
   "home": {
@@ -37,7 +38,21 @@
         "title": "Get in touch",
         "body": "Call or visit the school that fits you. We do not take a cut."
       }
-    }
+    },
+    "latestArticles": "Latest from the blog",
+    "latestArticlesLead": "Practical guides for the Cyprus driving licence process.",
+    "viewAllArticles": "Read all articles"
+  },
+  "blog": {
+    "indexTitle": "Articles and guides",
+    "indexLead": "Practical guides for getting a Cyprus driving licence. Theory, practical, foreigners, cost.",
+    "categories": "Categories",
+    "breadcrumb": "Blog",
+    "empty": "No articles yet.",
+    "emptyCategory": "No articles in this category yet.",
+    "previous": "Previous article",
+    "next": "Next article",
+    "bodyMissing": "This article is being edited."
   },
   "cities": {
     "all": "All cities",
