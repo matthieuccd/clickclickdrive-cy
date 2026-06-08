@@ -48,3 +48,13 @@ Thumbs.db
 # Logs
 *.log
 logs/
+
+# Brand audit working files (notes.md is committed; raw HTML/SVG fetches are not)
+brand-research/home.html
+brand-research/*.css
+
+# Scraped photos cached from Google Places (30-day ToS, refreshed by enrich.py)
+apps/web/public/schools/
+
+# Generated SEO content + scrape working files (run scraper to regenerate)
+scraper/data/

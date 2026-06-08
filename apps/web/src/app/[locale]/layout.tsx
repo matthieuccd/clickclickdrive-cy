@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Mulish, Noto_Sans } from "next/font/google";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
@@ -11,9 +11,17 @@ import { routing } from "@/i18n/routing";
 import { localeConfig } from "../../../i18n.config";
 import "../globals.css";
 
-const inter = Inter({
-  subsets: ["latin", "latin-ext", "greek", "greek-ext"],
-  variable: "--font-inter",
+// Brand font (matches clickclickdrive.de). Greek glyphs aren't in Mulish on
+// Google Fonts, so the body font stack falls through to Noto Sans for Greek.
+const mulish = Mulish({
+  subsets: ["latin", "latin-ext"],
+  variable: "--font-mulish",
+  display: "swap",
+});
+
+const notoSansGreek = Noto_Sans({
+  subsets: ["greek", "greek-ext"],
+  variable: "--font-greek",
   display: "swap",
 });
 
@@ -24,10 +32,10 @@ export function generateStaticParams() {
 export const metadata: Metadata = {
   title: {
     template: "%s · ClickClickDrive Cyprus",
-    default: "ClickClickDrive Cyprus — Σχολές οδηγών",
+    default: "ClickClickDrive Cyprus — Σχολές οδηγών στην Κύπρο",
   },
   description:
-    "Find driving schools across Cyprus. Compare ratings, hours, and contact details — free.",
+    "Βρείτε σχολές οδηγών σε όλη την Κύπρο. Συγκρίνετε αξιολογήσεις, ωράρια και στοιχεία επικοινωνίας — δωρεάν.",
 };
 
 export default async function LocaleLayout({
@@ -43,7 +51,10 @@ export default async function LocaleLayout({
 
   const htmlLang = localeConfig[locale].htmlLang;
   return (
-    <html lang={htmlLang} className={inter.variable}>
+    <html
+      lang={htmlLang}
+      className={`${mulish.variable} ${notoSansGreek.variable}`}
+    >
       <body className="min-h-screen flex flex-col bg-background text-text-primary">
         <NextIntlClientProvider>
           <Header />

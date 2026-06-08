@@ -11,7 +11,17 @@ import type { CyprusCity, DrivingSchool } from "./types";
  * The site has no database — this module is the data layer.
  */
 
-const JSONL_PATH = path.join(
+// Prefer the enriched JSONL (has photo_paths) when present; fall back to the
+// base scrape so a fresh checkout can build without running enrich.py first.
+const ENRICHED_PATH = path.join(
+  process.cwd(),
+  "..",
+  "..",
+  "scraper",
+  "output",
+  "schools_enriched.jsonl",
+);
+const BASE_PATH = path.join(
   process.cwd(),
   "..",
   "..",
@@ -24,19 +34,28 @@ let cache: DrivingSchool[] | null = null;
 
 function loadAll(): DrivingSchool[] {
   if (cache !== null) return cache;
-  if (!fs.existsSync(JSONL_PATH)) {
+  const sourcePath = fs.existsSync(ENRICHED_PATH)
+    ? ENRICHED_PATH
+    : fs.existsSync(BASE_PATH)
+      ? BASE_PATH
+      : null;
+  if (sourcePath === null) {
     console.warn(
-      `[schools] ${JSONL_PATH} not found — run the scraper to populate it.`,
+      "[schools] neither schools_enriched.jsonl nor schools.jsonl found — run the scraper.",
     );
     cache = [];
     return cache;
   }
-  const text = fs.readFileSync(JSONL_PATH, "utf8");
+  const text = fs.readFileSync(sourcePath, "utf8");
   cache = text
     .split("\n")
     .map((line) => line.trim())
     .filter(Boolean)
-    .map((line) => JSON.parse(line) as DrivingSchool);
+    .map((line) => {
+      const raw = JSON.parse(line) as Partial<DrivingSchool>;
+      // Default photo_paths to [] for records from the older non-enriched file.
+      return { ...raw, photo_paths: raw.photo_paths ?? [] } as DrivingSchool;
+    });
   return cache;
 }
 

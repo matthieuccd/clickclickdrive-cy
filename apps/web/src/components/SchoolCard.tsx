@@ -1,85 +1,91 @@
+import Image from "next/image";
+import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 
-import { Link } from "@/i18n/navigation";
-import type { DrivingSchool } from "@/lib/types";
+import { cityHref, displayName, schoolHref } from "@/lib/slugs";
+import type { DrivingSchool, Locale } from "@/lib/types";
 
 import { RatingStars } from "./RatingStars";
 
 export function SchoolCard({ school }: { school: DrivingSchool }) {
   const t = useTranslations();
-  const locale = useLocale();
-  const displayName =
-    locale === "el"
-      ? school.name_el ?? school.name_en ?? school.name
-      : school.name_en ?? school.name_el ?? school.name;
+  const locale = useLocale() as Locale;
+  const href = schoolHref(school, locale);
+  const name = displayName(school, locale);
+  const photo = school.photo_paths[0];
 
   return (
-    <article className="flex flex-col rounded-2xl border border-border bg-surface p-5 shadow-sm transition-shadow hover:shadow-md sm:p-6">
-      <div className="flex items-start justify-between gap-3">
-        <h3 className="text-lg font-semibold leading-snug tracking-tight">
-          <Link href={`/schools/${school.id}`} className="hover:text-brand">
-            {displayName}
+    <article className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-surface shadow-sm transition-shadow hover:shadow-md">
+      <div className="relative aspect-[4/3] w-full bg-surface-muted">
+        <Link href={href} className="absolute inset-0 z-0 block">
+          {photo ? (
+            <Image
+              src={photo}
+              alt={name}
+              fill
+              sizes="(min-width: 1024px) 24rem, (min-width: 640px) 50vw, 100vw"
+              className="object-cover transition-transform group-hover:scale-[1.02]"
+            />
+          ) : (
+            <div className="grid h-full w-full place-items-center text-text-muted">
+              <span className="text-sm">{t("brand.name")}</span>
+            </div>
+          )}
+        </Link>
+        {school.location.city && (
+          <Link
+            href={cityHref(school.location.city, locale)}
+            className="absolute left-3 top-3 z-10 rounded-full bg-surface/90 px-3 py-1 text-xs font-semibold text-text-primary backdrop-blur hover:bg-surface hover:text-brand"
+          >
+            {t(`cities.${school.location.city}`)}
+          </Link>
+        )}
+      </div>
+      <div className="flex flex-1 flex-col p-5">
+        <h3 className="text-lg font-bold leading-snug tracking-tight">
+          <Link href={href} className="hover:text-brand">
+            {name}
           </Link>
         </h3>
-        {school.location.city && (
-          <span className="shrink-0 rounded-full bg-brand-light px-3 py-1 text-xs font-semibold text-brand">
-            {t(`cities.${school.location.city}`)}
-          </span>
+        {school.rating !== null && (
+          <div className="mt-2 flex items-center gap-2 text-sm">
+            <RatingStars rating={school.rating} />
+            <span className="font-semibold">{school.rating.toFixed(1)}</span>
+            {school.review_count !== null && school.review_count > 0 && (
+              <span className="text-text-muted">
+                · {t("card.reviews", { count: school.review_count })}
+              </span>
+            )}
+          </div>
         )}
-      </div>
-
-      {school.rating !== null && (
-        <div className="mt-2 flex items-center gap-2 text-sm">
-          <RatingStars rating={school.rating} />
-          <span className="font-semibold text-text-primary">
-            {school.rating.toFixed(1)}
-          </span>
-          {school.review_count !== null && school.review_count > 0 && (
-            <span className="text-text-muted">
-              · {t("card.reviews", { count: school.review_count })}
-            </span>
+        {school.opening_hours.length > 0 && (
+          <p className="mt-2 text-xs text-text-muted line-clamp-1">
+            {school.opening_hours[0]}
+          </p>
+        )}
+        <div className="mt-4 flex flex-wrap gap-2 text-sm">
+          {school.phone_e164 && (
+            <a
+              href={`tel:${school.phone_e164}`}
+              className="inline-flex items-center gap-1.5 rounded-full bg-surface-muted px-3 py-1.5 font-semibold text-text-primary hover:bg-brand-light hover:text-brand"
+            >
+              <PhoneIcon /> {t("card.callNow")}
+            </a>
+          )}
+          {school.website && (
+            <a
+              href={school.website}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 rounded-full bg-surface-muted px-3 py-1.5 font-semibold text-text-primary hover:bg-brand-light hover:text-brand"
+            >
+              <GlobeIcon /> {t("card.website")}
+            </a>
           )}
         </div>
-      )}
-
-      {school.location.formatted_address && (
-        <p className="mt-3 text-sm text-text-secondary line-clamp-2">
-          {school.location.formatted_address}
-        </p>
-      )}
-
-      <div className="mt-4 flex flex-wrap gap-2 text-sm">
-        {school.phone_e164 && (
-          <a
-            href={`tel:${school.phone_e164}`}
-            className="inline-flex items-center gap-1.5 rounded-full bg-surface-muted px-3 py-1.5 font-medium text-text-secondary hover:bg-brand-light hover:text-brand"
-          >
-            <PhoneIcon /> {school.phone_e164}
-          </a>
-        )}
-        {school.website && (
-          <a
-            href={school.website}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 rounded-full bg-surface-muted px-3 py-1.5 font-medium text-text-secondary hover:bg-brand-light hover:text-brand"
-          >
-            <GlobeIcon /> {t("card.website")}
-          </a>
-        )}
-      </div>
-
-      <div className="mt-5 flex items-center justify-between border-t border-border pt-4">
-        {school.opening_hours.length > 0 ? (
-          <span className="text-xs text-text-muted line-clamp-1">
-            {school.opening_hours[0]}
-          </span>
-        ) : (
-          <span />
-        )}
         <Link
-          href={`/schools/${school.id}`}
-          className="text-sm font-semibold text-brand hover:text-brand-dark"
+          href={href}
+          className="mt-auto pt-4 text-sm font-semibold text-brand hover:text-brand-dark"
         >
           {t("card.viewDetails")} →
         </Link>

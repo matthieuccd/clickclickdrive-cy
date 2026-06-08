@@ -31,4 +31,10 @@ export interface DrivingSchool {
   opening_hours: string[];
   sources: string[];
   source_ids: Record<string, string>;
+  photo_paths: string[];
+  /** Per-locale URL slugs computed by scraper/add_slugs.py. */
+  slug_el: string;
+  slug_en: string;
 }
+
+export type Locale = "el" | "en";

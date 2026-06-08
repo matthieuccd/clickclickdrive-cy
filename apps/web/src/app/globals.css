@@ -1,24 +1,43 @@
 @import "tailwindcss";
 
+/*
+ * Brand tokens extracted from clickclickdrive.de inline CSS + logo SVG
+ * (see brand-research/notes.md for the audit).
+ *
+ *   --color-brand          #F74656  logo red, hover, link emphasis
+ *   --color-brand-dark     #DB1F35  denser red used on solid buttons / page bands
+ *   --color-brand-darker   #E6273E  variant
+ *   --color-brand-accent   #F63151  discount banner / strong emphasis
+ *   --color-text-primary   #354354  slate-blue, the logo's secondary mark
+ *   --color-background     #F9F9F9  body bg (per body{} rule)
+ *   --color-surface        #FFFFFF  header + cards
+ *
+ * Font: Mulish (variable, 400-900) via next/font/google. Mulish has no Greek
+ * subset on Google Fonts, so Noto Sans (greek subset) is the secondary font
+ * in the stack — browsers auto-switch per glyph.
+ */
+
 @theme {
-  --color-brand: #1f4fff;
-  --color-brand-dark: #1840cc;
-  --color-brand-light: #e6ecff;
-  --color-brand-accent: #fcd34d;
+  --color-brand: #f74656;
+  --color-brand-dark: #db1f35;
+  --color-brand-darker: #e6273e;
+  --color-brand-accent: #f63151;
+  --color-brand-light: #fde7ea;
+  --color-star: #f59e0b;
 
-  --color-background: #f8fafc;
+  --color-background: #f9f9f9;
   --color-surface: #ffffff;
-  --color-surface-muted: #f1f5f9;
+  --color-surface-muted: #f3f3f3;
 
-  --color-text-primary: #0f172a;
-  --color-text-secondary: #334155;
-  --color-text-muted: #64748b;
+  --color-text-primary: #354354;
+  --color-text-secondary: #4b5d70;
+  --color-text-muted: #7a8794;
 
-  --color-border: #e2e8f0;
-  --color-border-strong: #cbd5e1;
+  --color-border: #e4e7eb;
+  --color-border-strong: #cbd1d8;
 
-  --font-sans: var(--font-inter), system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, sans-serif;
+  --font-sans: var(--font-mulish), var(--font-greek), system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 
   --radius-card: 0.875rem;
 }

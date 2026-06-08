@@ -15,7 +15,7 @@ export function RatingStars({
         {"★★★★★"}
       </span>
       <span
-        className="absolute inset-0 overflow-hidden text-brand-accent"
+        className="absolute inset-0 overflow-hidden text-star"
         style={{ fontSize: size, width: `${pct}%` }}
       >
         {"★★★★★"}

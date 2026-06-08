@@ -11,7 +11,7 @@
   },
   "home": {
     "heroTitle": "Find your driving school in Cyprus",
-    "heroSubtitle": "Compare driving schools in Nicosia, Limassol, Larnaca, Paphos, and Paralimni. See ratings, hours, and contact — free.",
+    "heroSubtitle": "Compare driving schools in Nicosia, Limassol, Larnaca, Paphos, and Paralimni. See ratings, hours, and contact details. Free.",
     "searchLabel": "Where do you want to learn?",
     "searchPlaceholder": "Choose a city",
     "searchButton": "Search",
@@ -22,6 +22,21 @@
       "schools": "{count} schools",
       "cities": "{count} cities",
       "free": "100% free"
+    },
+    "howItWorks": {
+      "title": "How it works",
+      "step1": {
+        "title": "Search",
+        "body": "Pick your city. See every driving school in the area at one glance."
+      },
+      "step2": {
+        "title": "Compare",
+        "body": "Look at ratings, hours, phones, and websites. All on one page."
+      },
+      "step3": {
+        "title": "Get in touch",
+        "body": "Call or visit the school that fits you. We do not take a cut."
+      }
     }
   },
   "cities": {
@@ -33,11 +48,13 @@
     "Paralimni": "Paralimni"
   },
   "list": {
-    "title": "Driving schools",
-    "titleInCity": "Driving schools — {city}",
+    "title": "Driving schools in Cyprus",
+    "titleInCity": "Driving schools in {city}",
     "resultCount": "{count, plural, =0 {No schools found} =1 {1 school} other {# schools}}",
     "empty": "No schools found for this city.",
-    "filterByCity": "Filter by city"
+    "filterByCity": "Filter by city",
+    "otherCities": "Other cities",
+    "cityIntro": "Below is every driving school we found in {city}. Each card shows the rating, the hours, and how to call them. Pick the one that fits your schedule."
   },
   "card": {
     "viewDetails": "View details",
@@ -56,11 +73,19 @@
     "address": "Address",
     "openingHours": "Opening hours",
     "viewOnMap": "Open in Google Maps",
+    "previousInCity": "Previous school",
+    "nextInCity": "Next school",
     "notFound": "School not found",
-    "notFoundDesc": "The school you are looking for does not exist or has been removed."
+    "notFoundDesc": "The school you are looking for does not exist or has been removed.",
+    "fallbackBio": "{name} is in {city} and offers driving lessons for people working toward a Cypriot licence. Call to ask about availability and pricing.",
+    "fallbackBioNoCity": "{name} offers driving lessons in Cyprus. Call to ask about availability and pricing."
   },
   "footer": {
     "tagline": "Cyprus's leading driving school marketplace.",
-    "copyright": "© {year} ClickClickDrive Cyprus. All rights reserved."
+    "copyright": "© {year} ClickClickDrive Cyprus. All rights reserved.",
+    "explore": "Explore",
+    "legal": "Legal",
+    "privacy": "Privacy policy",
+    "terms": "Terms and conditions"
   }
 }

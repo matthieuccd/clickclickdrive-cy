@@ -1,18 +1,17 @@
 import { useTranslations } from "next-intl";
 
-import { getPathname } from "@/i18n/navigation";
-import { CITIES } from "@/lib/types";
+import { cityHref, listingHref } from "@/lib/slugs";
+import { CITIES, type Locale } from "@/lib/types";
 
 /**
- * Server component. Renders a plain HTML form that GETs to /schools with a
- * ?city= param. No JS needed for the core flow.
+ * Server-rendered search form. Posts to the locale-correct listing URL with a
+ * ?city= param. Selecting a city in the dropdown then submitting navigates
+ * straight to that city's page (handled by the listing page that interprets
+ * the query string).
  */
-export function SearchBar({ locale }: { locale: string }) {
+export function SearchBar({ locale }: { locale: Locale }) {
   const t = useTranslations();
-  const action = getPathname({
-    href: "/schools",
-    locale: locale as "el" | "en",
-  });
+  const action = listingHref(locale);
 
   return (
     <form
@@ -43,7 +42,7 @@ export function SearchBar({ locale }: { locale: string }) {
       </div>
       <button
         type="submit"
-        className="mt-2 w-full rounded-xl bg-brand px-6 py-3 text-base font-semibold text-white shadow-sm transition-colors hover:bg-brand-dark sm:mt-0 sm:w-auto"
+        className="mt-2 w-full rounded-xl bg-brand px-6 py-3 text-base font-bold text-white shadow-sm transition-colors hover:bg-brand-dark sm:mt-0 sm:w-auto"
       >
         {t("home.searchButton")}
       </button>

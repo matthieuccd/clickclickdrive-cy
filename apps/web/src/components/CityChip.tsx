@@ -1,7 +1,8 @@
-import { useTranslations } from "next-intl";
+import Link from "next/link";
+import { useLocale, useTranslations } from "next-intl";
 
-import { Link } from "@/i18n/navigation";
-import type { CyprusCity } from "@/lib/types";
+import { cityHref } from "@/lib/slugs";
+import type { CyprusCity, Locale } from "@/lib/types";
 
 export function CityChip({
   city,
@@ -11,16 +12,17 @@ export function CityChip({
   count: number;
 }) {
   const t = useTranslations();
+  const locale = useLocale() as Locale;
   return (
     <Link
-      href={{ pathname: "/schools", query: { city } }}
+      href={cityHref(city, locale)}
       className="group flex flex-col items-start justify-between gap-3 rounded-2xl border border-border bg-surface p-5 shadow-sm transition-all hover:-translate-y-0.5 hover:border-brand hover:shadow-md"
     >
       <span className="grid h-10 w-10 place-items-center rounded-full bg-brand-light text-brand">
         <PinIcon />
       </span>
       <div>
-        <div className="text-base font-semibold tracking-tight">
+        <div className="text-base font-bold tracking-tight">
           {t(`cities.${city}`)}
         </div>
         <div className="text-sm text-text-muted">
