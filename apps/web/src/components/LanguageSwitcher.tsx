@@ -25,85 +25,83 @@ export function LanguageSwitcher({
   className,
 }: Props) {
   const locale = useLocale() as Locale;
-  const otherLocale: Locale = locale === "el" ? "en" : "el";
-  const otherLabel = locale === "el" ? "EN" : "ΕΛ";
-  // next/navigation usePathname returns the real browser URL (e.g.
-  // "/en/blog/how-to-get-driving-licence-cyprus-foreigner"), not the
-  // next-intl canonical template ("/arthra/[slug]").
+  const target: Locale = locale === "el" ? "en" : "el";
+  const targetLabel = locale === "el" ? "EN" : "ΕΛ";
   const rawPath = usePathname();
 
-  const schoolMap = makeMap(schoolPairs, locale);
-  const articleMap = makeMap(articlePairs, locale);
-  const cityMap = makeMap(cityPairs, locale);
-
-  const altHref = buildAltHref(rawPath, locale, otherLocale, schoolMap, articleMap, cityMap);
+  const altHref = buildAltHref(
+    rawPath,
+    target,
+    schoolPairs,
+    articlePairs,
+    cityPairs,
+  );
 
   return (
     <NextLink
       href={altHref}
       className={className}
-      aria-label={otherLocale === "el" ? "Ελληνικά" : "English"}
+      aria-label={target === "el" ? "Ελληνικά" : "English"}
     >
-      {otherLabel}
+      {targetLabel}
     </NextLink>
   );
 }
 
-function makeMap(pairs: SlugPair[], currentLocale: Locale): Record<string, string> {
-  const map: Record<string, string> = {};
+// Bidirectional lookup: works whether `slug` is the el or en variant.
+function findAlt(slug: string, pairs: SlugPair[], target: Locale): string | undefined {
   for (const p of pairs) {
-    map[currentLocale === "el" ? p.el : p.en] = currentLocale === "el" ? p.en : p.el;
+    if (p.el === slug) return target === "en" ? p.en : p.el;
+    if (p.en === slug) return target === "el" ? p.el : p.en;
   }
-  return map;
+  return undefined;
 }
 
 function buildAltHref(
   rawPath: string,
-  currentLocale: Locale,
   target: Locale,
-  schoolMap: Record<string, string>,
-  articleMap: Record<string, string>,
-  cityMap: Record<string, string>,
+  schoolPairs: SlugPair[],
+  articlePairs: SlugPair[],
+  cityPairs: SlugPair[],
 ): string {
-  // Strip the /en prefix (localePrefix = "as-needed": only English is prefixed)
+  // Strip /en prefix. Use startsWith("/en/") to avoid clobbering paths like /entry.
   const path =
-    currentLocale === "en" && rawPath.startsWith("/en")
-      ? rawPath.slice(3) || "/"
-      : rawPath;
+    rawPath.startsWith("/en/") ? rawPath.slice(3)
+    : rawPath === "/en"       ? "/"
+    : rawPath;
 
   const pre = target === "el" ? "" : "/en";
 
-  // School/city detail — Greek: /scholes-odigon/<slug>, English: /driving-schools/<slug>
-  const schoolSeg = currentLocale === "el" ? "scholes-odigon" : "driving-schools";
-  const schoolMatch = path.match(new RegExp(`^\\/${schoolSeg}\\/([^/?#]+)\\/?$`));
+  // School/city detail — match EITHER locale's segment name so we handle both
+  // the user-visible URL (/driving-schools/...) and the internally-rewritten
+  // canonical path (/scholes-odigon/...) that usePathname may return.
+  const schoolMatch = path.match(/^\/(scholes-odigon|driving-schools)\/([^/?#]+)\/?$/);
   if (schoolMatch) {
-    const slug = decodeURIComponent(schoolMatch[1]);
-    const altSlug = cityMap[slug] ?? schoolMap[slug] ?? slug;
+    const slug = decodeURIComponent(schoolMatch[2]);
+    const allSchool = [...cityPairs, ...schoolPairs];
+    const altSlug = findAlt(slug, allSchool, target) ?? slug;
     return `${pre}/${target === "el" ? "scholes-odigon" : "driving-schools"}/${altSlug}`;
   }
-  if (path === `/${schoolSeg}` || path === `/${schoolSeg}/`) {
+  if (path.match(/^\/(scholes-odigon|driving-schools)\/?$/)) {
     return `${pre}/${target === "el" ? "scholes-odigon" : "driving-schools"}`;
   }
 
-  // Article detail — Greek: /arthra/<slug>, English: /blog/<slug>
-  const articleSeg = currentLocale === "el" ? "arthra" : "blog";
-  const articleMatch = path.match(new RegExp(`^\\/${articleSeg}\\/([^/?#]+)\\/?$`));
+  // Article detail — match /arthra/<slug> AND /blog/<slug>
+  const articleMatch = path.match(/^\/(arthra|blog)\/([^/?#]+)\/?$/);
   if (articleMatch) {
-    const slug = decodeURIComponent(articleMatch[1]);
-    const altSlug = articleMap[slug] ?? slug;
+    const slug = decodeURIComponent(articleMatch[2]);
+    const altSlug = findAlt(slug, articlePairs, target) ?? slug;
     return `${pre}/${target === "el" ? "arthra" : "blog"}/${altSlug}`;
   }
-  if (path === `/${articleSeg}` || path === `/${articleSeg}/`) {
+  if (path.match(/^\/(arthra|blog)\/?$/)) {
     return `${pre}/${target === "el" ? "arthra" : "blog"}`;
   }
 
-  // Static pages
-  const privacySeg = currentLocale === "el" ? "aporrito" : "privacy";
-  if (path === `/${privacySeg}` || path === `/${privacySeg}/`) {
+  // Static pages — match either locale variant
+  if (path === "/aporrito" || path === "/privacy") {
     return target === "el" ? "/aporrito" : "/en/privacy";
   }
-  const termsSeg = currentLocale === "el" ? "oroi" : "terms";
-  if (path === `/${termsSeg}` || path === `/${termsSeg}/`) {
+  if (path === "/oroi" || path === "/terms") {
     return target === "el" ? "/oroi" : "/en/terms";
   }
 
