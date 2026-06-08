@@ -1,25 +1,39 @@
-"""Fetch blog hero images from Unsplash.
+"""Fetch hero / fallback images from Pexels.
 
-Two modes:
+Three modes:
 
-1. Per-article fetch (`--slug X --query Y`): downloads one Unsplash image
-   matching `query` and saves to `apps/web/public/blog/<slug>/hero.jpg`.
-2. Ensure the project's generic fallback (`--default-hero`): downloads one
-   Unsplash image with the hardcoded query "cyprus road driving car" and
-   saves to `apps/web/public/blog/default-hero.jpg`.
+1. --default-hero
+       Fetch the site-wide blog hero (query "cyprus road driving car")
+       → apps/web/public/blog/default-hero.jpg
 
-If `UNSPLASH_ACCESS_KEY` is missing or the API call fails, the script
-returns a non-zero exit code. School photos are NEVER used as a fallback
-(intentional — the old school-photo fallback was removed because school
-images are private business assets and have no place on editorial pages).
+2. --school-fallback
+       Fetch the site-wide school-card fallback (query "driving school car
+       lesson") → apps/web/public/schools/fallback.jpg
+
+3. --slug X --query Y
+       Per-article hero fetch → apps/web/public/blog/<slug>/hero.jpg
+
+Pexels API
+----------
+Endpoint: https://api.pexels.com/v1/search?query=...&per_page=1
+Auth header: Authorization: <PEXELS_API_KEY>      (raw key, no Bearer prefix)
+Response: { photos: [{ id, photographer, src: { original, large2x, large, ... } }] }
+
+We pick `src.large2x` (1880 px wide) when present, falling back to
+`src.large`. Next/Image down-scales at serve time anyway, so over-fetching
+once at build/refresh time is fine.
+
+School photos are NEVER used as fallback for blog heroes (and vice versa).
+The old school-photo fallback for blog heroes was removed deliberately.
 
 Usage
 -----
-    export UNSPLASH_ACCESS_KEY=...
-    uv run python -m scraper.fetch_blog_hero --default-hero
+    export PEXELS_API_KEY=...        # or put it in .env
+    uv run python -m scraper.fetch_blog_hero --default-hero --force
+    uv run python -m scraper.fetch_blog_hero --school-fallback --force
     uv run python -m scraper.fetch_blog_hero \\
         --slug how-to-get-driving-licence-cyprus-foreigner \\
-        --query "cyprus driving licence road"
+        --query "cyprus driving licence road" --force
 """
 
 from __future__ import annotations
@@ -42,65 +56,90 @@ WEB_PUBLIC = PROJECT_ROOT / "apps" / "web" / "public"
 DEFAULT_HERO_QUERY = "cyprus road driving car"
 DEFAULT_HERO_PATH = WEB_PUBLIC / "blog" / "default-hero.jpg"
 
+SCHOOL_FALLBACK_QUERY = "driving school car lesson"
+SCHOOL_FALLBACK_PATH = WEB_PUBLIC / "schools" / "fallback.jpg"
 
-def fetch_unsplash(query: str, dest: Path) -> bool:
-    """Try Unsplash search → first result → download to `dest`.
+# Pexels sits behind Cloudflare and 403s the default `Python-urllib/X.Y`
+# User-Agent. A real UA gets through cleanly.
+USER_AGENT = (
+    "Mozilla/5.0 (compatible; ClickClickDriveCY/1.0; +https://clickclickdrive.com.cy)"
+)
+
+
+def fetch_pexels(query: str, dest: Path) -> bool:
+    """Search Pexels for one image and download it to `dest`.
 
     Returns True on success, False on any failure (missing key, API error,
-    no results, download error). Caller decides what to do on failure.
+    no results, download error). All failures log to stderr; success logs
+    to stdout with attribution.
     """
-    api_key = os.environ.get("UNSPLASH_ACCESS_KEY")
+    api_key = os.environ.get("PEXELS_API_KEY")
     if not api_key:
         print(
-            "[hero] UNSPLASH_ACCESS_KEY not set — "
-            "cannot fetch an Unsplash image.",
+            "[hero] PEXELS_API_KEY not set — cannot fetch Pexels image.",
             file=sys.stderr,
         )
         return False
 
     url = (
-        "https://api.unsplash.com/search/photos"
-        f"?query={urllib.parse.quote(query)}&per_page=10&orientation=landscape"
+        "https://api.pexels.com/v1/search"
+        f"?query={urllib.parse.quote(query)}&per_page=1"
     )
     req = urllib.request.Request(
-        url, headers={"Authorization": f"Client-ID {api_key}"}
+        url,
+        headers={"Authorization": api_key, "User-Agent": USER_AGENT},
     )
     try:
         with urllib.request.urlopen(req, timeout=20) as r:
             payload = json.loads(r.read().decode("utf-8"))
     except (HTTPError, URLError, TimeoutError) as exc:
-        print(f"[hero] Unsplash search failed: {exc}", file=sys.stderr)
+        print(f"[hero] Pexels search failed: {exc}", file=sys.stderr)
         return False
 
-    results = payload.get("results") or []
-    if not results:
+    photos = payload.get("photos") or []
+    if not photos:
         print(
-            f"[hero] Unsplash returned no results for query: {query!r}",
+            f"[hero] Pexels returned no results for query: {query!r}",
             file=sys.stderr,
         )
         return False
 
-    photo = results[0]
-    image_url = (photo.get("urls") or {}).get("regular")
+    photo = photos[0]
+    src = photo.get("src") or {}
+    image_url = src.get("large2x") or src.get("large") or src.get("original")
     if not image_url:
-        print("[hero] Unsplash result missing urls.regular", file=sys.stderr)
+        print(
+            "[hero] Pexels result has no usable size in src.{large2x,large,original}",
+            file=sys.stderr,
+        )
         return False
 
+    img_req = urllib.request.Request(image_url, headers={"User-Agent": USER_AGENT})
     try:
-        with urllib.request.urlopen(image_url, timeout=30) as r:
+        with urllib.request.urlopen(img_req, timeout=30) as r:
             data = r.read()
     except (HTTPError, URLError, TimeoutError) as exc:
-        print(f"[hero] Unsplash image download failed: {exc}", file=sys.stderr)
+        print(f"[hero] Pexels image download failed: {exc}", file=sys.stderr)
         return False
 
     dest.parent.mkdir(parents=True, exist_ok=True)
     dest.write_bytes(data)
     print(
-        f"[hero] saved Unsplash photo by "
-        f"{(photo.get('user') or {}).get('name')} "
-        f"({photo.get('id')}) → {dest.relative_to(PROJECT_ROOT)}"
+        f"[hero] saved Pexels photo by {photo.get('photographer')} "
+        f"({photo.get('id')}) → {dest.relative_to(PROJECT_ROOT)} "
+        f"({len(data):,} bytes)"
     )
     return True
+
+
+def _maybe_skip(dest: Path, force: bool) -> bool:
+    if dest.exists() and not force:
+        print(
+            f"[hero] {dest.relative_to(PROJECT_ROOT)} already exists — "
+            "skipping (use --force to refetch)."
+        )
+        return True
+    return False
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -111,19 +150,15 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument(
         "--default-hero",
         action="store_true",
-        help=(
-            "Ensure apps/web/public/blog/default-hero.jpg exists, "
-            "fetching it from Unsplash with the hardcoded query."
-        ),
+        help=f"Ensure {DEFAULT_HERO_PATH.relative_to(PROJECT_ROOT)} exists.",
     )
     ap.add_argument(
-        "--slug",
-        help="Article slug — destination folder for per-article hero.",
+        "--school-fallback",
+        action="store_true",
+        help=f"Ensure {SCHOOL_FALLBACK_PATH.relative_to(PROJECT_ROOT)} exists.",
     )
-    ap.add_argument(
-        "--query",
-        help="Unsplash search query for per-article hero.",
-    )
+    ap.add_argument("--slug", help="Article slug — destination subfolder.")
+    ap.add_argument("--query", help="Pexels search query for per-article hero.")
     ap.add_argument(
         "--force",
         action="store_true",
@@ -132,38 +167,25 @@ def main(argv: list[str] | None = None) -> int:
     args = ap.parse_args(argv)
 
     if args.default_hero:
-        if DEFAULT_HERO_PATH.exists() and not args.force:
-            print(
-                f"[hero] {DEFAULT_HERO_PATH.relative_to(PROJECT_ROOT)} "
-                "already exists — skipping (use --force to refetch)."
-            )
+        if _maybe_skip(DEFAULT_HERO_PATH, args.force):
             return 0
-        ok = fetch_unsplash(DEFAULT_HERO_QUERY, DEFAULT_HERO_PATH)
-        return 0 if ok else 1
+        return 0 if fetch_pexels(DEFAULT_HERO_QUERY, DEFAULT_HERO_PATH) else 1
+
+    if args.school_fallback:
+        if _maybe_skip(SCHOOL_FALLBACK_PATH, args.force):
+            return 0
+        return 0 if fetch_pexels(SCHOOL_FALLBACK_QUERY, SCHOOL_FALLBACK_PATH) else 1
 
     if not args.slug or not args.query:
         ap.error(
-            "Either pass --default-hero, or pass --slug and --query for a "
-            "per-article fetch."
+            "Provide --default-hero, --school-fallback, or both "
+            "--slug and --query for a per-article fetch."
         )
 
     dest = WEB_PUBLIC / "blog" / args.slug / "hero.jpg"
-    if dest.exists() and not args.force:
-        print(
-            f"[hero] {dest.relative_to(PROJECT_ROOT)} already exists — "
-            "skipping (use --force to refetch)."
-        )
+    if _maybe_skip(dest, args.force):
         return 0
-    ok = fetch_unsplash(args.query, dest)
-    if not ok:
-        print(
-            "[hero] could not source the image. The site's runtime falls "
-            "back to /blog/default-hero.jpg automatically; re-run with the "
-            "key once available.",
-            file=sys.stderr,
-        )
-        return 1
-    return 0
+    return 0 if fetch_pexels(args.query, dest) else 1
 
 
 if __name__ == "__main__":
