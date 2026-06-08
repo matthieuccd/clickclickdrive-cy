@@ -1,24 +1,10 @@
 "use client";
 
+import NextLink from "next/link";
 import { useLocale } from "next-intl";
 
-import { Link, usePathname } from "@/i18n/navigation";
+import { usePathname } from "@/i18n/navigation";
 import type { Locale } from "@/lib/types";
-
-/**
- * Switches between el and en preserving the user's current page.
- *
- * `usePathname()` from next-intl returns the *canonical* path (matching the
- * Greek pathname template), e.g.:
- *
- *   /scholes-odigon/scholi-odigon-leykosias-bfd5d8   (current locale el)
- *   /scholes-odigon/nicosia-driving-school-bfd5d8    (current locale en)
- *
- * The static prefix is auto-translated by next-intl when we hand the URL to
- * <Link locale={other}>. The dynamic slug is NOT — it stays verbatim. So we
- * must swap the slug to the equivalent in the target locale before passing
- * it to Link. The slug-pair maps come from the server (Header.tsx).
- */
 
 interface SlugPair {
   el: string;
@@ -41,58 +27,69 @@ export function LanguageSwitcher({
   const locale = useLocale() as Locale;
   const otherLocale: Locale = locale === "el" ? "en" : "el";
   const otherLabel = locale === "el" ? "EN" : "ΕΛ";
-  const pathname = usePathname();
+  const canonicalPath = usePathname() ?? "/";
 
   const schoolMap = makeMap(schoolPairs, locale);
   const articleMap = makeMap(articlePairs, locale);
   const cityMap = makeMap(cityPairs, locale);
 
-  const altPath = computeAltPath(pathname, schoolMap, articleMap, cityMap);
+  const altHref = buildAltHref(canonicalPath, otherLocale, schoolMap, articleMap, cityMap);
 
   return (
-    <Link
-      href={altPath as Parameters<typeof Link>[0]["href"]}
-      locale={otherLocale}
+    <NextLink
+      href={altHref}
       className={className}
       aria-label={otherLocale === "el" ? "Ελληνικά" : "English"}
     >
       {otherLabel}
-    </Link>
+    </NextLink>
   );
 }
 
 function makeMap(pairs: SlugPair[], currentLocale: Locale): Record<string, string> {
   const map: Record<string, string> = {};
   for (const p of pairs) {
-    if (currentLocale === "el") {
-      map[p.el] = p.en;
-    } else {
-      map[p.en] = p.el;
-    }
+    map[currentLocale === "el" ? p.el : p.en] = currentLocale === "el" ? p.en : p.el;
   }
   return map;
 }
 
-function computeAltPath(
+function buildAltHref(
   canonicalPath: string,
+  target: Locale,
   schoolMap: Record<string, string>,
   articleMap: Record<string, string>,
   cityMap: Record<string, string>,
 ): string {
+  const pre = target === "el" ? "" : "/en";
+
   const schoolMatch = canonicalPath.match(/^\/scholes-odigon\/([^/?#]+)\/?$/);
   if (schoolMatch) {
     const slug = decodeURIComponent(schoolMatch[1]);
-    if (cityMap[slug]) return `/scholes-odigon/${cityMap[slug]}`;
-    if (schoolMap[slug]) return `/scholes-odigon/${schoolMap[slug]}`;
-    return canonicalPath;
+    const altSlug = cityMap[slug] ?? schoolMap[slug] ?? slug;
+    const seg = target === "el" ? "scholes-odigon" : "driving-schools";
+    return `${pre}/${seg}/${altSlug}`;
+  }
+  if (canonicalPath === "/scholes-odigon" || canonicalPath === "/scholes-odigon/") {
+    return `${pre}/${target === "el" ? "scholes-odigon" : "driving-schools"}`;
   }
 
   const articleMatch = canonicalPath.match(/^\/arthra\/([^/?#]+)\/?$/);
   if (articleMatch) {
     const slug = decodeURIComponent(articleMatch[1]);
-    if (articleMap[slug]) return `/arthra/${articleMap[slug]}`;
-    return canonicalPath;
+    const altSlug = articleMap[slug] ?? slug;
+    return `${pre}/${target === "el" ? "arthra" : "blog"}/${altSlug}`;
+  }
+  if (canonicalPath === "/arthra" || canonicalPath === "/arthra/") {
+    return `${pre}/${target === "el" ? "arthra" : "blog"}`;
   }
 
-  return canonicalPath;
+  if (canonicalPath === "/aporrito" || canonicalPath === "/aporrito/") {
+    return target === "el" ? "/aporrito" : "/en/privacy";
+  }
+  if (canonicalPath === "/oroi" || canonicalPath === "/oroi/") {
+    return target === "el" ? "/oroi" : "/en/terms";
+  }
+
+  return target === "el" ? "/" : "/en";
 }
