@@ -53,8 +53,11 @@ logs/
 brand-research/home.html
 brand-research/*.css
 
-# Scraped photos cached from Google Places (30-day ToS, refreshed by enrich.py)
-apps/web/public/schools/
+# Scraped photos cached from Google Places (30-day ToS, refreshed by enrich.py).
+# Glob the contents — NOT the directory itself — so we can negate fallback.jpg.
+# (git can't re-include a file inside a fully-ignored directory.)
+apps/web/public/schools/*
+!apps/web/public/schools/fallback.jpg
 
 # Generated SEO content + scrape working files (run scraper to regenerate)
 scraper/data/

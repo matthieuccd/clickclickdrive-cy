@@ -12,25 +12,22 @@ export function SchoolCard({ school }: { school: DrivingSchool }) {
   const locale = useLocale() as Locale;
   const href = schoolHref(school, locale);
   const name = displayName(school, locale);
-  const photo = school.photo_paths[0];
+  // Fallback image is fetched once by scraper/fetch_school_fallback.py (or
+  // manually) and saved to public/schools/fallback.jpg. Until the real
+  // Unsplash photo lands, a placeholder JPG ships at that path.
+  const photo = school.photo_paths[0] ?? "/schools/fallback.jpg";
 
   return (
     <article className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-surface shadow-sm transition-shadow hover:shadow-md">
       <div className="relative aspect-[4/3] w-full bg-surface-muted">
         <Link href={href} className="absolute inset-0 z-0 block">
-          {photo ? (
-            <Image
-              src={photo}
-              alt={name}
-              fill
-              sizes="(min-width: 1024px) 24rem, (min-width: 640px) 50vw, 100vw"
-              className="object-cover transition-transform group-hover:scale-[1.02]"
-            />
-          ) : (
-            <div className="grid h-full w-full place-items-center text-text-muted">
-              <span className="text-sm">{t("brand.name")}</span>
-            </div>
-          )}
+          <Image
+            src={photo}
+            alt={name}
+            fill
+            sizes="(min-width: 1024px) 24rem, (min-width: 640px) 50vw, 100vw"
+            className="object-cover transition-transform group-hover:scale-[1.02]"
+          />
         </Link>
         {school.location.city && (
           <Link

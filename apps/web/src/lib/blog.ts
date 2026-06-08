@@ -128,6 +128,30 @@ export const BLOG_ARTICLES: readonly BlogArticle[] = [
   },
 ];
 
+// --- hero image resolution -----------------------------------------------
+
+/** Site-wide fallback hero, downloaded by scraper/fetch_blog_hero.py
+ *  --default-hero from Unsplash query "cyprus road driving car". */
+export const FALLBACK_BLOG_HERO = "/blog/default-hero.jpg";
+
+/**
+ * If the article's per-piece hero exists on disk under public/, return its
+ * path; otherwise return the site-wide fallback. School photos are NEVER
+ * used as blog heroes (they are private business assets — the old fallback
+ * was removed deliberately).
+ */
+export function resolveArticleHero(article: BlogArticle): string {
+  if (article.heroImagePath) {
+    const local = path.join(
+      process.cwd(),
+      "public",
+      article.heroImagePath.replace(/^\//, ""),
+    );
+    if (fs.existsSync(local)) return article.heroImagePath;
+  }
+  return FALLBACK_BLOG_HERO;
+}
+
 // --- accessors ------------------------------------------------------------
 
 export function getAllArticles(): BlogArticle[] {

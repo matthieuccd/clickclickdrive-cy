@@ -2,9 +2,13 @@ import Image from "next/image";
 
 /**
  * Mobile-first photo gallery. Up to 3 images; on mobile shows the hero, on
- * sm+ shows hero on the left and two stacked thumbs on the right. Falls back
- * to a placeholder block when there are no photos.
+ * sm+ shows hero on the left and two stacked thumbs on the right. When the
+ * school has zero photos, renders the site-wide schools fallback image
+ * (downloaded once from Unsplash query "driving school car lesson" by the
+ * blog hero script, or a placeholder until then).
  */
+const SCHOOL_FALLBACK_PHOTO = "/schools/fallback.jpg";
+
 export function PhotoGallery({
   photos,
   alt,
@@ -14,8 +18,15 @@ export function PhotoGallery({
 }) {
   if (photos.length === 0) {
     return (
-      <div className="grid h-56 w-full place-items-center rounded-2xl bg-surface-muted text-text-muted sm:h-72">
-        <PlaceholderIcon />
+      <div className="relative h-56 w-full overflow-hidden rounded-2xl bg-surface-muted sm:h-80">
+        <Image
+          src={SCHOOL_FALLBACK_PHOTO}
+          alt={alt}
+          fill
+          sizes="(min-width: 640px) 64rem, 100vw"
+          className="object-cover"
+          priority
+        />
       </div>
     );
   }
@@ -66,22 +77,3 @@ export function PhotoGallery({
   );
 }
 
-function PlaceholderIcon() {
-  return (
-    <svg
-      width="48"
-      height="48"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      aria-hidden="true"
-    >
-      <rect x="3" y="3" width="18" height="18" rx="2" />
-      <circle cx="9" cy="9" r="2" />
-      <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21" />
-    </svg>
-  );
-}

@@ -6,6 +6,7 @@ import {
   articleTitle,
   categoryTitle,
   getCategoryById,
+  resolveArticleHero,
   type BlogArticle,
 } from "@/lib/blog";
 import type { Locale } from "@/lib/types";
@@ -31,7 +32,7 @@ export function ArticleCard({
     >
       <div className="relative aspect-[16/9] w-full bg-surface-muted">
         <Image
-          src={article.heroImagePath}
+          src={resolveArticleHero(article)}
           alt={
             locale === "el" ? article.heroImageAlt_el : article.heroImageAlt_en
           }

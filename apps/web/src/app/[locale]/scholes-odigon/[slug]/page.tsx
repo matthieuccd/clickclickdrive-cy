@@ -8,6 +8,7 @@ import { MarkdownProse } from "@/components/MarkdownProse";
 import { PhotoGallery } from "@/components/PhotoGallery";
 import { RatingStars } from "@/components/RatingStars";
 import { SchoolCard } from "@/components/SchoolCard";
+import { CITY_INTROS } from "@/lib/cityContent";
 import { loadSchoolContent } from "@/lib/generatedContent";
 import { getAllSchools, getSchoolsByCity } from "@/lib/schools";
 import {
@@ -176,9 +177,13 @@ async function CityView({
       </header>
 
       <section className="mb-8 rounded-2xl bg-surface p-6 ring-1 ring-border sm:p-8">
-        <p className="text-base leading-relaxed text-text-secondary">
-          {t("list.cityIntro", { city: t(`cities.${city}`) })}
-        </p>
+        <div className="space-y-4 text-base leading-relaxed text-text-secondary">
+          {CITY_INTROS[city][locale]
+            .split(/\n{2,}/)
+            .map((para, i) => (
+              <p key={i}>{para}</p>
+            ))}
+        </div>
       </section>
 
       {schools.length === 0 ? (
@@ -230,17 +235,20 @@ async function SchoolView({
   const name = displayName(school, locale);
   const city = school.location.city;
 
-  const siblings = city
-    ? [...getSchoolsByCity(city)].sort((a, b) => {
-        const ar = a.rating ?? -1;
-        const br = b.rating ?? -1;
-        if (br !== ar) return br - ar;
-        return (b.review_count ?? 0) - (a.review_count ?? 0);
-      })
+  // "Other schools nearby" section: 3 highest-rated other schools in the
+  // same city, excluding this one. Removed the prev/next link strip that
+  // used to live inside the description section.
+  const nearby = city
+    ? [...getSchoolsByCity(city)]
+        .filter((s) => s.id !== school.id)
+        .sort((a, b) => {
+          const ar = a.rating ?? -1;
+          const br = b.rating ?? -1;
+          if (br !== ar) return br - ar;
+          return (b.review_count ?? 0) - (a.review_count ?? 0);
+        })
+        .slice(0, 3)
     : [];
-  const idx = siblings.findIndex((s) => s.id === school.id);
-  const prev = idx > 0 ? siblings[idx - 1] : null;
-  const next = idx >= 0 && idx < siblings.length - 1 ? siblings[idx + 1] : null;
 
   const canonicalUrl = siteUrl(
     locale === "el"
@@ -252,7 +260,8 @@ async function SchoolView({
   const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${school.location.lat},${school.location.lon}`;
 
   return (
-    <div className="mx-auto max-w-5xl px-4 py-8 sm:px-6 sm:py-12">
+    <>
+      <div className="mx-auto max-w-5xl px-4 py-8 sm:px-6 sm:py-12">
       <JsonLd data={jsonLd} />
 
       <Link
@@ -391,41 +400,28 @@ async function SchoolView({
         </aside>
       </div>
 
-      {(prev || next) && (
-        <nav className="mt-12 grid gap-3 border-t border-border pt-8 sm:grid-cols-2">
-          {prev ? (
-            <Link
-              href={schoolHref(prev, locale)}
-              className="group rounded-2xl border border-border bg-surface p-4 hover:border-brand"
-            >
-              <span className="text-xs font-bold uppercase tracking-wide text-text-muted">
-                ← {t("detail.previousInCity")}
-              </span>
-              <span className="mt-1 block font-bold text-text-primary group-hover:text-brand">
-                {displayName(prev, locale)}
-              </span>
-            </Link>
-          ) : (
-            <span />
-          )}
-          {next ? (
-            <Link
-              href={schoolHref(next, locale)}
-              className="group rounded-2xl border border-border bg-surface p-4 text-right hover:border-brand"
-            >
-              <span className="text-xs font-bold uppercase tracking-wide text-text-muted">
-                {t("detail.nextInCity")} →
-              </span>
-              <span className="mt-1 block font-bold text-text-primary group-hover:text-brand">
-                {displayName(next, locale)}
-              </span>
-            </Link>
-          ) : (
-            <span />
-          )}
-        </nav>
-      )}
     </div>
+
+      {nearby.length > 0 && (
+        <section className="mt-12 border-t border-border bg-surface-muted">
+          <div className="mx-auto max-w-5xl px-4 py-12 sm:px-6 sm:py-14">
+            <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">
+              {t("detail.nearbySchools")}
+            </h2>
+            {city && (
+              <p className="mt-2 text-text-muted">
+                {t("detail.nearbySchoolsLead", { city: t(`cities.${city}`) })}
+              </p>
+            )}
+            <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {nearby.map((s) => (
+                <SchoolCard key={s.id} school={s} />
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+    </>
   );
 }
 

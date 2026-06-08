@@ -1,13 +1,31 @@
 import Image from "next/image";
-import { useLocale, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 
 import { Link } from "@/i18n/navigation";
+import { BLOG_ARTICLES } from "@/lib/blog";
+import { getAllSchools } from "@/lib/schools";
+import { citySlug } from "@/lib/slugs";
+import { CITIES } from "@/lib/types";
+
+import { LanguageSwitcher } from "./LanguageSwitcher";
 
 export function Header() {
   const t = useTranslations();
-  const locale = useLocale();
-  const otherLocale = locale === "el" ? "en" : "el";
-  const otherLabel = locale === "el" ? "EN" : "ΕΛ";
+
+  // Slug pairs computed once on the server; serialised to the client
+  // LanguageSwitcher so it can map current → other-locale slugs.
+  const schoolPairs = getAllSchools().map((s) => ({
+    el: s.slug_el,
+    en: s.slug_en,
+  }));
+  const articlePairs = BLOG_ARTICLES.map((a) => ({
+    el: a.slug_el,
+    en: a.slug_en,
+  }));
+  const cityPairs = CITIES.map((c) => ({
+    el: citySlug(c, "el"),
+    en: citySlug(c, "en"),
+  }));
 
   return (
     <header className="sticky top-0 z-30 border-b border-border bg-surface/95 backdrop-blur">
@@ -36,14 +54,12 @@ export function Header() {
           >
             {t("nav.blog")}
           </Link>
-          <Link
-            href="/"
-            locale={otherLocale}
+          <LanguageSwitcher
+            schoolPairs={schoolPairs}
+            articlePairs={articlePairs}
+            cityPairs={cityPairs}
             className="rounded-full border border-border-strong px-3 py-1.5 text-sm font-semibold text-text-primary hover:border-brand hover:text-brand transition-colors"
-            aria-label={t("nav.switchLanguage")}
-          >
-            {otherLabel}
-          </Link>
+          />
         </nav>
       </div>
     </header>
