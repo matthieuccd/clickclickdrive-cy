@@ -176,8 +176,12 @@ SYSTEM_PROMPT_EL = """\
   Πες κάτι όπως «δείτε την τρέχουσα τιμή στο Τμήμα Οδικών Μεταφορών».
 
 ΛΙΣΤΕΣ
-- Χρησιμοποίησε bullet lists ή αριθμημένες λίστες μόνο όπου πραγματικά βοηθούν:
-  λίστες εγγράφων, βήματα διαδικασίας, σύντομα key facts. Όχι παντού.
+- Χρησιμοποίησε bullet lists ή αριθμημένες λίστες ΠΑΝΤΑ στις παρακάτω
+  περιπτώσεις: λίστες εγγράφων που χρειάζεται ο αναγνώστης, βήματα
+  διαδικασίας (π.χ. πώς πάρεις εκπαιδευτική άδεια, τι ελέγχει η πρακτική),
+  σύνολα 3+ παράλληλων key facts, πρακτικές συμβουλές στο τέλος. Αν μπορείς
+  να αριθμήσεις 3+ στοιχεία σε μία φράση, βάλε τα σε λίστα.
+- Στόχος: τουλάχιστον 5 ξεχωριστές λίστες στο κείμενο εκτός FAQ.
 - Η αφήγηση και η ανάλυση παραμένουν σε πρόζα.
 
 ΑΚΡΙΒΕΙΑ
@@ -400,9 +404,10 @@ def _make_client():  # noqa: ANN202
 def _call_anthropic(*, client, model: str, system_prompt: str, user_prompt: str) -> str:
     msg = client.messages.create(
         model=model,
-        # Long-form: 2000+ words can easily exceed 4k tokens — give plenty of
-        # headroom. Sonnet 4.6 handles this comfortably.
-        max_tokens=8000,
+        # Long-form: 2000+ words. Greek Unicode characters tokenize at ~2-3x
+        # the rate of Latin text, so Greek articles need significantly more
+        # headroom than English ones.
+        max_tokens=12000,
         system=system_prompt,
         messages=[{"role": "user", "content": user_prompt}],
     )
