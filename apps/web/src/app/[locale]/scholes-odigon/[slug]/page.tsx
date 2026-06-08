@@ -217,14 +217,14 @@ async function CityView({
   );
 }
 
-function stripInterlinks(md: string): string {
-  return md
-    .split(/\n{2,}/)
-    .filter((para) => {
-      const links = para.match(/\[([^\]]+)\]\(([^)]+)\)/g);
-      return !links || links.length < 3;
-    })
-    .join("\n\n");
+function splitInterlinks(md: string): { body: string; interlinks: string | null } {
+  const paras = md.trim().split(/\n{2,}/);
+  const last = paras[paras.length - 1];
+  const links = last.match(/\[([^\]]+)\]\(([^)]+)\)/g);
+  if (links && links.length > 0) {
+    return { body: paras.slice(0, -1).join("\n\n"), interlinks: last };
+  }
+  return { body: md, interlinks: null };
 }
 
 // -------- school view --------------------------------------------------------
@@ -266,7 +266,9 @@ async function SchoolView({
   );
   const jsonLd = buildLocalBusinessJsonLd(school, canonicalUrl);
   const rawSeoMd = loadSchoolContent(school.id, locale);
-  const seoMd = rawSeoMd ? stripInterlinks(rawSeoMd) : null;
+  const { body: seoBody, interlinks: seoInterlinks } = rawSeoMd
+    ? splitInterlinks(rawSeoMd)
+    : { body: null, interlinks: null };
   const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${school.location.lat},${school.location.lon}`;
 
   return (
@@ -314,9 +316,9 @@ async function SchoolView({
 
       <div className="mt-8 grid gap-6 lg:grid-cols-3">
         <div className="space-y-6 lg:col-span-2">
-          {seoMd ? (
+          {seoBody ? (
             <section className="rounded-2xl bg-surface p-6 ring-1 ring-border sm:p-8">
-              <MarkdownProse markdown={seoMd} />
+              <MarkdownProse markdown={seoBody} />
             </section>
           ) : (
             <FallbackBio school={school} locale={locale} />
@@ -412,6 +414,17 @@ async function SchoolView({
       </div>
 
     </div>
+
+      {seoInterlinks && (
+        <section className="border-t border-border bg-surface-muted">
+          <div className="mx-auto max-w-5xl px-4 py-10 sm:px-6 sm:py-12">
+            <h2 className="mb-4 text-lg font-bold tracking-tight">
+              {t("detail.exploreMore")}
+            </h2>
+            <MarkdownProse markdown={seoInterlinks} />
+          </div>
+        </section>
+      )}
 
       {nearby.length > 0 && (
         <section className="mt-12 border-t border-border bg-surface-muted">

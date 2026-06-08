@@ -90,6 +90,7 @@
     "viewOnMap": "Open in Google Maps",
     "previousInCity": "Previous school",
     "nextInCity": "Next school",
+    "exploreMore": "Explore more schools",
     "nearbySchools": "Other schools nearby",
     "nearbySchoolsLead": "Other driving schools in {city}",
     "notFound": "School not found",
