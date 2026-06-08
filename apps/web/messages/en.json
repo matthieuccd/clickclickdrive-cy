@@ -1,0 +1,66 @@
+{
+  "brand": {
+    "name": "ClickClickDrive",
+    "tagline": "Driving schools in Cyprus"
+  },
+  "nav": {
+    "schools": "Driving schools",
+    "cities": "Cities",
+    "about": "About",
+    "switchLanguage": "Ελληνικά"
+  },
+  "home": {
+    "heroTitle": "Find your driving school in Cyprus",
+    "heroSubtitle": "Compare driving schools in Nicosia, Limassol, Larnaca, Paphos, and Paralimni. See ratings, hours, and contact — free.",
+    "searchLabel": "Where do you want to learn?",
+    "searchPlaceholder": "Choose a city",
+    "searchButton": "Search",
+    "popularCities": "Popular cities",
+    "featuredSchools": "Featured schools",
+    "viewAll": "View all",
+    "stats": {
+      "schools": "{count} schools",
+      "cities": "{count} cities",
+      "free": "100% free"
+    }
+  },
+  "cities": {
+    "all": "All cities",
+    "Nicosia": "Nicosia",
+    "Limassol": "Limassol",
+    "Larnaca": "Larnaca",
+    "Paphos": "Paphos",
+    "Paralimni": "Paralimni"
+  },
+  "list": {
+    "title": "Driving schools",
+    "titleInCity": "Driving schools — {city}",
+    "resultCount": "{count, plural, =0 {No schools found} =1 {1 school} other {# schools}}",
+    "empty": "No schools found for this city.",
+    "filterByCity": "Filter by city"
+  },
+  "card": {
+    "viewDetails": "View details",
+    "noRating": "No ratings yet",
+    "reviews": "{count, plural, =1 {1 review} other {# reviews}}",
+    "callNow": "Call",
+    "website": "Website",
+    "openNow": "Open now",
+    "closedNow": "Closed"
+  },
+  "detail": {
+    "backToList": "← Back to schools",
+    "contact": "Contact",
+    "phone": "Phone",
+    "website": "Website",
+    "address": "Address",
+    "openingHours": "Opening hours",
+    "viewOnMap": "Open in Google Maps",
+    "notFound": "School not found",
+    "notFoundDesc": "The school you are looking for does not exist or has been removed."
+  },
+  "footer": {
+    "tagline": "Cyprus's leading driving school marketplace.",
+    "copyright": "© {year} ClickClickDrive Cyprus. All rights reserved."
+  }
+}

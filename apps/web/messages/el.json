@@ -1,0 +1,66 @@
+{
+  "brand": {
+    "name": "ClickClickDrive",
+    "tagline": "Σχολές οδηγών στην Κύπρο"
+  },
+  "nav": {
+    "schools": "Σχολές οδηγών",
+    "cities": "Πόλεις",
+    "about": "Σχετικά",
+    "switchLanguage": "English"
+  },
+  "home": {
+    "heroTitle": "Βρείτε τη σχολή οδηγών σας στην Κύπρο",
+    "heroSubtitle": "Συγκρίνετε σχολές οδηγών σε Λευκωσία, Λεμεσό, Λάρνακα, Πάφο και Παραλίμνι. Δείτε αξιολογήσεις, ωράριο και επικοινωνία — δωρεάν.",
+    "searchLabel": "Πού θέλετε να μάθετε οδήγηση;",
+    "searchPlaceholder": "Επιλέξτε πόλη",
+    "searchButton": "Αναζήτηση",
+    "popularCities": "Δημοφιλείς πόλεις",
+    "featuredSchools": "Επιλεγμένες σχολές",
+    "viewAll": "Δείτε όλες",
+    "stats": {
+      "schools": "{count} σχολές",
+      "cities": "{count} πόλεις",
+      "free": "100% δωρεάν"
+    }
+  },
+  "cities": {
+    "all": "Όλες οι πόλεις",
+    "Nicosia": "Λευκωσία",
+    "Limassol": "Λεμεσός",
+    "Larnaca": "Λάρνακα",
+    "Paphos": "Πάφος",
+    "Paralimni": "Παραλίμνι"
+  },
+  "list": {
+    "title": "Σχολές οδηγών",
+    "titleInCity": "Σχολές οδηγών — {city}",
+    "resultCount": "{count, plural, =0 {Δεν βρέθηκαν σχολές} =1 {1 σχολή} other {# σχολές}}",
+    "empty": "Δεν βρέθηκαν σχολές για αυτή την πόλη.",
+    "filterByCity": "Φίλτρο πόλης"
+  },
+  "card": {
+    "viewDetails": "Δείτε λεπτομέρειες",
+    "noRating": "Χωρίς αξιολογήσεις",
+    "reviews": "{count, plural, =1 {1 αξιολόγηση} other {# αξιολογήσεις}}",
+    "callNow": "Κλήση",
+    "website": "Ιστοσελίδα",
+    "openNow": "Ανοιχτά τώρα",
+    "closedNow": "Κλειστά"
+  },
+  "detail": {
+    "backToList": "← Πίσω στις σχολές",
+    "contact": "Επικοινωνία",
+    "phone": "Τηλέφωνο",
+    "website": "Ιστοσελίδα",
+    "address": "Διεύθυνση",
+    "openingHours": "Ωράριο λειτουργίας",
+    "viewOnMap": "Άνοιγμα στο Google Maps",
+    "notFound": "Η σχολή δεν βρέθηκε",
+    "notFoundDesc": "Η σχολή που ψάχνετε δεν υπάρχει ή έχει αφαιρεθεί."
+  },
+  "footer": {
+    "tagline": "Η μεγαλύτερη πλατφόρμα σχολών οδηγών στην Κύπρο.",
+    "copyright": "© {year} ClickClickDrive Cyprus. Όλα τα δικαιώματα διατηρούνται."
+  }
+}
