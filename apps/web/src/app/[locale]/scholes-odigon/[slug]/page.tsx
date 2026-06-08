@@ -8,8 +8,9 @@ import { MarkdownProse } from "@/components/MarkdownProse";
 import { PhotoGallery } from "@/components/PhotoGallery";
 import { RatingStars } from "@/components/RatingStars";
 import { SchoolCard } from "@/components/SchoolCard";
-import { CITY_INTROS } from "@/lib/cityContent";
+import { CITY_DEEP, CITY_INTROS } from "@/lib/cityContent";
 import { loadSchoolContent } from "@/lib/generatedContent";
+import { translateAddress, translateHoursLine } from "@/lib/i18nUtils";
 import { getAllSchools, getSchoolsByCity } from "@/lib/schools";
 import {
   buildAlternates,
@@ -177,13 +178,7 @@ async function CityView({
       </header>
 
       <section className="mb-8 rounded-2xl bg-surface p-6 ring-1 ring-border sm:p-8">
-        <div className="space-y-4 text-base leading-relaxed text-text-secondary">
-          {CITY_INTROS[city][locale]
-            .split(/\n{2,}/)
-            .map((para, i) => (
-              <p key={i}>{para}</p>
-            ))}
-        </div>
+        <MarkdownProse markdown={CITY_INTROS[city][locale]} />
       </section>
 
       {schools.length === 0 ? (
@@ -198,7 +193,11 @@ async function CityView({
         </div>
       )}
 
-      <section className="mt-16 border-t border-border pt-8">
+      <section className="mt-12 rounded-2xl bg-surface p-6 ring-1 ring-border sm:p-8">
+        <MarkdownProse markdown={CITY_DEEP[city][locale]} />
+      </section>
+
+      <section className="mt-10 border-t border-border pt-8">
         <h2 className="mb-4 text-lg font-bold tracking-tight">
           {t("list.otherCities")}
         </h2>
@@ -216,6 +215,16 @@ async function CityView({
       </section>
     </div>
   );
+}
+
+function stripInterlinks(md: string): string {
+  return md
+    .split(/\n{2,}/)
+    .filter((para) => {
+      const links = para.match(/\[([^\]]+)\]\(([^)]+)\)/g);
+      return !links || links.length < 3;
+    })
+    .join("\n\n");
 }
 
 // -------- school view --------------------------------------------------------
@@ -256,7 +265,8 @@ async function SchoolView({
       : `/en/driving-schools/${school.slug_en}`,
   );
   const jsonLd = buildLocalBusinessJsonLd(school, canonicalUrl);
-  const seoMd = loadSchoolContent(school.id, locale);
+  const rawSeoMd = loadSchoolContent(school.id, locale);
+  const seoMd = rawSeoMd ? stripInterlinks(rawSeoMd) : null;
   const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${school.location.lat},${school.location.lon}`;
 
   return (
@@ -280,9 +290,9 @@ async function SchoolView({
             {t(`cities.${city}`)}
           </Link>
         )}
-        <h1 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">
+        <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">
           {name}
-        </h1>
+        </h2>
         {school.rating !== null ? (
           <div className="mt-3 flex items-center gap-3">
             <RatingStars rating={school.rating} size={20} />
@@ -357,7 +367,7 @@ async function SchoolView({
                     {t("detail.address")}
                   </dt>
                   <dd className="mt-1 text-text-secondary">
-                    {school.location.formatted_address}
+                    {translateAddress(school.location.formatted_address, locale)}
                   </dd>
                   <a
                     href={mapsUrl}
@@ -379,7 +389,8 @@ async function SchoolView({
             {school.opening_hours.length > 0 ? (
               <ul className="mt-4 divide-y divide-border text-sm">
                 {school.opening_hours.map((line) => {
-                  const [day, ...rest] = line.split(":");
+                  const translated = translateHoursLine(line, locale);
+                  const [day, ...rest] = translated.split(":");
                   return (
                     <li
                       key={line}
