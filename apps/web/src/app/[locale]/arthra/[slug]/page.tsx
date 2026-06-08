@@ -1,3 +1,6 @@
+import fs from "node:fs";
+import path from "node:path";
+
 import type { Metadata } from "next";
 import Image from "next/image";
 import { notFound } from "next/navigation";
@@ -131,6 +134,36 @@ export default async function BlogSlugPage({
   notFound();
 }
 
+// -------- helpers ------------------------------------------------------------
+
+interface FaqEntry { q: string; a: string }
+
+function parseFaq(markdown: string): { body: string; faq: FaqEntry[] } {
+  const match = /^## (?:FAQ|Συχνές Ερωτήσεις)\s*$/m.exec(markdown);
+  if (!match) return { body: markdown, faq: [] };
+  const body = markdown.slice(0, match.index).trimEnd();
+  const section = markdown.slice(match.index + match[0].length).trim();
+  const faq: FaqEntry[] = [];
+  for (const block of section.split(/\n{2,}/).map((b) => b.trim()).filter(Boolean)) {
+    // Each block: **Question?\n**Answer text.
+    const m = block.match(/^\*\*(.+?)\*\*\n([\s\S]+)$/);
+    if (m) faq.push({ q: m[1].trim(), a: m[2].replace(/\n/g, " ").trim() });
+  }
+  return { body, faq };
+}
+
+function extractHowToSteps(markdown: string): string[] {
+  let best: string[] = [];
+  for (const block of markdown.split(/\n{2,}/).map((b) => b.trim()).filter(Boolean)) {
+    const lines = block.split("\n").filter((l) => l.trim());
+    if (lines.length >= 3 && lines.every((l) => /^\d+\.\s/.test(l.trim()))) {
+      const steps = lines.map((l) => l.replace(/^\d+\.\s/, "").trim());
+      if (steps.length > best.length) best = steps;
+    }
+  }
+  return best;
+}
+
 // -------- article view -------------------------------------------------------
 
 async function ArticleView({
@@ -142,21 +175,29 @@ async function ArticleView({
 }) {
   const t = await getTranslations();
   const title = articleTitle(article, locale);
-  const body = loadArticleBody(article.id, locale);
+  const rawBody = loadArticleBody(article.id, locale);
+  const { body, faq } = rawBody ? parseFaq(rawBody) : { body: null, faq: [] };
+  const howToSteps = body ? extractHowToSteps(body) : [];
   const category = getCategoryById(article.categoryId);
   const { prev, next } = getAdjacent(article);
+
+  // Check for optional image2
+  const image2Src = `/blog/${article.id}/image2.jpg`;
+  const image2Exists = fs.existsSync(
+    path.join(process.cwd(), "public", image2Src.slice(1)),
+  );
 
   const pathEl = `/arthra/${article.slug_el}`;
   const pathEn = `/blog/${article.slug_en}`;
   const pageUrl = siteUrl(locale === "el" ? pathEl : `/en${pathEn}`);
   const heroUrl = siteUrl(article.heroImagePath);
+  const description = locale === "el" ? article.metaDescription_el : article.metaDescription_en;
 
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: title,
-    description:
-      locale === "el" ? article.metaDescription_el : article.metaDescription_en,
+    description,
     image: [heroUrl],
     datePublished: article.publishedDate,
     dateModified: article.modifiedDate,
@@ -205,6 +246,29 @@ async function ArticleView({
     ],
   };
 
+  const faqJsonLd = faq.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faq.map(({ q, a }) => ({
+      "@type": "Question",
+      name: q,
+      acceptedAnswer: { "@type": "Answer", text: a },
+    })),
+  } : null;
+
+  const howToJsonLd = howToSteps.length >= 3 ? {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: title,
+    description,
+    step: howToSteps.map((text, i) => ({
+      "@type": "HowToStep",
+      position: i + 1,
+      name: text.length > 70 ? text.slice(0, 70) + "…" : text,
+      text,
+    })),
+  } : null;
+
   const dateLabel = new Date(article.publishedDate).toLocaleDateString(
     locale === "el" ? "el-CY" : "en-CY",
     { day: "numeric", month: "long", year: "numeric" },
@@ -214,6 +278,8 @@ async function ArticleView({
     <article className="mx-auto max-w-3xl px-4 py-10 sm:px-6 sm:py-14">
       <JsonLd data={articleJsonLd} />
       <JsonLd data={breadcrumbJsonLd} />
+      {faqJsonLd && <JsonLd data={faqJsonLd} />}
+      {howToJsonLd && <JsonLd data={howToJsonLd} />}
 
       <nav className="mb-6 text-sm text-text-muted">
         <Link
@@ -262,9 +328,7 @@ async function ArticleView({
       <div className="relative mb-10 aspect-[16/9] w-full overflow-hidden rounded-2xl bg-surface-muted">
         <Image
           src={article.heroImagePath}
-          alt={
-            locale === "el" ? article.heroImageAlt_el : article.heroImageAlt_en
-          }
+          alt={locale === "el" ? article.heroImageAlt_el : article.heroImageAlt_en}
           fill
           sizes="(min-width: 1024px) 48rem, 100vw"
           className="object-cover"
@@ -273,11 +337,36 @@ async function ArticleView({
       </div>
 
       {body ? (
-        <BlogProse markdown={body} />
+        <BlogProse
+          markdown={body}
+          injectAfterH2={image2Exists ? 4 : undefined}
+          injectImageSrc={image2Exists ? image2Src : undefined}
+          injectImageAlt={
+            locale === "el"
+              ? "Έγγραφα άδειας οδήγησης"
+              : "Driving licence documents"
+          }
+        />
       ) : (
         <p className="rounded-2xl border border-dashed border-border bg-surface px-6 py-12 text-center text-text-muted">
           {t("blog.bodyMissing")}
         </p>
+      )}
+
+      {faq.length > 0 && (
+        <section className="mt-14 rounded-2xl border border-border bg-surface p-6 sm:p-8">
+          <h2 className="mb-6 text-xl font-bold tracking-tight text-text-primary sm:text-2xl">
+            {locale === "el" ? "Συχνές Ερωτήσεις" : "FAQ"}
+          </h2>
+          <div className="divide-y divide-border">
+            {faq.map(({ q, a }, i) => (
+              <div key={i} className="py-5 first:pt-0 last:pb-0">
+                <p className="font-bold text-text-primary">{q}</p>
+                <p className="mt-2 leading-relaxed text-text-secondary">{a}</p>
+              </div>
+            ))}
+          </div>
+        </section>
       )}
 
       {(prev || next) && (

@@ -166,8 +166,7 @@ SYSTEM_PROMPT_EL = """\
 
 ΑΠΑΓΟΡΕΥΣΕΙΣ
 - Καμία παύλα em (—) πουθενά. Ποτέ. Χρησιμοποίησε τελείες ή κόμματα.
-- Καμία λίστα bullet ή αριθμημένη μέσα στο κείμενο.
-- Καμία H3. Μόνο H2 (## ) για τις ενότητες.
+- Καμία H3. Μόνο H2 (## ) για τις ενότητες και ## Συχνές Ερωτήσεις για το FAQ.
 - Καμία από αυτές τις λέξεις/φράσεις πουθενά: «επιπλέον», «επιπροσθέτως»,
   «αξίζει να σημειωθεί», «εν κατακλείδι», «δεν χρειάζεται να ειπωθεί»,
   «πλοηγηθείτε», «βυθιστείτε», «κρίσιμο», «εξασφαλίστε», «απρόσκοπτο»,
@@ -175,6 +174,11 @@ SYSTEM_PROMPT_EL = """\
   ή «πρόσθετη χρέωση». Για «επίσης» χρησιμοποίησε «και» ή «ακόμα».
 - Μην εφεύρεις γεγονότα. Μην βάλεις ακριβείς τιμές ή ποσά αν δεν σου δίνονται.
   Πες κάτι όπως «δείτε την τρέχουσα τιμή στο Τμήμα Οδικών Μεταφορών».
+
+ΛΙΣΤΕΣ
+- Χρησιμοποίησε bullet lists ή αριθμημένες λίστες μόνο όπου πραγματικά βοηθούν:
+  λίστες εγγράφων, βήματα διαδικασίας, σύντομα key facts. Όχι παντού.
+- Η αφήγηση και η ανάλυση παραμένουν σε πρόζα.
 
 ΑΚΡΙΒΕΙΑ
 - Όλα τα γεγονότα πρέπει να ισχύουν για την Κυπριακή Δημοκρατία.
@@ -185,15 +189,15 @@ SYSTEM_PROMPT_EL = """\
 ΔΟΜΗ
 - Καθαρό Markdown. Όχι front-matter, όχι H1. Η σελίδα δίνει δικό της H1.
 - Εισαγωγική παράγραφος χωρίς επικεφαλίδα. 3 με 5 προτάσεις, περίπου 90 λέξεις.
-- Μετά, ΑΚΡΙΒΩΣ 8 ενότητες σε H2. ΚΑΘΕ ενότητα ΠΡΕΠΕΙ να έχει 280 με 340 λέξεις
-  σε αμιγή πρόζα. Πιο κοντά στις 320.
-- Τελική παράγραφος χωρίς επικεφαλίδα, περίπου 120 λέξεις. Συνοψίζει χωρίς
+- Μετά, ΑΚΡΙΒΩΣ 8 ενότητες σε H2. ΚΑΘΕ ενότητα ΠΡΕΠΕΙ να έχει 200 με 300 λέξεις.
+  Χρησιμοποίησε πρόζα ή λίστες ανάλογα με το τι εξυπηρετεί το περιεχόμενο.
+- Τελική παράγραφος χωρίς επικεφαλίδα, περίπου 80 λέξεις. Συνοψίζει χωρίς
   να λέει «εν κατακλείδι» ή κάτι παρόμοιο.
-- ΣΥΝΟΛΟ: 2500 ΛΕΞΕΙΣ ΕΛΑΧΙΣΤΟ. Μέτρα τις λέξεις στο τέλος. Αν είσαι κάτω
-  από 2500, συνέχισε να γράφεις και να επεκτείνεις τις ενότητες με πρακτικά
-  παραδείγματα: τι ώρα ανοίγει το Τμήμα, πώς να κλείσεις ραντεβού, τι ρωτάει
-  ο εξεταστής, γιατί πολλοί κόβονται πρώτη φορά, πώς διαφέρει ο δρόμος της
-  Κύπρου από άλλες χώρες. Μην εφεύρεις νέα νομικά γεγονότα.
+- ΤΕΛΕΥΤΑΙΟ: ενότητα ## Συχνές Ερωτήσεις με ΑΚΡΙΒΩΣ 5 ερωτήσεις-απαντήσεις.
+  Κάθε ερώτηση γράφεται έτσι (ΑΚΡΙΒΩΣ αυτή η μορφή, καμία παραλλαγή):
+  **Ερώτηση σε μία πρόταση;**
+  Απάντηση σε 2-4 προτάσεις πρόζας. Χωρίς bullet στις απαντήσεις.
+- ΣΥΝΟΛΟ: 2000 ΛΕΞΕΙΣ ΕΛΑΧΙΣΤΟ χωρίς το FAQ. Με το FAQ τουλάχιστον 2200.
 
 ΕΣΩΤΕΡΙΚΟΙ ΣΥΝΔΕΣΜΟΙ
 - Ενσωμάτωσε ΟΛΟΥΣ τους εσωτερικούς συνδέσμους που σου δίνονται μέσα σε προτάσεις.
@@ -218,14 +222,18 @@ VOICE
 
 NEVER
 - No em-dashes (—) anywhere. Use periods or commas instead.
-- No bullet points or numbered lists inside the prose.
-- No H3. Only H2 (## ) for section headings.
+- No H3. Only H2 (## ) for section headings and ## FAQ for the FAQ section.
 - None of these phrases: "furthermore", "moreover", "it is worth noting",
   "in conclusion", "it goes without saying", "it is important to note",
   "navigating", "delve", "crucial", "ensure", "seamless",
   "in today's fast-paced world", "rest assured".
 - Do not invent facts. Do not state exact prices or fees if you were not
   given them. Say "check current fees with the Department of Road Transport".
+
+LISTS
+- Use bullet lists or numbered lists only where they genuinely help:
+  document checklists, step sequences, key facts. Not everywhere.
+- Narrative and analysis stay in prose.
 
 ACCURACY
 - Every fact must apply to the Republic of Cyprus.
@@ -236,12 +244,16 @@ ACCURACY
 
 STRUCTURE
 - Plain Markdown. No front-matter. No H1. The page renders its own H1.
-- An intro paragraph with no heading. 2 to 4 sentences. Hook the reader
-  and explain what they will learn.
-- Then 6 to 8 sections in H2. Each section 200 to 300 words of pure prose.
-- A closing paragraph with no heading. It wraps up without saying
-  "in conclusion".
-- At least 2000 words total. Target 2100 to 2400.
+- An intro paragraph with no heading. 2 to 4 sentences. Hook the reader.
+- Then 6 to 8 sections in H2. Each section 200 to 300 words. Use prose or
+  lists depending on what the content calls for.
+- A closing paragraph with no heading, about 80 words. Wraps up without
+  saying "in conclusion".
+- LAST: a ## FAQ section with EXACTLY 5 questions and answers specific to
+  this article. Each Q/A must follow this exact format (no variations):
+  **Question in one sentence?**
+  Answer in 2-4 sentences of prose. No bullets inside answers.
+- TOTAL: at least 2000 words excluding FAQ. At least 2200 with FAQ.
 
 INTERNAL LINKS
 - Weave ALL provided internal links naturally inside sentences.
