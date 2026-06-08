@@ -2,7 +2,6 @@
 
 import NextLink from "next/link";
 import { usePathname } from "next/navigation";
-import { useLocale } from "next-intl";
 
 import type { Locale } from "@/lib/types";
 
@@ -24,18 +23,16 @@ export function LanguageSwitcher({
   cityPairs,
   className,
 }: Props) {
-  const locale = useLocale() as Locale;
-  const target: Locale = locale === "el" ? "en" : "el";
-  const targetLabel = locale === "el" ? "EN" : "ΕΛ";
   const rawPath = usePathname();
 
-  const altHref = buildAltHref(
-    rawPath,
-    target,
-    schoolPairs,
-    articlePairs,
-    cityPairs,
-  );
+  // Derive the current locale purely from the URL path.
+  // With localePrefix:"as-needed", /en/... = English; everything else = Greek.
+  // This avoids any useLocale() hydration lag that could set the wrong target.
+  const isEnglish = rawPath.startsWith("/en/") || rawPath === "/en";
+  const target: Locale = isEnglish ? "el" : "en";
+  const targetLabel = isEnglish ? "ΕΛ" : "EN";
+
+  const altHref = buildAltHref(rawPath, target, schoolPairs, articlePairs, cityPairs);
 
   return (
     <NextLink
@@ -48,7 +45,7 @@ export function LanguageSwitcher({
   );
 }
 
-// Bidirectional lookup: works whether `slug` is the el or en variant.
+// Bidirectional lookup — works whether `slug` is the el or en variant.
 function findAlt(slug: string, pairs: SlugPair[], target: Locale): string | undefined {
   for (const p of pairs) {
     if (p.el === slug) return target === "en" ? p.en : p.el;
@@ -64,7 +61,7 @@ function buildAltHref(
   articlePairs: SlugPair[],
   cityPairs: SlugPair[],
 ): string {
-  // Strip /en prefix. Use startsWith("/en/") to avoid clobbering paths like /entry.
+  // Strip /en prefix. startsWith("/en/") guards against paths like /entry.
   const path =
     rawPath.startsWith("/en/") ? rawPath.slice(3)
     : rawPath === "/en"       ? "/"
@@ -72,21 +69,20 @@ function buildAltHref(
 
   const pre = target === "el" ? "" : "/en";
 
-  // School/city detail — match EITHER locale's segment name so we handle both
-  // the user-visible URL (/driving-schools/...) and the internally-rewritten
-  // canonical path (/scholes-odigon/...) that usePathname may return.
+  // School/city — match either locale's segment so both the user-visible URL
+  // (/driving-schools/...) and the internally-rewritten path (/scholes-odigon/...)
+  // are handled correctly.
   const schoolMatch = path.match(/^\/(scholes-odigon|driving-schools)\/([^/?#]+)\/?$/);
   if (schoolMatch) {
     const slug = decodeURIComponent(schoolMatch[2]);
-    const allSchool = [...cityPairs, ...schoolPairs];
-    const altSlug = findAlt(slug, allSchool, target) ?? slug;
+    const altSlug = findAlt(slug, [...cityPairs, ...schoolPairs], target) ?? slug;
     return `${pre}/${target === "el" ? "scholes-odigon" : "driving-schools"}/${altSlug}`;
   }
   if (path.match(/^\/(scholes-odigon|driving-schools)\/?$/)) {
     return `${pre}/${target === "el" ? "scholes-odigon" : "driving-schools"}`;
   }
 
-  // Article detail — match /arthra/<slug> AND /blog/<slug>
+  // Article — match /arthra/<slug> and /blog/<slug>
   const articleMatch = path.match(/^\/(arthra|blog)\/([^/?#]+)\/?$/);
   if (articleMatch) {
     const slug = decodeURIComponent(articleMatch[2]);
