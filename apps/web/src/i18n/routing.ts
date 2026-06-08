@@ -25,6 +25,7 @@ export const routing = defineRouting({
   locales,
   defaultLocale,
   localePrefix,
+  localeDetection: false,
   pathnames: {
     "/": "/",
     "/scholes-odigon": {
