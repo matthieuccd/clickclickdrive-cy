@@ -5,7 +5,7 @@ Pattern mirrors scraper/generate_content.py: one Anthropic API call per
 
 The article registry lives in this file (ARTICLES list). Add an entry per
 article. The Next.js side mirrors the article metadata in
-apps/web/src/lib/blog.ts; keep the article IDs in sync.
+src/lib/blog.ts; keep the article IDs in sync.
 
 Usage
 -----

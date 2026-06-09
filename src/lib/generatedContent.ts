@@ -11,8 +11,6 @@ import type { Locale } from "./types";
 
 const GENERATED_DIR = path.join(
   process.cwd(),
-  "..",
-  "..",
   "scraper",
   "data",
   "generated",

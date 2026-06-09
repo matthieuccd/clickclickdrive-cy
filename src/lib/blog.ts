@@ -244,8 +244,6 @@ export function getAdjacent(
 
 const BLOG_CONTENT_DIR = path.join(
   process.cwd(),
-  "..",
-  "..",
   "scraper",
   "data",
   "blog",

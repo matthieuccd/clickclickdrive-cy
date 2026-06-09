@@ -4,7 +4,7 @@ Reads scraper/output/schools.jsonl, downloads up to 3 photos per school via
 Place Photos, and writes the input records back to
 scraper/output/schools_enriched.jsonl with a new `photo_paths` field.
 
-Photo binaries land in apps/web/public/schools/{id}/{n}.jpg (served as
+Photo binaries land in public/schools/{id}/{n}.jpg (served as
 /schools/{id}/{n}.jpg by Next.js).
 
 Usage:
@@ -28,7 +28,7 @@ log = structlog.get_logger(__name__)
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 SCHOOLS_JSONL = PROJECT_ROOT / "scraper" / "output" / "schools.jsonl"
 ENRICHED_JSONL = PROJECT_ROOT / "scraper" / "output" / "schools_enriched.jsonl"
-PUBLIC_DIR = PROJECT_ROOT / "apps" / "web" / "public"
+PUBLIC_DIR = PROJECT_ROOT / "public"
 
 
 def main(argv: list[str] | None = None) -> int:

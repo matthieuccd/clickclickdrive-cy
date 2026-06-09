@@ -15,16 +15,12 @@ import type { CyprusCity, DrivingSchool } from "./types";
 // base scrape so a fresh checkout can build without running enrich.py first.
 const ENRICHED_PATH = path.join(
   process.cwd(),
-  "..",
-  "..",
   "scraper",
   "output",
   "schools_enriched.jsonl",
 );
 const BASE_PATH = path.join(
   process.cwd(),
-  "..",
-  "..",
   "scraper",
   "output",
   "schools.jsonl",

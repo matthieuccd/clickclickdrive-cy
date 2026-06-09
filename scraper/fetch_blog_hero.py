@@ -4,14 +4,14 @@ Three modes:
 
 1. --default-hero
        Fetch the site-wide blog hero (query "cyprus road driving car")
-       → apps/web/public/blog/default-hero.jpg
+       → public/blog/default-hero.jpg
 
 2. --school-fallback
        Fetch the site-wide school-card fallback (query "driving school car
-       lesson") → apps/web/public/schools/fallback.jpg
+       lesson") → public/schools/fallback.jpg
 
 3. --slug X --query Y
-       Per-article hero fetch → apps/web/public/blog/<slug>/hero.jpg
+       Per-article hero fetch → public/blog/<slug>/hero.jpg
 
 Pexels API
 ----------
@@ -51,7 +51,7 @@ from dotenv import load_dotenv
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DOTENV_PATH = PROJECT_ROOT / ".env"
-WEB_PUBLIC = PROJECT_ROOT / "apps" / "web" / "public"
+WEB_PUBLIC = PROJECT_ROOT / "public"
 
 DEFAULT_HERO_QUERY = "cyprus road driving car"
 DEFAULT_HERO_PATH = WEB_PUBLIC / "blog" / "default-hero.jpg"
