@@ -32,11 +32,17 @@ yarn-error.log*
 pnpm-debug.log*
 
 # Scraper output
-scraper/output/
+# Ignore directory contents but NOT the directory itself, so we can negate
+# the two files that Next.js reads at build time (same trick as public/schools/).
+scraper/output/*
+!scraper/output/schools.jsonl
+!scraper/output/schools_enriched.jsonl
 scraper/cache/
 scraper/.scrapling/
 *.jsonl
 !scraper/fixtures/*.jsonl
+!scraper/output/schools.jsonl
+!scraper/output/schools_enriched.jsonl
 
 # Editor / OS
 .vscode/
