@@ -123,7 +123,147 @@ export const BLOG_ARTICLES: readonly BlogArticle[] = [
     relatedSlugs: [
       "exchange-eu-licence-cyprus",
       "uk-licence-cyprus-after-brexit",
-      "theory-test-cyprus-english",
+      "how-to-get-driving-licence-cyprus-step-by-step",
+    ],
+  },
+  {
+    id: "pws-na-vgaleis-diploma-odigisis-stin-kypro",
+    slug_el: "pws-na-vgaleis-diploma-odigisis-stin-kypro",
+    slug_en: "how-to-get-driving-licence-cyprus-step-by-step",
+    categoryId: "foreigners",
+    title_el: "Πώς να βγάλεις δίπλωμα οδήγησης στην Κύπρο",
+    title_en: "How to Get a Driving Licence in Cyprus — Step by Step",
+    excerpt_el:
+      "Ολοκληρωμένος οδηγός για το δίπλωμα οδήγησης στην Κύπρο. Από την εκπαιδευτική άδεια ως την πρακτική εξέταση, βήμα προς βήμα.",
+    excerpt_en:
+      "The complete guide to getting a driving licence in Cyprus. From the learner's licence to the practical test, step by step.",
+    metaDescription_el:
+      "Πώς να βγάλεις δίπλωμα οδήγησης στην Κύπρο βήμα προς βήμα. Εκπαιδευτική άδεια, θεωρητική και πρακτική εξέταση.",
+    metaDescription_en:
+      "How to get a driving licence in Cyprus step by step. Learner's licence, theory test, and practical test explained.",
+    heroImagePath: "/blog/pws-na-vgaleis-diploma-odigisis-stin-kypro/hero.jpg",
+    heroImageAlt_el: "Εκπαιδευτής οδήγησης και μαθητής σε αυτοκίνητο κατά τη διάρκεια μαθήματος",
+    heroImageAlt_en: "Driving instructor and student in car during a lesson",
+    publishedDate: "2026-06-09",
+    modifiedDate: "2026-06-09",
+    author: "ClickClickDrive Cyprus",
+    relatedCity: null,
+    relatedSlugs: [
+      "how-to-get-driving-licence-cyprus-foreigner",
+      "exchange-eu-licence-cyprus",
+      "driving-lesson-cost-cyprus",
+    ],
+  },
+  {
+    id: "poso-kostizei-ekpaideysi-odigisis-kypros",
+    slug_el: "poso-kostizei-ekpaideysi-odigisis-kypros",
+    slug_en: "driving-lesson-cost-cyprus",
+    categoryId: "costs",
+    title_el: "Πόσο κοστίζει η εκπαίδευση οδήγησης στην Κύπρο",
+    title_en: "How Much Does Driving Education Cost in Cyprus",
+    excerpt_el:
+      "Μαθήματα, εξετάσεις και επίσημα τέλη. Όλα όσα κοστίζουν για να βγάλεις δίπλωμα στην Κύπρο.",
+    excerpt_en:
+      "Lessons, tests, and official fees. Everything that costs money when getting a driving licence in Cyprus.",
+    metaDescription_el:
+      "Κόστος εκπαίδευσης οδήγησης στην Κύπρο. Μαθήματα, εξετάσεις, ιατρικό πιστοποιητικό και επίσημα τέλη.",
+    metaDescription_en:
+      "Driving education costs in Cyprus. Lessons, tests, medical certificate, and official fees explained.",
+    heroImagePath: "/blog/poso-kostizei-ekpaideysi-odigisis-kypros/hero.jpg",
+    heroImageAlt_el: "Σχολή οδηγών με αυτοκίνητα έξω",
+    heroImageAlt_en: "Driving school building with cars outside",
+    publishedDate: "2026-06-09",
+    modifiedDate: "2026-06-09",
+    author: "ClickClickDrive Cyprus",
+    relatedCity: null,
+    relatedSlugs: [
+      "how-to-get-driving-licence-cyprus-step-by-step",
+      "how-to-get-driving-licence-cyprus-foreigner",
+      "category-b-driving-licence-cyprus",
+    ],
+  },
+  {
+    id: "diploma-odigisis-kypros-uk-citizens-meta-brexit",
+    slug_el: "vretaniko-diploma-kypros",
+    slug_en: "uk-licence-cyprus-after-brexit",
+    categoryId: "foreigners",
+    title_el: "Βρετανική άδεια οδήγησης στην Κύπρο μετά το Brexit",
+    title_en: "Driving Licence in Cyprus for UK Citizens After Brexit",
+    excerpt_el:
+      "Τι ισχύει σήμερα για τους Βρετανούς στην Κύπρο. Έγγραφα, εξετάσεις και αν χρειάζεται ανταλλαγή άδειας.",
+    excerpt_en:
+      "What the rules are now for UK citizens in Cyprus. Documents, tests, and whether you need to exchange your licence.",
+    metaDescription_el:
+      "Βρετανική άδεια οδήγησης στην Κύπρο μετά το Brexit. Τι έγγραφα χρειάζεστε και αν πρέπει να κάνετε εξετάσεις.",
+    metaDescription_en:
+      "UK driving licence in Cyprus after Brexit. What documents you need and whether you must sit a test.",
+    heroImagePath: "/blog/diploma-odigisis-kypros-uk-citizens-meta-brexit/hero.jpg",
+    heroImageAlt_el: "Βρετανική άδεια οδήγησης στο ταμπλό αυτοκινήτου",
+    heroImageAlt_en: "UK driving licence on a car dashboard",
+    publishedDate: "2026-06-09",
+    modifiedDate: "2026-06-09",
+    author: "ClickClickDrive Cyprus",
+    relatedCity: null,
+    relatedSlugs: [
+      "how-to-get-driving-licence-cyprus-foreigner",
+      "exchange-eu-licence-cyprus",
+      "how-to-get-driving-licence-cyprus-step-by-step",
+    ],
+  },
+  {
+    id: "anallagi-adeias-ee-kypros",
+    slug_el: "anallagi-adeias-ee-kypros",
+    slug_en: "exchange-eu-licence-cyprus",
+    categoryId: "foreigners",
+    title_el: "Ανταλλαγή άδειας ΕΕ στην Κύπρο",
+    title_en: "EU Driving Licence in Cyprus — Do You Need to Exchange It",
+    excerpt_el:
+      "Χρειάζεται να ανταλλάξετε την ευρωπαϊκή σας άδεια; Τι ισχύει, τι έγγραφα χρειάζεστε και ποια είναι η προθεσμία.",
+    excerpt_en:
+      "Do you need to swap your EU licence for a Cypriot one? What the rules are, what documents you need, and what the deadline is.",
+    metaDescription_el:
+      "Ανταλλαγή ευρωπαϊκής άδειας οδήγησης στην Κύπρο. Διαδικασία, έγγραφα, προθεσμία.",
+    metaDescription_en:
+      "EU driving licence exchange in Cyprus. Process, documents, and deadline explained.",
+    heroImagePath: "/blog/anallagi-adeias-ee-kypros/hero.jpg",
+    heroImageAlt_el: "Ευρωπαϊκές άδειες οδήγησης στο τραπέζι",
+    heroImageAlt_en: "European driving licences on a table",
+    publishedDate: "2026-06-09",
+    modifiedDate: "2026-06-09",
+    author: "ClickClickDrive Cyprus",
+    relatedCity: null,
+    relatedSlugs: [
+      "how-to-get-driving-licence-cyprus-foreigner",
+      "uk-licence-cyprus-after-brexit",
+      "how-to-get-driving-licence-cyprus-step-by-step",
+    ],
+  },
+  {
+    id: "katigoria-b-adeia-odigisis-kypros",
+    slug_el: "katigoria-b-adeia-odigisis-kypros",
+    slug_en: "category-b-driving-licence-cyprus",
+    categoryId: "rules",
+    title_el: "Κατηγορία Β άδεια οδήγησης στην Κύπρο",
+    title_en: "Category B Driving Licence Cyprus — Everything You Need to Know",
+    excerpt_el:
+      "Τι καλύπτει η κατηγορία Β, πώς αποκτάται και τι επιτρέπει να οδηγείς στην Κύπρο.",
+    excerpt_en:
+      "What Category B covers, how to get it, and what it allows you to drive in Cyprus.",
+    metaDescription_el:
+      "Κατηγορία Β άδεια οδήγησης στην Κύπρο. Τι καλύπτει, εξετάσεις, ισχύς και ανανέωση.",
+    metaDescription_en:
+      "Category B driving licence in Cyprus. What it covers, tests required, validity and renewal.",
+    heroImagePath: "/blog/katigoria-b-adeia-odigisis-kypros/hero.jpg",
+    heroImageAlt_el: "Αυτοκίνητο σε κυπριακό δρόμο κατά τη διάρκεια πρακτικής εξέτασης",
+    heroImageAlt_en: "Car on a Cyprus road during a practical driving test",
+    publishedDate: "2026-06-09",
+    modifiedDate: "2026-06-09",
+    author: "ClickClickDrive Cyprus",
+    relatedCity: null,
+    relatedSlugs: [
+      "how-to-get-driving-licence-cyprus-step-by-step",
+      "driving-lesson-cost-cyprus",
+      "how-to-get-driving-licence-cyprus-foreigner",
     ],
   },
 ];

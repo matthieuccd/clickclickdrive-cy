@@ -147,6 +147,350 @@ ARTICLES: tuple[ArticleSpec, ...] = (
             ("/en", "ClickClickDrive Cyprus"),
         ),
     ),
+    ArticleSpec(
+        id="pws-na-vgaleis-diploma-odigisis-stin-kypro",
+        topic_el="Πώς να βγάλεις δίπλωμα οδήγησης στην Κύπρο βήμα προς βήμα",
+        topic_en="How to get a driving licence in Cyprus step by step",
+        title_el="Πώς να βγάλεις δίπλωμα οδήγησης στην Κύπρο",
+        title_en="How to Get a Driving Licence in Cyprus — Step by Step",
+        audience_el=(
+            "Άτομα που ζουν στην Κύπρο και θέλουν να βγάλουν δίπλωμα για πρώτη φορά "
+            "ή να κατανοήσουν τη διαδικασία από την αρχή."
+        ),
+        audience_en=(
+            "People living in Cyprus who want to get their first driving licence or "
+            "understand the full process from scratch."
+        ),
+        facts=(
+            "The authority that issues driving licences in Cyprus is the Department of "
+            "Road Transport (Τμήμα Οδικών Μεταφορών), under the Ministry of Transport.",
+            "Minimum age for a Category B (car) licence: 18.",
+            "Cyprus drives on the LEFT. Speed limits and distances are in km and km/h.",
+            "The first step is to apply for a Learner's Licence (εκπαιδευτική άδεια) "
+            "from the Department of Road Transport.",
+            "While training, the car must display red L plates front and rear.",
+            "Lessons must be with a licensed instructor in a dual-control car.",
+            "Lessons typically last 45 minutes. Prices vary by school and city.",
+            "The theory test (γραπτή εξέταση) can be taken in Greek or English. It is "
+            "computer-based and covers road signs, rules, and safe driving.",
+            "The practical test is conducted by a Department of Road Transport examiner "
+            "on real public roads.",
+            "Required documents include: valid passport or ID, proof of Cyprus residence "
+            "(rental contract, utility bill, or yellow slip / ARC), recent photo, "
+            "medical certificate from a registered doctor.",
+            "The five main cities for Department of Road Transport services: Nicosia, "
+            "Limassol, Larnaca, Paphos, Paralimni.",
+            "The Republic of Cyprus only covers the south. Northern Cyprus uses a "
+            "separate system.",
+        ),
+        sections_el=(
+            "Τι χρειάζεστε για να ξεκινήσετε",
+            "Η εκπαιδευτική άδεια: το πρώτο βήμα",
+            "Τα μαθήματα οδήγησης",
+            "Η θεωρητική εξέταση",
+            "Η πρακτική εξέταση",
+            "Μετά το δίπλωμα: τι πρέπει να ξέρετε",
+        ),
+        sections_en=(
+            "What you need before you start",
+            "The learner's licence: your first step",
+            "Your driving lessons",
+            "The theory test",
+            "The practical test",
+            "After you pass: what you need to know",
+        ),
+        internal_links_el=(
+            ("/arthra/diploma-odigisis-gia-ksenous-stin-kypro", "δίπλωμα για ξένους στην Κύπρο"),
+            ("/arthra/anallagi-adeias-ee-kypros", "ανταλλαγή ευρωπαϊκής άδειας"),
+            ("/arthra/vretaniko-diploma-kypros", "βρετανική άδεια μετά το Brexit"),
+            ("/scholes-odigon/lefkosia", "σχολές οδηγών στη Λευκωσία"),
+            ("/", "ClickClickDrive Κύπρος"),
+        ),
+        internal_links_en=(
+            ("/en/blog/how-to-get-driving-licence-cyprus-foreigner", "licence guide for foreigners"),
+            ("/en/blog/exchange-eu-licence-cyprus", "exchanging an EU licence"),
+            ("/en/blog/uk-licence-cyprus-after-brexit", "UK licence after Brexit"),
+            ("/en/driving-schools/nicosia", "driving schools in Nicosia"),
+            ("/en", "ClickClickDrive Cyprus"),
+        ),
+    ),
+    ArticleSpec(
+        id="poso-kostizei-ekpaideysi-odigisis-kypros",
+        topic_el="Πόσο κοστίζει η εκπαίδευση οδήγησης στην Κύπρο",
+        topic_en="How much does driving education cost in Cyprus",
+        title_el="Πόσο κοστίζει η εκπαίδευση οδήγησης στην Κύπρο",
+        title_en="How Much Does Driving Education Cost in Cyprus",
+        audience_el=(
+            "Άτομα που σχεδιάζουν να βγάλουν δίπλωμα στην Κύπρο και θέλουν να "
+            "καταλάβουν τι κοστίζει η όλη διαδικασία."
+        ),
+        audience_en=(
+            "People planning to get a driving licence in Cyprus who want to understand "
+            "the full cost of the process before they commit."
+        ),
+        facts=(
+            "The Department of Road Transport charges official fees for applications, "
+            "tests, and licences. Candidates should check current amounts directly with "
+            "the Department, as fees can change.",
+            "Driving lesson prices are not fixed nationally. They vary by school and "
+            "by city. Shopping around is normal and sensible.",
+            "Lessons typically last 45 minutes each.",
+            "Failing a test means paying to rebook. The test booking fee applies again "
+            "for each attempt.",
+            "A medical certificate from a registered doctor is required to apply. "
+            "The doctor charges their own fee for this.",
+            "If a foreign licence needs certified translation, the translator charges "
+            "a fee. Translation must be by an approved certified translator.",
+            "EU citizens exchanging their licence for a Cypriot one pay mainly "
+            "administrative fees — no lesson or test costs if the exchange is done "
+            "within the window period.",
+            "Non-EU nationals going through the full process (learner's licence, "
+            "lessons, theory test, practical test) spend significantly more in total.",
+            "Many first-time candidates fail the practical test on the first attempt. "
+            "Budget for at least one rebook.",
+            "Prices in Nicosia, Limassol, Larnaca, Paphos, and Paralimni may differ "
+            "from each other. Local schools in each city have their own rates.",
+        ),
+        sections_el=(
+            "Τα επίσημα τέλη του Τμήματος Οδικών Μεταφορών",
+            "Κόστος μαθημάτων οδήγησης",
+            "Ιατρικό πιστοποιητικό και μεταφράσεις",
+            "Πόσο πληρώνετε αν αποτύχετε",
+            "Κόστος για πολίτες ΕΕ",
+            "Κόστος για πολίτες εκτός ΕΕ",
+            "Πώς να μειώσετε το κόστος",
+        ),
+        sections_en=(
+            "The Department of Road Transport official fees",
+            "Driving lesson costs",
+            "Medical certificate and translation costs",
+            "What a failed test costs you",
+            "Cost for EU citizens",
+            "Cost for non-EU nationals",
+            "How to keep your total costs down",
+        ),
+        internal_links_el=(
+            ("/arthra/pws-na-vgaleis-diploma-odigisis-stin-kypro", "πλήρης οδηγός για δίπλωμα"),
+            ("/arthra/anallagi-adeias-ee-kypros", "ανταλλαγή ευρωπαϊκής άδειας"),
+            ("/scholes-odigon/lefkosia", "σχολές οδηγών στη Λευκωσία"),
+            ("/scholes-odigon/lemesos", "σχολές οδηγών στη Λεμεσό"),
+            ("/", "ClickClickDrive Κύπρος"),
+        ),
+        internal_links_en=(
+            ("/en/blog/how-to-get-driving-licence-cyprus-step-by-step", "step-by-step driving licence guide"),
+            ("/en/blog/exchange-eu-licence-cyprus", "EU licence exchange"),
+            ("/en/driving-schools/nicosia", "driving schools in Nicosia"),
+            ("/en/driving-schools/limassol", "driving schools in Limassol"),
+            ("/en", "ClickClickDrive Cyprus"),
+        ),
+    ),
+    ArticleSpec(
+        id="diploma-odigisis-kypros-uk-citizens-meta-brexit",
+        topic_el="Βρετανική άδεια οδήγησης στην Κύπρο μετά το Brexit",
+        topic_en="Driving licence in Cyprus for UK citizens after Brexit",
+        title_el="Βρετανική άδεια οδήγησης στην Κύπρο μετά το Brexit",
+        title_en="Driving Licence in Cyprus for UK Citizens After Brexit",
+        audience_el=(
+            "Βρετανοί πολίτες που ζουν ή σκοπεύουν να ζήσουν στην Κύπρο και θέλουν "
+            "να μάθουν τι ισχύει για την άδεια οδήγησής τους μετά το Brexit."
+        ),
+        audience_en=(
+            "UK citizens living in or moving to Cyprus who want to know what their "
+            "driving licence situation is after Brexit."
+        ),
+        facts=(
+            "The UK left the EU on 31 January 2020. From that date, UK licences lost "
+            "their automatic EU-equivalent treatment in Cyprus.",
+            "Cyprus and the UK may have a bilateral agreement affecting licence "
+            "exchange. The status of such agreements can change. Check current rules "
+            "directly with the Department of Road Transport before applying.",
+            "UK licence holders may need: a certified translation of their UK licence, "
+            "and in some cases a Cypriot theory test, practical test, or both, "
+            "depending on current bilateral agreement status.",
+            "One practical advantage for UK drivers: Cyprus also drives on the LEFT. "
+            "UK drivers do not need to retrain for left-hand traffic.",
+            "Minimum age for a Category B licence in Cyprus: 18.",
+            "The Department of Road Transport (Τμήμα Οδικών Μεταφορών) is the only "
+            "authority that can confirm current rules for UK licence holders.",
+            "Post-Brexit, a UK licence should be treated as a third-country licence "
+            "for exchange purposes in Cyprus.",
+            "UK licences use Latin characters, which simplifies translation requirements.",
+            "Required documents typically include: valid passport, proof of Cyprus "
+            "residence, recent photo, medical certificate, original UK licence, and "
+            "a certified translation if required.",
+            "A Cypriot licence obtained after exchange is valid across the EU.",
+        ),
+        sections_el=(
+            "Τι άλλαξε μετά το Brexit",
+            "Ισχύει η βρετανική άδεια στην Κύπρο σήμερα",
+            "Διμερείς συμφωνίες Κύπρου και Ηνωμένου Βασιλείου",
+            "Τα έγγραφα που χρειάζεστε",
+            "Πρέπει να κάνετε εξετάσεις",
+            "Το πλεονέκτημα της αριστερής οδήγησης",
+            "Βήμα προς βήμα για Βρετανούς οδηγούς",
+        ),
+        sections_en=(
+            "What Brexit changed for UK licence holders in Cyprus",
+            "Is your UK licence currently valid in Cyprus",
+            "The bilateral agreement between Cyprus and the UK",
+            "Documents UK drivers need to bring",
+            "Do you need to sit a test",
+            "The left-hand advantage UK drivers already have",
+            "Step by step for UK citizens in Cyprus",
+        ),
+        internal_links_el=(
+            ("/arthra/diploma-odigisis-gia-ksenous-stin-kypro", "δίπλωμα ξένων στην Κύπρο"),
+            ("/arthra/anallagi-adeias-ee-kypros", "ανταλλαγή ευρωπαϊκής άδειας"),
+            ("/arthra/pws-na-vgaleis-diploma-odigisis-stin-kypro", "οδηγός για δίπλωμα βήμα προς βήμα"),
+            ("/scholes-odigon/lefkosia", "σχολές οδηγών στη Λευκωσία"),
+            ("/", "ClickClickDrive Κύπρος"),
+        ),
+        internal_links_en=(
+            ("/en/blog/how-to-get-driving-licence-cyprus-foreigner", "foreigner licence guide for Cyprus"),
+            ("/en/blog/exchange-eu-licence-cyprus", "EU licence exchange process"),
+            ("/en/blog/how-to-get-driving-licence-cyprus-step-by-step", "step-by-step driving licence guide"),
+            ("/en/driving-schools/nicosia", "driving schools in Nicosia"),
+            ("/en", "ClickClickDrive Cyprus"),
+        ),
+    ),
+    ArticleSpec(
+        id="anallagi-adeias-ee-kypros",
+        topic_el="Ανταλλαγή ευρωπαϊκής άδειας οδήγησης στην Κύπρο",
+        topic_en="EU driving licence in Cyprus — do you need to exchange it",
+        title_el="Ανταλλαγή άδειας ΕΕ στην Κύπρο",
+        title_en="EU Driving Licence in Cyprus — Do You Need to Exchange It",
+        audience_el=(
+            "Πολίτες ΕΕ που έχουν εγκατασταθεί στην Κύπρο και αναρωτιούνται αν "
+            "πρέπει να ανταλλάξουν την ευρωπαϊκή τους άδεια με κυπριακή."
+        ),
+        audience_en=(
+            "EU citizens who have moved to Cyprus and are wondering whether they need "
+            "to exchange their European driving licence for a Cypriot one."
+        ),
+        facts=(
+            "EU and EEA licence holders living in Cyprus can continue driving legally "
+            "on their home-country licence.",
+            "No new tests are required to exchange an EU licence for a Cypriot one.",
+            "There is a window period after taking up residence in Cyprus during which "
+            "the exchange can be made without tests. This period can change — confirm "
+            "current deadlines with the Department of Road Transport.",
+            "When you exchange, your original EU licence is returned to the issuing "
+            "country. You cannot hold both a Cypriot and your original EU licence.",
+            "A Cypriot licence is valid across all EU member states.",
+            "Practical reasons to exchange: easier for car rental in Cyprus, "
+            "simpler for local administrative purposes, quicker replacement if lost.",
+            "EU licences issued without expiry dates (lifetime licences) are treated "
+            "under special rules — check with the Department.",
+            "The exchange is processed at Department of Road Transport offices in "
+            "Nicosia, Limassol, Larnaca, Paphos, or Paralimni.",
+            "If your EU licence has expired before you apply, the process may be more "
+            "complicated and could require tests.",
+            "Required documents: valid EU licence (original), proof of Cyprus "
+            "residence (yellow slip or equivalent), recent passport photo, "
+            "completed application form from the Department.",
+        ),
+        sections_el=(
+            "Μπορείτε να οδηγείτε με ευρωπαϊκή άδεια στην Κύπρο",
+            "Γιατί οι περισσότεροι κάτοικοι ΕΕ επιλέγουν ανταλλαγή",
+            "Η διαδικασία ανταλλαγής βήμα προς βήμα",
+            "Τα έγγραφα για την ανταλλαγή",
+            "Τι γίνεται με την παλιά σας άδεια",
+            "Η προθεσμία και τι συμβαίνει αν τη χάσετε",
+            "Ανταλλαγή αν η άδεια ΕΕ έχει λήξει",
+        ),
+        sections_en=(
+            "Can you drive in Cyprus on an EU licence",
+            "Why most EU residents choose to exchange",
+            "The exchange process step by step",
+            "Documents you need to bring",
+            "What happens to your original EU licence",
+            "The deadline and what happens if you miss it",
+            "Exchanging when your EU licence has expired",
+        ),
+        internal_links_el=(
+            ("/arthra/diploma-odigisis-gia-ksenous-stin-kypro", "δίπλωμα για ξένους"),
+            ("/arthra/pws-na-vgaleis-diploma-odigisis-stin-kypro", "πλήρης οδηγός για δίπλωμα"),
+            ("/arthra/vretaniko-diploma-kypros", "βρετανική άδεια μετά το Brexit"),
+            ("/scholes-odigon/lefkosia", "σχολές οδηγών στη Λευκωσία"),
+            ("/", "ClickClickDrive Κύπρος"),
+        ),
+        internal_links_en=(
+            ("/en/blog/how-to-get-driving-licence-cyprus-foreigner", "licence guide for foreigners"),
+            ("/en/blog/how-to-get-driving-licence-cyprus-step-by-step", "step-by-step licence guide"),
+            ("/en/blog/uk-licence-cyprus-after-brexit", "UK licence after Brexit"),
+            ("/en/driving-schools/nicosia", "driving schools in Nicosia"),
+            ("/en", "ClickClickDrive Cyprus"),
+        ),
+    ),
+    ArticleSpec(
+        id="katigoria-b-adeia-odigisis-kypros",
+        topic_el="Κατηγορία Β άδεια οδήγησης στην Κύπρο",
+        topic_en="Category B driving licence in Cyprus — everything you need to know",
+        title_el="Κατηγορία Β άδεια οδήγησης στην Κύπρο",
+        title_en="Category B Driving Licence Cyprus — Everything You Need to Know",
+        audience_el=(
+            "Άτομα στην Κύπρο που θέλουν να καταλάβουν τι σημαίνει κατηγορία Β, "
+            "τι καλύπτει και πώς αποκτάται."
+        ),
+        audience_en=(
+            "People in Cyprus who want to understand what Category B means, what it "
+            "covers, and how to obtain it."
+        ),
+        facts=(
+            "Category B is the standard passenger car licence. It covers vehicles up "
+            "to 3,500 kg and up to 8 passengers (not counting the driver).",
+            "Minimum age to apply for Category B in Cyprus: 18.",
+            "The first step is a Learner's Licence (εκπαιδευτική άδεια) from the "
+            "Department of Road Transport.",
+            "Lessons must be with a licensed instructor in a dual-control car. The "
+            "car must display red L plates front and rear.",
+            "The theory test (γραπτή εξέταση) covers road signs, traffic rules, and "
+            "safe driving. It can be taken in Greek or English.",
+            "The practical test is conducted by a Department of Road Transport examiner "
+            "on real public roads in the candidate's city.",
+            "A Cyprus Category B licence is valid across all EU member states.",
+            "Towing with Category B: a trailer is allowed up to a combined weight limit. "
+            "For heavier trailer combinations, an additional category (BE) may be needed.",
+            "Required documents for the application: valid passport or ID, proof of "
+            "Cyprus residence, recent photo, medical certificate from a registered doctor.",
+            "The five Department of Road Transport offices are in Nicosia (headquarters), "
+            "Limassol, Larnaca, Paphos, and Paralimni.",
+        ),
+        sections_el=(
+            "Τι είναι η κατηγορία Β",
+            "Ηλικία και βασικές προϋποθέσεις",
+            "Η εκπαιδευτική άδεια κατηγορίας Β",
+            "Τα μαθήματα: τι καλύπτουν",
+            "Η θεωρητική εξέταση κατηγορίας Β",
+            "Η πρακτική εξέταση κατηγορίας Β",
+            "Ρυμούλκηση με κατηγορία Β στην Κύπρο",
+            "Ισχύς και ανανέωση",
+        ),
+        sections_en=(
+            "What Category B covers",
+            "The minimum age and requirements",
+            "The learner's licence for Category B",
+            "Your lessons: what they cover",
+            "The Category B theory test",
+            "The Category B practical test",
+            "Towing with a Category B licence in Cyprus",
+            "Validity and renewal of your Cyprus Category B licence",
+        ),
+        internal_links_el=(
+            ("/arthra/pws-na-vgaleis-diploma-odigisis-stin-kypro", "βήμα προς βήμα οδηγός για δίπλωμα"),
+            ("/arthra/diploma-odigisis-gia-ksenous-stin-kypro", "δίπλωμα για ξένους"),
+            ("/arthra/anallagi-adeias-ee-kypros", "ανταλλαγή ευρωπαϊκής άδειας"),
+            ("/scholes-odigon/lefkosia", "σχολές οδηγών στη Λευκωσία"),
+            ("/", "ClickClickDrive Κύπρος"),
+        ),
+        internal_links_en=(
+            ("/en/blog/how-to-get-driving-licence-cyprus-step-by-step", "step-by-step driving licence guide"),
+            ("/en/blog/how-to-get-driving-licence-cyprus-foreigner", "licence guide for foreigners"),
+            ("/en/blog/exchange-eu-licence-cyprus", "exchanging an EU licence"),
+            ("/en/driving-schools/nicosia", "driving schools in Nicosia"),
+            ("/en", "ClickClickDrive Cyprus"),
+        ),
+    ),
 )
 
 

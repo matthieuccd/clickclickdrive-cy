@@ -160,6 +160,11 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--slug", help="Article slug — destination subfolder.")
     ap.add_argument("--query", help="Pexels search query for per-article hero.")
     ap.add_argument(
+        "--output-name",
+        default="hero.jpg",
+        help="Filename to save inside the slug subfolder (default: hero.jpg).",
+    )
+    ap.add_argument(
         "--force",
         action="store_true",
         help="Re-download even if the destination already exists.",
@@ -182,7 +187,7 @@ def main(argv: list[str] | None = None) -> int:
             "--slug and --query for a per-article fetch."
         )
 
-    dest = WEB_PUBLIC / "blog" / args.slug / "hero.jpg"
+    dest = WEB_PUBLIC / "blog" / args.slug / args.output_name
     if _maybe_skip(dest, args.force):
         return 0
     return 0 if fetch_pexels(args.query, dest) else 1
