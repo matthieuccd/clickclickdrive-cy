@@ -59,10 +59,7 @@ logs/
 brand-research/home.html
 brand-research/*.css
 
-# Scraped photos cached from Google Places (30-day ToS, refreshed by enrich.py).
-# Glob the contents — NOT the directory itself — so we can negate fallback.jpg.
-# (git can't re-include a file inside a fully-ignored directory.)
-public/schools/*
+# Scraped photos cached from Google Places — committed so Vercel can serve them.
 !public/schools/fallback.jpg
 
 # Leftover monorepo scaffold (Next.js app is now at the root)
