@@ -1,10 +1,9 @@
 # Python tooling — not needed in the Vercel build environment.
 # Keep scraper/data/blog/ and scraper/output/ so Next.js can read them at
 # build time. Framework detection is handled by vercel.json, not by
-# excluding this directory.
+# excluding these files.
 .venv/
 uv.lock
-pyproject.toml
 scraper/*.py
 scraper/sources/
 scraper/pipeline/
