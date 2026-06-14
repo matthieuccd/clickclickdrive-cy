@@ -36,6 +36,15 @@ export const metadata: Metadata = {
   },
   description:
     "Βρείτε σχολές οδηγών σε όλη την Κύπρο. Συγκρίνετε αξιολογήσεις, ωράρια και στοιχεία επικοινωνίας — δωρεάν.",
+  icons: {
+    icon: [
+      { url: "/favicon-small.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon.png", sizes: "256x256", type: "image/png" },
+    ],
+    apple: { url: "/favicon.png", type: "image/png" },
+    shortcut: "/favicon.png",
+  },
+  manifest: "/site.webmanifest",
 };
 
 export default async function LocaleLayout({
