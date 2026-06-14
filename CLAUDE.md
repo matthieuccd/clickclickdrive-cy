@@ -6,7 +6,7 @@ Consumer-facing driving-school discovery marketplace for the Republic of Cyprus.
 
 - **What it is**: Marketplace where students search, compare, and book driving schools by location, language, price, and reviews.
 - **What it is NOT**: B2B SaaS for schools. No school-management software, no scheduling backend for instructors, no LMS. Discovery + booking only.
-- **Domain**: `clickclickdrive.com.cy`
+- **Domain**: `clickclickdrive-cyprus.com`
 - **Reference**: `clickclickdrive.de` (Germany) — mirror the consumer flows, not the operator tooling.
 
 ## Market: Republic of Cyprus (EU territory only)

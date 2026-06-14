@@ -20,14 +20,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // Home
   entries.push({
-    url: `${SITE_HOST}/`,
+    url: SITE_HOST,
     lastModified: updated,
     changeFrequency: "weekly",
     priority: 1,
     alternates: {
       languages: {
-        "x-default": `${SITE_HOST}/`,
-        el: `${SITE_HOST}/`,
+        "x-default": SITE_HOST,
+        el: SITE_HOST,
         en: `${SITE_HOST}/en`,
       },
     },

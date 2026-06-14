@@ -87,9 +87,9 @@ function TermsEl() {
           φωτογραφίας και θέλετε αφαίρεση, στείλτε μας email στο{" "}
           <a
             className="text-brand hover:underline"
-            href="mailto:info@clickclickdrive.com.cy"
+            href="mailto:info@clickclickdrive-cyprus.com"
           >
-            info@clickclickdrive.com.cy
+            info@clickclickdrive-cyprus.com
           </a>
           .
         </p>
@@ -136,9 +136,9 @@ function TermsEn() {
           contributors. If you own a photo and want it removed, email us at{" "}
           <a
             className="text-brand hover:underline"
-            href="mailto:info@clickclickdrive.com.cy"
+            href="mailto:info@clickclickdrive-cyprus.com"
           >
-            info@clickclickdrive.com.cy
+            info@clickclickdrive-cyprus.com
           </a>
           .
         </p>

@@ -4,9 +4,10 @@ import type { CyprusCity, DrivingSchool, Locale } from "./types";
  * The public host. In production this should be set from env, but since the
  * domain is final we can hardcode it for now and override later.
  */
-export const SITE_HOST = "https://clickclickdrive.com.cy";
+export const SITE_HOST = "https://clickclickdrive-cyprus.com";
 
 export function siteUrl(path: string): string {
+  if (path === "/" || path === "") return SITE_HOST;
   return `${SITE_HOST}${path.startsWith("/") ? path : `/${path}`}`;
 }
 

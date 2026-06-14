@@ -92,9 +92,9 @@ function PrivacyEl() {
           και θέλετε διόρθωση, στείλτε μας email στο{" "}
           <a
             className="text-brand hover:underline"
-            href="mailto:info@clickclickdrive.com.cy"
+            href="mailto:info@clickclickdrive-cyprus.com"
           >
-            info@clickclickdrive.com.cy
+            info@clickclickdrive-cyprus.com
           </a>
           .
         </p>
@@ -113,9 +113,9 @@ function PrivacyEl() {
           του υποκαταστήματος Κύπρου. Επικοινωνία:{" "}
           <a
             className="text-brand hover:underline"
-            href="mailto:info@clickclickdrive.com.cy"
+            href="mailto:info@clickclickdrive-cyprus.com"
           >
-            info@clickclickdrive.com.cy
+            info@clickclickdrive-cyprus.com
           </a>
           .
         </p>
@@ -163,9 +163,9 @@ function PrivacyEn() {
           email us at{" "}
           <a
             className="text-brand hover:underline"
-            href="mailto:info@clickclickdrive.com.cy"
+            href="mailto:info@clickclickdrive-cyprus.com"
           >
-            info@clickclickdrive.com.cy
+            info@clickclickdrive-cyprus.com
           </a>
           .
         </p>
@@ -184,9 +184,9 @@ function PrivacyEn() {
           branch is registered. Contact:{" "}
           <a
             className="text-brand hover:underline"
-            href="mailto:info@clickclickdrive.com.cy"
+            href="mailto:info@clickclickdrive-cyprus.com"
           >
-            info@clickclickdrive.com.cy
+            info@clickclickdrive-cyprus.com
           </a>
           .
         </p>
