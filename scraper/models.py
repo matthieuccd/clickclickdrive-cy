@@ -29,7 +29,7 @@ class SourceName(str, Enum):
     DIRECTORY = "directory"
 
 
-# Republic of Cyprus bounding box (EU territory only — excludes Northern Cyprus).
+# Republic of Cyprus bounding box (EU territory only - excludes Northern Cyprus).
 # Used by the normalize pipeline to reject out-of-country geocodes.
 RoC_BBOX = {
     "min_lat": 34.55,

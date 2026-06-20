@@ -6,7 +6,7 @@ import type { Locale } from "./types";
 /**
  * Reads the per-school SEO markdown produced by scraper/generate_content.py.
  * Returns null when the file does not yet exist (the dev/build flow tolerates
- * missing content — pages render a programmatic fallback instead).
+ * missing content - pages render a programmatic fallback instead).
  */
 
 const GENERATED_DIR = path.join(

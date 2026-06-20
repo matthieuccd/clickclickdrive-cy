@@ -1,19 +1,17 @@
 # ClickClickDrive Cyprus (CCD.cy)
 
-Consumer-facing driving-school discovery marketplace for the Republic of Cyprus. Localized fork of clickclickdrive.de — same product model, new market.
+Consumer-facing driving-school discovery marketplace for the Republic of Cyprus. Localized fork of clickclickdrive.de - same product model, new market.
 
 ## Product scope
 
 - **What it is**: Marketplace where students search, compare, and book driving schools by location, language, price, and reviews.
 - **What it is NOT**: B2B SaaS for schools. No school-management software, no scheduling backend for instructors, no LMS. Discovery + booking only.
 - **Domain**: `clickclickdrive-cyprus.com`
-- **Reference**: `clickclickdrive.de` (Germany) — mirror the consumer flows, not the operator tooling.
+- **Reference**: `clickclickdrive.de` (Germany) - mirror the consumer flows, not the operator tooling.
 
-## Market: Republic of Cyprus (EU territory only)
+## Market: Cyprus (island-wide)
 
-We only cover the **Republic of Cyprus** (EU member state, southern + government-controlled areas). We do **not** cover the **Turkish Republic of Northern Cyprus (TRNC)** — it is outside EU jurisdiction and uses a separate licensing regime. Scrapers and place queries must filter accordingly.
-
-Target cities (lat/lon centroids used by the scraper):
+We cover driving schools across the whole island of Cyprus, including schools in the north. Target cities (lat/lon centroids used by the scraper):
 
 | City          | Greek      | Approx. centroid (lat, lon) |
 |---------------|------------|-----------------------------|
@@ -25,22 +23,22 @@ Target cities (lat/lon centroids used by the scraper):
 
 ## Languages
 
-- **Primary**: Greek (`el`) — Cypriot Greek is the dominant local language.
-- **Fallback**: English (`en`) — widely spoken, used by expats, tourists, and the British community.
+- **Primary**: Greek (`el`) - Cypriot Greek is the dominant local language.
+- **Fallback**: English (`en`) - widely spoken, used by expats, tourists, and the British community.
 - All user-facing strings ship `el` first, `en` second. No German content (despite the parent brand).
 
 ## Data sources
 
 The scraper aggregates driving schools from multiple sources, normalizes, and dedupes:
 
-1. **Google Places API** (`scraper/sources/places.py`) — primary source. Text Search + Nearby Search around each city centroid with the query `σχολή οδηγών` and English fallback `driving school`. Use Place Details for phone, website, hours, reviews.
-2. **Local directories** (`scraper/sources/directory_spider.py`) — Scrapling-based spider for Cypriot business directories (e.g., yellowpages.com.cy, cyprusyellowpages, ministry of transport listings). Filled in per-site by adding configs to the registry.
-3. **Registry** (`scraper/sources/registry.py`) — central registry of source adapters so `run.py` can iterate without caring about source internals.
+1. **Google Places API** (`scraper/sources/places.py`) - primary source. Text Search + Nearby Search around each city centroid with the query `σχολή οδηγών` and English fallback `driving school`. Use Place Details for phone, website, hours, reviews.
+2. **Local directories** (`scraper/sources/directory_spider.py`) - Scrapling-based spider for Cypriot business directories (e.g., yellowpages.com.cy, cyprusyellowpages, ministry of transport listings). Filled in per-site by adding configs to the registry.
+3. **Registry** (`scraper/sources/registry.py`) - central registry of source adapters so `run.py` can iterate without caring about source internals.
 
 ### Pipeline
 
-- `pipeline/normalize.py` — phone numbers to E.164 (`+357…`), addresses to a canonical form, Greek/English name pairs, geocoding sanity check (must fall inside Republic of Cyprus bounding box).
-- `pipeline/dedupe.py` — fuzzy match across sources (phone match → website host match → name + geo proximity fallback). Output is a unified `DrivingSchool` record per real-world entity.
+- `pipeline/normalize.py` - phone numbers to E.164 (`+357…`), addresses to a canonical form, Greek/English name pairs, geocoding sanity check (must fall inside Republic of Cyprus bounding box).
+- `pipeline/dedupe.py` - fuzzy match across sources (phone match → website host match → name + geo proximity fallback). Output is a unified `DrivingSchool` record per real-world entity.
 
 ## Repo layout
 
@@ -72,12 +70,11 @@ The scraper aggregates driving schools from multiple sources, normalizes, and de
 
 The scraper expects:
 
-- `GOOGLE_PLACES_API_KEY` — required for the Places source.
+- `GOOGLE_PLACES_API_KEY` - required for the Places source.
 
 Put these in a local `.env` file (gitignored). Never commit keys.
 
 ## Conventions
 
-- Always keep Republic-of-Cyprus-only filtering in mind when adding sources. If a source spans both north and south, filter by lat/lon bbox before yielding.
 - Greek strings: store raw Greek; do not transliterate at ingest. Transliteration (if ever needed) happens at presentation.
-- Phone numbers: store E.164 (`+357…`). Cyprus mobile numbers start with `+357 9`, landlines with `+357 2`.
+- Phone numbers: store E.164. Republic of Cyprus numbers start with `+357`; northern Cyprus schools may use Turkish numbers (`+90`).

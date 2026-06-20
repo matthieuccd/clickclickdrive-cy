@@ -50,7 +50,7 @@ QUERIES_BY_LANG: tuple[tuple[str, str], ...] = (
     ("en", "driving school"),
 )
 
-# Place Details field mask — locked to the captured schema.
+# Place Details field mask - locked to the captured schema.
 # Basic SKU: name, formatted_address, geometry/location, opening_hours.
 # Contact SKU: international_phone_number, formatted_phone_number, website.
 # Atmosphere SKU: rating, user_ratings_total.
@@ -132,7 +132,7 @@ class GooglePlacesSource:
         """Fetch the next Text Search page.
 
         Google requires a short delay between issuing a `next_page_token` and
-        using it — typically 2 s, but sometimes longer. The error surfaces as
+        using it - typically 2 s, but sometimes longer. The error surfaces as
         an `INVALID_REQUEST`, which we treat as "token not ripe yet" and
         retry with backoff. Returns None when the token never matures.
         """
@@ -165,7 +165,7 @@ class GooglePlacesSource:
             log.warning("places.skip_no_geo", place_id=place_id)
             return None
         if not _in_cyprus_bbox(lat, lon):
-            # Likely Northern Cyprus / TRNC — out of scope (EU territory only).
+            # Likely Northern Cyprus / TRNC - out of scope (EU territory only).
             log.info("places.skip_out_of_bbox", place_id=place_id, lat=lat, lon=lon)
             return None
 

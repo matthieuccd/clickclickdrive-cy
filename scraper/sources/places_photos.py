@@ -8,7 +8,7 @@ MAX_PHOTOS_PER_SCHOOL image binaries per school.
 Saves to {public_dir}/schools/{school_id}/{n}.jpg.
 
 Cache policy note: Google's terms allow caching Places photo bytes for up
-to 30 days. The expected ops cadence is a scheduled re-fetch — yearly per
+to 30 days. The expected ops cadence is a scheduled re-fetch - yearly per
 the current call, with the option to drop to monthly without code change.
 """
 
@@ -73,7 +73,7 @@ class PlacePhotosSource:
     @retry(stop=stop_after_attempt(3), wait=wait_exponential(min=1, max=10))
     def _fetch_photo_refs(self, place_id: str) -> list[str]:
         # Field is 'photo' (singular) in the legacy Places SDK; the response
-        # key is 'photos' (plural) — easy to confuse.
+        # key is 'photos' (plural) - easy to confuse.
         resp = self.client.place(place_id=place_id, fields=["photo"])
         photos = (resp.get("result") or {}).get("photos") or []
         return [p["photo_reference"] for p in photos if "photo_reference" in p]

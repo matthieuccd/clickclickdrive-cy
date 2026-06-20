@@ -2,7 +2,7 @@
 
 Reads scraper/output/schools_enriched.jsonl (or schools.jsonl as fallback),
 fetches every school's website (when present), and writes one JSON record
-per school under scraper/data/content/{school_id}.json — including stubs
+per school under scraper/data/content/{school_id}.json - including stubs
 for schools that have no website. The content generator (Step 4) then has
 a complete file-per-school surface to read from.
 

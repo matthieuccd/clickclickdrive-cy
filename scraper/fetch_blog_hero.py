@@ -76,7 +76,7 @@ def fetch_pexels(query: str, dest: Path) -> bool:
     api_key = os.environ.get("PEXELS_API_KEY")
     if not api_key:
         print(
-            "[hero] PEXELS_API_KEY not set — cannot fetch Pexels image.",
+            "[hero] PEXELS_API_KEY not set - cannot fetch Pexels image.",
             file=sys.stderr,
         )
         return False
@@ -135,7 +135,7 @@ def fetch_pexels(query: str, dest: Path) -> bool:
 def _maybe_skip(dest: Path, force: bool) -> bool:
     if dest.exists() and not force:
         print(
-            f"[hero] {dest.relative_to(PROJECT_ROOT)} already exists — "
+            f"[hero] {dest.relative_to(PROJECT_ROOT)} already exists - "
             "skipping (use --force to refetch)."
         )
         return True
@@ -157,7 +157,7 @@ def main(argv: list[str] | None = None) -> int:
         action="store_true",
         help=f"Ensure {SCHOOL_FALLBACK_PATH.relative_to(PROJECT_ROOT)} exists.",
     )
-    ap.add_argument("--slug", help="Article slug — destination subfolder.")
+    ap.add_argument("--slug", help="Article slug - destination subfolder.")
     ap.add_argument("--query", help="Pexels search query for per-article hero.")
     ap.add_argument(
         "--output-name",

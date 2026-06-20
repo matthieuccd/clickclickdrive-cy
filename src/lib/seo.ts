@@ -11,12 +11,85 @@ export function siteUrl(path: string): string {
   return `${SITE_HOST}${path.startsWith("/") ? path : `/${path}`}`;
 }
 
+// --- Opening hours helpers ------------------------------------------------
+
+const GREEK_DAY: Record<string, string> = {
+  "Δευτέρα": "Mo",
+  "Τρίτη": "Tu",
+  "Τετάρτη": "We",
+  "Πέμπτη": "Th",
+  "Παρασκευή": "Fr",
+  "Σάββατο": "Sa",
+  "Κυριακή": "Su",
+};
+
+function to24h(time: string, period: string): string {
+  const [hStr, mStr] = time.split(":");
+  let h = parseInt(hStr, 10);
+  const m = mStr.padStart(2, "0");
+  const isAm = period.startsWith("π"); // π.μ. = AM
+  if (isAm) {
+    if (h === 12) h = 0;
+  } else {
+    if (h !== 12) h += 12;
+  }
+  return `${String(h).padStart(2, "0")}:${m}`;
+}
+
+// Converts Google Places Greek-localized opening hours to Schema.org format.
+// Input:  "Δευτέρα: 8:00 π.μ. – 5:00 μ.μ."  →  Output: "Mo 08:00-17:00"
+// Closed: "Σάββατο: Κλειστά"                  →  omitted
+function convertOpeningHours(lines: string[]): string[] {
+  const result: string[] = [];
+  for (const line of lines) {
+    const colonIdx = line.indexOf(":");
+    if (colonIdx === -1) continue;
+    const dayEl = line.slice(0, colonIdx).trim();
+    const rest = line.slice(colonIdx + 1).trim();
+    const dayCode = GREEK_DAY[dayEl];
+    if (!dayCode || rest === "Κλειστά") continue;
+
+    // "8:00 π.μ. – 5:00 μ.μ." - split on en-dash
+    const halves = rest.split("–").map((s) => s.trim());
+    if (halves.length !== 2) continue;
+
+    const parseHalf = (s: string): string | null => {
+      const m = s.match(/(\d+:\d+)\s+(π\.μ\.|μ\.μ\.)/);
+      return m ? to24h(m[1], m[2]) : null;
+    };
+    const open = parseHalf(halves[0]);
+    const close = parseHalf(halves[1]);
+    if (!open || !close) continue;
+    result.push(`${dayCode} ${open}-${close}`);
+  }
+  return result;
+}
+
+// --- Address helpers ------------------------------------------------------
+
+// Splits a Google Places formatted_address into street + postal code.
+// e.g. "Archiepiskopou Makariou III 75d, Λευκωσία 1070, Κύπρος"
+//   → streetAddress: "Archiepiskopou Makariou III 75d", postalCode: "1070"
+function parseStreetAndPostal(formatted: string): {
+  streetAddress: string | undefined;
+  postalCode: string | undefined;
+} {
+  const streetAddress = formatted.split(",")[0]?.trim() || undefined;
+  const postalMatch = formatted.match(/\b(\d{4})\b/);
+  const postalCode = postalMatch?.[1];
+  return { streetAddress, postalCode };
+}
+
 // --- LocalBusiness (school detail page) -----------------------------------
 
 export function buildLocalBusinessJsonLd(
   school: DrivingSchool,
   canonicalUrl: string,
 ) {
+  const { streetAddress, postalCode } = school.location.formatted_address
+    ? parseStreetAndPostal(school.location.formatted_address)
+    : { streetAddress: undefined, postalCode: undefined };
+
   const data: Record<string, unknown> = {
     "@context": "https://schema.org",
     "@type": "DrivingSchool",
@@ -25,7 +98,8 @@ export function buildLocalBusinessJsonLd(
     url: canonicalUrl,
     address: {
       "@type": "PostalAddress",
-      streetAddress: school.location.formatted_address ?? undefined,
+      streetAddress,
+      postalCode,
       addressLocality: school.location.city ?? undefined,
       addressCountry: "CY",
     },
@@ -37,20 +111,26 @@ export function buildLocalBusinessJsonLd(
   };
   if (school.phone_e164) data.telephone = school.phone_e164;
   if (school.website) data.sameAs = [school.website];
-  if (school.opening_hours.length > 0) {
-    data.openingHours = school.opening_hours;
+  const schemaHours = convertOpeningHours(school.opening_hours);
+  if (schemaHours.length > 0) {
+    data.openingHours = schemaHours;
   }
   if (school.rating !== null && school.review_count !== null) {
     data.aggregateRating = {
       "@type": "AggregateRating",
-      ratingValue: school.rating,
+      ratingValue: String(school.rating),
       reviewCount: school.review_count,
-      bestRating: 5,
-      worstRating: 1,
+      bestRating: "5",
+      worstRating: "1",
     };
   }
   if (school.photo_paths.length > 0) {
-    data.image = school.photo_paths.map((p) => siteUrl(p));
+    data.image = school.photo_paths.map((p) => ({
+      "@type": "ImageObject",
+      url: siteUrl(p),
+      width: 800,
+      height: 600,
+    }));
   }
   return data;
 }

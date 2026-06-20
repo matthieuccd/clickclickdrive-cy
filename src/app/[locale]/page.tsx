@@ -25,8 +25,8 @@ export async function generateMetadata({
   const { locale } = await params;
   const title =
     locale === "el"
-      ? "ClickClickDrive Κύπρος — Σχολές οδηγών"
-      : "ClickClickDrive Cyprus — Driving schools";
+      ? "ClickClickDrive Κύπρος - Σχολές οδηγών"
+      : "ClickClickDrive Cyprus - Driving schools";
   const description =
     locale === "el"
       ? "Βρείτε σχολές οδηγών σε όλη την Κύπρο. Συγκρίνετε αξιολογήσεις και ωράρια. Δωρεάν."

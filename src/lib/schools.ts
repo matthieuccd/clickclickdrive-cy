@@ -8,7 +8,7 @@ import type { CyprusCity, DrivingSchool } from "./types";
  *
  * Reads `scraper/output/schools.jsonl` (gitignored, produced by the Python
  * scraper) once per server process and caches the parsed records in memory.
- * The site has no database — this module is the data layer.
+ * The site has no database - this module is the data layer.
  */
 
 // Prefer the enriched JSONL (has photo_paths) when present; fall back to the
@@ -37,7 +37,7 @@ function loadAll(): DrivingSchool[] {
       : null;
   if (sourcePath === null) {
     console.warn(
-      "[schools] neither schools_enriched.jsonl nor schools.jsonl found — run the scraper.",
+      "[schools] neither schools_enriched.jsonl nor schools.jsonl found - run the scraper.",
     );
     cache = [];
     return cache;

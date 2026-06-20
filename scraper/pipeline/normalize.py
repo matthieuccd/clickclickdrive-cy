@@ -40,7 +40,7 @@ CITY_CENTROIDS: dict[CyprusCity, tuple[float, float]] = {
     "Paralimni": (35.0353, 33.9803),
 }
 
-# Greek script range — used to detect whether a name is already Greek.
+# Greek script range - used to detect whether a name is already Greek.
 _GREEK_RE = re.compile(r"[Ͱ-Ͽἀ-῿]")
 
 
@@ -149,7 +149,7 @@ def _split_name_by_script(name: str) -> tuple[str | None, str | None]:
     script bucket it matches (so input order doesn't matter). Otherwise
     assign the single name to whichever script it's written in.
     """
-    for sep in (" / ", " — ", " - ", " | "):
+    for sep in (" / ", " - ", " | "):
         if sep in name:
             left, right = name.split(sep, 1)
             return _assign_by_script(_clean(left), _clean(right))
@@ -169,7 +169,7 @@ def _assign_by_script(
         return a, b
     if b_greek and not a_greek:
         return b, a
-    # Both Greek or both Latin — can't disambiguate, keep input order.
+    # Both Greek or both Latin - can't disambiguate, keep input order.
     return a, b
 
 

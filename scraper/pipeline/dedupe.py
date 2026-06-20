@@ -6,7 +6,7 @@ Matching ladder (first hit wins):
   3. Fuzzy name similarity >= NAME_THRESHOLD AND within GEO_THRESHOLD_KM.
 
 When two records collide we merge: union of sources, prefer non-null fields,
-take max review_count (not sum — avoids double-counting Google reviews that
+take max review_count (not sum - avoids double-counting Google reviews that
 surface in multiple sources).
 """
 

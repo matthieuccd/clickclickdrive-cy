@@ -1,7 +1,7 @@
 """Cypriot business-directory spider built on Scrapling.
 
 Scrapling (https://github.com/d4vinci/Scrapling) gives us resilient selectors
-that survive minor HTML drift — useful for directory sites that don't ship
+that survive minor HTML drift - useful for directory sites that don't ship
 machine-readable APIs.
 
 Add one DirectorySite config per target site. The spider iterates listing
@@ -30,7 +30,7 @@ log = structlog.get_logger(__name__)
 
 @dataclass
 class DirectorySite:
-    """Per-site config. Selectors are CSS — Scrapling auto-relocates on drift."""
+    """Per-site config. Selectors are CSS - Scrapling auto-relocates on drift."""
 
     site_id: str
     start_urls: list[str]
@@ -46,7 +46,7 @@ class DirectorySite:
     headers: dict[str, str] = field(default_factory=dict)
 
 
-# Seed list — selectors are intentionally generic. Tune per site before running.
+# Seed list - selectors are intentionally generic. Tune per site before running.
 CYPRUS_DIRECTORIES: tuple[DirectorySite, ...] = (
     DirectorySite(
         site_id="yellowpages_cy",

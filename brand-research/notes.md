@@ -18,7 +18,7 @@ Extracted from `home.html` (live HTML) and `logo.svg` (downloaded asset) on 2026
 
 - Font family: **Mulish** (variable, 400–900), preloaded as `/assets/fonts/Mulish-variable.woff2`.
 - Aliased in CSS as `'Muli'` via `@font-face`.
-- **Caveat for Cyprus**: Mulish on Google Fonts ships with `latin / latin-ext / cyrillic / vietnamese` — *no Greek subset*. Our `apps/web` pairs Mulish (Latin) with **Noto Sans** (Greek subset) in the font stack so Greek copy gets real glyphs instead of fallback substitution. If you find the mixed feel jarring, switch the whole stack to Inter or Manrope (both ship Greek).
+- **Caveat for Cyprus**: Mulish on Google Fonts ships with `latin / latin-ext / cyrillic / vietnamese` - *no Greek subset*. Our `apps/web` pairs Mulish (Latin) with **Noto Sans** (Greek subset) in the font stack so Greek copy gets real glyphs instead of fallback substitution. If you find the mixed feel jarring, switch the whole stack to Inter or Manrope (both ship Greek).
 
 ## Logo
 
@@ -43,13 +43,13 @@ Extracted from `home.html` (live HTML) and `logo.svg` (downloaded asset) on 2026
 
 ## What I deliberately didn't copy
 
-- Their old Ionicons icon font (`.callMeBackForm .phoneInput:before{font-family:Ionicons}`) — using inline SVG icons instead, lighter and matches the Next 16 / React 19 stack we're on.
-- The `pages/_app` chunked legacy Next setup — we're on App Router, that's a different generation of Next.
-- Marketing copy from the German site — Cyprus market gets its own Greek-first voice.
+- Their old Ionicons icon font (`.callMeBackForm .phoneInput:before{font-family:Ionicons}`) - using inline SVG icons instead, lighter and matches the Next 16 / React 19 stack we're on.
+- The `pages/_app` chunked legacy Next setup - we're on App Router, that's a different generation of Next.
+- Marketing copy from the German site - Cyprus market gets its own Greek-first voice.
 
 ## What downstream code needs to honor
 
 - All "brand" / CTA surfaces should use `--color-brand` (#F74656) or `--color-brand-dark` (#DB1F35) for solid fills.
 - Body / nav / heading text → `--color-text-primary` (#354354), NOT pure black.
 - Page background → `--color-background` (#F9F9F9), NOT pure white. The white belongs to surfaces (cards, header).
-- Rating stars stay gold (`--color-star: #F59E0B`) — CCD.de doesn't surface stars in a way I could sample, and red stars read as warnings, so going with the conventional gold.
+- Rating stars stay gold (`--color-star: #F59E0B`) - CCD.de doesn't surface stars in a way I could sample, and red stars read as warnings, so going with the conventional gold.

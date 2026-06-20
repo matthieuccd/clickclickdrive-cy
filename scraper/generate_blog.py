@@ -152,7 +152,7 @@ ARTICLES: tuple[ArticleSpec, ...] = (
         topic_el="Πώς να βγάλεις δίπλωμα οδήγησης στην Κύπρο βήμα προς βήμα",
         topic_en="How to get a driving licence in Cyprus step by step",
         title_el="Πώς να βγάλεις δίπλωμα οδήγησης στην Κύπρο",
-        title_en="How to Get a Driving Licence in Cyprus — Step by Step",
+        title_en="How to Get a Driving Licence in Cyprus - Step by Step",
         audience_el=(
             "Άτομα που ζουν στην Κύπρο και θέλουν να βγάλουν δίπλωμα για πρώτη φορά "
             "ή να κατανοήσουν τη διαδικασία από την αρχή."
@@ -242,7 +242,7 @@ ARTICLES: tuple[ArticleSpec, ...] = (
             "If a foreign licence needs certified translation, the translator charges "
             "a fee. Translation must be by an approved certified translator.",
             "EU citizens exchanging their licence for a Cypriot one pay mainly "
-            "administrative fees — no lesson or test costs if the exchange is done "
+            "administrative fees - no lesson or test costs if the exchange is done "
             "within the window period.",
             "Non-EU nationals going through the full process (learner's licence, "
             "lessons, theory test, practical test) spend significantly more in total.",
@@ -356,9 +356,9 @@ ARTICLES: tuple[ArticleSpec, ...] = (
     ArticleSpec(
         id="anallagi-adeias-ee-kypros",
         topic_el="Ανταλλαγή ευρωπαϊκής άδειας οδήγησης στην Κύπρο",
-        topic_en="EU driving licence in Cyprus — do you need to exchange it",
+        topic_en="EU driving licence in Cyprus - do you need to exchange it",
         title_el="Ανταλλαγή άδειας ΕΕ στην Κύπρο",
-        title_en="EU Driving Licence in Cyprus — Do You Need to Exchange It",
+        title_en="EU Driving Licence in Cyprus - Do You Need to Exchange It",
         audience_el=(
             "Πολίτες ΕΕ που έχουν εγκατασταθεί στην Κύπρο και αναρωτιούνται αν "
             "πρέπει να ανταλλάξουν την ευρωπαϊκή τους άδεια με κυπριακή."
@@ -372,7 +372,7 @@ ARTICLES: tuple[ArticleSpec, ...] = (
             "on their home-country licence.",
             "No new tests are required to exchange an EU licence for a Cypriot one.",
             "There is a window period after taking up residence in Cyprus during which "
-            "the exchange can be made without tests. This period can change — confirm "
+            "the exchange can be made without tests. This period can change - confirm "
             "current deadlines with the Department of Road Transport.",
             "When you exchange, your original EU licence is returned to the issuing "
             "country. You cannot hold both a Cypriot and your original EU licence.",
@@ -380,7 +380,7 @@ ARTICLES: tuple[ArticleSpec, ...] = (
             "Practical reasons to exchange: easier for car rental in Cyprus, "
             "simpler for local administrative purposes, quicker replacement if lost.",
             "EU licences issued without expiry dates (lifetime licences) are treated "
-            "under special rules — check with the Department.",
+            "under special rules - check with the Department.",
             "The exchange is processed at Department of Road Transport offices in "
             "Nicosia, Limassol, Larnaca, Paphos, or Paralimni.",
             "If your EU licence has expired before you apply, the process may be more "
@@ -425,9 +425,9 @@ ARTICLES: tuple[ArticleSpec, ...] = (
     ArticleSpec(
         id="katigoria-b-adeia-odigisis-kypros",
         topic_el="Κατηγορία Β άδεια οδήγησης στην Κύπρο",
-        topic_en="Category B driving licence in Cyprus — everything you need to know",
+        topic_en="Category B driving licence in Cyprus - everything you need to know",
         title_el="Κατηγορία Β άδεια οδήγησης στην Κύπρο",
-        title_en="Category B Driving Licence Cyprus — Everything You Need to Know",
+        title_en="Category B Driving Licence Cyprus - Everything You Need to Know",
         audience_el=(
             "Άτομα στην Κύπρο που θέλουν να καταλάβουν τι σημαίνει κατηγορία Β, "
             "τι καλύπτει και πώς αποκτάται."
@@ -509,7 +509,7 @@ SYSTEM_PROMPT_EL = """\
 - Δεν ακούγεσαι σαν μάρκετινγκ. Ακούγεσαι σαν άνθρωπος.
 
 ΑΠΑΓΟΡΕΥΣΕΙΣ
-- Καμία παύλα em (—) πουθενά. Ποτέ. Χρησιμοποίησε τελείες ή κόμματα.
+- Καμία παύλα em πουθενά. Ποτέ. Χρησιμοποίησε παύλα (-), τελείες ή κόμματα.
 - Καμία H3. Μόνο H2 (## ) για τις ενότητες και ## Συχνές Ερωτήσεις για το FAQ.
 - Καμία από αυτές τις λέξεις/φράσεις πουθενά: «επιπλέον», «επιπροσθέτως»,
   «αξίζει να σημειωθεί», «εν κατακλείδι», «δεν χρειάζεται να ειπωθεί»,
@@ -569,7 +569,7 @@ VOICE
 - You do not sound like marketing. You sound like a person.
 
 NEVER
-- No em-dashes (—) anywhere. Use periods or commas instead.
+- Never use em dashes. Use a regular hyphen (-) or rewrite the sentence instead.
 - No H3. Only H2 (## ) for section headings and ## FAQ for the FAQ section.
 - None of these phrases: "furthermore", "moreover", "it is worth noting",
   "in conclusion", "it goes without saying", "it is important to note",
@@ -771,7 +771,7 @@ _GREEK_REPLACEMENTS: tuple[tuple[str, str], ...] = (
 
 
 def _post_process(md: str, locale: Locale) -> str:
-    md = md.replace("—", ",")
+    md = md.replace("-", ",")
     if locale == "el":
         for src, dst in _GREEK_REPLACEMENTS:
             md = md.replace(src, dst)

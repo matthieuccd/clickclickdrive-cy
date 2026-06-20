@@ -32,10 +32,10 @@ export function generateStaticParams() {
 export const metadata: Metadata = {
   title: {
     template: "%s · ClickClickDrive Cyprus",
-    default: "ClickClickDrive Cyprus — Σχολές οδηγών στην Κύπρο",
+    default: "ClickClickDrive Cyprus - Σχολές οδηγών στην Κύπρο",
   },
   description:
-    "Βρείτε σχολές οδηγών σε όλη την Κύπρο. Συγκρίνετε αξιολογήσεις, ωράρια και στοιχεία επικοινωνίας — δωρεάν.",
+    "Βρείτε σχολές οδηγών σε όλη την Κύπρο. Συγκρίνετε αξιολογήσεις, ωράρια και στοιχεία επικοινωνίας - δωρεάν.",
   icons: {
     icon: [
       { url: "/favicon-small.png", sizes: "32x32", type: "image/png" },

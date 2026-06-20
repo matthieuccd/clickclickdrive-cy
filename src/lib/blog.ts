@@ -132,7 +132,7 @@ export const BLOG_ARTICLES: readonly BlogArticle[] = [
     slug_en: "how-to-get-driving-licence-cyprus-step-by-step",
     categoryId: "foreigners",
     title_el: "Πώς να βγάλεις δίπλωμα οδήγησης στην Κύπρο",
-    title_en: "How to Get a Driving Licence in Cyprus — Step by Step",
+    title_en: "How to Get a Driving Licence in Cyprus - Step by Step",
     excerpt_el:
       "Ολοκληρωμένος οδηγός για το δίπλωμα οδήγησης στην Κύπρο. Από την εκπαιδευτική άδεια ως την πρακτική εξέταση, βήμα προς βήμα.",
     excerpt_en:
@@ -216,7 +216,7 @@ export const BLOG_ARTICLES: readonly BlogArticle[] = [
     slug_en: "exchange-eu-licence-cyprus",
     categoryId: "foreigners",
     title_el: "Ανταλλαγή άδειας ΕΕ στην Κύπρο",
-    title_en: "EU Driving Licence in Cyprus — Do You Need to Exchange It",
+    title_en: "EU Driving Licence in Cyprus - Do You Need to Exchange It",
     excerpt_el:
       "Χρειάζεται να ανταλλάξετε την ευρωπαϊκή σας άδεια; Τι ισχύει, τι έγγραφα χρειάζεστε και ποια είναι η προθεσμία.",
     excerpt_en:
@@ -244,7 +244,7 @@ export const BLOG_ARTICLES: readonly BlogArticle[] = [
     slug_en: "category-b-driving-licence-cyprus",
     categoryId: "rules",
     title_el: "Κατηγορία Β άδεια οδήγησης στην Κύπρο",
-    title_en: "Category B Driving Licence Cyprus — Everything You Need to Know",
+    title_en: "Category B Driving Licence Cyprus - Everything You Need to Know",
     excerpt_el:
       "Τι καλύπτει η κατηγορία Β, πώς αποκτάται και τι επιτρέπει να οδηγείς στην Κύπρο.",
     excerpt_en:
@@ -277,7 +277,7 @@ export const FALLBACK_BLOG_HERO = "/blog/default-hero.jpg";
 /**
  * If the article's per-piece hero exists on disk under public/, return its
  * path; otherwise return the site-wide fallback. School photos are NEVER
- * used as blog heroes (they are private business assets — the old fallback
+ * used as blog heroes (they are private business assets - the old fallback
  * was removed deliberately).
  */
 export function resolveArticleHero(article: BlogArticle): string {

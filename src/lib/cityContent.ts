@@ -1,7 +1,7 @@
 import type { CyprusCity } from "./types";
 
 /**
- * CITY_INTROS — Part 1, short intro (~150 words).
+ * CITY_INTROS - Part 1, short intro (~150 words).
  * Targets "driving schools [city]" / "best driving school [city]" keywords.
  * Appears above the school grid.
  */
@@ -29,7 +29,7 @@ export const CITY_INTROS: Record<CyprusCity, { el: string; en: string }> = {
 };
 
 /**
- * CITY_DEEP — Part 3, deep local content (~600 words).
+ * CITY_DEEP - Part 3, deep local content (~600 words).
  * Covers the RTD office, local driving conditions, prices, and a 10-question FAQ.
  * Appears below the school grid.
  * FK grade 8, no em-dashes, journalist voice.

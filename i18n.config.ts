@@ -1,11 +1,11 @@
 /**
- * ClickClickDrive Cyprus — i18n configuration.
+ * ClickClickDrive Cyprus - i18n configuration.
  *
  * Greek (`el`) is the primary locale for the Republic of Cyprus.
  * English (`en`) is the fallback / secondary locale (widely spoken; used by
  * expats, tourists, and the British community).
  *
- * No German content despite the parent brand — this market ships el + en only.
+ * No German content despite the parent brand - this market ships el + en only.
  */
 
 export const locales = ["el", "en"] as const;

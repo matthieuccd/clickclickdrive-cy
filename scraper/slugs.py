@@ -4,7 +4,7 @@ Greek slugs are produced by transliterating to Latin (ISO 843 / passport
 scheme) and then kebab-casing. We never percent-encode Greek script in URLs;
 the rendered path is always pure ASCII a-z0-9-.
 
-This module is the single source of truth — `add_slugs.py` calls it to
+This module is the single source of truth - `add_slugs.py` calls it to
 write slug_el / slug_en fields into the enriched JSONL, and the Next.js
 side just reads those pre-computed values.
 """

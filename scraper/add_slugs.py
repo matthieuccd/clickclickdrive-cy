@@ -41,7 +41,7 @@ def main() -> int:
         s["slug_en"] = school_slug_en(s.get("name_en"), name, sid)
         out_lines.append(json.dumps(s, ensure_ascii=False))
 
-    # Always write the enriched file — that's the canonical artifact.
+    # Always write the enriched file - that's the canonical artifact.
     ENRICHED.write_text("\n".join(out_lines) + "\n", encoding="utf-8")
     log.info("slugs.done", path=str(ENRICHED))
     return 0

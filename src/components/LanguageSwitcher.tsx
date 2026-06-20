@@ -45,7 +45,7 @@ export function LanguageSwitcher({
   );
 }
 
-// Bidirectional lookup — works whether `slug` is the el or en variant.
+// Bidirectional lookup - works whether `slug` is the el or en variant.
 function findAlt(slug: string, pairs: SlugPair[], target: Locale): string | undefined {
   for (const p of pairs) {
     if (p.el === slug) return target === "en" ? p.en : p.el;
@@ -69,7 +69,7 @@ function buildAltHref(
 
   const pre = target === "el" ? "" : "/en";
 
-  // School/city — match either locale's segment so both the user-visible URL
+  // School/city - match either locale's segment so both the user-visible URL
   // (/driving-schools/...) and the internally-rewritten path (/scholes-odigon/...)
   // are handled correctly.
   const schoolMatch = path.match(/^\/(scholes-odigon|driving-schools)\/([^/?#]+)\/?$/);
@@ -82,7 +82,7 @@ function buildAltHref(
     return `${pre}/${target === "el" ? "scholes-odigon" : "driving-schools"}`;
   }
 
-  // Article — match /arthra/<slug> and /blog/<slug>
+  // Article - match /arthra/<slug> and /blog/<slug>
   const articleMatch = path.match(/^\/(arthra|blog)\/([^/?#]+)\/?$/);
   if (articleMatch) {
     const slug = decodeURIComponent(articleMatch[2]);
@@ -93,7 +93,7 @@ function buildAltHref(
     return `${pre}/${target === "el" ? "arthra" : "blog"}`;
   }
 
-  // Static pages — match either locale variant
+  // Static pages - match either locale variant
   if (path === "/aporrito" || path === "/privacy") {
     return target === "el" ? "/aporrito" : "/en/privacy";
   }

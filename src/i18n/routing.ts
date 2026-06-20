@@ -18,7 +18,7 @@ import {
  *
  * The internal app router uses the Greek-canonical pathnames; middleware
  * rewrites between the user-facing localized URL and this canonical form.
- * Slug VALUES differ per locale — pass slug_el for the Greek link and
+ * Slug VALUES differ per locale - pass slug_el for the Greek link and
  * slug_en for the English link explicitly via `getPathname`.
  */
 export const routing = defineRouting({

@@ -30,7 +30,7 @@ import { CITIES, type CyprusCity, type Locale } from "@/lib/types";
 
 /**
  * Pre-render the union of city slugs and school slugs for the active locale.
- * Same internal route serves both — disambiguation by lookup.
+ * Same internal route serves both - disambiguation by lookup.
  *
  * Next 16 passes parent route params to generateStaticParams synchronously
  * (the page component itself receives them as a Promise; the two APIs
@@ -99,8 +99,8 @@ export async function generateMetadata({
       : s.location.city;
   const description =
     locale === "el"
-      ? `${name} στη(ν) ${cityLabel}. Αξιολόγηση ${s.rating?.toFixed(1) ?? "—"}, τηλέφωνο, ωράριο.`
-      : `${name} in ${cityLabel}. Rating ${s.rating?.toFixed(1) ?? "—"}, phone, opening hours.`;
+      ? `${name} στη(ν) ${cityLabel}. Αξιολόγηση ${s.rating?.toFixed(1) ?? "-"}, τηλέφωνο, ωράριο.`
+      : `${name} in ${cityLabel}. Rating ${s.rating?.toFixed(1) ?? "-"}, phone, opening hours.`;
   const pathEl = `/scholes-odigon/${s.slug_el}`;
   const pathEn = `/en/driving-schools/${s.slug_en}`;
   const ogImage = s.photo_paths[0] ? siteUrl(s.photo_paths[0]) : undefined;
@@ -407,7 +407,7 @@ async function SchoolView({
                 })}
               </ul>
             ) : (
-              <p className="mt-4 text-sm text-text-muted">—</p>
+              <p className="mt-4 text-sm text-text-muted">-</p>
             )}
           </section>
         </aside>

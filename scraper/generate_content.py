@@ -1,4 +1,4 @@
-"""SEO content generator (Step 4 — the tool, not the content).
+"""SEO content generator (Step 4 - the tool, not the content).
 
 For each (school, locale), composes a prompt grounded in real data
 (Places signals + scraped website content) and asks Claude to write a
@@ -22,10 +22,10 @@ default          fully generate, calling the Anthropic API
 Editorial rules baked in (system prompt)
 ----------------------------------------
 - Flesch-Kincaid grade 8 or below; short sentences, common words.
-- No em-dashes (—). No bullet points. No "AI tells" (it is worth noting,
+- Never use em dashes. Use a hyphen (-) or rewrite instead. No bullet points. No "AI tells" (it is worth noting,
   furthermore, moreover, in conclusion, rest assured, navigate the world
   of, ...). No invented facts.
-- Journalist voice — sounds like a local writing about their own city.
+- Journalist voice - sounds like a local writing about their own city.
 - Each page weaves in 4 links: previous school in city, next school in
   city, the city listing page, the homepage.
 
@@ -85,7 +85,7 @@ SYSTEM_PROMPT_EL = """\
 - Ακούγεσαι σαν άνθρωπος που ζει στην πόλη, όχι σαν διαφημιστής.
 
 ΑΠΑΓΟΡΕΥΕΤΑΙ
-- Καμία παύλα em (—). Χρησιμοποίησε τελείες, κόμματα ή παρενθέσεις.
+- Καμία παύλα em. Χρησιμοποίησε παύλα (-), τελείες ή κόμματα.
 - Καμία λίστα με bullets ή αριθμημένα σημεία μέσα στο κείμενο.
 - Φράσεις όπως «αξίζει να σημειωθεί», «εν κατακλείδι», «επιπλέον», «επιπροσθέτως»,
   «δεν χρειάζεται να ειπωθεί», «σε έναν κόσμο που αλλάζει συνεχώς».
@@ -103,7 +103,7 @@ SYSTEM_PROMPT_EL = """\
 - Σύνδεσμος στην αρχική σελίδα.
 
 ΜΟΡΦΗ
-- Markdown. Μην βάλεις τίτλο H1 — η σελίδα προσθέτει δική της.
+- Markdown. Μην βάλεις τίτλο H1 - η σελίδα προσθέτει δική της.
 - 4 έως 6 σύντομες παραγράφους. Στόχος 480 με 520 λέξεις.
 """
 
@@ -119,7 +119,7 @@ VOICE
 - You sound like a person who lives in this city, not a marketer.
 
 NEVER
-- No em-dashes (—) anywhere. Use periods, commas, or parentheses.
+- Never use em dashes. Use a regular hyphen (-) or rewrite the sentence instead.
 - No bullet points or numbered lists in the prose.
 - No phrases like: "it is worth noting", "in conclusion", "furthermore",
   "moreover", "it goes without saying", "rest assured", "navigate the world of",
@@ -138,7 +138,7 @@ REQUIRED LINKS (woven into sentences, not listed)
 - A link to the homepage.
 
 FORMAT
-- Output Markdown only. Do NOT include an H1 — the page already renders one.
+- Output Markdown only. Do NOT include an H1 - the page already renders one.
 - 4 to 6 short paragraphs. Target 480 to 520 words.
 """
 
@@ -187,7 +187,7 @@ def build_user_prompt(
             bits.append("Services keyword hits: " + ", ".join(content["services_mentioned"]))
         scraped = "\n".join(bits) if bits else "(none extracted)"
     else:
-        scraped = f"(no website content — reason: {content.get('reason', 'unknown')})"
+        scraped = f"(no website content - reason: {content.get('reason', 'unknown')})"
 
     return f"""\
 Write the 500-word page for this school. Locale: {locale}.
@@ -196,7 +196,7 @@ Write the 500-word page for this school. Locale: {locale}.
 Name (rendered): {name}
 City: {city_label}
 Rating: {rating if rating is not None else "no rating yet"}
-Review count: {rev if rev is not None else "—"}
+Review count: {rev if rev is not None else "-"}
 Phone: {phone or "(not listed)"}
 Address: {addr or "(not listed)"}
 Opening hours:
@@ -208,8 +208,8 @@ Opening hours:
 == Required links (use these exact paths, link text is your choice) ==
 City listing: {city_path}
 Homepage: {home_path}
-{"Previous school in this city: " + prev_link if prev_link else "Previous school: (none — write around it)"}
-{"Next school in this city: " + next_link if next_link else "Next school: (none — write around it)"}
+{"Previous school in this city: " + prev_link if prev_link else "Previous school: (none - write around it)"}
+{"Next school in this city: " + next_link if next_link else "Next school: (none - write around it)"}
 
 Now write the page.
 """
@@ -256,7 +256,7 @@ def _format_hours(hours: list[str]) -> str:
 def main(argv: list[str] | None = None) -> int:
     # Anchor .env lookup to the project root so this works regardless of CWD.
     # `override=False` lets a shell `export ANTHROPIC_API_KEY=...` take
-    # precedence over whatever is in .env — common when rotating keys.
+    # precedence over whatever is in .env - common when rotating keys.
     if DOTENV_PATH.exists():
         load_dotenv(DOTENV_PATH, override=False)
     args = _parse_args(argv)

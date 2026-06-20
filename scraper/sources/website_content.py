@@ -3,7 +3,7 @@
 Approach: httpx for the fetch, lxml.html for parsing. Scrapling was the
 original plan, but 0.4.x ships its `Fetcher` chain wired to playwright +
 curl_cffi + chromium binaries (~350 MB), and its parser API drifted between
-minor versions — for plain static HTML extraction lxml is faster, smaller,
+minor versions - for plain static HTML extraction lxml is faster, smaller,
 and stable.
 
 For each school that has a website URL, we save a structured JSON record at
@@ -75,7 +75,7 @@ class WebsiteContent:
 def scrape_school(school_id: str, website: str | None) -> WebsiteContent:
     """Fetch and extract content from a single school's website.
 
-    Always returns a WebsiteContent — failures are recorded with success=False
+    Always returns a WebsiteContent - failures are recorded with success=False
     so the generator can read every {school_id}.json without try/except.
     """
     now = _dt.datetime.now(_dt.UTC).isoformat()
