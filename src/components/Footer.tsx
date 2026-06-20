@@ -39,7 +39,7 @@ export function Footer() {
                 <a
                   key={`city-${c}`}
                   href={cityHref(c, locale)}
-                  className="text-text-muted hover:text-brand"
+                  className="text-text-primary hover:text-brand"
                 >
                   {t(`cities.${c}`)}
                 </a>
