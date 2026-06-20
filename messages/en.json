@@ -107,7 +107,8 @@
     "legal": "Legal",
     "privacy": "Privacy policy",
     "terms": "Terms and conditions",
-    "bestSchools": "Best schools"
+    "bestSchools": "Best schools",
+    "bestSchoolsLink": "Best driving schools {city}"
   },
   "bestOf": {
     "title": "Best Driving Schools in {city} {year}",

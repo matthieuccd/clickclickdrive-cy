@@ -35,6 +35,15 @@ export function Footer() {
               <a href={allSchools} className="text-text-primary hover:text-brand">
                 {t("nav.schools")}
               </a>
+              {CITIES.map((c) => (
+                <a
+                  key={`city-${c}`}
+                  href={cityHref(c, locale)}
+                  className="text-text-muted hover:text-brand"
+                >
+                  {t(`cities.${c}`)}
+                </a>
+              ))}
             </nav>
             <nav className="flex flex-col gap-2">
               <span className="text-xs font-bold uppercase tracking-wide text-text-muted">
@@ -46,19 +55,7 @@ export function Footer() {
                   href={bestOfHref(c, locale)}
                   className="text-text-primary hover:text-brand"
                 >
-                  {t(`cities.${c}`)}
-                </a>
-              ))}
-              <span className="mt-2 text-xs font-bold uppercase tracking-wide text-text-muted">
-                {t("footer.explore")}
-              </span>
-              {CITIES.map((c) => (
-                <a
-                  key={`city-${c}`}
-                  href={cityHref(c, locale)}
-                  className="text-text-muted hover:text-brand"
-                >
-                  {t(`cities.${c}`)}
+                  {t("footer.bestSchoolsLink", { city: t(`cities.${c}`) })}
                 </a>
               ))}
             </nav>
