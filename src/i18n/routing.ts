@@ -52,5 +52,25 @@ export const routing = defineRouting({
       el: "/oroi",
       en: "/terms",
     },
+    "/kalytera-scholes-odigon-lefkosia": {
+      el: "/kalytera-scholes-odigon-lefkosia",
+      en: "/best-driving-schools-nicosia",
+    },
+    "/kalytera-scholes-odigon-lemesos": {
+      el: "/kalytera-scholes-odigon-lemesos",
+      en: "/best-driving-schools-limassol",
+    },
+    "/kalytera-scholes-odigon-larnaka": {
+      el: "/kalytera-scholes-odigon-larnaka",
+      en: "/best-driving-schools-larnaca",
+    },
+    "/kalytera-scholes-odigon-pafos": {
+      el: "/kalytera-scholes-odigon-pafos",
+      en: "/best-driving-schools-paphos",
+    },
+    "/kalytera-scholes-odigon-paralimni": {
+      el: "/kalytera-scholes-odigon-paralimni",
+      en: "/best-driving-schools-paralimni",
+    },
   },
 });

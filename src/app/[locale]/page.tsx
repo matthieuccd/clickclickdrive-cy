@@ -14,7 +14,7 @@ import {
   getFeaturedSchools,
 } from "@/lib/schools";
 import { buildAlternates, buildWebSiteJsonLd, siteUrl } from "@/lib/seo";
-import { listingHref } from "@/lib/slugs";
+import { bestOfHref, listingHref } from "@/lib/slugs";
 import { CITIES, type Locale } from "@/lib/types";
 
 export async function generateMetadata({
@@ -123,6 +123,35 @@ export default async function HomePage({
           </div>
         </section>
       )}
+
+      <section className="mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-16">
+        <div className="flex items-baseline justify-between">
+          <div>
+            <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">
+              {t("home.bestByCity")}
+            </h2>
+            <p className="mt-2 text-text-secondary">
+              {t("home.bestByCityLead")}
+            </p>
+          </div>
+        </div>
+        <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 lg:grid-cols-5">
+          {CITIES.map((c) => (
+            <a
+              key={c}
+              href={bestOfHref(c, locale)}
+              className="group flex flex-col items-center justify-center rounded-2xl border border-border bg-surface p-4 text-center transition hover:border-brand hover:bg-brand-light/10"
+            >
+              <span className="text-base font-bold text-text-primary group-hover:text-brand">
+                {t(`cities.${c}`)}
+              </span>
+              <span className="mt-1 text-xs text-text-muted">
+                {locale === "el" ? "Κορυφαίες σχολές" : "Top schools"}
+              </span>
+            </a>
+          ))}
+        </div>
+      </section>
 
       {latestArticles.length > 0 && (
         <section className="mx-auto max-w-6xl px-4 py-12 sm:px-6 sm:py-16">

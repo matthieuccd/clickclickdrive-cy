@@ -41,7 +41,9 @@
     },
     "latestArticles": "Latest from the blog",
     "latestArticlesLead": "Practical guides for the Cyprus driving licence process.",
-    "viewAllArticles": "Read all articles"
+    "viewAllArticles": "Read all articles",
+    "bestByCity": "Best schools by city",
+    "bestByCityLead": "The top-rated driving schools for every city in Cyprus - chosen by ratings and reviews."
   },
   "blog": {
     "indexTitle": "Articles and guides",
@@ -104,6 +106,15 @@
     "explore": "Explore",
     "legal": "Legal",
     "privacy": "Privacy policy",
-    "terms": "Terms and conditions"
+    "terms": "Terms and conditions",
+    "bestSchools": "Best schools"
+  },
+  "bestOf": {
+    "title": "Best Driving Schools in {city} {year}",
+    "description": "The {count} best driving schools in {city}. Compare ratings, hours, and contact details.",
+    "breadcrumb": "Best schools",
+    "topSchools": "Top schools",
+    "viewAll": "See all schools in {city}",
+    "notFound": "Page not found"
   }
 }

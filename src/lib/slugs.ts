@@ -47,6 +47,13 @@ export function listingHref(locale: Locale): string {
   return locale === "el" ? "/scholes-odigon" : "/en/driving-schools";
 }
 
+export function bestOfHref(city: CyprusCity, locale: Locale): string {
+  return locale === "el"
+    ? `/kalytera-scholes-odigon-${CITY_SLUGS_EL[city]}`
+    : `/en/best-driving-schools-${CITY_SLUGS_EN[city]}`;
+}
+
+
 /** Best-fit name for a school in a given locale (with the usual fallbacks). */
 export function displayName(school: DrivingSchool, locale: Locale): string {
   if (locale === "el") {

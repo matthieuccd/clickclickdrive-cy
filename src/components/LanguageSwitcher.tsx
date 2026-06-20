@@ -14,6 +14,7 @@ interface Props {
   schoolPairs: SlugPair[];
   articlePairs: SlugPair[];
   cityPairs: SlugPair[];
+  bestOfPairs: SlugPair[];
   className?: string;
 }
 
@@ -21,6 +22,7 @@ export function LanguageSwitcher({
   schoolPairs,
   articlePairs,
   cityPairs,
+  bestOfPairs,
   className,
 }: Props) {
   const rawPath = usePathname();
@@ -32,7 +34,7 @@ export function LanguageSwitcher({
   const target: Locale = isEnglish ? "el" : "en";
   const targetLabel = isEnglish ? "ΕΛ" : "EN";
 
-  const altHref = buildAltHref(rawPath, target, schoolPairs, articlePairs, cityPairs);
+  const altHref = buildAltHref(rawPath, target, schoolPairs, articlePairs, cityPairs, bestOfPairs);
 
   return (
     <NextLink
@@ -60,6 +62,7 @@ function buildAltHref(
   schoolPairs: SlugPair[],
   articlePairs: SlugPair[],
   cityPairs: SlugPair[],
+  bestOfPairs: SlugPair[],
 ): string {
   // Strip /en prefix. startsWith("/en/") guards against paths like /entry.
   const path =
@@ -91,6 +94,16 @@ function buildAltHref(
   }
   if (path.match(/^\/(arthra|blog)\/?$/)) {
     return `${pre}/${target === "el" ? "arthra" : "blog"}`;
+  }
+
+  // Best-of city pages - /kalytera-scholes-odigon-{slug} ↔ /en/best-driving-schools-{slug}
+  const bestOfMatch = path.match(/^\/(kalytera-scholes-odigon|best-driving-schools)-([^/?#]+)\/?$/);
+  if (bestOfMatch) {
+    const slug = decodeURIComponent(bestOfMatch[2]);
+    const altSlug = findAlt(slug, bestOfPairs, target) ?? slug;
+    return target === "el"
+      ? `/kalytera-scholes-odigon-${altSlug}`
+      : `/en/best-driving-schools-${altSlug}`;
   }
 
   // Static pages - match either locale variant

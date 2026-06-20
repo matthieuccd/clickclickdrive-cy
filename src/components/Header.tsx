@@ -3,6 +3,7 @@ import { useTranslations } from "next-intl";
 
 import { Link } from "@/i18n/navigation";
 import { BLOG_ARTICLES } from "@/lib/blog";
+import { BEST_OF_CITIES } from "@/lib/bestOf";
 import { getAllSchools } from "@/lib/schools";
 import { citySlug } from "@/lib/slugs";
 import { CITIES } from "@/lib/types";
@@ -25,6 +26,11 @@ export function Header() {
   const cityPairs = CITIES.map((c) => ({
     el: citySlug(c, "el"),
     en: citySlug(c, "en"),
+  }));
+  // Suffix after kalytera-scholes-odigon- / best-driving-schools-
+  const bestOfPairs = Object.values(BEST_OF_CITIES).map((cfg) => ({
+    el: cfg.pathEl.replace("/kalytera-scholes-odigon-", ""),
+    en: cfg.pathEn.replace("/best-driving-schools-", ""),
   }));
 
   return (
@@ -58,6 +64,7 @@ export function Header() {
             schoolPairs={schoolPairs}
             articlePairs={articlePairs}
             cityPairs={cityPairs}
+            bestOfPairs={bestOfPairs}
             className="rounded-full border border-border-strong px-3 py-1.5 text-sm font-semibold text-text-primary hover:border-brand hover:text-brand transition-colors"
           />
         </nav>

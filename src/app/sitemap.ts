@@ -9,6 +9,22 @@ import { SITE_HOST } from "@/lib/seo";
 import { citySlug } from "@/lib/slugs";
 import { CITIES } from "@/lib/types";
 
+const BEST_OF_SLUG_EL: Record<string, string> = {
+  Nicosia: "lefkosia",
+  Limassol: "lemesos",
+  Larnaca: "larnaka",
+  Paphos: "pafos",
+  Paralimni: "paralimni",
+};
+
+const BEST_OF_SLUG_EN: Record<string, string> = {
+  Nicosia: "nicosia",
+  Limassol: "limassol",
+  Larnaca: "larnaca",
+  Paphos: "paphos",
+  Paralimni: "paralimni",
+};
+
 /**
  * Sitemap covering every page in both locales. Greek is canonical; English
  * is announced via the `alternates.languages` map so search engines learn
@@ -116,6 +132,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.6,
       alternates: { languages: { "x-default": el, el, en } },
+    });
+  }
+
+  // Best-of city pages
+  for (const c of CITIES) {
+    const el = `${SITE_HOST}/kalytera-scholes-odigon-${BEST_OF_SLUG_EL[c]}`;
+    const en = `${SITE_HOST}/en/best-driving-schools-${BEST_OF_SLUG_EN[c]}`;
+    entries.push({
+      url: el,
+      lastModified: updated,
+      changeFrequency: "monthly",
+      priority: 0.7,
+      alternates: {
+        languages: { "x-default": el, el, en },
+      },
     });
   }
 
