@@ -65,7 +65,7 @@ jobs:
             -H "Authorization: Bearer $RESEND_API_KEY" \
             -H "Content-Type: application/json" \
             -d '{
-              "from": "blog@clickclickdrive-cyprus.com",
+              "from": "onboarding@resend.dev",
               "to": "matthieu@clickclickdrive.net",
               "subject": "Published: ${{ steps.publish.outputs.published_title }}",
               "html": "<p>New article live:</p><ul><li><a href=\"${{ steps.publish.outputs.published_url_el }}\">Greek</a></li><li><a href=\"${{ steps.publish.outputs.published_url_en }}\">English</a></li></ul>"
