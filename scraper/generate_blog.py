@@ -71,12 +71,12 @@ class ArticleSpec:
     # value for the reader. Ask: "would a real person use this to make a
     # decision, calculate something, or self-assess?" If no, leave it empty.
     #
-    # Available widgets and when to use them:
-    #   "price-calculator"  → articles about cost/fees (lesson prices, total
-    #                         licence cost). DO NOT use on rule/law articles.
-    #   "theory-quiz"       → theory test prep articles. Self-assessment only.
-    #   "time-estimator"    → timeline articles ("how long does it take?").
-    #                         Only when the answer depends on user variables.
+    # Widgets must be built before they can be referenced here. Currently built:
+    #   "price-calculator"  → cost/fees articles (lesson prices, total cost)
+    #
+    # There is no fixed list — any interactive tool can be built on request.
+    # If an article calls for something new (quiz, timeline estimator, school
+    # comparator, checklist, map, etc.) flag it and build the component first.
     #
     # Default: "" (no widget). Most articles should NOT have a widget.
     widget_id: str = ""
