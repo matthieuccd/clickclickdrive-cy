@@ -12,6 +12,7 @@ from __future__ import annotations
 import argparse
 import datetime
 import json
+import os
 import subprocess
 import sys
 from pathlib import Path
@@ -303,6 +304,13 @@ def publish_review(article: dict, q: dict, dry_run: bool) -> None:
               f"checkout main, update queue with pr_number, push")
 
 
+def emit_github_output(key: str, value: str) -> None:
+    github_output = os.environ.get("GITHUB_OUTPUT")
+    if github_output:
+        with open(github_output, "a") as f:
+            f.write(f"{key}={value}\n")
+
+
 def publish_auto(article: dict, q: dict, dry_run: bool) -> None:
     today = today_str()
     entry_ts = make_blog_ts_entry(article, today)
@@ -326,6 +334,11 @@ def publish_auto(article: dict, q: dict, dry_run: bool) -> None:
         git_commit(f"feat(blog): publish {article['id']}")
         git("push")
         print(f"Published: {article['title_en']}")
+        url_el = f"https://clickclickdrive-cyprus.com/arthra/{article['slug_el']}"
+        url_en = f"https://clickclickdrive-cyprus.com/en/blog/{article['slug_en']}"
+        emit_github_output("published_url_el", url_el)
+        emit_github_output("published_url_en", url_en)
+        emit_github_output("published_title", article["title_en"])
     else:
         print(f"(dry-run) would: git add files, commit, push to main")
 

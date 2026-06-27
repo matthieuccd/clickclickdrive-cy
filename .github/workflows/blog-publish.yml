@@ -44,6 +44,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
       - name: Run publish_next
+        id: publish
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
@@ -54,3 +55,18 @@ jobs:
             MODE_ARG="--publish-mode ${{ github.event.inputs.publish_mode }}"
           fi
           uv run python -m scraper.publish_next $MODE_ARG
+
+      - name: Email notification
+        if: steps.publish.outputs.published_url_en != ''
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+        run: |
+          curl -s -X POST https://api.resend.com/emails \
+            -H "Authorization: Bearer $RESEND_API_KEY" \
+            -H "Content-Type: application/json" \
+            -d '{
+              "from": "blog@clickclickdrive-cyprus.com",
+              "to": "matthieu@clickclickdrive.net",
+              "subject": "Published: ${{ steps.publish.outputs.published_title }}",
+              "html": "<p>New article live:</p><ul><li><a href=\"${{ steps.publish.outputs.published_url_el }}\">Greek</a></li><li><a href=\"${{ steps.publish.outputs.published_url_en }}\">English</a></li></ul>"
+            }'
