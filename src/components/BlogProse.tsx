@@ -1,20 +1,28 @@
 import Image from "next/image";
 import React from "react";
 
-interface Props {
-  markdown: string;
-  /** Inject image2 after the Nth H2 (1-indexed). */
-  injectAfterH2?: number;
-  injectImageSrc?: string;
-  injectImageAlt?: string;
+import { LicenceStepsInfographic } from "@/components/infographics/LicenceStepsInfographic";
+import { PriceCalculator } from "@/components/widgets/PriceCalculator";
+import type { Locale } from "@/lib/types";
+
+interface InjectImage {
+  afterH2: number;
+  src: string;
+  alt: string;
 }
 
-export function BlogProse({
-  markdown,
-  injectAfterH2,
-  injectImageSrc,
-  injectImageAlt = "",
-}: Props) {
+interface Props {
+  markdown: string;
+  locale: Locale;
+  /** Images to inject after specific H2 headings (1-indexed). */
+  injectImages?: InjectImage[];
+}
+
+export function BlogProse({ markdown, locale, injectImages = [] }: Props) {
+  const injectMap = new Map<number, InjectImage>(
+    injectImages.map((img) => [img.afterH2, img]),
+  );
+
   const blocks = markdown
     .trim()
     .split(/\n{2,}/)
@@ -38,22 +46,42 @@ export function BlogProse({
           {renderInline(block.slice(3).trim())}
         </h2>,
       );
-      // Inject image2 after the requested H2
-      if (injectImageSrc && injectAfterH2 !== undefined && h2Count === injectAfterH2) {
+      const inject = injectMap.get(h2Count);
+      if (inject) {
         elements.push(
           <figure
             key={`img-inject-${i}`}
             className="relative my-8 aspect-[16/9] w-full overflow-hidden rounded-2xl bg-surface-muted"
           >
             <Image
-              src={injectImageSrc}
-              alt={injectImageAlt}
+              src={inject.src}
+              alt={inject.alt}
               fill
               sizes="(min-width: 1024px) 48rem, 100vw"
               className="object-cover"
             />
           </figure>,
         );
+      }
+      continue;
+    }
+
+    // Infographic token: {{infographic:type}}
+    const infographicMatch = block.match(/^\{\{infographic:([^}]+)\}\}$/);
+    if (infographicMatch) {
+      const type = infographicMatch[1];
+      if (type === "licence-steps") {
+        elements.push(<LicenceStepsInfographic key={i} locale={locale} />);
+      }
+      continue;
+    }
+
+    // Widget token: {{widget:id}}
+    const widgetMatch = block.match(/^\{\{widget:([^}]+)\}\}$/);
+    if (widgetMatch) {
+      const id = widgetMatch[1];
+      if (id === "price-calculator") {
+        elements.push(<PriceCalculator key={i} locale={locale} />);
       }
       continue;
     }

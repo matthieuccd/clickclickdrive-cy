@@ -59,6 +59,19 @@ class ArticleSpec:
     # Internal link targets (path, anchor text) the model MUST weave in.
     internal_links_el: tuple[tuple[str, str], ...]
     internal_links_en: tuple[tuple[str, str], ...]
+    # Optional fixed answer-first summary (2-3 sentences). When supplied the
+    # model outputs it verbatim as the very first paragraph. When omitted the
+    # model writes its own per the ANSWER block in the system prompt.
+    answer_el: str = ""
+    answer_en: str = ""
+    # Inline widget token to embed in the article body (e.g. "price-calculator").
+    # The model places {{widget:<widget_id>}} at a sensible point in the body.
+    widget_id: str = ""
+    # Infographic type for the inline SVG. Empty = no infographic.
+    infographic_type: str = ""
+    # Pexels queries for inline body images (saved as inline-1.jpg, inline-2.jpg, …).
+    # publish_next.py fetches these after the hero.
+    inline_image_queries: tuple[str, ...] = ()
 
 
 ARTICLES: tuple[ArticleSpec, ...] = (
@@ -491,6 +504,132 @@ ARTICLES: tuple[ArticleSpec, ...] = (
             ("/en", "ClickClickDrive Cyprus"),
         ),
     ),
+    ArticleSpec(
+        id="cyprus-driving-licence-complete-guide",
+        topic_el="Πώς να βγάλετε δίπλωμα οδήγησης στην Κύπρο: πλήρης οδηγός 2026",
+        topic_en="How to get a driving licence in Cyprus: the complete 2026 guide",
+        title_el="Πώς να βγάλετε δίπλωμα οδήγησης στην Κύπρο: Πλήρης Οδηγός 2026",
+        title_en="How to Get a Driving Licence in Cyprus: Complete 2026 Guide",
+        audience_el=(
+            "Κάτοικοι Κύπρου - ντόπιοι, μετανάστες και νεοφερμένοι - που θέλουν "
+            "ολοκληρωμένο οδηγό για το κυπριακό δίπλωμα από την αρχή. "
+            "Στόχος: 2300+ λέξεις εκτός FAQ."
+        ),
+        audience_en=(
+            "Anyone in Cyprus - resident, expat, or newcomer - who wants a definitive "
+            "overview of how the Cypriot driving licence system works."
+        ),
+        facts=(
+            "The Department of Road Transport (Τμήμα Οδικών Μεταφορών), under the "
+            "Ministry of Transport, Communications and Works, is the only authority "
+            "that issues driving licences in the Republic of Cyprus. "
+            "Headquarters in Nicosia; offices also in Limassol, Larnaca, Paphos, "
+            "and Paralimni.",
+            "Cyprus drives on the LEFT. Speed limits and road distances are in "
+            "kilometres and km/h.",
+            "Minimum age to apply for a Category B (standard passenger car) licence "
+            "in Cyprus: 18.",
+            "The full process for a new driver: (1) apply for a Learner's Licence "
+            "(εκπαιδευτική άδεια) at the Department of Road Transport; (2) complete "
+            "driving lessons with a licensed instructor in a dual-control car; "
+            "(3) pass the theory test (γραπτή εξέταση); (4) pass the practical test.",
+            "While a learner is at the wheel, the car must display red L plates "
+            "front and rear at all times.",
+            "Lessons typically last 45 minutes each. Prices vary by school and city; "
+            "shopping around is normal and advisable.",
+            "The theory test is computer-based and can be taken in Greek or English. "
+            "It covers road signs, traffic rules, and safe driving behaviour.",
+            "The practical test is conducted on real public roads by an examiner "
+            "from the Department of Road Transport.",
+            "Documents required for a new applicant: valid passport or national ID, "
+            "proof of residence in Cyprus (rental contract, utility bill, or yellow "
+            "slip / ARC), a recent passport-style photograph, and a medical "
+            "certificate from a registered doctor confirming fitness to drive.",
+            "EU and EEA citizens living in Cyprus may keep driving on their home "
+            "licence indefinitely but have a window after taking up residence to "
+            "exchange it for a Cypriot licence without sitting any new tests. "
+            "Check the current window period with the Department of Road Transport.",
+            "UK licence holders after Brexit are treated as third-country nationals "
+            "for exchange purposes. A certified translation and possibly one or both "
+            "tests may be required - check current bilateral agreement status with "
+            "the Department before applying.",
+            "Third-country nationals with licences from countries not on the "
+            "recognised list typically go through the full new-driver process: "
+            "learner's licence, lessons, theory test, practical test.",
+            "Driving licence categories in Cyprus follow EU standards: AM (mopeds), "
+            "A1/A2/A (motorcycles by power output), B (passenger cars up to 3,500 kg "
+            "and 8 passengers), C (trucks), D (buses), and trailer combinations "
+            "BE/CE/DE. Category B is the most common.",
+            "A Cyprus Category B licence is valid across all EU member states.",
+            "Category B validity: typically until age 70, after which renewal with "
+            "medical checks is required. Check current validity rules with the "
+            "Department of Road Transport.",
+            "The Republic of Cyprus only covers the south of the island. Northern "
+            "Cyprus (TRNC) operates a separate licensing system and a Cypriot "
+            "licence does not automatically apply there.",
+            "Official fees are set by the Department of Road Transport and can "
+            "change. Always check current amounts directly with the Department.",
+        ),
+        sections_el=(
+            "Πώς λειτουργεί το σύστημα διπλωμάτων στην Κύπρο",
+            "Ποιος δικαιούται και ποια είναι η ελάχιστη ηλικία",
+            "Η εκπαιδευτική άδεια: το πρώτο επίσημο βήμα",
+            "Τα μαθήματα οδήγησης: τι να περιμένετε",
+            "Η θεωρητική εξέταση: τι καλύπτει και πώς να περάσετε",
+            "Η πρακτική εξέταση: τι γίνεται την ημέρα",
+            "Κατηγορίες αδειών, ισχύς και ανανέωση",
+            "Αν έχετε ήδη ξένη άδεια οδήγησης",
+        ),
+        sections_en=(
+            "How the Cyprus driving licence system works",
+            "Who can apply and the minimum age",
+            "The learner's licence: your first official step",
+            "Driving lessons: what to expect",
+            "The theory test: what it covers and how to pass",
+            "The practical test: what happens on the day",
+            "Licence categories, validity, and renewal",
+            "If you already hold a foreign driving licence",
+        ),
+        internal_links_el=(
+            ("/arthra/pws-na-vgaleis-diploma-odigisis-stin-kypro", "βήμα προς βήμα οδηγός για δίπλωμα"),
+            ("/arthra/diploma-odigisis-gia-ksenous-stin-kypro", "δίπλωμα για ξένους στην Κύπρο"),
+            ("/arthra/anallagi-adeias-ee-kypros", "ανταλλαγή ευρωπαϊκής άδειας"),
+            ("/arthra/vretaniko-diploma-kypros", "βρετανική άδεια μετά το Brexit"),
+            ("/arthra/poso-kostizei-ekpaideysi-odigisis-kypros", "κόστος εκπαίδευσης οδήγησης"),
+            ("/scholes-odigon/lefkosia", "σχολές οδηγών στη Λευκωσία"),
+            ("/", "ClickClickDrive Κύπρος"),
+        ),
+        internal_links_en=(
+            ("/en/blog/how-to-get-driving-licence-cyprus-step-by-step", "step-by-step driving licence guide"),
+            ("/en/blog/how-to-get-driving-licence-cyprus-foreigner", "guide for foreigners in Cyprus"),
+            ("/en/blog/exchange-eu-licence-cyprus", "exchanging an EU licence"),
+            ("/en/blog/uk-licence-cyprus-after-brexit", "UK licence after Brexit"),
+            ("/en/blog/driving-lesson-cost-cyprus", "driving lesson costs in Cyprus"),
+            ("/en/driving-schools/nicosia", "driving schools in Nicosia"),
+            ("/en", "ClickClickDrive Cyprus"),
+        ),
+        answer_el=(
+            "Για να βγάλετε κυπριακό δίπλωμα οδήγησης κατηγορίας Β, πρέπει να ολοκληρώσετε "
+            "τέσσερα βήματα: εκπαιδευτική άδεια, μαθήματα με αδειούχο εκπαιδευτή, θεωρητική "
+            "εξέταση και πρακτική εξέταση. Η διαδικασία διαρκεί συνήθως τρεις έως έξι μήνες. "
+            "Πολίτες ΕΕ μπορούν να ανταλλάξουν την άδειά τους χωρίς εξετάσεις, ενώ υπήκοοι "
+            "τρίτων χωρών ακολουθούν συνήθως ολόκληρη τη διαδικασία."
+        ),
+        answer_en=(
+            "To get a Cyprus driving licence, you need to complete four steps: apply for a "
+            "learner's licence at the Department of Road Transport, complete lessons with a "
+            "licensed instructor, pass the theory test, and pass the practical test. The process "
+            "typically takes three to six months for a new driver. EU citizens can exchange their "
+            "existing licence without sitting tests; other nationalities should check their status "
+            "with the Department."
+        ),
+        widget_id="price-calculator",
+        infographic_type="licence-steps",
+        inline_image_queries=(
+            "driving instructor lesson student car cyprus",
+            "computer theory test driving exam screen",
+        ),
+    ),
 )
 
 
@@ -534,10 +673,19 @@ SYSTEM_PROMPT_EL = """\
 - Χρησιμοποίησε μόνο τα γεγονότα που σου δίνονται. Αν δεν σου δόθηκε ένας
   αριθμός ή ένα κανονιστικό όριο, μην τον επινοήσεις.
 
+ΑΠΑΝΤΗΣΗ ΠΡΩΤΑ (ANSWER-FIRST)
+- Η ΠΡΩΤΗ παράγραφος του άρθρου πρέπει να είναι μια άμεση απάντηση 2-3 προτάσεων
+  στο κεντρικό ερώτημα του άρθρου. Γράψτη ΠΡΙΝ από οποιαδήποτε επικεφαλίδα.
+- Αυτή η παράγραφος δεν επαναλαμβάνει τον τίτλο H1 και δεν είναι η meta description.
+  Είναι μια πρακτική απάντηση που δίνει αμέσως αξία στον αναγνώστη.
+- Αν σου δοθεί ΑΠΑΝΤΗΣΗ στις οδηγίες, αντέγραψέ την ακριβώς ως πρώτη παράγραφο.
+  Αν δεν σου δοθεί, γράψε τη δική σου.
+
 ΔΟΜΗ
 - Καθαρό Markdown. Όχι front-matter, όχι H1. Η σελίδα δίνει δικό της H1.
-- Εισαγωγική παράγραφος χωρίς επικεφαλίδα. 3 με 5 προτάσεις, περίπου 90 λέξεις.
-- Μετά, ΑΚΡΙΒΩΣ 8 ενότητες σε H2. ΚΑΘΕ ενότητα ΠΡΕΠΕΙ να έχει 200 με 300 λέξεις.
+- Πρώτα η παράγραφος ΑΠΑΝΤΗΣΗ (βλ. παραπάνω).
+- Μετά εισαγωγική παράγραφος χωρίς επικεφαλίδα. 3 με 5 προτάσεις, περίπου 90 λέξεις.
+- Μετά, ΑΚΡΙΒΩΣ 8 ενότητες σε H2. ΚΑΘΕ ενότητα ΠΡΕΠΕΙ να έχει 250 με 350 λέξεις.
   Χρησιμοποίησε πρόζα ή λίστες ανάλογα με το τι εξυπηρετεί το περιεχόμενο.
 - Τελική παράγραφος χωρίς επικεφαλίδα, περίπου 80 λέξεις. Συνοψίζει χωρίς
   να λέει «εν κατακλείδι» ή κάτι παρόμοιο.
@@ -545,7 +693,7 @@ SYSTEM_PROMPT_EL = """\
   Κάθε ερώτηση γράφεται έτσι (ΑΚΡΙΒΩΣ αυτή η μορφή, καμία παραλλαγή):
   **Ερώτηση σε μία πρόταση;**
   Απάντηση σε 2-4 προτάσεις πρόζας. Χωρίς bullet στις απαντήσεις.
-- ΣΥΝΟΛΟ: 2000 ΛΕΞΕΙΣ ΕΛΑΧΙΣΤΟ χωρίς το FAQ. Με το FAQ τουλάχιστον 2200.
+- ΣΥΝΟΛΟ: 2300 ΛΕΞΕΙΣ ΕΛΑΧΙΣΤΟ χωρίς το FAQ. Με το FAQ τουλάχιστον 2500.
 
 ΕΣΩΤΕΡΙΚΟΙ ΣΥΝΔΕΣΜΟΙ
 - Ενσωμάτωσε ΟΛΟΥΣ τους εσωτερικούς συνδέσμους που σου δίνονται μέσα σε προτάσεις.
@@ -590,9 +738,18 @@ ACCURACY
 - Use only the facts you were given. If a number or a regulatory limit was
   not given to you, do not make one up.
 
+ANSWER FIRST
+- The VERY FIRST paragraph of the article must be a direct 2-3 sentence answer
+  to the core question of the article. Write it BEFORE any heading.
+- This paragraph does not restate the H1 title and is not the meta description.
+  It gives the reader immediate practical value.
+- If an ANSWER is supplied in the instructions, copy it verbatim as the first
+  paragraph. If none is supplied, write your own.
+
 STRUCTURE
 - Plain Markdown. No front-matter. No H1. The page renders its own H1.
-- An intro paragraph with no heading. 2 to 4 sentences. Hook the reader.
+- First: the ANSWER paragraph (see above).
+- Then an intro paragraph with no heading. 2 to 4 sentences. Hook the reader.
 - Then 6 to 8 sections in H2. Each section 200 to 300 words. Use prose or
   lists depending on what the content calls for.
 - A closing paragraph with no heading, about 80 words. Wraps up without
@@ -650,11 +807,32 @@ def build_user_prompt(article: ArticleSpec, locale: Locale) -> str:
     facts_block = "\n".join(f"- {f}" for f in article.facts)
     links_block = "\n".join(f"- {anchor} → {path}" for path, anchor in links)
 
+    answer = article.answer_el if locale == "el" else article.answer_en
+    answer_block = f"\nANSWER (copy this verbatim as your first paragraph):\n{answer}" if answer else ""
+
+    widget_block = (
+        f"\nWIDGET: Place the token {{{{widget:{article.widget_id}}}}} once in the "
+        "article body at a natural break (after a relevant section, not inside a list)."
+    ) if article.widget_id else ""
+
+    infographic_block = (
+        f"\nINFOGRAPHIC: Place the token {{{{infographic:{article.infographic_type}}}}} "
+        "once in the article body, immediately after the first or second H2 section."
+    ) if article.infographic_type else ""
+
+    # EL reminder: model consistently underestimates Greek word count, so add
+    # an explicit check-before-submitting note to push sections to 280-350 words.
+    word_count_reminder = (
+        "\n\nΕΛΕΓΧΟΣ ΠΡΙΝ ΤΕΛΕΙΩΣΕΙΣ: Κάθε ενότητα πρέπει να έχει 280-350 λέξεις. "
+        "Αν κάποια ενότητα έχει λιγότερες από 280 λέξεις, γράψε περισσότερο πριν συνεχίσεις "
+        "στην επόμενη. Σύνολο εκτός FAQ: 2300+ λέξεις."
+    ) if locale == "el" else ""
+
     return f"""\
 {intro_label}
 
 Title (for reference, do not output an H1): {title}
-
+{answer_block}
 {header_label}:
 {sections_block}
 
@@ -663,7 +841,7 @@ Title (for reference, do not output an H1): {title}
 
 {links_label}:
 {links_block}
-
+{widget_block}{infographic_block}{word_count_reminder}
 Now write the article body. Markdown only. No H1.
 """
 
@@ -771,7 +949,7 @@ _GREEK_REPLACEMENTS: tuple[tuple[str, str], ...] = (
 
 
 def _post_process(md: str, locale: Locale) -> str:
-    md = md.replace("-", ",")
+    md = md.replace("—", " - ")  # em-dash → spaced hyphen
     if locale == "el":
         for src, dst in _GREEK_REPLACEMENTS:
             md = md.replace(src, dst)

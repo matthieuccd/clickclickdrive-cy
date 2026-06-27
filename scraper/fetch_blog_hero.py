@@ -132,6 +132,16 @@ def fetch_pexels(query: str, dest: Path) -> bool:
     return True
 
 
+def fetch_article_inline_images(
+    slug: str, queries: tuple[str, ...], force: bool = False
+) -> None:
+    """Fetch inline-N.jpg for each query, saving to public/blog/<slug>/inline-N.jpg."""
+    for i, q in enumerate(queries, 1):
+        dest = WEB_PUBLIC / "blog" / slug / f"inline-{i}.jpg"
+        if not _maybe_skip(dest, force):
+            fetch_pexels(q, dest)
+
+
 def _maybe_skip(dest: Path, force: bool) -> bool:
     if dest.exists() and not force:
         print(
@@ -165,6 +175,15 @@ def main(argv: list[str] | None = None) -> int:
         help="Filename to save inside the slug subfolder (default: hero.jpg).",
     )
     ap.add_argument(
+        "--inline-queries",
+        nargs="+",
+        metavar="QUERY",
+        help=(
+            "Fetch inline-1.jpg, inline-2.jpg, … using these queries. "
+            "Requires --slug. Can be combined with --query for the hero."
+        ),
+    )
+    ap.add_argument(
         "--force",
         action="store_true",
         help="Re-download even if the destination already exists.",
@@ -181,16 +200,27 @@ def main(argv: list[str] | None = None) -> int:
             return 0
         return 0 if fetch_pexels(SCHOOL_FALLBACK_QUERY, SCHOOL_FALLBACK_PATH) else 1
 
-    if not args.slug or not args.query:
+    if not args.slug and not args.default_hero and not args.school_fallback:
         ap.error(
-            "Provide --default-hero, --school-fallback, or both "
-            "--slug and --query for a per-article fetch."
+            "Provide --default-hero, --school-fallback, or --slug "
+            "(with --query and/or --inline-queries)."
         )
 
-    dest = WEB_PUBLIC / "blog" / args.slug / args.output_name
-    if _maybe_skip(dest, args.force):
-        return 0
-    return 0 if fetch_pexels(args.query, dest) else 1
+    if args.slug and not args.query and not args.inline_queries:
+        ap.error("--slug requires at least one of --query or --inline-queries.")
+
+    exit_code = 0
+
+    if args.slug and args.query:
+        dest = WEB_PUBLIC / "blog" / args.slug / args.output_name
+        if not _maybe_skip(dest, args.force):
+            if not fetch_pexels(args.query, dest):
+                exit_code = 1
+
+    if args.slug and args.inline_queries:
+        fetch_article_inline_images(args.slug, tuple(args.inline_queries), args.force)
+
+    return exit_code
 
 
 if __name__ == "__main__":

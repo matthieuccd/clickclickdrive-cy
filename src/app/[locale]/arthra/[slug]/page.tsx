@@ -181,11 +181,30 @@ async function ArticleView({
   const category = getCategoryById(article.categoryId);
   const { prev, next } = getAdjacent(article);
 
-  // Check for optional image2
+  // Build inject-image list: image2.jpg (legacy, after H2 #4) + inline-N.jpg (after H2 #3, #5, #7)
+  type InjectImg = { afterH2: number; src: string; alt: string };
+  const injectImages: InjectImg[] = [];
+
   const image2Src = `/blog/${article.id}/image2.jpg`;
-  const image2Exists = fs.existsSync(
-    path.join(process.cwd(), "public", image2Src.slice(1)),
-  );
+  if (fs.existsSync(path.join(process.cwd(), "public", image2Src.slice(1)))) {
+    injectImages.push({
+      afterH2: 4,
+      src: image2Src,
+      alt: locale === "el" ? "Έγγραφα άδειας οδήγησης" : "Driving licence documents",
+    });
+  }
+
+  const inlinePositions = [3, 5, 7];
+  for (let n = 1; n <= 3; n++) {
+    const src = `/blog/${article.id}/inline-${n}.jpg`;
+    if (fs.existsSync(path.join(process.cwd(), "public", src.slice(1)))) {
+      injectImages.push({
+        afterH2: inlinePositions[n - 1],
+        src,
+        alt: locale === "el" ? "Σχολή οδήγησης Κύπρος" : "Driving in Cyprus",
+      });
+    }
+  }
 
   const pathEl = `/arthra/${article.slug_el}`;
   const pathEn = `/blog/${article.slug_en}`;
@@ -339,13 +358,8 @@ async function ArticleView({
       {body ? (
         <BlogProse
           markdown={body}
-          injectAfterH2={image2Exists ? 4 : undefined}
-          injectImageSrc={image2Exists ? image2Src : undefined}
-          injectImageAlt={
-            locale === "el"
-              ? "Έγγραφα άδειας οδήγησης"
-              : "Driving licence documents"
-          }
+          locale={locale}
+          injectImages={injectImages.length > 0 ? injectImages : undefined}
         />
       ) : (
         <p className="rounded-2xl border border-dashed border-border bg-surface px-6 py-12 text-center text-text-muted">

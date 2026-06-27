@@ -266,6 +266,35 @@ export const BLOG_ARTICLES: readonly BlogArticle[] = [
       "how-to-get-driving-licence-cyprus-foreigner",
     ],
   },
+  {
+    id: "cyprus-driving-licence-complete-guide",
+    slug_el: "plires-odigos-diploma-odigisis-kypros",
+    slug_en: "cyprus-driving-licence-complete-guide",
+    categoryId: "rules",
+    title_el: "Πώς να βγάλετε δίπλωμα οδήγησης στην Κύπρο: Πλήρης Οδηγός 2026",
+    title_en: "How to Get a Driving Licence in Cyprus: Complete 2026 Guide",
+    excerpt_el:
+      "Όλα όσα χρειάζεστε για να βγάλετε κυπριακό δίπλωμα οδήγησης το 2026.",
+    excerpt_en:
+      "Everything you need to know to get a Cyprus driving licence in 2026 — rules, steps, costs, and timelines.",
+    metaDescription_el:
+      "Πλήρης οδηγός 2026 για το δίπλωμα οδήγησης στην Κύπρο. Βήματα, κόστος, εξετάσεις.",
+    metaDescription_en:
+      "Complete 2026 guide to getting a driving licence in Cyprus. Steps, costs, tests, and requirements.",
+    heroImagePath: "/blog/cyprus-driving-licence-complete-guide/hero.jpg",
+    heroImageAlt_el:
+      "Κυπριακή άδεια οδήγησης και κλειδιά αυτοκινήτου",
+    heroImageAlt_en: "Cyprus driving licence and car keys on a table",
+    publishedDate: "2026-06-27",
+    modifiedDate: "2026-06-27",
+    author: "ClickClickDrive Cyprus",
+    relatedCity: null,
+    relatedSlugs: [
+      "how-to-get-driving-licence-cyprus-step-by-step",
+      "exchange-eu-licence-cyprus",
+      "how-to-get-driving-licence-cyprus-foreigner",
+    ],
+  },
 ];
 
 // --- hero image resolution -----------------------------------------------
