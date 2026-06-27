@@ -71,10 +71,13 @@ class ArticleSpec:
     # decision, calculate something, or self-assess? If yes, set widget_id.
     # If no suitable widget exists yet, build the component in the same commit.
     #
+    # Bias toward building. If there is any reasonable case for interactivity,
+    # build the widget. Only leave widget_id empty when the article is purely
+    # informational with no user variables (e.g. a law explainer with no
+    # decisions or calculations the reader needs to make).
+    #
     # Currently built:
     #   "price-calculator"  → cost/fees articles (lesson prices, total cost)
-    #
-    # Default: "" (no widget). Most articles should NOT have a widget.
     widget_id: str = ""
     # Infographic type for the inline SVG. Empty = no infographic.
     infographic_type: str = ""
