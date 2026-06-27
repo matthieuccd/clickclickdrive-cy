@@ -15,6 +15,7 @@ import json
 import os
 import subprocess
 import sys
+from datetime import timezone, timedelta
 from pathlib import Path
 
 ROOT = Path(__file__).parent.parent
@@ -49,6 +50,11 @@ def today_str() -> str:
 
 
 def cadence_met(q: dict) -> bool:
+    next_at_str = q["settings"].get("next_publish_at")
+    if next_at_str:
+        next_at = datetime.datetime.fromisoformat(next_at_str.replace("Z", "+00:00"))
+        return datetime.datetime.now(timezone.utc) >= next_at
+    # Legacy fallback: day-based cadence
     last = q.get("last_publish_date")
     if not last:
         return True
@@ -328,12 +334,23 @@ def publish_auto(article: dict, q: dict, dry_run: bool) -> None:
             break
     q["last_publish_date"] = today
 
+    # Advance next_publish_at: current scheduled time + cadence_days + 65 min
+    cadence_days = q["settings"]["cadence_days"]
+    current_next = q["settings"].get("next_publish_at")
+    if current_next:
+        base = datetime.datetime.fromisoformat(current_next.replace("Z", "+00:00"))
+    else:
+        base = datetime.datetime.now(timezone.utc)
+    new_next = base + timedelta(days=cadence_days, minutes=65)
+    q["settings"]["next_publish_at"] = new_next.strftime("%Y-%m-%dT%H:%M:%SZ")
+
     if not dry_run:
         save_queue(q)
         git_add(*_article_files(article["id"]), BLOG_TS_PATH, QUEUE_PATH)
         git_commit(f"feat(blog): publish {article['id']}")
         git("push")
         print(f"Published: {article['title_en']}")
+        print(f"Next publish scheduled: {q['settings']['next_publish_at']}")
         url_el = f"https://clickclickdrive-cyprus.com/arthra/{article['slug_el']}"
         url_en = f"https://clickclickdrive-cyprus.com/en/blog/{article['slug_en']}"
         emit_github_output("published_url_el", url_el)
@@ -341,6 +358,7 @@ def publish_auto(article: dict, q: dict, dry_run: bool) -> None:
         emit_github_output("published_title", article["title_en"])
     else:
         print(f"(dry-run) would: git add files, commit, push to main")
+        print(f"Next publish would be: {q['settings']['next_publish_at']}")
 
 
 # ---------------------------------------------------------------------------

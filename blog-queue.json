@@ -3,7 +3,8 @@
   "settings": {
     "cadence_days": 2,
     "publish_mode": "auto",
-    "consecutive_clean_approvals": 0
+    "consecutive_clean_approvals": 0,
+    "next_publish_at": "2026-06-29T07:00:00Z"
   },
   "state": {
     "open_pr_number": null,

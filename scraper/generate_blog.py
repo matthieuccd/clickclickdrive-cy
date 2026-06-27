@@ -64,8 +64,21 @@ class ArticleSpec:
     # model writes its own per the ANSWER block in the system prompt.
     answer_el: str = ""
     answer_en: str = ""
-    # Inline widget token to embed in the article body (e.g. "price-calculator").
+    # Inline widget token to embed in the article body.
     # The model places {{widget:<widget_id>}} at a sensible point in the body.
+    #
+    # CHECKLIST — only set widget_id when an interactive tool genuinely adds
+    # value for the reader. Ask: "would a real person use this to make a
+    # decision, calculate something, or self-assess?" If no, leave it empty.
+    #
+    # Available widgets and when to use them:
+    #   "price-calculator"  → articles about cost/fees (lesson prices, total
+    #                         licence cost). DO NOT use on rule/law articles.
+    #   "theory-quiz"       → theory test prep articles. Self-assessment only.
+    #   "time-estimator"    → timeline articles ("how long does it take?").
+    #                         Only when the answer depends on user variables.
+    #
+    # Default: "" (no widget). Most articles should NOT have a widget.
     widget_id: str = ""
     # Infographic type for the inline SVG. Empty = no infographic.
     infographic_type: str = ""

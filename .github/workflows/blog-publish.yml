@@ -2,8 +2,9 @@ name: Blog Publish
 
 on:
   schedule:
-    # Runs at 07:00 UTC daily
-    - cron: "0 7 * * *"
+    # Runs every hour. publish_next.py checks next_publish_at in blog-queue.json
+    # and exits early if it's not time yet — staggered by 65 min per article.
+    - cron: "0 * * * *"
   workflow_dispatch:
     inputs:
       publish_mode:
