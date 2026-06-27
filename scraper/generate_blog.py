@@ -67,16 +67,12 @@ class ArticleSpec:
     # Inline widget token to embed in the article body.
     # The model places {{widget:<widget_id>}} at a sensible point in the body.
     #
-    # CHECKLIST — only set widget_id when an interactive tool genuinely adds
-    # value for the reader. Ask: "would a real person use this to make a
-    # decision, calculate something, or self-assess?" If no, leave it empty.
+    # Decide: would an interactive tool genuinely help this reader make a
+    # decision, calculate something, or self-assess? If yes, set widget_id.
+    # If no suitable widget exists yet, build the component in the same commit.
     #
-    # Widgets must be built before they can be referenced here. Currently built:
+    # Currently built:
     #   "price-calculator"  → cost/fees articles (lesson prices, total cost)
-    #
-    # There is no fixed list — any interactive tool can be built on request.
-    # If an article calls for something new (quiz, timeline estimator, school
-    # comparator, checklist, map, etc.) flag it and build the component first.
     #
     # Default: "" (no widget). Most articles should NOT have a widget.
     widget_id: str = ""
