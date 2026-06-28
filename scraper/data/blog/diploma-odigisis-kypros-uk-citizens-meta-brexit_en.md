@@ -1,4 +1,4 @@
-You can still drive in Cyprus on your UK licence for a limited period, but Brexit changed the long-term rules. To keep driving legally, most UK residents in Cyprus will need to exchange their licence for a Cypriot one. The exact process depends on whether a bilateral agreement is in place between Cyprus and the UK right now.
+After Brexit, a UK driving licence is treated as a third-country licence in Cyprus, not an EU one. This means you can no longer simply swap it over without extra steps. The exact process depends on whether a bilateral agreement between Cyprus and the UK is currently in force, so check with the Department of Road Transport before you do anything.
 
 - [What did Brexit change for UK licence holders in Cyprus?](#what-did-brexit-change-for-uk-licence-holders-in-cyprus)
 - [Is your UK licence currently valid in Cyprus?](#is-your-uk-licence-currently-valid-in-cyprus)
@@ -7,133 +7,140 @@ You can still drive in Cyprus on your UK licence for a limited period, but Brexi
 - [Do you need to sit a test?](#do-you-need-to-sit-a-test)
 - [Does driving on the left give UK drivers an advantage?](#does-driving-on-the-left-give-uk-drivers-an-advantage)
 - [What is the step-by-step process for UK citizens in Cyprus?](#what-is-the-step-by-step-process-for-uk-citizens-in-cyprus)
+- [FAQ](#faq)
 
-Moving to Cyprus from the UK used to be simple when it came to driving. Your licence worked the same as any EU one. Then Brexit happened, and the rules shifted in ways that many UK expats did not expect. If you live in Cyprus or are planning to move here, this is what you need to know before you get behind the wheel.
+Many UK citizens who moved to Cyprus before or after Brexit assumed their driving licence situation would stay the same. It did not. The rules shifted in a way that caught many people off guard. If you are a UK national living here, or planning to move, this is what you actually need to know.
 
 ## What did Brexit change for UK licence holders in Cyprus?
 
-For years, UK driving licences had the same standing as EU licences across all member states, including Cyprus. That changed on 31 January 2020, the day the UK officially left the European Union.
+Before Brexit, a UK licence worked across the EU on equal terms. Cyprus accepted it the same way it accepted a French or German licence. Exchanging it for a Cypriot one was a simple, paperwork-led process with no tests involved.
 
-Before Brexit, a UK licence holder living in Cyprus could simply exchange their licence without jumping through many hoops. The process was close to automatic. Cyprus treated UK licences the same way it treated licences from Germany, France, or any other EU country.
+That changed on 31 January 2020, when the UK left the EU. From that date, UK licences lost their automatic EU-equivalent treatment in Cyprus. Overnight, a UK licence became what officials call a third-country licence. That puts it in the same legal category as a licence from, say, Australia or Russia.
 
-After Brexit, that automatic treatment disappeared. Cyprus now treats a UK licence as a third-country licence. That is a big shift. Third-country licences do not enjoy the same easy exchange rights as EU ones.
+This does not mean your UK licence became worthless. It means the rules that apply to it are different, and in some ways more demanding. The automatic right to a straightforward exchange was gone.
 
-What does that mean in practice? It means UK residents in Cyprus can no longer walk into the Department of Road Transport and do a simple swap. The rules that apply to you now are closer to those that apply to someone from the United States or Australia, not someone from Greece or Germany.
+For people already living in Cyprus when Brexit happened, this created real uncertainty. Many had never thought twice about their licence. Suddenly they needed to find out whether they could still legally drive, and what they needed to do to get a Cypriot licence.
 
-It also means the situation is more complex than it was before. The [foreigner licence guide for Cyprus](/en/blog/how-to-get-driving-licence-cyprus-foreigner) gives you a broader picture of how the system works for non-EU residents. But for UK citizens specifically, the post-Brexit reality has added extra steps and, in some cases, extra tests.
+The core issue is this: Cyprus, like all EU member states, treats third-country licences differently from EU ones. The process for exchanging a third-country licence can involve extra steps, including tests. Whether those extra steps apply to UK drivers specifically depends on agreements made between Cyprus and the UK after Brexit.
 
-The Department of Road Transport is the only official body that can tell you exactly where things stand today. Rules can change, and anything you read online, including this article, should be checked against the current official position before you act.
+If you want a broader picture of what getting a licence in Cyprus involves as a non-EU resident, the [foreigner licence guide for Cyprus](/en/blog/how-to-get-driving-licence-cyprus-foreigner) is a good place to start.
 
 ## Is your UK licence currently valid in Cyprus?
 
-This is the question most UK expats ask first. The short answer is: it depends on your situation.
+This is the question most people ask first, and the honest answer is: it depends on your situation.
 
-If you are visiting Cyprus as a tourist, your UK licence is generally accepted for driving. But if you are a resident, the rules are stricter.
+If you are a tourist visiting Cyprus from the UK, your UK licence is valid for driving during your stay. Cyprus recognises it for short visits. You do not need an international driving permit for short trips, though carrying one is never a bad idea.
 
-Once you take up official residence in Cyprus, you are expected to hold a licence that is valid for use by residents, not just visitors. A UK licence, post-Brexit, is treated as a third-country licence. That means the clock starts ticking once you register as a resident.
+If you are a resident in Cyprus, the situation is different. Once you take up residence, you are expected to hold a Cypriot licence. Driving on a UK licence as a long-term resident puts you in a legal grey area. The longer you stay without exchanging, the more exposed you are.
 
-Cyprus does not allow residents to drive indefinitely on a foreign third-country licence. At some point, you will need to convert it to a Cypriot one. Driving without the correct licence could mean a fine, and in a worst case it could affect your insurance cover.
+For UK nationals who became residents before Brexit, there was a transition period with some protections. But those protections have an end point. Relying on them now is risky.
 
-The exact time limits and grace periods can change. That is why you should contact the Department of Road Transport directly to ask about your specific category of licence and your residency status. Do not assume the rules you read about last year still apply today.
+The practical rule is simple. If you live in Cyprus, you should have a Cypriot licence. The Department of Road Transport is the only body that can tell you definitively whether your specific licence, in your specific situation, is currently valid for your use. Do not rely on what a neighbour or an expat forum told you. Go to the source.
 
-One thing is clear: doing nothing is not a safe option if you live in Cyprus and hold only a UK licence. You need to find out where you stand and act on it.
+It is also worth knowing that a Cypriot licence, once you have it, is valid across the entire EU. That is a significant benefit, especially if you travel to other EU countries or plan to move within Europe later.
 
 ## What does the bilateral agreement between Cyprus and the UK say?
 
-Cyprus and the UK have explored bilateral agreements on licence exchange since Brexit. A bilateral agreement is a deal between two countries that sets specific terms for how each country treats the other's licences.
+Cyprus and the UK have discussed bilateral arrangements to make the licence exchange process easier for UK nationals. Such agreements can allow for a simplified exchange without the need to sit tests, similar to how the old EU system worked.
 
-If a valid bilateral agreement is in place, it can make the exchange process easier. It might allow UK licence holders to swap without sitting a test. But the status of these agreements can change. A deal that existed last year might have been updated or replaced.
+However, the status of these agreements can and does change. What was true last year may not be true today. The terms can be updated, paused, or altered without much public notice.
 
-This is not a small detail. Whether or not a bilateral agreement is active directly affects what you will need to do. With one in place, the process can be closer to the [EU licence exchange process](/en/blog/exchange-eu-licence-cyprus). Without one, you may face a full application as a third-country national, which can include theory and practical tests.
+This matters because the bilateral agreement, if active and applicable to your situation, is what determines whether you need to sit a theory test, a practical test, both, or neither. Getting this wrong costs you time and money.
 
-The Department of Road Transport is the only source you should trust for the current status of any bilateral arrangement. Check with them before you start gathering documents or booking tests. Going in with wrong information will cost you time and possibly money.
+The only reliable source for the current status of any bilateral arrangement is the Department of Road Transport in Cyprus. Their official name in Greek is Τμήμα Οδικών Μεταφορών. You can visit them in person or check their official communications. Do not assume the situation is the same as it was when your friend exchanged their licence two years ago.
 
-If a bilateral agreement is in force when you apply, ask the Department to confirm this in writing or point you to the official notice. That way you have a clear record of the rules that apply to your application.
+If a bilateral agreement is not in place, or does not cover your licence category, you will be treated as a standard third-country licence holder. That typically means going through more of the standard licence process, which could include tests.
+
+For comparison, you can see how the [EU licence exchange process](/en/blog/exchange-eu-licence-cyprus) works. The UK process post-Brexit may differ considerably depending on current bilateral terms.
+
+{{infographic:uk-exchange}}
 
 ## What documents do UK drivers need?
 
-Whatever the current bilateral agreement status, you will need to show the Department of Road Transport that you are who you say you are, that you live in Cyprus, and that you hold a valid foreign licence. Here is what is typically required:
+Even in the most straightforward exchange scenario, you will need to bring a set of documents to the Department of Road Transport. Getting these ready before you go saves you from making multiple trips.
+
+Here is what is typically required:
 
 - Valid passport
-- Proof of Cyprus residence (such as a registration certificate or utility bill)
-- A recent passport-style photo
+- Proof of Cyprus residence (a registration certificate or utility bill in your name)
+- A recent passport-style photograph
 - A medical certificate from an approved doctor
-- Your original UK licence
+- Your original UK driving licence
 - A certified translation of your UK licence, if required
 
-On the translation point: UK licences use Latin characters. That does simplify things compared to a licence written in Arabic or Chinese script. But a certified translation may still be required as a formality, depending on current rules. Ask the Department whether you need one before paying for a translation.
+The translation point is worth explaining. UK licences use Latin characters, which is helpful. Cyprus authorities can generally read the text. In some cases this reduces or removes the need for a full certified translation. But do not assume this applies to you. Ask the Department of Road Transport directly whether your licence needs translation before you pay for one.
 
-The medical certificate is often overlooked by UK applicants. Cyprus requires you to pass a basic medical check before a licence is issued. Your GP or an approved local doctor can carry this out. It is not a difficult test, but you do need the paperwork.
+The medical certificate is something many people overlook. Cyprus requires it for licence applications. You need to see an approved medical professional who can confirm you meet the health standards for driving. Your GP may be able to help, but check what the Department of Road Transport accepts.
 
-Keep your original UK licence safe. You will need to hand it over as part of the exchange. Make sure it is not expired before you start the process. An expired UK licence will cause your application to stall.
-
-If you are unsure about any documents, the [step-by-step driving licence guide](/en/blog/how-to-get-driving-licence-cyprus-step-by-step) walks through what Cyprus requires in detail.
+All documents should be originals or certified copies where copies are required. Bring both just in case. The process is not forgiving of missing paperwork.
 
 ## Do you need to sit a test?
 
-This is the question that worries UK applicants most. The honest answer is: maybe.
+This is the question that worries most people, and the answer is genuinely uncertain without knowing the current state of the bilateral agreement.
 
-Under a valid bilateral agreement, you may be able to exchange your UK licence without sitting any test. The logic is that both countries recognise each other's driving standards as broadly equivalent.
+If the bilateral agreement between Cyprus and the UK is in place and covers your situation, you may be able to exchange your licence without sitting any tests. This would mirror the old EU exchange process, which was document-based.
 
-Without a bilateral agreement, or if your licence falls into a category not covered by one, you could be required to sit a theory test, a practical test, or both. This is what happens with most third-country nationals applying in Cyprus.
+If no such agreement applies to you, or if your licence category is not covered, you may face one or both of the following:
 
-The theory test in Cyprus covers road signs, traffic law, and safe driving. It is available in English, which removes the language barrier for UK applicants. If you do need to sit it, study the Cypriot version of the Highway Code. Some rules differ from the UK version.
+- A theory test covering Cypriot road rules and traffic law
+- A practical driving test
 
-If you need a practical test, you will have to book lessons with an approved Cypriot driving school. Instructors there know what examiners look for, and they can point out any differences between UK and Cypriot driving habits. You can find [driving schools in Nicosia](/en/driving-schools/nicosia) if that is where you are based.
+The theory test in Cyprus is computer-based and covers road signs, rules, and hazard awareness. It is available in English, which is an obvious advantage for UK nationals. The practical test follows standard European driving test formats.
 
-The minimum age for a Category B licence in Cyprus is 18. If you are applying to exchange a UK licence, this will not affect you, but it is worth knowing if you have young family members who need a licence here.
+The minimum age for a Category B licence in Cyprus is 18. If you are exchanging a UK licence you already hold, this is unlikely to be an issue. But if you are applying for the first time here, it is relevant.
 
-Always confirm with the Department of Road Transport whether tests are required in your case before booking anything.
+Even if you do not need to sit tests, it is sensible to brush up on Cypriot road rules. Some signs and rules differ from the UK. Speed limits, road markings, and priority rules at junctions can catch people out.
+
+If you do end up needing lessons, finding a good school matters. You can look at [driving schools in Nicosia](/en/driving-schools/nicosia) if that is where you are based.
 
 ## Does driving on the left give UK drivers an advantage?
 
-Yes, genuinely. This is one area where UK drivers have a real edge over most other foreign licence applicants in Cyprus.
+Yes, and it is a more significant advantage than it might seem.
 
-Cyprus drives on the left, the same as the UK. This is not common across Europe. Most EU countries drive on the right. When a German or French driver moves to Cyprus, they have to adapt to an entirely different side of the road. For UK drivers, there is no such adjustment.
+Cyprus is one of only a handful of countries outside the UK that drives on the left. This is a legacy of British colonial rule, which ended in 1960. The road layout, the position of the steering wheel in local cars, the way junctions work - all of it will feel familiar to a UK driver.
 
-You already know how to read left-hand traffic. You already know the feel of roundabouts in a left-hand drive system. You know how to overtake safely on the left. That experience transfers directly.
+Drivers moving from the UK to most other EU countries face a real adjustment. They have to retrain their instincts for right-hand traffic. This takes time and mental effort, especially at roundabouts and when turning. It is a genuine road safety issue in the early weeks.
 
-In a practical test situation, this matters. Examiners watch for hesitation, incorrect lane use, and poor junction decisions. UK drivers, having grown up with left-hand traffic, are unlikely to make the basic errors that catch out drivers who are new to driving on the left.
+UK drivers in Cyprus do not have this problem. You get in the car, you drive on the left, and it feels normal. That reduces the stress of the transition considerably.
 
-It also means settling into daily driving in Cyprus is faster. The roads, the roundabouts, and the general flow of traffic will feel familiar. Rural roads in Cyprus are narrow in places, but the logic of the road is the same as at home.
+It also means that any practical test you might have to sit will feel more natural. You are not being assessed on a skill you have only recently learned. You are driving the way you have always driven.
 
-This does not mean you can skip preparation for a practical test. Cypriot roads have their own quirks, and local driving habits vary. But the fundamental skill of driving on the left is already yours.
+This shared road culture also extends to general driving habits. Many road signs in Cyprus are in both Greek and English. English is widely spoken and understood. For a UK driver, Cyprus is genuinely one of the least disorienting countries in the EU to drive in.
 
 ## What is the step-by-step process for UK citizens in Cyprus?
 
-The process is not complicated once you know what to expect. Here is how it generally works:
+Once you know your situation and have confirmed the current rules with the Department of Road Transport, the process itself is manageable. Here is a general outline.
 
-1. Check the current rules with the Department of Road Transport. Ask specifically about UK licences and whether a bilateral agreement is active.
-2. Gather your documents. Use the list in the section above as a starting point, but confirm the exact list with the Department.
-3. Get a medical certificate from an approved doctor.
-4. Get a certified translation of your UK licence if the Department tells you one is needed.
-5. Book any required tests. If a theory test is needed, study the Cypriot material in English. If a practical test is needed, book lessons with an approved school.
-6. Submit your application at the Department of Road Transport with all documents and any applicable fees.
-7. Wait for your Cypriot licence to be issued.
+1. Contact the Department of Road Transport to confirm the current rules for UK licence holders, including whether any bilateral agreement applies to you.
+2. Gather your documents: passport, proof of residence, photo, medical certificate, original UK licence, and translation if required.
+3. Book and complete a medical examination with an approved doctor if you have not already.
+4. If tests are required, register for the theory test first. Study the Cypriot highway code and road signs in English.
+5. Pass the theory test, then book your practical test if that is also required.
+6. If you need lessons before the practical, find a registered driving school.
+7. Submit your full application at the Department of Road Transport with all documents and the appropriate fee. Check current fees directly with the Department.
+8. Collect your Cypriot licence once it is issued.
 
-One thing worth knowing: once you hold a Cypriot driving licence, it is valid across the entire EU. That is a real benefit if you travel often to EU countries or plan to move elsewhere in Europe later.
+The [step-by-step driving licence guide](/en/blog/how-to-get-driving-licence-cyprus-step-by-step) goes into more detail on several of these stages and is worth reading alongside this article.
 
-Check current fees with the Department of Road Transport before you apply. Fees change, and published figures online are not always up to date.
+The whole process can take several weeks depending on appointment availability and how quickly you can get your documents together. Start early. Do not leave it until your UK licence is about to expire or until you have already been stopped by police and had awkward questions asked.
 
-If you want general guidance on getting started in Cyprus, [ClickClickDrive Cyprus](/en) covers a range of driving topics relevant to expats here.
+For more general help with driving and car-related questions in Cyprus, [ClickClickDrive Cyprus](/en) covers a range of topics that UK expats often find useful.
 
-The whole process takes time, especially if tests are involved. Start as soon as you register as a resident. Do not leave it until your insurance provider or the police raise the issue.
-
-Getting your Cypriot licence is one of those admin tasks that feels daunting but is very manageable once you start. UK drivers have the language advantage and the left-hand driving advantage. With the right documents and current advice from the Department of Road Transport, most applicants get through the process without major problems. The key is not to assume the rules are the same as before Brexit, and not to rely on secondhand information that may already be out of date.
+Getting your licence sorted properly is one of those tasks that feels like a burden until it is done. Once you hold a valid Cypriot licence, you have an EU licence that works across the continent. That is a genuinely useful thing to have, and it is worth putting in the effort to get it right. The Department of Road Transport is straightforward to deal with if you arrive prepared and with the right paperwork. Do your homework first and the process is far less painful than it sounds.
 
 ## FAQ
 
-**Does a UK driving licence still work in Cyprus after Brexit?**
-For short visits, a UK licence is generally accepted. For residents, Cyprus now treats a UK licence as a third-country licence, which means you will need to exchange it. The exact rules depend on whether a bilateral agreement between Cyprus and the UK is currently active.
+**Does my UK driving licence automatically convert to a Cypriot one after Brexit?**
+No. Since Brexit, a UK licence is treated as a third-country licence in Cyprus. There is no longer an automatic conversion. The process you go through depends on the current status of any bilateral agreement between Cyprus and the UK, which you should confirm with the Department of Road Transport.
 
-**Will I have to take a driving test to get a Cypriot licence?**
-It depends on the current status of any bilateral agreement between Cyprus and the UK. If one is active, you may be able to exchange without a test. If not, you could be required to sit a theory test, a practical test, or both. Check with the Department of Road Transport before making any plans.
+**Can I drive in Cyprus on my UK licence if I live there permanently?**
+Long-term residents are expected to hold a Cypriot licence. Driving on a UK licence as a permanent resident carries legal risk. The rules on how long you can use a foreign licence before exchanging it should be confirmed directly with the Department of Road Transport, as the position can change.
 
-**How long can I drive on my UK licence after moving to Cyprus?**
-There is no fixed public deadline that applies to every case, and grace periods can change. Once you become a resident, you should contact the Department of Road Transport to find out your specific position. Do not assume you have a set number of months without checking.
+**Will I have to retake my driving test to get a Cypriot licence?**
+You might. If a bilateral agreement between Cyprus and the UK is currently in force and covers your licence category, you may be able to exchange without sitting tests. If not, a theory test, a practical test, or both may be required. Check with the Department of Road Transport to find out what applies to you.
 
-**What happens to my UK licence when I exchange it?**
-You hand over your original UK licence as part of the application. In return, you receive a Cypriot licence. That Cypriot licence is valid across the EU, which can be useful if you travel or relocate within Europe later.
+**What happens to my Cypriot licence if I later move to another EU country?**
+A Cypriot driving licence is an EU licence. If you move to another EU member state, your Cypriot licence is recognised and can generally be exchanged for that country's licence through the standard EU process. This is one of the main practical benefits of getting a Cypriot licence rather than continuing to hold only a UK one.
 
-**Is English available for the Cypriot theory test?**
-Yes. The theory test in Cyprus is available in English, which removes the language barrier for UK applicants. If you do need to sit the test, make sure you study the Cypriot version of road rules, as some signs and regulations differ from those in the UK.
+**Do I need an international driving permit to drive in Cyprus as a UK visitor?**
+For short tourist visits, Cyprus recognises a valid UK driving licence without requiring an international driving permit. However, carrying one alongside your UK licence is straightforward and removes any ambiguity. If your visit turns into a longer stay or permanent residence, the rules change and you will need to look at exchanging your licence.

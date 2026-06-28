@@ -1,4 +1,4 @@
-You can drive a standard car in Cyprus under a Category B licence. It covers vehicles up to 3,500 kg with up to 8 passenger seats. Getting one takes a learner's licence, theory test, and a practical test on real public roads.
+Category B is the standard car licence in Cyprus. It lets you drive passenger vehicles up to 3,500 kg with up to 8 passengers. If you are new to Cyprus or starting from scratch, this guide covers everything you need.
 
 - [What does Category B cover?](#what-does-category-b-cover)
 - [What is the minimum age and what are the requirements?](#what-is-the-minimum-age-and-what-are-the-requirements)
@@ -9,130 +9,124 @@ You can drive a standard car in Cyprus under a Category B licence. It covers veh
 - [Can you tow with a Category B licence in Cyprus?](#can-you-tow-with-a-category-b-licence-in-cyprus)
 - [How long is your Cyprus Category B licence valid and when must you renew?](#how-long-is-your-cyprus-category-b-licence-valid-and-when-must-you-renew)
 
-If you live in Cyprus and want to drive, Category B is the licence you almost certainly need. Most people never go beyond it. But the process here has its own rules, its own offices, and a few surprises that catch foreigners off guard. This guide covers everything from the first form to the final test.
+Cyprus drives on the left, just like the UK. The roads here can surprise newcomers - narrow village streets, fast dual carriageways, and roundabouts that follow their own local logic. Getting your Category B licence properly means you understand the rules before you are out there alone. This guide walks you through every step, from the first piece of paperwork to the day you pass your test.
 
 ## What does Category B cover?
 
-Category B is the standard car licence. In Cyprus, as across the EU, it lets you drive a vehicle that weighs up to 3,500 kg and carries no more than 8 passengers, not counting you as the driver. That covers the vast majority of private cars, SUVs, and small vans on the road.
+Category B is what most people mean when they say "a driving licence." In Cyprus, it authorises you to drive a motor vehicle with a maximum weight of 3,500 kg and a seating capacity of up to 8 passengers, not counting the driver. That covers almost every standard car, estate, SUV, and small van you will see on the road day to day.
 
-It does not cover motorcycles, large vans over the weight limit, minibuses with more seats, or heavy goods vehicles. Those need their own categories.
+What it does not cover is heavier vehicles, minibuses with more than 8 passenger seats, buses, or trucks. Those require different categories - C, D, and others. For most people living and working in Cyprus, though, Category B is the only licence they will ever need.
 
-One thing that often surprises newcomers: a Cyprus Category B licence is valid across all EU member states. You do not need a separate licence every time you cross a border into another EU country. The licence you earn here works in France, Germany, Greece, and the rest. That matters a lot if you travel for work or plan to move around Europe later.
+One practical point worth knowing: a Category B licence from Cyprus is recognised across all EU member states. So if you earn your licence here and later move to France, Germany, or anywhere else in the EU, you do not start again. You exchange it. If you already hold an EU licence and are wondering whether you need to go through this whole process, check the article on [exchanging an EU licence](/en/blog/exchange-eu-licence-cyprus) first - you may have a simpler route.
 
-If you are unsure whether you even need to get a new licence - for example, if you already hold a licence from another country - the [licence guide for foreigners](/en/blog/how-to-get-driving-licence-cyprus-foreigner) explains your options clearly. Some people can exchange their existing licence rather than start from scratch.
+Cyprus issues Category B licences through the Department of Road Transport. There are five offices across the island: Nicosia (the headquarters), Limassol, Larnaca, Paphos, and Paralimni. You go to the office that covers the area where you live. That is also the city where your practical test will be held.
 
-Category B is also the base you build on. If you later want to tow a heavier trailer or drive a slightly larger vehicle, you add a sub-category on top of it. But for everyday driving in Cyprus, Category B is all you need.
+For a broader overview of the whole process before you read further, the [step-by-step driving licence guide](/en/blog/how-to-get-driving-licence-cyprus-step-by-step) is a good place to start.
 
 ## What is the minimum age and what are the requirements?
 
-You must be at least 18 years old to apply for a Category B licence in Cyprus. There is no provisional period at 17, as there is in some other countries. Eighteen is the hard minimum, full stop.
+The minimum age to apply for a Category B licence in Cyprus is 18. There are no provisional younger-age schemes like the one in the UK. You must be 18 before you can apply for a learner's licence, and you must hold that learner's licence before you can start formal lessons with an instructor.
 
-Beyond age, you need to meet a set of basic requirements before the Department of Road Transport will process your application.
-
-Here is what you need to bring:
+Beyond age, here is what you will need to bring to the Department of Road Transport:
 
 - A valid passport or national ID card
-- Proof of Cyprus residence (a utility bill or rental contract usually works)
-- A recent passport-style photo
+- Proof of Cyprus residence (a utility bill, rental contract, or similar document)
+- A recent passport-style photograph
 - A medical certificate from a registered doctor confirming you are fit to drive
 
-The medical check is straightforward for most people. Your GP can do it. The doctor looks at eyesight, general health, and whether any condition could affect your ability to drive safely. If you wear glasses or contact lenses, make sure you have them with you at the appointment.
+The medical certificate is not just a formality. The doctor checks your eyesight, general health, and any conditions that could affect your ability to drive safely. Make sure you visit a registered doctor - not every clinic will issue the right form.
 
-The Department of Road Transport has five offices across the island: Nicosia (the headquarters), Limassol, Larnaca, Paphos, and Paralimni. You apply at the office that covers your area of residence. Do not show up without checking current office hours first - they change, and queues can be long.
+If you are not a Cyprus citizen, the process has a few extra layers. The [licence guide for foreigners](/en/blog/how-to-get-driving-licence-cyprus-foreigner) explains the specific requirements for non-EU nationals and residents. Some people find the language barrier the biggest hurdle. The good news is that the Department of Road Transport does provide services in English, and you can take your theory test in English too.
 
-Check current fees with the Department of Road Transport before you go. Fee amounts are not published centrally in a way that stays up to date, so it is worth calling ahead.
+Fees apply at various stages of the process. Check current fees with the Department of Road Transport, as these can change. Do not rely on figures you find in Facebook groups - they are often out of date.
 
 ## How do you get a Category B learner's licence?
 
-The first official step is getting a Learner's Licence. In Greek, it is called an εκπαιδευτική άδεια. Without it, you cannot legally take driving lessons on public roads in Cyprus.
+The learner's licence is called an εκπαιδευτική άδεια in Greek. You apply for it in person at your local Department of Road Transport office. Bring all the documents listed above. Staff will check them, take your details, and issue the learner's permit if everything is in order.
 
-You apply for the learner's licence at your local Department of Road Transport office. Bring all the documents listed above. Once your application is accepted and the fee is paid, you will receive the learner's licence. This is not your full driving licence. It is permission to practise under supervision.
+Once you have the learner's licence, you are not yet allowed to drive on your own. It is a permit to learn - nothing more. You can only drive when accompanied by a licensed instructor, in a dual-control vehicle, on official lessons. Driving unsupervised with a learner's licence is illegal and will cause serious problems if you are stopped.
 
-The [step-by-step driving licence guide](/en/blog/how-to-get-driving-licence-cyprus-step-by-step) walks through exactly what happens at the office and what to expect on your first visit. If this is your first time dealing with Cypriot bureaucracy, that guide will save you time.
+The learner's licence is the gateway to everything else. Without it, no driving school can officially enrol you for lessons, and you cannot book your theory test. Get this step done first.
 
-Once you have the learner's licence, you are ready to book lessons. You cannot just go out and practise in a friend's car. The law in Cyprus requires that your lessons happen with a licensed instructor, in a proper driving school vehicle. This is not optional - it is how the system works here.
+{{infographic:licence-steps}}
 
-The whole process from application to test can take a few months, depending on how quickly you progress and how busy your local office is. Some people move through it in eight to ten weeks. Others take longer. There is no fixed deadline, so you can go at your own pace.
+The Department of Road Transport offices are open on weekdays. Go early if you can - queues build up through the morning, especially at the Nicosia headquarters. The Paralimni and Paphos offices tend to be quieter. Bring originals and photocopies of all your documents. Staff sometimes ask for both.
 
 ## What do your driving lessons cover?
 
-Your lessons must take place in a dual-control car. The instructor has their own brake pedal on the passenger side. The car must display red L plates on the front and rear while you are learning. These are not optional extras. They are legal requirements.
+All lessons must be taken with a licensed driving instructor in a dual-control car. The car must display red L plates on the front and rear. These are not optional. If you are spotted on the road in a lesson car without proper L plates, it can cause trouble for both you and your instructor.
 
-A licensed instructor will take you through everything you need to handle a car safely on Cypriot roads. That includes basic vehicle control, hill starts (and Cyprus has plenty of hills), roundabouts, parking, and dealing with the specific conditions you will face here - narrow village streets, fast rural roads, and the organised chaos of city driving in Nicosia or Limassol.
+Lessons cover everything from basic vehicle control - steering, braking, gear changes - to more complex skills like motorway driving, roundabouts, and parking. Your instructor will also make sure you understand Cyprus-specific road rules, because there are a few habits local drivers have that you will need to know about.
 
-Your instructor will also prepare you for the practical test format. They know what examiners look for and where common mistakes happen.
+There is no fixed minimum number of hours required by law before you can take the practical test. In practice, most instructors recommend between 30 and 40 hours for a complete beginner. Some people need more, some fewer. Your instructor will tell you honestly when they think you are ready.
 
-If you are looking for a school, [driving schools in Nicosia](/en/driving-schools/nicosia) is a good place to start comparing options in the capital. Schools vary in price, availability, and teaching style, so it is worth checking a few before you commit.
+If you are based in the capital and looking for a school, the list of [driving schools in Nicosia](/en/driving-schools/nicosia) can help you find a licensed instructor near you. Prices vary between schools. Ask about lesson packages before you commit.
 
-There is no national minimum number of lessons set by law. Some people are ready after 20 hours. Others need 40 or more. Your instructor will tell you honestly when they think you are ready to test. A good instructor will not push you to test too early.
-
-Lessons are mostly conducted in Greek, but many schools in larger cities have English-speaking instructors. Ask before you book.
+Your instructor will also guide you on when to book the theory test. Most people sit the theory test before completing all their practical hours. The two processes can run in parallel.
 
 ## What is the Category B theory test like?
 
-The theory test is called the γραπτή εξέταση in Greek. It is a written exam, and you can take it in Greek or in English. For most foreigners living in Cyprus, the English option is the practical choice.
+The theory test is called the γραπτή εξέταση. It is a written exam that covers road signs, traffic rules, and safe driving behaviour. You can take it in Greek or in English. For most foreigners living in Cyprus, English is the obvious choice.
 
-The test covers three main areas: road signs, traffic rules, and safe driving. The questions are multiple choice. You will need to study the official material, which covers Cyprus-specific signs and rules. Do not assume your knowledge from another country will be enough. Some rules differ here, and the signs can vary too.
+The test is held at the Department of Road Transport. Your driving school will usually help you book it, or you can contact the department directly. You need your learner's licence to sit the test.
 
-You book the theory test through the Department of Road Transport. You will be given a date and a test centre. Results are usually given on the day or shortly after. If you do not pass, you can retake it. There is no limit on attempts, but each attempt requires a new booking and a new fee.
+The questions are multiple choice. They test whether you know what road signs mean, how to behave at junctions, what to do in an emergency, and how safe driving principles apply in real situations. The question bank is not published openly, but your driving instructor and school will have practice materials.
 
-The best way to prepare is to get the official study material from the Department of Road Transport and work through it section by section. There are also practice question banks available online. Use them. The more questions you see before the real test, the less likely you are to be caught out by phrasing or an unusual sign.
+Preparing properly matters. Do not assume that because you have driven for years in another country you will pass easily. Cyprus uses EU-standard signs, but the rules around priority, pedestrian crossings, and speed limits have specific local applications. Take the practice tests seriously.
 
-Once you pass the theory test, you can move on to booking the practical test. Both passes are required before you can hold a full Category B licence.
+If you fail, you can resit the test. There is a waiting period between attempts. Check current fees with the Department of Road Transport for resit costs. Passing the theory test is required before you can book your practical test. You cannot sit the practical without a theory pass.
 
 ## What happens at the Category B practical test?
 
-The practical test is conducted by an examiner from the Department of Road Transport. Unlike some countries where tests happen on closed circuits, in Cyprus you drive on real public roads in the city where you trained. The examiner sits in the passenger seat and observes.
+The practical test is conducted by an examiner from the Department of Road Transport. It takes place on real public roads in your city - not a closed course. This is important. You will be driving in actual traffic, not a controlled environment.
 
-The test is not a fixed route. The examiner will direct you in real time. You are expected to follow instructions, react to real traffic, and show that you can drive safely and confidently. There is no second car or safety instructor with you. It is just you and the examiner.
+The examiner will ask you to do various things during the test: pull away from the kerb, follow road signs, handle junctions, deal with roundabouts, reverse, and park. They will also check that you do proper mirror and blind-spot checks before every manoeuvre.
 
-You will be assessed on things like speed control, observation at junctions, use of mirrors, lane discipline, and how you handle other road users. Stalling, hesitating too long, or making a serious error - like pulling into oncoming traffic - will end the test early.
+The test starts and ends at the local Department of Road Transport office. The examiner sits beside you. Your instructor is not in the car during the test. That is deliberate - it is your ability being assessed, not your instructor's guidance.
 
-If you fail, you can rebook. Again, there is no limit on attempts. But each attempt costs a fee, so it is worth making sure you are genuinely ready before you book.
+Common reasons people fail include not checking mirrors consistently, hesitating too long at junctions, and poor positioning on roundabouts. Cyprus roundabouts work on a give-way-to-the-right principle. If you are not solid on this before the test, practise until you are.
 
-When you pass, the examiner signs off your paperwork. You then go back to the Department of Road Transport office to collect your full Category B licence. The process from passing to holding the physical card usually takes a short time, but confirm the current process with your local office.
+If you fail, you can book a resit. There is no limit on the number of attempts, but each one costs money and time. Your instructor will debrief you after the result is known and help you understand what to work on.
 
-[ClickClickDrive Cyprus](/en) can help you find and compare driving schools if you want to make sure you are training with someone experienced in getting candidates through the Cyprus test.
+[ClickClickDrive Cyprus](/en) is a resource that can help you find driving schools and prepare for each stage of the test process.
 
 ## Can you tow with a Category B licence in Cyprus?
 
-Yes, but there are limits. A Category B licence does allow you to tow a trailer, but only up to a certain combined weight. If the trailer and vehicle together exceed that limit, you will need an additional category - specifically Category BE.
+Yes, but there are limits. A Category B licence allows you to tow a trailer, but only up to a certain combined weight. When the total weight of the vehicle plus the trailer goes beyond the limit set for Category B, you need an additional licence category - specifically BE.
 
-Category BE is an add-on to Category B. It covers heavier trailer combinations. If you are planning to tow a large caravan, a horse trailer, or a boat on a heavy trailer, check the total combined weight before you assume your Category B alone is enough.
+The BE category is an extension of B. It covers heavier trailer combinations that fall outside what a standard Category B licence allows. If you plan to tow a large caravan, a horse trailer, or a heavy boat trailer, check the combined weights carefully before you assume your Category B is enough.
 
-For most people towing a small trailer for garden waste or a light bike trailer, a standard Category B is fine. The rules here match the broader EU framework, so if you have already looked this up for another EU country, the logic is similar - though always confirm the specific weight thresholds with the Department of Road Transport in Cyprus.
+In practice, many people tow small trailers - garden waste trailers, small luggage trailers, light bike carriers - without any issue under Category B. The problems arise with heavier loads. Do not guess at the weights. Check the vehicle's towing capacity plate and the trailer's gross weight before you hook anything up.
 
-If you already have a licence from another EU country and you are wondering whether you can simply exchange it rather than go through the full process again, the answer may be yes. Check the details in this guide on [exchanging an EU licence](/en/blog/exchange-eu-licence-cyprus). It can save you significant time and money if you qualify.
-
-Do not attach a trailer to your vehicle and assume you are covered. Check first. Driving with an unlicenced combination can result in fines and problems with your insurance.
+If you are ever unsure whether your intended tow falls within Category B limits, the Department of Road Transport can give you a definitive answer. Do not rely on what a friend told you. Towing over your licence category on a public road is a traffic offence.
 
 ## How long is your Cyprus Category B licence valid and when must you renew?
 
-A Cyprus Category B driving licence does not last forever. The validity period depends on your age at the time of issue or renewal. Younger drivers tend to get a longer validity period; older drivers are asked to renew more frequently. The Department of Road Transport sets these periods, and they can change, so always confirm the current terms when you collect or renew your licence.
+A Cyprus Category B licence does not last forever. The validity period depends on your age at the time of renewal. Younger drivers typically receive a licence valid for a longer period. As you get older, renewal intervals become shorter - this is standard across the EU and reflects the medical check requirements that come with age.
 
-When your licence is close to expiry, you need to renew it at your local Department of Road Transport office. The renewal process typically involves a new photo, a check of your documents, and a medical certificate again. The medical requirement becomes more regular as you get older, which is standard practice across much of the EU.
+When your licence is due to expire, you will need to renew it at the Department of Road Transport. Renewal is not automatic. You need to apply, provide an updated medical certificate, and pay the renewal fee. Check current fees with the Department of Road Transport.
 
-If your licence expires and you keep driving, you are technically driving without a valid licence. That has legal and insurance consequences. Set a reminder well before the expiry date so you have time to book your renewal appointment.
+Do not let your licence expire without renewing it. Driving on an expired licence in Cyprus is treated as driving without a licence. The fines are real, and if you are involved in an accident with an expired licence, your insurance may refuse to pay out.
 
-If you have moved to Cyprus from another EU country and already hold a valid EU licence, you may be able to exchange it for a Cypriot one without retesting. That exchange process has its own rules and timelines. Again, the [licence guide for foreigners](/en/blog/how-to-get-driving-licence-cyprus-foreigner) covers this in detail.
+If you obtained your licence in another EU country and moved to Cyprus, you are required to exchange it for a Cyprus licence after taking up residence. The [exchanging an EU licence](/en/blog/exchange-eu-licence-cyprus) guide covers this in detail. Non-EU licence holders have a different process and different timelines.
 
-Keeping your licence valid is your responsibility. The Department of Road Transport will not write to remind you.
+Keep a reminder in your phone or calendar for your licence expiry date. It is easy to forget, especially if life gets busy. Renewal takes time to process, so start the paperwork well before the expiry date arrives.
 
-Getting a Category B licence in Cyprus takes patience, preparation, and a few trips to a government office. But the process is manageable when you know what is coming. Study early, find a good instructor, and do not skip the paperwork. Once you have the licence in hand, it works across the EU and covers almost everything you will ever want to drive in everyday life on this island.
+Getting a Category B licence in Cyprus takes time and effort, but the process is straightforward once you know what to expect. Get your documents ready, find a good instructor, and take the theory preparation seriously. Thousands of people from all over the world go through this every year in Cyprus. With the right preparation, you will too.
 
 ## FAQ
 
 **What vehicles can I drive with a Category B licence in Cyprus?**
-A Category B licence lets you drive any vehicle up to 3,500 kg with a maximum of 8 passenger seats, not counting the driver. This covers most private cars, small SUVs, and light vans. Motorcycles, heavy vans, and minibuses with more seats require a different category.
+A Category B licence covers motor vehicles up to 3,500 kg with up to 8 passenger seats, not counting the driver. This includes standard cars, SUVs, and small vans. It does not cover larger vehicles, minibuses, or trucks.
 
-**Can I take the theory test in English in Cyprus?**
-Yes. The Department of Road Transport offers the theory test in both Greek and English. This is a genuine option, not a workaround. Most English-speaking foreigners choose the English version and use the same official study material, just in translation.
+**Can I take the Cyprus driving theory test in English?**
+Yes. The theory test can be taken in Greek or in English. Most driving schools have practice materials in both languages, and the Department of Road Transport accommodates English-speaking candidates at all five offices.
 
-**Do I need to retake my driving test if I already have an EU licence?**
-Not necessarily. Cyprus allows holders of valid EU licences to exchange them for a Cypriot licence without a new test in many cases. The rules depend on your specific situation. Check the process carefully before assuming you are eligible, as conditions apply.
+**Do I need a Cyprus licence if I already have one from an EU country?**
+If you are resident in Cyprus, you are required to exchange your EU licence for a Cyprus one. The good news is that this is usually a straightforward exchange rather than starting from scratch. The process is explained in detail in the [licence guide for foreigners](/en/blog/how-to-get-driving-licence-cyprus-foreigner).
 
-**How many driving lessons do I need before I can take the practical test in Cyprus?**
-There is no legal minimum number of hours set by Cyprus law. Your instructor decides when you are ready based on your progress. Some learners are ready in around 20 hours; others need considerably more. Rushing to test before you are ready costs money and wastes time.
+**How many driving lessons do I need before the practical test in Cyprus?**
+There is no legally fixed minimum number of lessons. In practice, most instructors recommend between 30 and 40 hours for a complete beginner. Your instructor will advise you based on your progress and tell you when they think you are ready to sit the test.
 
-**What happens if my Category B licence expires in Cyprus?**
-If your licence expires and you drive, you are driving without a valid licence. This can result in fines and may void your insurance cover. Renewal requires a visit to the Department of Road Transport, updated documents, a new photo, and a medical certificate. Check current fees and validity periods directly with the Department.
+**What happens if my Cyprus driving licence expires?**
+Driving on an expired licence is treated the same as driving without a licence. You must renew before it expires by visiting your local Department of Road Transport office, providing a fresh medical certificate, and paying the renewal fee. Check current fees directly with the department, as they are updated periodically.

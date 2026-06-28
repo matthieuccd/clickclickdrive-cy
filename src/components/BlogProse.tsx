@@ -2,7 +2,9 @@ import Image from "next/image";
 import React from "react";
 
 import { CostBreakdownInfographic } from "@/components/infographics/CostBreakdownInfographic";
+import { EuExchangeInfographic } from "@/components/infographics/EuExchangeInfographic";
 import { LicenceStepsInfographic } from "@/components/infographics/LicenceStepsInfographic";
+import { UkExchangeInfographic } from "@/components/infographics/UkExchangeInfographic";
 import { PriceCalculator } from "@/components/widgets/PriceCalculator";
 import type { Locale } from "@/lib/types";
 
@@ -82,6 +84,10 @@ export function BlogProse({ markdown, locale, injectImages = [] }: Props) {
         elements.push(<LicenceStepsInfographic key={i} locale={locale} />);
       } else if (type === "cost-breakdown") {
         elements.push(<CostBreakdownInfographic key={i} locale={locale} />);
+      } else if (type === "uk-exchange") {
+        elements.push(<UkExchangeInfographic key={i} locale={locale} />);
+      } else if (type === "eu-exchange") {
+        elements.push(<EuExchangeInfographic key={i} locale={locale} />);
       }
       continue;
     }
