@@ -392,16 +392,27 @@ async function ArticleView({
         <h1 className="mt-4 text-3xl font-bold tracking-tight text-text-primary sm:text-5xl">
           {title}
         </h1>
-        <p className="mt-4 text-sm text-text-muted">
-          {dateLabel} ·{" "}
-          {author ? (
-            <a href="#author-bio" className="hover:text-brand hover:underline">
-              {article.author}
-            </a>
-          ) : (
-            article.author
+        <div className="mt-4 flex items-center gap-2 text-sm text-text-muted">
+          {author && (
+            <Image
+              src={author.photo}
+              alt={author.name}
+              width={22}
+              height={22}
+              className="size-[22px] rounded-full object-cover"
+            />
           )}
-        </p>
+          <span>
+            {dateLabel} ·{" "}
+            {author ? (
+              <a href="#author-bio" className="hover:text-brand hover:underline">
+                {article.author}
+              </a>
+            ) : (
+              article.author
+            )}
+          </span>
+        </div>
       </header>
 
       {summary && (

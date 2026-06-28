@@ -37,6 +37,8 @@ The categories on your original licence should transfer across. So if you hold a
 
 Bring your foreign licence in good condition. If it is damaged or hard to read, the Department may ask for additional verification. Processing times vary, so do not leave it until the week before your old licence expires.
 
+{{widget:foreigner-path-checker}}
+
 ## What rules apply to UK and non-EU licence holders?
 
 This is where things get a bit more complicated. After Brexit, UK licence holders lost the automatic right to exchange their licence for a Cypriot one without any additional steps. The [UK licence after Brexit](/en/blog/uk-licence-cyprus-after-brexit) situation now puts British nationals in a similar position to other non-EU citizens.
@@ -133,7 +135,6 @@ Budget for the process taking longer than you expect. Government offices have th
 
 Getting your Cyprus driving licence takes some effort, but it is a one-time process. Once you have it, you are free to drive anywhere in the Republic of Cyprus with a local licence in your wallet. The paperwork can feel tedious, but most foreigners who go through it say the organised approach makes it manageable. Start by confirming your category with the Department of Road Transport, gather your documents early, and book your lessons with a school that has a solid pass rate.
 
-{{widget:foreigner-path-checker}}
 
 ## FAQ
 

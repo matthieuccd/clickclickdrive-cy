@@ -132,14 +132,25 @@ export function BlogProse({ markdown, locale, injectImages = [] }: Props) {
     const widgetMatch = block.match(/^\{\{widget:([^}]+)\}\}$/);
     if (widgetMatch) {
       const id = widgetMatch[1];
+      let widget: React.ReactNode = null;
       if (id === "price-calculator") {
-        elements.push(<PriceCalculator key={i} locale={locale} />);
+        widget = <PriceCalculator locale={locale} />;
       } else if (id === "uk-licence-checker") {
-        elements.push(<UkLicenceChecker key={i} locale={locale} />);
+        widget = <UkLicenceChecker locale={locale} />;
       } else if (id === "eu-exchange-checker") {
-        elements.push(<EuExchangeChecker key={i} locale={locale} />);
+        widget = <EuExchangeChecker locale={locale} />;
       } else if (id === "foreigner-path-checker") {
-        elements.push(<ForeignerPathChecker key={i} locale={locale} />);
+        widget = <ForeignerPathChecker locale={locale} />;
+      }
+      if (widget) {
+        elements.push(
+          <div key={i} className="relative my-10 rounded-2xl border-2 border-brand/40 bg-brand/[0.04] p-1 shadow-sm">
+            <span className="absolute -top-3.5 left-5 rounded-full bg-brand px-3 py-1 text-[11px] font-bold uppercase tracking-widest text-white shadow-sm">
+              {locale === "el" ? "Διαδραστικό εργαλείο" : "Interactive tool"}
+            </span>
+            {widget}
+          </div>
+        );
       }
       continue;
     }
