@@ -151,7 +151,7 @@ export function BlogProse({ markdown, locale, injectImages = [] }: Props) {
         };
         const widgetPillLabel = widgetLabel[id]?.[locale] ?? (locale === "el" ? "Διαδραστικό εργαλείο" : "Interactive tool");
         elements.push(
-          <div key={i} className="relative my-10 rounded-2xl border-2 border-brand/40 bg-brand/[0.04] p-1 shadow-sm">
+          <div key={i} className="relative my-10 rounded-2xl border-2 border-brand/40 bg-brand/[0.04] p-3 shadow-sm">
             <span className="absolute -top-3.5 left-5 rounded-full bg-brand px-3 py-1 text-[11px] font-bold uppercase tracking-widest text-white shadow-sm">
               {widgetPillLabel}
             </span>
