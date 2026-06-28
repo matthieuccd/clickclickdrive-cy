@@ -3,7 +3,7 @@ import type { Locale } from "@/lib/types";
 const DATA = {
   el: {
     title: "Η διαδικασία για Βρετανούς οδηγούς στην Κύπρο",
-    caption: "Βάσει της διμερούς συμφωνίας Κύπρου-Ηνωμένου Βασιλείου — επιβεβαιώστε την ισχύουσα κατάσταση στο ΤΟΜ",
+    caption: "Βάσει της διμερούς συμφωνίας Κύπρου-Ηνωμένου Βασιλείου.επιβεβαιώστε την ισχύουσα κατάσταση στο ΤΟΜ",
     steps: [
       {
         num: "1",
@@ -29,7 +29,7 @@ const DATA = {
   },
   en: {
     title: "The process for UK drivers in Cyprus",
-    caption: "Based on the Cyprus–UK bilateral agreement — confirm current status with the Department of Road Transport",
+    caption: "Based on the Cyprus-UK bilateral agreement.confirm current status with the Department of Road Transport",
     steps: [
       {
         num: "1",

@@ -680,7 +680,7 @@ SYSTEM_PROMPT_EL = """\
   αμέσως μετά την H2 ενότητα που ταιριάζει καλύτερα. Χρησιμοποίησε αυτή ακριβώς
   τη μορφή (τίποτα άλλο):
   ![Περιγραφικό alt text](path)
-  *Λεζάντα μιας πρότασης — via Pexels.com*
+  *Λεζάντα μιας πρότασης, via Pexels.com*
 - Alt text: περιέγραψε πρώτα τι φαίνεται στην εικόνα (πρόσωπο, αντικείμενο,
   σκηνή), μετά πρόσθεσε μία-δύο λέξεις-κλειδιά. Κάτω από 125 χαρακτήρες.
 - Λεζάντα: μία σύντομη πρόταση που περιγράφει τη σκηνή ή τη σχέση της με
@@ -764,7 +764,7 @@ VOICE
 NEVER
 - Never use em dashes. Use a regular hyphen (-) or rewrite the sentence instead.
 - No H3. Only H2 (## ) for section headings and ## FAQ for the FAQ section.
-- If a section heading is phrased as a question, it must end with a question mark — even if the section title provided to you does not already include one. Do not add question marks to headings that are not questions.
+- If a section heading is phrased as a question, it must end with a question mark (even if the section title provided to you does not already include one). Do not add question marks to headings that are not questions.
 - None of these phrases: "furthermore", "moreover", "it is worth noting",
   "in conclusion", "it goes without saying", "it is important to note",
   "navigating", "delve", "crucial", "ensure", "seamless",
@@ -774,10 +774,10 @@ NEVER
 
 IMAGES
 - When IMAGES are provided in the instructions, embed each one in the article
-  body at the most natural position — right after the H2 section it best
+  body at the most natural position, right after the H2 section it best
   illustrates. Use this exact two-line format (nothing else):
   ![Descriptive alt text](path)
-  *Caption sentence — via Pexels.com*
+  *Caption sentence, via Pexels.com*
 - Alt text: describe what is actually visible in the image first (person,
   object, scene), then lightly sprinkle one or two relevant keywords.
   Under 125 characters. No keyword stuffing.
@@ -825,7 +825,7 @@ STRUCTURE
   **Question in one sentence?**
   Answer in 2-4 sentences of prose. No bullets inside answers.
 - INFOGRAPHIC, WIDGET, and VIDEO tokens (if given in the instructions) go inline
-  inside the body at the most relevant H2 section — not after the closing paragraph.
+  inside the body at the most relevant H2 section (not after the closing paragraph).
 - TOTAL: at least 2000 words excluding FAQ. At least 2200 with FAQ.
 
 INTERNAL LINKS
@@ -899,8 +899,8 @@ def build_user_prompt(article: ArticleSpec, locale: Locale) -> str:
         images_text = "\n".join(lines)
         images_block = (
             "\nIMAGES: Embed each inline image right after the most relevant H2 "
-            "section. Two-line format only — first the ![alt](path), then the "
-            "*caption — attribution* line. Do not wrap in a list.\n"
+            "section. Two-line format only: first the ![alt](path), then the "
+            "*caption, attribution* line. Do not wrap in a list.\n"
             + images_text
         )
 
@@ -921,7 +921,7 @@ def build_user_prompt(article: ArticleSpec, locale: Locale) -> str:
     video_block = (
         f"\nVIDEO: Place the token {{{{video:{article.youtube_id}}}}} "
         "inline in the article body, on its own line between two blank lines, "
-        "at the most natural position — typically after the section it illustrates."
+        "at the most natural position, typically after the section it illustrates."
     ) if article.youtube_id else ""
 
     # EL reminder: model consistently underestimates Greek word count, so add

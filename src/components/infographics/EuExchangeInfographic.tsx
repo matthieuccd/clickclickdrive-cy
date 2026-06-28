@@ -2,7 +2,7 @@ import type { Locale } from "@/lib/types";
 
 const DATA = {
   el: {
-    title: "Ανταλλαγή ευρωπαϊκής άδειας στην Κύπρο — χωρίς εξετάσεις",
+    title: "Ανταλλαγή ευρωπαϊκής άδειας στην Κύπρο:χωρίς εξετάσεις",
     caption: "Επιβεβαιώστε την τρέχουσα προθεσμία ανταλλαγής στο Τμήμα Οδικών Μεταφορών",
     steps: [
       {
@@ -24,7 +24,7 @@ const DATA = {
     badge: "✓ Χωρίς εξετάσεις",
   },
   en: {
-    title: "Exchanging an EU licence in Cyprus — no tests required",
+    title: "Exchanging an EU licence in Cyprus:no tests required",
     caption: "Confirm the current exchange window with the Department of Road Transport",
     steps: [
       {

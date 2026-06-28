@@ -3,9 +3,9 @@ import type { Locale } from "@/lib/types";
 const DATA = {
   el: {
     title: "Κατανομή κόστους διπλώματος οδήγησης στην Κύπρο",
-    caption: "Ενδεικτική κατανομή — τα ακριβή ποσά διαφέρουν ανά σχολή και πόλη",
+    caption: "Ενδεικτική κατανομή.τα ακριβή ποσά διαφέρουν ανά σχολή και πόλη",
     items: [
-      { label: "Μαθήματα οδήγησης", sublabel: "10–20 μαθήματα (45 λεπτά)", pct: 60, color: "#f74656" },
+      { label: "Μαθήματα οδήγησης", sublabel: "10-20 μαθήματα (45 λεπτά)", pct: 60, color: "#f74656" },
       { label: "Επίσημα τέλη ΤΟΜ", sublabel: "Αίτηση, εξετάσεις, δίπλωμα", pct: 22, color: "#354354" },
       { label: "Ιατρικό πιστοποιητικό", sublabel: "Γιατρός εγγεγραμμένος", pct: 10, color: "#4b5d70" },
       { label: "Επιπλέον κόστη", sublabel: "Επανεξέταση, μεταφράσεις", pct: 8, color: "#7a8794" },
@@ -13,9 +13,9 @@ const DATA = {
   },
   en: {
     title: "Driving licence cost breakdown in Cyprus",
-    caption: "Indicative split — exact amounts vary by school and city",
+    caption: "Indicative split.exact amounts vary by school and city",
     items: [
-      { label: "Driving lessons", sublabel: "10–20 lessons (45 min each)", pct: 60, color: "#f74656" },
+      { label: "Driving lessons", sublabel: "10-20 lessons (45 min each)", pct: 60, color: "#f74656" },
       { label: "Official DRT fees", sublabel: "Application, tests, licence", pct: 22, color: "#354354" },
       { label: "Medical certificate", sublabel: "Registered doctor", pct: 10, color: "#4b5d70" },
       { label: "Extra costs", sublabel: "Retakes, translations", pct: 8, color: "#7a8794" },
