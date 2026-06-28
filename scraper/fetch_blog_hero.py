@@ -124,6 +124,23 @@ def fetch_pexels(query: str, dest: Path) -> bool:
 
     dest.parent.mkdir(parents=True, exist_ok=True)
     dest.write_bytes(data)
+
+    # Save attribution sidecar so the blog generator can embed captions.
+    sidecar = dest.with_suffix(".json")
+    sidecar.write_text(
+        json.dumps(
+            {
+                "photographer": photo.get("photographer", ""),
+                "photographer_url": photo.get("photographer_url", ""),
+                "pexels_id": photo.get("id"),
+                "pexels_url": photo.get("url", ""),
+                "query": query,
+            },
+            ensure_ascii=False,
+            indent=2,
+        )
+    )
+
     print(
         f"[hero] saved Pexels photo by {photo.get('photographer')} "
         f"({photo.get('id')}) → {dest.relative_to(PROJECT_ROOT)} "

@@ -9,6 +9,7 @@ interface InjectImage {
   afterH2: number;
   src: string;
   alt: string;
+  caption?: string;
 }
 
 interface Props {
@@ -38,28 +39,34 @@ export function BlogProse({ markdown, locale, injectImages = [] }: Props) {
     // H2 heading
     if (block.startsWith("## ")) {
       h2Count++;
+      const headingText = block.slice(3).trim();
       elements.push(
         <h2
           key={i}
+          id={toSlug(headingText)}
           className="mt-10 text-2xl font-bold tracking-tight text-text-primary sm:text-3xl"
         >
-          {renderInline(block.slice(3).trim())}
+          {renderInline(headingText)}
         </h2>,
       );
       const inject = injectMap.get(h2Count);
       if (inject) {
         elements.push(
-          <figure
-            key={`img-inject-${i}`}
-            className="relative my-8 aspect-[16/9] w-full overflow-hidden rounded-2xl bg-surface-muted"
-          >
-            <Image
-              src={inject.src}
-              alt={inject.alt}
-              fill
-              sizes="(min-width: 1024px) 48rem, 100vw"
-              className="object-cover"
-            />
+          <figure key={`img-inject-${i}`} className="my-8">
+            <div className="relative aspect-[16/9] w-full overflow-hidden rounded-2xl bg-surface-muted">
+              <Image
+                src={inject.src}
+                alt={inject.alt}
+                fill
+                sizes="(min-width: 1024px) 48rem, 100vw"
+                className="object-cover"
+              />
+            </div>
+            {inject.caption && (
+              <figcaption className="mt-2 text-center text-xs italic text-text-muted">
+                {inject.caption}
+              </figcaption>
+            )}
           </figure>,
         );
       }
@@ -76,6 +83,27 @@ export function BlogProse({ markdown, locale, injectImages = [] }: Props) {
       continue;
     }
 
+    // Video token: {{video:youtube_id}}
+    const videoMatch = block.match(/^\{\{video:([^}]+)\}\}$/);
+    if (videoMatch) {
+      const youtubeId = videoMatch[1];
+      elements.push(
+        <div
+          key={i}
+          className="my-8 overflow-hidden rounded-2xl aspect-video"
+        >
+          <iframe
+            src={`https://www.youtube-nocookie.com/embed/${youtubeId}`}
+            title="Video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            className="h-full w-full border-0"
+          />
+        </div>,
+      );
+      continue;
+    }
+
     // Widget token: {{widget:id}}
     const widgetMatch = block.match(/^\{\{widget:([^}]+)\}\}$/);
     if (widgetMatch) {
@@ -87,20 +115,43 @@ export function BlogProse({ markdown, locale, injectImages = [] }: Props) {
     }
 
     // Standalone image block: ![alt](src)
-    const imgMatch = block.match(/^!\[([^\]]*)\]\(([^)]+)\)$/);
-    if (imgMatch) {
+    // Caption may follow on the very next line (same block, no blank line) OR
+    // as the next block (separated by a blank line). Both forms are handled.
+    const blockLines = block.split("\n");
+    const imgLineMatch = blockLines[0].trim().match(/^!\[([^\]]*)\]\(([^)]+)\)$/);
+    if (imgLineMatch) {
+      const CAPTION_RE = /^\*([^*].*[^*])\*$|^\*([^*])\*$/;
+      // Caption on same block (line 2)?
+      const sameLine = blockLines[1]?.trim() ?? "";
+      const sameMatch = CAPTION_RE.exec(sameLine);
+      // Caption on next block?
+      let caption: string | null = null;
+      if (sameMatch) {
+        caption = sameMatch[1] ?? sameMatch[2];
+      } else {
+        const nextBlock = blocks[i + 1]?.trim() ?? "";
+        const nextMatch = CAPTION_RE.exec(nextBlock);
+        if (nextMatch) {
+          i++;
+          caption = nextMatch[1] ?? nextMatch[2];
+        }
+      }
       elements.push(
-        <figure
-          key={i}
-          className="relative my-8 aspect-[16/9] w-full overflow-hidden rounded-2xl bg-surface-muted"
-        >
-          <Image
-            src={imgMatch[2]}
-            alt={imgMatch[1]}
-            fill
-            sizes="(min-width: 1024px) 48rem, 100vw"
-            className="object-cover"
-          />
+        <figure key={i} className="my-8">
+          <div className="relative aspect-[16/9] w-full overflow-hidden rounded-2xl bg-surface-muted">
+            <Image
+              src={imgLineMatch[2]}
+              alt={imgLineMatch[1]}
+              fill
+              sizes="(min-width: 1024px) 48rem, 100vw"
+              className="object-cover"
+            />
+          </div>
+          {caption && (
+            <figcaption className="mt-2 text-center text-xs italic text-text-muted">
+              {caption}
+            </figcaption>
+          )}
         </figure>,
       );
       continue;
@@ -147,10 +198,19 @@ export function BlogProse({ markdown, locale, injectImages = [] }: Props) {
   );
 }
 
+function toSlug(text: string): string {
+  return text
+    .toLowerCase()
+    .replace(/\s+/g, "-")
+    .replace(/[^\p{L}\p{N}-]/gu, "")
+    .replace(/-+/g, "-")
+    .replace(/^-|-$/g, "");
+}
+
 function renderInline(line: string): React.ReactNode {
   const parts: React.ReactNode[] = [];
-  // Match [text](url) links or **bold** spans
-  const re = /\[([^\]]+)\]\(([^)]+)\)|\*\*([^*]+)\*\*/g;
+  // Match [text](url) links, **bold**, or *italic* spans
+  const re = /\[([^\]]+)\]\(([^)]+)\)|\*\*([^*]+)\*\*|\*([^*]+)\*/g;
   let last = 0;
   let m: RegExpExecArray | null;
   while ((m = re.exec(line)) !== null) {
@@ -168,11 +228,17 @@ function renderInline(line: string): React.ReactNode {
           {m[1]}
         </a>,
       );
-    } else {
+    } else if (m[3] !== undefined) {
       parts.push(
         <strong key={`${m.index}-bold`} className="font-semibold text-text-primary">
           {m[3]}
         </strong>,
+      );
+    } else {
+      parts.push(
+        <em key={`${m.index}-italic`} className="italic">
+          {m[4]}
+        </em>,
       );
     }
     last = m.index + m[0].length;

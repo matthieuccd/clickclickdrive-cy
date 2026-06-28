@@ -4,6 +4,7 @@ import {
   BLOG_ARTICLES,
   BLOG_CATEGORIES,
 } from "@/lib/blog";
+import { AUTHORS } from "@/lib/authors";
 import { getAllSchools } from "@/lib/schools";
 import { SITE_HOST } from "@/lib/seo";
 import { citySlug } from "@/lib/slugs";
@@ -147,6 +148,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       alternates: {
         languages: { "x-default": el, el, en },
       },
+    });
+  }
+
+  // Author pages
+  for (const author of Object.values(AUTHORS)) {
+    const el = `${SITE_HOST}/arthrografoi/${author.slug}`;
+    const en = `${SITE_HOST}/en/authors/${author.slug}`;
+    entries.push({
+      url: el,
+      lastModified: updated,
+      changeFrequency: "monthly" as const,
+      priority: 0.5,
+      alternates: { languages: { "x-default": el, el, en } },
     });
   }
 

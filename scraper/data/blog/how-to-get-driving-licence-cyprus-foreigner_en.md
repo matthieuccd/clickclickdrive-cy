@@ -1,5 +1,14 @@
 Getting a driving licence in Cyprus is not as complicated as some people fear. But the rules do differ depending on where you are from. This guide cuts through the confusion so you know exactly what to expect before you walk into the Department of Road Transport.
 
+- [The Cyprus basics you need to know](#the-cyprus-basics-you-need-to-know)
+- [What happens if you hold an EU licence](#what-happens-if-you-hold-an-eu-licence)
+- [Drivers from the UK and other non-EU countries](#drivers-from-the-uk-and-other-non-eu-countries)
+- [The papers you will need to bring](#the-papers-you-will-need-to-bring)
+- [Your learner's licence and the lessons](#your-learners-licence-and-the-lessons)
+- [The theory test in English or Greek](#the-theory-test-in-english-or-greek)
+- [The practical test day](#the-practical-test-day)
+- [Cost, timing, and tips before you start](#cost-timing-and-tips-before-you-start)
+
 ## The Cyprus basics you need to know
 
 Cyprus has its own licensing system, run by the Department of Road Transport. The full Greek name is Τμήμα Οδικών Μεταφορών. It sits under the Ministry of Transport, Communications and Works. The headquarters is in Nicosia, but there are offices in the other main cities too. Those cities are Limassol, Larnaca, Paphos, and Paralimni.

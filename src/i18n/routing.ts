@@ -52,6 +52,10 @@ export const routing = defineRouting({
       el: "/oroi",
       en: "/terms",
     },
+    "/arthrografoi/[slug]": {
+      el: "/arthrografoi/[slug]",
+      en: "/authors/[slug]",
+    },
     "/kalytera-scholes-odigon-lefkosia": {
       el: "/kalytera-scholes-odigon-lefkosia",
       en: "/best-driving-schools-nicosia",

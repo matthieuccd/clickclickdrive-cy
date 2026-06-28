@@ -1,5 +1,12 @@
 Getting a driving licence in Cyprus takes time and patience, but the process is straightforward once you know the steps. Whether you just arrived or have lived here for years without a car, this guide walks you through everything from the first form to the day you pass your test.
 
+- [What you need before you start](#what-you-need-before-you-start)
+- [The learner's licence: your first step](#the-learners-licence-your-first-step)
+- [Your driving lessons](#your-driving-lessons)
+- [The theory test](#the-theory-test)
+- [The practical test](#the-practical-test)
+- [After you pass: what you need to know](#after-you-pass-what-you-need-to-know)
+
 ## What you need before you start
 
 Before you do anything else, gather your documents. The Department of Road Transport will not process your application without the full set. Missing even one item means a wasted trip.

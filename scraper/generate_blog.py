@@ -65,7 +65,7 @@ class ArticleSpec:
     answer_el: str = ""
     answer_en: str = ""
     # Inline widget token to embed in the article body.
-    # The model places {{widget:<widget_id>}} at a sensible point in the body.
+    # The model places {{widget:<widget_id>}} after the closing paragraph, before FAQ.
     #
     # Decide: would an interactive tool genuinely help this reader make a
     # decision, calculate something, or self-assess? If yes, set widget_id.
@@ -80,7 +80,11 @@ class ArticleSpec:
     #   "price-calculator"  → cost/fees articles (lesson prices, total cost)
     widget_id: str = ""
     # Infographic type for the inline SVG. Empty = no infographic.
+    # Placed after closing paragraph, before widget, before FAQ.
     infographic_type: str = ""
+    # YouTube video ID to embed after the widget and before the FAQ.
+    # If set, emits {{video:<youtube_id>}}. If empty, nothing is emitted.
+    youtube_id: str = ""
     # Pexels queries for inline body images (saved as inline-1.jpg, inline-2.jpg, …).
     # publish_next.py fetches these after the hero.
     inline_image_queries: tuple[str, ...] = ()
@@ -347,19 +351,19 @@ ARTICLES: tuple[ArticleSpec, ...] = (
         ),
         sections_el=(
             "Τι άλλαξε μετά το Brexit",
-            "Ισχύει η βρετανική άδεια στην Κύπρο σήμερα",
+            "Ισχύει η βρετανική άδεια στην Κύπρο σήμερα;",
             "Διμερείς συμφωνίες Κύπρου και Ηνωμένου Βασιλείου",
             "Τα έγγραφα που χρειάζεστε",
-            "Πρέπει να κάνετε εξετάσεις",
+            "Πρέπει να κάνετε εξετάσεις;",
             "Το πλεονέκτημα της αριστερής οδήγησης",
             "Βήμα προς βήμα για Βρετανούς οδηγούς",
         ),
         sections_en=(
             "What Brexit changed for UK licence holders in Cyprus",
-            "Is your UK licence currently valid in Cyprus",
+            "Is your UK licence currently valid in Cyprus?",
             "The bilateral agreement between Cyprus and the UK",
             "Documents UK drivers need to bring",
-            "Do you need to sit a test",
+            "Do you need to sit a test?",
             "The left-hand advantage UK drivers already have",
             "Step by step for UK citizens in Cyprus",
         ),
@@ -415,21 +419,21 @@ ARTICLES: tuple[ArticleSpec, ...] = (
             "completed application form from the Department.",
         ),
         sections_el=(
-            "Μπορείτε να οδηγείτε με ευρωπαϊκή άδεια στην Κύπρο",
+            "Μπορείτε να οδηγείτε με ευρωπαϊκή άδεια στην Κύπρο;",
             "Γιατί οι περισσότεροι κάτοικοι ΕΕ επιλέγουν ανταλλαγή",
             "Η διαδικασία ανταλλαγής βήμα προς βήμα",
             "Τα έγγραφα για την ανταλλαγή",
-            "Τι γίνεται με την παλιά σας άδεια",
-            "Η προθεσμία και τι συμβαίνει αν τη χάσετε",
+            "Τι γίνεται με την παλιά σας άδεια;",
+            "Η προθεσμία και τι συμβαίνει αν τη χάσετε;",
             "Ανταλλαγή αν η άδεια ΕΕ έχει λήξει",
         ),
         sections_en=(
-            "Can you drive in Cyprus on an EU licence",
+            "Can you drive in Cyprus on an EU licence?",
             "Why most EU residents choose to exchange",
             "The exchange process step by step",
             "Documents you need to bring",
-            "What happens to your original EU licence",
-            "The deadline and what happens if you miss it",
+            "What happens to your original EU licence?",
+            "The deadline and what happens if you miss it?",
             "Exchanging when your EU licence has expired",
         ),
         internal_links_el=(
@@ -662,6 +666,18 @@ SYSTEM_PROMPT_EL = """\
 ΑΠΑΓΟΡΕΥΣΕΙΣ
 - Καμία παύλα em πουθενά. Ποτέ. Χρησιμοποίησε παύλα (-), τελείες ή κόμματα.
 - Καμία H3. Μόνο H2 (## ) για τις ενότητες και ## Συχνές Ερωτήσεις για το FAQ.
+- Αν ο τίτλος ενότητας είναι διατυπωμένος ως ερώτηση, πρέπει να τελειώνει με ερωτηματικό - ακόμα κι αν ο τίτλος που σου δίνεται δεν το έχει ήδη. Μην βάζεις ερωτηματικό σε επικεφαλίδες που δεν είναι ερωτήσεις.
+
+ΕΙΚΟΝΕΣ
+- Όταν οι οδηγίες σου δίνουν ΕΙΚΟΝΕΣ (IMAGES), ενσωμάτωσε κάθε μία στο σώμα
+  αμέσως μετά την H2 ενότητα που ταιριάζει καλύτερα. Χρησιμοποίησε αυτή ακριβώς
+  τη μορφή (τίποτα άλλο):
+  ![Περιγραφικό alt text](path)
+  *Λεζάντα μιας πρότασης — via Pexels.com*
+- Alt text: περιέγραψε πρώτα τι φαίνεται στην εικόνα (πρόσωπο, αντικείμενο,
+  σκηνή), μετά πρόσθεσε μία-δύο λέξεις-κλειδιά. Κάτω από 125 χαρακτήρες.
+- Λεζάντα: μία σύντομη πρόταση που περιγράφει τη σκηνή ή τη σχέση της με
+  το άρθρο. Τελείωσε με την αναφορά που σου δίνεται.
 - Καμία από αυτές τις λέξεις/φράσεις πουθενά: «επιπλέον», «επιπροσθέτως»,
   «αξίζει να σημειωθεί», «εν κατακλείδι», «δεν χρειάζεται να ειπωθεί»,
   «πλοηγηθείτε», «βυθιστείτε», «κρίσιμο», «εξασφαλίστε», «απρόσκοπτο»,
@@ -695,13 +711,23 @@ SYSTEM_PROMPT_EL = """\
 
 ΔΟΜΗ
 - Καθαρό Markdown. Όχι front-matter, όχι H1. Η σελίδα δίνει δικό της H1.
-- Πρώτα η παράγραφος ΑΠΑΝΤΗΣΗ (βλ. παραπάνω).
+- ΠΡΩΤΑ: η παράγραφος ΑΠΑΝΤΗΣΗ (βλ. παραπάνω). 2-3 προτάσεις. Χωρίς επικεφαλίδα.
+  Η σελίδα ανεβάζει αυτή την παράγραφο και την εμφανίζει ΠΑΝΩ από την εικόνα hero.
+- ΔΕΥΤΕΡΟ: Πίνακας Περιεχομένων - απλή λίστα bullet με anchor link σε κάθε H2.
+  Κάθε στοιχείο: - [Τίτλος ενότητας](#slug)
+  Slug = ο τίτλος πεζά, τα κενά γίνονται παύλες (-), αφαιρούνται απόστροφοι και
+  κάθε χαρακτήρας που δεν είναι γράμμα (ελληνικό ή λατινικό), ψηφίο ή παύλα.
+  Χωρίς επικεφαλίδα πάνω από τη λίστα. Μόνο τα bullets.
+  Η σελίδα ανεβάζει αυτή τη λίστα ΠΑΝΩ από την εικόνα hero, κάτω από την απάντηση.
 - Μετά εισαγωγική παράγραφος χωρίς επικεφαλίδα. 3 με 5 προτάσεις, περίπου 90 λέξεις.
+  Εδώ αρχίζει το σώμα κάτω από την εικόνα hero.
 - Μετά, ΑΚΡΙΒΩΣ 8 ενότητες σε H2. ΚΑΘΕ ενότητα ΠΡΕΠΕΙ να έχει 250 με 350 λέξεις.
   Χρησιμοποίησε πρόζα ή λίστες ανάλογα με το τι εξυπηρετεί το περιεχόμενο.
 - Τελική παράγραφος χωρίς επικεφαλίδα, περίπου 80 λέξεις. Συνοψίζει χωρίς
   να λέει «εν κατακλείδι» ή κάτι παρόμοιο.
 - ΤΕΛΕΥΤΑΙΟ: ενότητα ## Συχνές Ερωτήσεις με ΑΚΡΙΒΩΣ 5 ερωτήσεις-απαντήσεις.
+- Τυχόν tokens INFOGRAPHIC, WIDGET ή VIDEO (αν δίνονται στις οδηγίες) μπαίνουν
+  inline μέσα στο σώμα, αμέσως μετά την H2 ενότητα στην οποία ταιριάζουν καλύτερα.
   Κάθε ερώτηση γράφεται έτσι (ΑΚΡΙΒΩΣ αυτή η μορφή, καμία παραλλαγή):
   **Ερώτηση σε μία πρόταση;**
   Απάντηση σε 2-4 προτάσεις πρόζας. Χωρίς bullet στις απαντήσεις.
@@ -731,12 +757,25 @@ VOICE
 NEVER
 - Never use em dashes. Use a regular hyphen (-) or rewrite the sentence instead.
 - No H3. Only H2 (## ) for section headings and ## FAQ for the FAQ section.
+- If a section heading is phrased as a question, it must end with a question mark — even if the section title provided to you does not already include one. Do not add question marks to headings that are not questions.
 - None of these phrases: "furthermore", "moreover", "it is worth noting",
   "in conclusion", "it goes without saying", "it is important to note",
   "navigating", "delve", "crucial", "ensure", "seamless",
   "in today's fast-paced world", "rest assured".
 - Do not invent facts. Do not state exact prices or fees if you were not
   given them. Say "check current fees with the Department of Road Transport".
+
+IMAGES
+- When IMAGES are provided in the instructions, embed each one in the article
+  body at the most natural position — right after the H2 section it best
+  illustrates. Use this exact two-line format (nothing else):
+  ![Descriptive alt text](path)
+  *Caption sentence — via Pexels.com*
+- Alt text: describe what is actually visible in the image first (person,
+  object, scene), then lightly sprinkle one or two relevant keywords.
+  Under 125 characters. No keyword stuffing.
+- Caption: one short sentence describing the scene or its relevance to the
+  article. End with the attribution already provided.
 
 LISTS
 - Use bullet lists or numbered lists only where they genuinely help:
@@ -760,8 +799,16 @@ ANSWER FIRST
 
 STRUCTURE
 - Plain Markdown. No front-matter. No H1. The page renders its own H1.
-- First: the ANSWER paragraph (see above).
+- FIRST: the ANSWER paragraph (see above). 2-3 sentences. No heading.
+  The page template lifts this paragraph and renders it ABOVE the hero image.
+- SECOND: Table of Contents - a bullet list with anchor links to every H2 section.
+  Each item: - [Section title](#section-title-slug)
+  Slug = section title lowercased, spaces become hyphens, remove apostrophes and all
+  characters that are not letters, digits, or hyphens.
+  No heading above the list. Just the bullets.
+  The page template lifts this list and renders it ABOVE the hero image, below the summary.
 - Then an intro paragraph with no heading. 2 to 4 sentences. Hook the reader.
+  This is where the body starts below the hero image.
 - Then 6 to 8 sections in H2. Each section 200 to 300 words. Use prose or
   lists depending on what the content calls for.
 - A closing paragraph with no heading, about 80 words. Wraps up without
@@ -770,6 +817,8 @@ STRUCTURE
   this article. Each Q/A must follow this exact format (no variations):
   **Question in one sentence?**
   Answer in 2-4 sentences of prose. No bullets inside answers.
+- INFOGRAPHIC, WIDGET, and VIDEO tokens (if given in the instructions) go inline
+  inside the body at the most relevant H2 section — not after the closing paragraph.
 - TOTAL: at least 2000 words excluding FAQ. At least 2200 with FAQ.
 
 INTERNAL LINKS
@@ -822,15 +871,51 @@ def build_user_prompt(article: ArticleSpec, locale: Locale) -> str:
     answer = article.answer_el if locale == "el" else article.answer_en
     answer_block = f"\nANSWER (copy this verbatim as your first paragraph):\n{answer}" if answer else ""
 
-    widget_block = (
-        f"\nWIDGET: Place the token {{{{widget:{article.widget_id}}}}} once in the "
-        "article body at a natural break (after a relevant section, not inside a list)."
-    ) if article.widget_id else ""
+    # Build inline-images block: read Pexels sidecar if available.
+    images_block = ""
+    if article.inline_image_queries:
+        import json as _json
+        lines = []
+        for n, query in enumerate(article.inline_image_queries, 1):
+            img_path = f"/blog/{article.id}/inline-{n}.jpg"
+            sidecar = PROJECT_ROOT / "public" / "blog" / article.id / f"inline-{n}.json"
+            if sidecar.exists():
+                meta = _json.loads(sidecar.read_text())
+                photographer = meta.get("photographer", "")
+                attribution = f"Photo by {photographer} via Pexels.com" if photographer else "via Pexels.com"
+            else:
+                attribution = "via Pexels.com"
+            lines.append(
+                f'- inline-{n}: path `{img_path}`, subject: "{query}", '
+                f'attribution: "{attribution}"'
+            )
+        images_text = "\n".join(lines)
+        images_block = (
+            "\nIMAGES: Embed each inline image right after the most relevant H2 "
+            "section. Two-line format only — first the ![alt](path), then the "
+            "*caption — attribution* line. Do not wrap in a list.\n"
+            + images_text
+        )
 
     infographic_block = (
         f"\nINFOGRAPHIC: Place the token {{{{infographic:{article.infographic_type}}}}} "
-        "once in the article body, immediately after the first or second H2 section."
+        "inline in the article body, on its own line between two blank lines, "
+        "immediately after whichever H2 section it best illustrates visually. "
+        "Do not place it inside a list or inside a sentence."
     ) if article.infographic_type else ""
+
+    widget_block = (
+        f"\nWIDGET: Place the token {{{{widget:{article.widget_id}}}}} "
+        "inline in the article body, on its own line between two blank lines, "
+        "immediately after the H2 section most relevant to it. "
+        "Do not place it inside a list or inside a sentence."
+    ) if article.widget_id else ""
+
+    video_block = (
+        f"\nVIDEO: Place the token {{{{video:{article.youtube_id}}}}} "
+        "inline in the article body, on its own line between two blank lines, "
+        "at the most natural position — typically after the section it illustrates."
+    ) if article.youtube_id else ""
 
     # EL reminder: model consistently underestimates Greek word count, so add
     # an explicit check-before-submitting note to push sections to 280-350 words.
@@ -853,7 +938,7 @@ Title (for reference, do not output an H1): {title}
 
 {links_label}:
 {links_block}
-{widget_block}{infographic_block}{word_count_reminder}
+{images_block}{infographic_block}{widget_block}{video_block}{word_count_reminder}
 Now write the article body. Markdown only. No H1.
 """
 

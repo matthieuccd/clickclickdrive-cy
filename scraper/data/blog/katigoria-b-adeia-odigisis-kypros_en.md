@@ -1,5 +1,14 @@
 Getting a driving licence in Cyprus is more straightforward than many people expect. Category B is the one most people need, covering everyday cars and light vans. Whether you are new to Cyprus or starting from scratch, knowing the rules upfront saves you time and stress.
 
+- [What Category B covers](#what-category-b-covers)
+- [The minimum age and requirements](#the-minimum-age-and-requirements)
+- [The learner's licence for Category B](#the-learners-licence-for-category-b)
+- [Your lessons: what they cover](#your-lessons-what-they-cover)
+- [The Category B theory test](#the-category-b-theory-test)
+- [The Category B practical test](#the-category-b-practical-test)
+- [Towing with a Category B licence in Cyprus](#towing-with-a-category-b-licence-in-cyprus)
+- [Validity and renewal of your Cyprus Category B licence](#validity-and-renewal-of-your-cyprus-category-b-licence)
+
 ## What Category B covers
 
 Category B is the standard car licence. It is what most people picture when they think of a driving licence.

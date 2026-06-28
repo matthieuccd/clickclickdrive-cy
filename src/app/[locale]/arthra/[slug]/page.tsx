@@ -7,6 +7,7 @@ import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
 import { ArticleCard } from "@/components/ArticleCard";
+import { AuthorBio } from "@/components/AuthorBio";
 import { BlogProse } from "@/components/BlogProse";
 import { JsonLd } from "@/components/JsonLd";
 import { Link } from "@/i18n/navigation";
@@ -27,6 +28,7 @@ import {
   type BlogArticle,
   type BlogCategory,
 } from "@/lib/blog";
+import { getAuthorBySlug, authorPageHref } from "@/lib/authors";
 import { SITE_HOST, siteUrl } from "@/lib/seo";
 import type { Locale } from "@/lib/types";
 
@@ -152,6 +154,49 @@ function parseFaq(markdown: string): { body: string; faq: FaqEntry[] } {
   return { body, faq };
 }
 
+interface TocItem { title: string; href: string }
+
+function isTocBlock(block: string): boolean {
+  const lines = block.trim().split("\n").filter(Boolean);
+  return lines.length > 0 && lines.every((l) => /^-\s+\[/.test(l.trim()));
+}
+
+function parseTocBlock(block: string): TocItem[] {
+  return block
+    .trim()
+    .split("\n")
+    .map((l) => l.trim().match(/^-\s+\[([^\]]+)\]\(([^)]+)\)/))
+    .filter((m): m is RegExpMatchArray => m !== null)
+    .map((m) => ({ title: m[1], href: m[2] }));
+}
+
+function extractSummaryAndToc(markdown: string): {
+  summary: string | null;
+  tocItems: TocItem[];
+  remaining: string;
+} {
+  const blocks = markdown.trim().split(/\n\n+/);
+  const first = blocks[0]?.trim() ?? "";
+
+  // If first block is a heading or TOC, nothing to extract
+  if (first.startsWith("## ") || isTocBlock(first)) {
+    return { summary: null, tocItems: [], remaining: markdown };
+  }
+
+  // Block 0 = summary paragraph
+  const summary = first;
+
+  if (blocks.length > 1 && isTocBlock(blocks[1])) {
+    return {
+      summary,
+      tocItems: parseTocBlock(blocks[1]),
+      remaining: blocks.slice(2).join("\n\n"),
+    };
+  }
+
+  return { summary, tocItems: [], remaining: blocks.slice(1).join("\n\n") };
+}
+
 function extractHowToSteps(markdown: string): string[] {
   let best: string[] = [];
   for (const block of markdown.split(/\n{2,}/).map((b) => b.trim()).filter(Boolean)) {
@@ -177,33 +222,34 @@ async function ArticleView({
   const title = articleTitle(article, locale);
   const rawBody = loadArticleBody(article.id, locale);
   const { body, faq } = rawBody ? parseFaq(rawBody) : { body: null, faq: [] };
+  const { summary, tocItems, remaining } = body
+    ? extractSummaryAndToc(body)
+    : { summary: null, tocItems: [], remaining: body ?? "" };
   const howToSteps = body ? extractHowToSteps(body) : [];
   const category = getCategoryById(article.categoryId);
   const { prev, next } = getAdjacent(article);
+  const author = getAuthorBySlug(article.authorSlug);
 
   // Build inject-image list: image2.jpg (legacy, after H2 #4) + inline-N.jpg (after H2 #3, #5, #7)
-  type InjectImg = { afterH2: number; src: string; alt: string };
+  type InjectImg = { afterH2: number; src: string; alt: string; caption?: string };
   const injectImages: InjectImg[] = [];
 
+  // image2.jpg: injected after H2 #4 for articles that don't embed images in
+  // their markdown body. Articles with inline_image_queries embed images directly
+  // in the markdown (via the generator), so they are not added here.
   const image2Src = `/blog/${article.id}/image2.jpg`;
   if (fs.existsSync(path.join(process.cwd(), "public", image2Src.slice(1)))) {
+    const credit = article.imageCredits?.["image2"];
     injectImages.push({
       afterH2: 4,
       src: image2Src,
-      alt: locale === "el" ? "Έγγραφα άδειας οδήγησης" : "Driving licence documents",
+      alt: credit
+        ? (locale === "el" ? credit.alt_el : credit.alt_en)
+        : (locale === "el" ? "Έγγραφα άδειας οδήγησης" : "Driving licence documents"),
+      caption: credit
+        ? (locale === "el" ? credit.caption_el : credit.caption_en)
+        : (locale === "el" ? "Φωτογραφία via Pexels.com" : "Photo via Pexels.com"),
     });
-  }
-
-  const inlinePositions = [3, 5, 7];
-  for (let n = 1; n <= 3; n++) {
-    const src = `/blog/${article.id}/inline-${n}.jpg`;
-    if (fs.existsSync(path.join(process.cwd(), "public", src.slice(1)))) {
-      injectImages.push({
-        afterH2: inlinePositions[n - 1],
-        src,
-        alt: locale === "el" ? "Σχολή οδήγησης Κύπρος" : "Driving in Cyprus",
-      });
-    }
   }
 
   const pathEl = `/arthra/${article.slug_el}`;
@@ -220,7 +266,14 @@ async function ArticleView({
     image: [heroUrl],
     datePublished: article.publishedDate,
     dateModified: article.modifiedDate,
-    author: { "@type": "Organization", name: article.author },
+    author: author
+      ? {
+          "@type": "Person",
+          name: author.name,
+          url: siteUrl(authorPageHref(author.slug, "el")),
+          sameAs: [author.linkedIn],
+        }
+      : { "@type": "Organization", name: article.author },
     publisher: {
       "@type": "Organization",
       name: "ClickClickDrive Cyprus",
@@ -340,35 +393,84 @@ async function ArticleView({
           {title}
         </h1>
         <p className="mt-4 text-sm text-text-muted">
-          {dateLabel} · {article.author}
+          {dateLabel} ·{" "}
+          {author ? (
+            <a href="#author-bio" className="hover:text-brand hover:underline">
+              {article.author}
+            </a>
+          ) : (
+            article.author
+          )}
         </p>
       </header>
 
-      <div className="relative mb-10 aspect-[16/9] w-full overflow-hidden rounded-2xl bg-surface-muted">
-        <Image
-          src={article.heroImagePath}
-          alt={locale === "el" ? article.heroImageAlt_el : article.heroImageAlt_en}
-          fill
-          sizes="(min-width: 1024px) 48rem, 100vw"
-          className="object-cover"
-          priority
-        />
-      </div>
+      {summary && (
+        <div className="relative mb-8 mt-4 rounded-xl border border-brand/25 bg-brand/[0.04] px-5 pb-5 pt-6">
+          <span className="absolute -top-3 left-4 rounded-full bg-brand px-3 py-1 text-[11px] font-bold uppercase tracking-widest text-white shadow-sm">
+            {locale === "el" ? "Με μια ματιά" : "At a glance"}
+          </span>
+          <p className="text-lg leading-relaxed text-text-secondary">
+            {summary}
+          </p>
+        </div>
+      )}
 
-      {body ? (
-        <BlogProse
-          markdown={body}
-          locale={locale}
-          injectImages={injectImages.length > 0 ? injectImages : undefined}
-        />
-      ) : (
+      {tocItems.length > 0 && (
+        <nav aria-label={locale === "el" ? "Πίνακας περιεχομένων" : "Table of contents"} className="mb-8 rounded-xl border border-border bg-surface p-4 sm:p-5">
+          <ol className="space-y-2">
+            {tocItems.map((item, i) => (
+              <li key={i} className="flex items-baseline gap-2.5">
+                <span className="shrink-0 text-sm font-bold tabular-nums text-brand">
+                  {String(i + 1).padStart(2, "0")}.
+                </span>
+                <a
+                  href={item.href}
+                  className="text-sm leading-snug text-text-secondary hover:text-brand hover:underline"
+                >
+                  {item.title}
+                </a>
+              </li>
+            ))}
+          </ol>
+        </nav>
+      )}
+
+      <figure className="mb-10">
+        <div className="relative aspect-[16/9] w-full overflow-hidden rounded-2xl bg-surface-muted">
+          <Image
+            src={article.heroImagePath}
+            alt={locale === "el" ? article.heroImageAlt_el : article.heroImageAlt_en}
+            fill
+            sizes="(min-width: 1024px) 48rem, 100vw"
+            className="object-cover"
+            priority
+          />
+        </div>
+        <figcaption className="mt-2 text-center text-xs italic text-text-muted">
+          {locale === "el" ? article.heroCaption_el : article.heroCaption_en}
+        </figcaption>
+      </figure>
+
+      {!rawBody ? (
         <p className="rounded-2xl border border-dashed border-border bg-surface px-6 py-12 text-center text-text-muted">
           {t("blog.bodyMissing")}
         </p>
+      ) : remaining ? (
+        <BlogProse
+          markdown={remaining}
+          locale={locale}
+          injectImages={injectImages.length > 0 ? injectImages : undefined}
+        />
+      ) : null}
+
+      {author && (
+        <div id="author-bio">
+          <AuthorBio author={author} locale={locale} />
+        </div>
       )}
 
       {faq.length > 0 && (
-        <section className="mt-14 rounded-2xl border border-border bg-surface p-6 sm:p-8">
+        <section className="mt-12 rounded-2xl border border-border bg-surface p-6 sm:p-8">
           <h2 className="mb-6 text-xl font-bold tracking-tight text-text-primary sm:text-2xl">
             {locale === "el" ? "Συχνές Ερωτήσεις" : "FAQ"}
           </h2>
@@ -388,14 +490,25 @@ async function ArticleView({
           {prev ? (
             <a
               href={articleHref(prev, locale)}
-              className="group rounded-2xl border border-border bg-surface p-4 hover:border-brand"
+              className="group overflow-hidden rounded-2xl border border-border bg-surface hover:border-brand"
             >
-              <span className="text-xs font-bold uppercase tracking-wide text-text-muted">
-                ← {t("blog.previous")}
-              </span>
-              <span className="mt-1 block font-bold text-text-primary group-hover:text-brand">
-                {articleTitle(prev, locale)}
-              </span>
+              <div className="relative aspect-[16/9] w-full overflow-hidden bg-surface-muted">
+                <Image
+                  src={prev.heroImagePath}
+                  alt={locale === "el" ? prev.heroImageAlt_el : prev.heroImageAlt_en}
+                  fill
+                  sizes="(min-width: 640px) 24rem, 100vw"
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
+              <div className="p-4">
+                <span className="text-xs font-bold uppercase tracking-wide text-text-muted">
+                  ← {t("blog.previous")}
+                </span>
+                <span className="mt-1 block font-bold text-text-primary group-hover:text-brand">
+                  {articleTitle(prev, locale)}
+                </span>
+              </div>
             </a>
           ) : (
             <span />
@@ -403,14 +516,25 @@ async function ArticleView({
           {next ? (
             <a
               href={articleHref(next, locale)}
-              className="group rounded-2xl border border-border bg-surface p-4 text-right hover:border-brand"
+              className="group overflow-hidden rounded-2xl border border-border bg-surface hover:border-brand"
             >
-              <span className="text-xs font-bold uppercase tracking-wide text-text-muted">
-                {t("blog.next")} →
-              </span>
-              <span className="mt-1 block font-bold text-text-primary group-hover:text-brand">
-                {articleTitle(next, locale)}
-              </span>
+              <div className="relative aspect-[16/9] w-full overflow-hidden bg-surface-muted">
+                <Image
+                  src={next.heroImagePath}
+                  alt={locale === "el" ? next.heroImageAlt_el : next.heroImageAlt_en}
+                  fill
+                  sizes="(min-width: 640px) 24rem, 100vw"
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
+              <div className="p-4 text-right">
+                <span className="text-xs font-bold uppercase tracking-wide text-text-muted">
+                  {t("blog.next")} →
+                </span>
+                <span className="mt-1 block font-bold text-text-primary group-hover:text-brand">
+                  {articleTitle(next, locale)}
+                </span>
+              </div>
             </a>
           ) : (
             <span />

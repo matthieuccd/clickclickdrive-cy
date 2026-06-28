@@ -1,5 +1,13 @@
 Getting a driving licence in Cyprus costs more than most people expect. The official fees are just one part of the picture. Lessons, medical checks, and the real chance of a failed test all add up. Before you start, it helps to know what you are actually getting into.
 
+- [The Department of Road Transport official fees](#the-department-of-road-transport-official-fees)
+- [Driving lesson costs](#driving-lesson-costs)
+- [Medical certificate and translation costs](#medical-certificate-and-translation-costs)
+- [What a failed test costs you](#what-a-failed-test-costs-you)
+- [Cost for EU citizens](#cost-for-eu-citizens)
+- [Cost for non-EU nationals](#cost-for-non-eu-nationals)
+- [How to keep your total costs down](#how-to-keep-your-total-costs-down)
+
 ## The Department of Road Transport official fees
 
 The Department of Road Transport is the government body that handles everything to do with driving licences in Cyprus. You deal with them at almost every stage. They process your learner's licence application. They take the booking for your theory test. They take the booking for your practical test. And they issue your final licence when you pass.

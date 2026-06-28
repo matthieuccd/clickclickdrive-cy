@@ -21,6 +21,13 @@ export interface BlogCategory {
   description_en: string;
 }
 
+export interface ImageCredit {
+  alt_en: string;
+  alt_el: string;
+  caption_en: string;
+  caption_el: string;
+}
+
 export interface BlogArticle {
   id: string;
   slug_el: string;
@@ -35,9 +42,14 @@ export interface BlogArticle {
   heroImagePath: string;
   heroImageAlt_el: string;
   heroImageAlt_en: string;
+  heroCaption_en: string;
+  heroCaption_el: string;
+  /** Per supplementary image metadata, keyed by filename without extension: "image2", "inline-1", "inline-2" */
+  imageCredits?: Record<string, ImageCredit>;
   publishedDate: string;
   modifiedDate: string;
   author: string;
+  authorSlug: string;
   relatedCity: CyprusCity | null;
   relatedSlugs: string[];
 }
@@ -113,12 +125,22 @@ export const BLOG_ARTICLES: readonly BlogArticle[] = [
     metaDescription_en:
       "Guide for foreigners who want a Cyprus driving licence. Papers, tests, and cost.",
     heroImagePath: "/blog/how-to-get-driving-licence-cyprus-foreigner/hero.jpg",
-    heroImageAlt_el:
-      "Κυπριακή ύπαιθρος με δρόμο που οδηγεί στα βουνά",
-    heroImageAlt_en: "Cyprus countryside road leading toward the mountains",
+    heroImageAlt_en: "Driver's hands on a Volkswagen steering wheel at sunset, green fields visible through the windscreen",
+    heroImageAlt_el: "Χέρια οδηγού στο τιμόνι Volkswagen στο ηλιοβασίλεμα με πράσινα χωράφια μπροστά",
+    heroCaption_en: "Hands on steering wheel — via Pexels.com",
+    heroCaption_el: "Χέρια στο τιμόνι — via Pexels.com",
+    imageCredits: {
+      "image2": {
+        alt_en: "Three Polish EU passports spread out alongside airline boarding passes on a grey fabric surface",
+        alt_el: "Τρία πολωνικά διαβατήρια ΕΕ απλωμένα μαζί με κάρτες επιβίβασης αεροπλάνου σε γκρι ύφασμα",
+        caption_en: "EU passports and boarding passes — via Pexels.com",
+        caption_el: "Διαβατήρια ΕΕ με κάρτες επιβίβασης — via Pexels.com",
+      },
+    },
     publishedDate: "2026-06-08",
     modifiedDate: "2026-06-08",
-    author: "ClickClickDrive Cyprus",
+    author: "Matthieu Tissot",
+    authorSlug: "matthieu",
     relatedCity: "Nicosia",
     relatedSlugs: [
       "exchange-eu-licence-cyprus",
@@ -142,11 +164,22 @@ export const BLOG_ARTICLES: readonly BlogArticle[] = [
     metaDescription_en:
       "How to get a driving licence in Cyprus step by step. Learner's licence, theory test, and practical test explained.",
     heroImagePath: "/blog/pws-na-vgaleis-diploma-odigisis-stin-kypro/hero.jpg",
-    heroImageAlt_el: "Εκπαιδευτής οδήγησης και μαθητής σε αυτοκίνητο κατά τη διάρκεια μαθήματος",
-    heroImageAlt_en: "Driving instructor and student in car during a lesson",
+    heroImageAlt_en: "An adult man and a young child sitting together in the driver's seat of a car, viewed through the side window",
+    heroImageAlt_el: "Ενήλικας και παιδί καθισμένοι μαζί στη θέση οδηγού αυτοκινήτου, φωτογραφία μέσα από το παράθυρο",
+    heroCaption_en: "Adult and child in car — via Pexels.com",
+    heroCaption_el: "Ενήλικας και παιδί σε αυτοκίνητο — via Pexels.com",
+    imageCredits: {
+      "image2": {
+        alt_en: "A 50 km/h speed limit sign stacked above a 2 KM distance marker against a clear blue sky",
+        alt_el: "Πινακίδα ορίου ταχύτητας 50 χλμ/ώρα με πινακίδα απόστασης 2 ΧΛΜ κάτω, σε καθαρό μπλε ουρανό",
+        caption_en: "Speed limit sign on road — via Pexels.com",
+        caption_el: "Πινακίδα ορίου ταχύτητας — via Pexels.com",
+      },
+    },
     publishedDate: "2026-06-09",
     modifiedDate: "2026-06-09",
-    author: "ClickClickDrive Cyprus",
+    author: "Matthieu Tissot",
+    authorSlug: "matthieu",
     relatedCity: null,
     relatedSlugs: [
       "how-to-get-driving-licence-cyprus-foreigner",
@@ -170,11 +203,22 @@ export const BLOG_ARTICLES: readonly BlogArticle[] = [
     metaDescription_en:
       "Driving education costs in Cyprus. Lessons, tests, medical certificate, and official fees explained.",
     heroImagePath: "/blog/poso-kostizei-ekpaideysi-odigisis-kypros/hero.jpg",
-    heroImageAlt_el: "Σχολή οδηγών με αυτοκίνητα έξω",
-    heroImageAlt_en: "Driving school building with cars outside",
+    heroImageAlt_en: "Blue L-plates mounted on the roofs of two learner driver cars in a car park, with hedgerow behind",
+    heroImageAlt_el: "Μπλε πινακίδες Λ τοποθετημένες στις στέγες δύο αυτοκινήτων εκπαιδευόμενων σε χώρο στάθμευσης",
+    heroCaption_en: "L-plates on learner cars — via Pexels.com",
+    heroCaption_el: "Πινακίδες Λ σε εκπαιδευτικά — via Pexels.com",
+    imageCredits: {
+      "image2": {
+        alt_en: "US dollar bills fanned out on a surface alongside a black calculator and a car key remote",
+        alt_el: "Αμερικανικά χαρτονομίσματα απλωμένα σε επιφάνεια δίπλα σε αριθμομηχανή και τηλεχειριστήριο αυτοκινήτου",
+        caption_en: "Cash, calculator, and car key — via Pexels.com",
+        caption_el: "Χαρτονομίσματα και κλειδί αυτοκινήτου — via Pexels.com",
+      },
+    },
     publishedDate: "2026-06-09",
     modifiedDate: "2026-06-09",
-    author: "ClickClickDrive Cyprus",
+    author: "Matthieu Tissot",
+    authorSlug: "matthieu",
     relatedCity: null,
     relatedSlugs: [
       "how-to-get-driving-licence-cyprus-step-by-step",
@@ -198,11 +242,22 @@ export const BLOG_ARTICLES: readonly BlogArticle[] = [
     metaDescription_en:
       "UK driving licence in Cyprus after Brexit. What documents you need and whether you must sit a test.",
     heroImagePath: "/blog/diploma-odigisis-kypros-uk-citizens-meta-brexit/hero.jpg",
-    heroImageAlt_el: "Βρετανική άδεια οδήγησης στο ταμπλό αυτοκινήτου",
-    heroImageAlt_en: "UK driving licence on a car dashboard",
+    heroImageAlt_en: "A UK-registered Hyundai i10 stopped at a red traffic light at a roundabout, seen from behind through a car windscreen",
+    heroImageAlt_el: "Αυτοκίνητο Hyundai i10 με βρετανικές πινακίδες σταματημένο σε κόκκινο φανάρι σε κυκλικό κόμβο, φωτογραφία από πίσω",
+    heroCaption_en: "UK car at red light — via Pexels.com",
+    heroCaption_el: "Βρετανικό αυτοκίνητο στο φανάρι — via Pexels.com",
+    imageCredits: {
+      "image2": {
+        alt_en: "Aerial view of a busy British dual carriageway with left-hand traffic curving through a suburban landscape at dusk",
+        alt_el: "Εναέρια άποψη πολυσύχναστης βρετανικής διπλής οδού με κυκλοφορία αριστερής πλευράς σε προαστιακό τοπίο",
+        caption_en: "Aerial view of British motorway — via Pexels.com",
+        caption_el: "Εναέρια άποψη βρετανικής οδού — via Pexels.com",
+      },
+    },
     publishedDate: "2026-06-09",
     modifiedDate: "2026-06-09",
-    author: "ClickClickDrive Cyprus",
+    author: "Matthieu Tissot",
+    authorSlug: "matthieu",
     relatedCity: null,
     relatedSlugs: [
       "how-to-get-driving-licence-cyprus-foreigner",
@@ -226,11 +281,22 @@ export const BLOG_ARTICLES: readonly BlogArticle[] = [
     metaDescription_en:
       "EU driving licence exchange in Cyprus. Process, documents, and deadline explained.",
     heroImagePath: "/blog/anallagi-adeias-ee-kypros/hero.jpg",
-    heroImageAlt_el: "Ευρωπαϊκές άδειες οδήγησης στο τραπέζι",
-    heroImageAlt_en: "European driving licences on a table",
+    heroImageAlt_en: "Black and white photo of an office desk with a large stack of documents and a pen, keyboard and monitor in the background",
+    heroImageAlt_el: "Ασπρόμαυρη φωτογραφία γραφείου με μεγάλη στοίβα εγγράφων και στυλό, πληκτρολόγιο και οθόνη στο βάθος",
+    heroCaption_en: "Stack of documents on desk — via Pexels.com",
+    heroCaption_el: "Στοίβα εγγράφων σε γραφείο — via Pexels.com",
+    imageCredits: {
+      "image2": {
+        alt_en: "A hand holding an open passport filled with Cyrillic entry and exit stamps, held up in an airport",
+        alt_el: "Χέρι που κρατά ανοιχτό διαβατήριο γεμάτο σφραγίδες εισόδου και εξόδου στα κυριλλικά, σε αεροδρόμιο",
+        caption_en: "Passport with entry visa stamps — via Pexels.com",
+        caption_el: "Διαβατήριο με σφραγίδες εισόδου — via Pexels.com",
+      },
+    },
     publishedDate: "2026-06-09",
     modifiedDate: "2026-06-09",
-    author: "ClickClickDrive Cyprus",
+    author: "Matthieu Tissot",
+    authorSlug: "matthieu",
     relatedCity: null,
     relatedSlugs: [
       "how-to-get-driving-licence-cyprus-foreigner",
@@ -254,11 +320,22 @@ export const BLOG_ARTICLES: readonly BlogArticle[] = [
     metaDescription_en:
       "Category B driving licence in Cyprus. What it covers, tests required, validity and renewal.",
     heroImagePath: "/blog/katigoria-b-adeia-odigisis-kypros/hero.jpg",
-    heroImageAlt_el: "Αυτοκίνητο σε κυπριακό δρόμο κατά τη διάρκεια πρακτικής εξέτασης",
-    heroImageAlt_en: "Car on a Cyprus road during a practical driving test",
+    heroImageAlt_en: "View through a car windscreen following a blue sedan on a winding tree-lined road in bright sunshine, dried flowers on the dashboard",
+    heroImageAlt_el: "Άποψη μέσα από παρμπρίζ που ακολουθεί μπλε σεντάν σε ελικτό δρόμο με δέντρα στον ήλιο, αποξηραμένα λουλούδια στο ταμπλό",
+    heroCaption_en: "Car on a winding road — via Pexels.com",
+    heroCaption_el: "Αυτοκίνητο σε ελικτό δρόμο — via Pexels.com",
+    imageCredits: {
+      "image2": {
+        alt_en: "A grey car with yellow bonnet markings navigating between orange traffic cones on an outdoor driving test circuit",
+        alt_el: "Γκρι αυτοκίνητο με κίτρινες σημάνσεις που κινείται ανάμεσα σε πορτοκαλί κώνους σε υπαίθριο κύκλωμα δοκιμαστικής οδήγησης",
+        caption_en: "Car navigating test cones — via Pexels.com",
+        caption_el: "Αυτοκίνητο ανάμεσα σε κώνους — via Pexels.com",
+      },
+    },
     publishedDate: "2026-06-09",
     modifiedDate: "2026-06-09",
-    author: "ClickClickDrive Cyprus",
+    author: "Matthieu Tissot",
+    authorSlug: "matthieu",
     relatedCity: null,
     relatedSlugs: [
       "how-to-get-driving-licence-cyprus-step-by-step",
@@ -282,12 +359,14 @@ export const BLOG_ARTICLES: readonly BlogArticle[] = [
     metaDescription_en:
       "Complete 2026 guide to getting a driving licence in Cyprus. Steps, costs, tests, and requirements.",
     heroImagePath: "/blog/cyprus-driving-licence-complete-guide/hero.jpg",
-    heroImageAlt_el:
-      "Κυπριακή άδεια οδήγησης και κλειδιά αυτοκινήτου",
-    heroImageAlt_en: "Cyprus driving licence and car keys on a table",
+    heroImageAlt_en: "A winding empty road through a pine forest in the Cyprus mountains, with a metal guardrail on the left and blue sky above",
+    heroImageAlt_el: "Ελικτός δρόμος μέσα από πευκόδασος στα κυπριακά βουνά, με μεταλλικό κιγκλίδωμα αριστερά και μπλε ουρανό",
+    heroCaption_en: "Mountain road through pine forest — via Pexels.com",
+    heroCaption_el: "Ορεινός δρόμος μέσα σε πεύκα — via Pexels.com",
     publishedDate: "2026-06-27",
     modifiedDate: "2026-06-27",
-    author: "ClickClickDrive Cyprus",
+    author: "Matthieu Tissot",
+    authorSlug: "matthieu",
     relatedCity: null,
     relatedSlugs: [
       "how-to-get-driving-licence-cyprus-step-by-step",

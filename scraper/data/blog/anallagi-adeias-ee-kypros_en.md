@@ -1,5 +1,13 @@
 Moving to Cyprus comes with a long to-do list. Sorting out your driving licence is one item many EU citizens push to the bottom. That is a mistake worth avoiding early.
 
+- [Can you drive in Cyprus on an EU licence](#can-you-drive-in-cyprus-on-an-eu-licence)
+- [Why most EU residents choose to exchange](#why-most-eu-residents-choose-to-exchange)
+- [The exchange process step by step](#the-exchange-process-step-by-step)
+- [Documents you need to bring](#documents-you-need-to-bring)
+- [What happens to your original EU licence](#what-happens-to-your-original-eu-licence)
+- [The deadline and what happens if you miss it](#the-deadline-and-what-happens-if-you-miss-it)
+- [Exchanging when your EU licence has expired](#exchanging-when-your-eu-licence-has-expired)
+
 ## Can you drive in Cyprus on an EU licence
 
 The short answer is yes. If you hold a valid driving licence issued by an EU or EEA country, you can drive legally on the roads of the Republic of Cyprus. You do not need to swap it on arrival. You do not need to take any new test simply because you have moved here.
