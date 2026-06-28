@@ -38,14 +38,19 @@ const DATA = {
 };
 
 const W = 700;
-const CARD_W = 140;
-const CARD_H = 100;
 const H = 220;
+const CARDS_TOP = 58;
+const CARD_H = 100;
+const CARD_GAP = 8;
+// Available width per side (half minus a small margin so cards don't crowd the centre line)
+const SECTION_W = W / 2 - 20;
 
 export function CategoryBVehiclesInfographic({ locale }: { locale: Locale }) {
   const d = DATA[locale];
-  const allowedGap = (W / 2 - 20 - d.allowed.length * CARD_W) / (d.allowed.length + 1);
-  const notGap = (W / 2 - 20 - d.notAllowed.length * CARD_W) / (d.notAllowed.length + 1);
+
+  // Compute card widths to fill each section without overlap
+  const aCW = Math.floor((SECTION_W - (d.allowed.length + 1) * CARD_GAP) / d.allowed.length);
+  const nCW = Math.floor((SECTION_W - (d.notAllowed.length + 1) * CARD_GAP) / d.notAllowed.length);
 
   return (
     <figure className="my-8 overflow-hidden rounded-2xl bg-[#f3f3f3] p-4">
@@ -73,28 +78,28 @@ export function CategoryBVehiclesInfographic({ locale }: { locale: Locale }) {
 
         {/* Allowed cards */}
         {d.allowed.map((item, i) => {
-          const x = allowedGap + i * (CARD_W + allowedGap);
-          const cx = x + CARD_W / 2;
+          const x = CARD_GAP + i * (aCW + CARD_GAP);
+          const cx = x + aCW / 2;
           return (
             <g key={i}>
-              <rect x={x} y={56} width={CARD_W} height={CARD_H} rx={8} fill="#ffffff" stroke="#22c55e" strokeWidth={1.5} />
-              <text x={cx} y={82} textAnchor="middle" fontSize={22} fontFamily="system-ui, sans-serif">{item.icon}</text>
-              <text x={cx} y={100} textAnchor="middle" fill="#354354" fontSize={10} fontWeight="600" fontFamily="system-ui, sans-serif">{item.label}</text>
-              <text x={cx} y={114} textAnchor="middle" fill="#7a8794" fontSize={9} fontFamily="system-ui, sans-serif">{item.sub}</text>
+              <rect x={x} y={CARDS_TOP} width={aCW} height={CARD_H} rx={8} fill="#ffffff" stroke="#22c55e" strokeWidth={1.5} />
+              <text x={cx} y={CARDS_TOP + 28} textAnchor="middle" fontSize={20} fontFamily="system-ui, sans-serif">{item.icon}</text>
+              <text x={cx} y={CARDS_TOP + 50} textAnchor="middle" fill="#354354" fontSize={9} fontWeight="600" fontFamily="system-ui, sans-serif">{item.label}</text>
+              <text x={cx} y={CARDS_TOP + 64} textAnchor="middle" fill="#7a8794" fontSize={8} fontFamily="system-ui, sans-serif">{item.sub}</text>
             </g>
           );
         })}
 
         {/* Not allowed cards */}
         {d.notAllowed.map((item, i) => {
-          const x = W / 2 + notGap + i * (CARD_W + notGap);
-          const cx = x + CARD_W / 2;
+          const x = W / 2 + CARD_GAP + i * (nCW + CARD_GAP);
+          const cx = x + nCW / 2;
           return (
             <g key={i}>
-              <rect x={x} y={56} width={CARD_W} height={CARD_H} rx={8} fill="#ffffff" stroke="#ef4444" strokeWidth={1.5} />
-              <text x={cx} y={82} textAnchor="middle" fontSize={22} fontFamily="system-ui, sans-serif">{item.icon}</text>
-              <text x={cx} y={100} textAnchor="middle" fill="#354354" fontSize={10} fontWeight="600" fontFamily="system-ui, sans-serif">{item.label}</text>
-              <text x={cx} y={114} textAnchor="middle" fill="#7a8794" fontSize={9} fontFamily="system-ui, sans-serif">{item.sub}</text>
+              <rect x={x} y={CARDS_TOP} width={nCW} height={CARD_H} rx={8} fill="#ffffff" stroke="#ef4444" strokeWidth={1.5} />
+              <text x={cx} y={CARDS_TOP + 28} textAnchor="middle" fontSize={20} fontFamily="system-ui, sans-serif">{item.icon}</text>
+              <text x={cx} y={CARDS_TOP + 50} textAnchor="middle" fill="#354354" fontSize={9} fontWeight="600" fontFamily="system-ui, sans-serif">{item.label}</text>
+              <text x={cx} y={CARDS_TOP + 64} textAnchor="middle" fill="#7a8794" fontSize={8} fontFamily="system-ui, sans-serif">{item.sub}</text>
             </g>
           );
         })}

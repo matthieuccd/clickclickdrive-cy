@@ -48,7 +48,7 @@ const DATA = {
 };
 
 const W = 700;
-const H = 168;
+const H = 200;
 const BOX_W = 160;
 const BOX_H = 112;
 const GAP = (W - 3 * BOX_W) / 4;
@@ -99,8 +99,8 @@ export function EuExchangeInfographic({ locale }: { locale: Locale }) {
         })}
 
         {/* No-tests badge */}
-        <rect x={W - 148} y={H - 28} width={142} height={22} rx={11} fill="#f74656" />
-        <text x={W - 77} y={H - 13} textAnchor="middle" fill="#ffffff" fontSize={11} fontWeight="700" fontFamily="system-ui, sans-serif">
+        <rect x={W - 148} y={H - 32} width={142} height={22} rx={11} fill="#f74656" />
+        <text x={W - 77} y={H - 17} textAnchor="middle" fill="#ffffff" fontSize={11} fontWeight="700" fontFamily="system-ui, sans-serif">
           {d.badge}
         </text>
       </svg>
