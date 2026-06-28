@@ -31,11 +31,11 @@ export async function generateMetadata({
       pathEn: "/driving-schools",
     }),
     openGraph: {
-      title,
-      description,
-      url: siteUrl(locale === "el" ? "/scholes-odigon" : "/en/driving-schools"),
+      title: "Όλες οι σχολές οδηγών στην Κύπρο",
+      description: "Όλες οι σχολές οδηγών σε Λευκωσία, Λεμεσό, Λάρνακα, Πάφο και Παραλίμνι. Αξιολογήσεις και ωράρια.",
+      url: siteUrl("/scholes-odigon"),
       type: "website",
-      locale: locale === "el" ? "el_CY" : "en_CY",
+      locale: "el_CY",
     },
   };
 }

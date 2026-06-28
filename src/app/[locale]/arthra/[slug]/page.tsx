@@ -75,11 +75,11 @@ export async function generateMetadata({
         },
       },
       openGraph: {
-        title,
-        description,
-        url: siteUrl(lc === "el" ? pathEl : `/en${pathEn}`),
+        title: article.title_el,
+        description: article.metaDescription_el,
+        url: siteUrl(pathEl),
         type: "article",
-        locale: lc === "el" ? "el_CY" : "en_CY",
+        locale: "el_CY",
         images: [{ url: siteUrl(article.heroImagePath) }],
       },
     };
@@ -104,11 +104,11 @@ export async function generateMetadata({
         },
       },
       openGraph: {
-        title,
-        description,
-        url: siteUrl(lc === "el" ? pathEl : `/en${pathEn}`),
+        title: category.title_el,
+        description: category.description_el,
+        url: siteUrl(pathEl),
         type: "website",
-        locale: lc === "el" ? "el_CY" : "en_CY",
+        locale: "el_CY",
       },
     };
   }

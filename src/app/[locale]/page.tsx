@@ -36,11 +36,11 @@ export async function generateMetadata({
     description,
     alternates: buildAlternates({ pathEl: "/", pathEn: "/" }),
     openGraph: {
-      title,
-      description,
-      url: siteUrl(locale === "el" ? "/" : "/en"),
+      title: "ClickClickDrive Κύπρος - Σχολές οδηγών",
+      description: "Βρείτε σχολές οδηγών σε όλη την Κύπρο. Συγκρίνετε αξιολογήσεις και ωράρια. Δωρεάν.",
+      url: siteUrl("/"),
       type: "website",
-      locale: locale === "el" ? "el_CY" : "en_CY",
+      locale: "el_CY",
       images: [{ url: siteUrl("/logo.svg") }],
     },
   };

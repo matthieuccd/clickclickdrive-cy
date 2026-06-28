@@ -20,10 +20,11 @@ export async function generateMetadata({
     description,
     alternates: buildAlternates({ pathEl: "/oroi", pathEn: "/terms" }),
     openGraph: {
-      title,
-      description,
-      url: siteUrl(locale === "el" ? "/oroi" : "/en/terms"),
+      title: "Όροι χρήσης",
+      description: "Όροι χρήσης για το ClickClickDrive Κύπρος.",
+      url: siteUrl("/oroi"),
       type: "article",
+      locale: "el_CY",
     },
   };
 }

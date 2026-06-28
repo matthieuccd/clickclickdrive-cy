@@ -80,23 +80,27 @@ export async function generateMetadata({
       description,
       alternates: buildAlternates({ pathEl, pathEn }),
       openGraph: {
-        title,
-        description,
-        url: siteUrl(locale === "el" ? pathEl : pathEn),
+        title: `Σχολές οδηγών στη(ν) ${cityLabelEl}`,
+        description: `${inCity.length} σχολές οδηγών στη(ν) ${cityLabelEl}. Αξιολογήσεις, ωράρια, τηλέφωνα.`,
+        url: siteUrl(pathEl),
         type: "website",
-        locale: locale === "el" ? "el_CY" : "en_CY",
+        locale: "el_CY",
       },
     };
   }
 
   const s = lookup.school;
   const name = displayName(s, locale as Locale);
+  const nameEl = displayName(s, "el");
   const cityLabel =
     s.location.city && locale === "el"
       ? (
           { Nicosia: "Λευκωσία", Limassol: "Λεμεσός", Larnaca: "Λάρνακα", Paphos: "Πάφος", Paralimni: "Παραλίμνι" } as const
         )[s.location.city]
       : s.location.city;
+  const cityLabelEl = s.location.city
+    ? ({ Nicosia: "Λευκωσία", Limassol: "Λεμεσός", Larnaca: "Λάρνακα", Paphos: "Πάφος", Paralimni: "Παραλίμνι" } as const)[s.location.city]
+    : undefined;
   const description =
     locale === "el"
       ? `${name} στη(ν) ${cityLabel}. Αξιολόγηση ${s.rating?.toFixed(1) ?? "-"}, τηλέφωνο, ωράριο.`
@@ -109,11 +113,11 @@ export async function generateMetadata({
     description,
     alternates: buildAlternates({ pathEl, pathEn }),
     openGraph: {
-      title: name,
-      description,
-      url: siteUrl(locale === "el" ? pathEl : pathEn),
+      title: nameEl,
+      description: `${nameEl} στη(ν) ${cityLabelEl ?? s.location.city}. Αξιολόγηση ${s.rating?.toFixed(1) ?? "-"}, τηλέφωνο, ωράριο.`,
+      url: siteUrl(pathEl),
       type: "website",
-      locale: locale === "el" ? "el_CY" : "en_CY",
+      locale: "el_CY",
       images: ogImage ? [{ url: ogImage }] : undefined,
     },
   };

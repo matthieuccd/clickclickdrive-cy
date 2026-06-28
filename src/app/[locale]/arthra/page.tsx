@@ -31,11 +31,11 @@ export async function generateMetadata({
     description,
     alternates: buildAlternates({ pathEl: "/arthra", pathEn: "/blog" }),
     openGraph: {
-      title,
-      description,
-      url: siteUrl(blogIndexHref(locale as Locale)),
+      title: "Άρθρα και οδηγοί για δίπλωμα οδήγησης στην Κύπρο",
+      description: "Πρακτικοί οδηγοί για να βγάλετε δίπλωμα οδήγησης στην Κύπρο. Θεωρία, πράξη, ξένοι, κόστος.",
+      url: siteUrl("/arthra"),
       type: "website",
-      locale: locale === "el" ? "el_CY" : "en_CY",
+      locale: "el_CY",
     },
   };
 }

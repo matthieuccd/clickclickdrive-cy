@@ -34,16 +34,15 @@ export async function generateMetadata({
 
   const title =
     lc === "el"
-      ? `${author.name} — Συγγραφέας | ClickClickDrive Κύπρος`
-      : `${author.name} — Author | ClickClickDrive Cyprus`;
-  const description =
-    lc === "el" ? author.bio_el : author.bio_en;
+      ? `${author.name} - Συγγραφέας | ClickClickDrive Κύπρος`
+      : `${author.name} - Author | ClickClickDrive Cyprus`;
+  const descriptionEl = author.bio_short_el;
   const pathEl = `/arthrografoi/${slug}`;
   const pathEn = `/en/authors/${slug}`;
 
   return {
     title,
-    description,
+    description: lc === "el" ? author.bio_short_el : author.bio_short_en,
     alternates: {
       canonical: siteUrl(pathEl),
       languages: {
@@ -51,6 +50,13 @@ export async function generateMetadata({
         el: siteUrl(pathEl),
         en: siteUrl(pathEn),
       },
+    },
+    openGraph: {
+      title: `${author.name} - Συγγραφέας | ClickClickDrive Κύπρος`,
+      description: descriptionEl,
+      url: siteUrl(pathEl),
+      type: "profile",
+      locale: "el_CY",
     },
   };
 }
