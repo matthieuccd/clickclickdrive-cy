@@ -36,6 +36,8 @@ The fourth reason is that a Cypriot licence is valid across all EU member states
 
 For most people who have settled here permanently, exchanging just makes life easier. It is one less thing to worry about.
 
+{{widget:eu-exchange-checker}}
+
 ## What is the exchange process step by step?
 
 The process is simpler than most people expect. There are no tests involved. You go in, submit your documents, and wait for your new licence to be issued. Here is how it works in practice.
@@ -111,8 +113,6 @@ The safest approach is always to deal with the exchange while your licence is va
 Exchanging your EU licence in Cyprus is not something you are always forced to do. But for anyone planning to stay long-term, it is usually the sensible move. The process is simple, there are no tests involved, and a Cypriot licence works everywhere in Europe. Get your documents together, visit your nearest Department of Road Transport office, and get it done. Future you will appreciate not having to explain a foreign licence at a car rental desk or track down a replacement from another country.
 
 ---
-
-{{widget:eu-exchange-checker}}
 
 ## FAQ
 

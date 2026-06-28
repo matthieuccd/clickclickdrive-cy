@@ -93,6 +93,8 @@ Even if you do not need to sit tests, it is sensible to brush up on Cypriot road
 
 If you do end up needing lessons, finding a good school matters. You can look at [driving schools in Nicosia](/en/driving-schools/nicosia) if that is where you are based.
 
+{{widget:uk-licence-checker}}
+
 ## Does driving on the left give UK drivers an advantage?
 
 Yes, and it is a more significant advantage than it might seem.
@@ -127,8 +129,6 @@ The whole process can take several weeks depending on appointment availability a
 For more general help with driving and car-related questions in Cyprus, [ClickClickDrive Cyprus](/en) covers a range of topics that UK expats often find useful.
 
 Getting your licence sorted properly is one of those tasks that feels like a burden until it is done. Once you hold a valid Cypriot licence, you have an EU licence that works across the continent. That is a genuinely useful thing to have, and it is worth putting in the effort to get it right. The Department of Road Transport is straightforward to deal with if you arrive prepared and with the right paperwork. Do your homework first and the process is far less painful than it sounds.
-
-{{widget:uk-licence-checker}}
 
 ## FAQ
 

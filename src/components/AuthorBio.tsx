@@ -28,6 +28,7 @@ export function AuthorBio({ author, locale }: Props) {
             height={56}
             className="size-14 rounded-full object-cover"
             priority
+            unoptimized
           />
         </a>
         <div className="min-w-0">
