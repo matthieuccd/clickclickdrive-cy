@@ -31,11 +31,11 @@ export async function generateMetadata({
     description: description.slice(0, 150),
     alternates: buildAlternates({ pathEl: CONFIG.pathEl, pathEn: CONFIG.pathEn }),
     openGraph: {
-      title: `Οι ${n} Καλύτερες Σχολές Οδηγών στη(ν) ${CONFIG.cityElAcc} 2026`,
-      description: `Κατάταξη και αξιολογήσεις για ${n} σχολές οδηγών στη(ν) ${CONFIG.cityElAcc}. Διευθύνσεις, τηλέφωνα και φωτογραφίες.`,
-      url: siteUrl(CONFIG.pathEl),
+      title,
+      description: description.slice(0, 150),
+      url: siteUrl(locale === "el" ? CONFIG.pathEl : "/en" + CONFIG.pathEn),
       type: "article",
-      locale: "el_CY",
+      locale: locale === "el" ? "el_CY" : "en_CY",
       ...(hero ? { images: [{ url: siteUrl(hero), width: 1600, height: 900 }] } : {}),
     },
   };

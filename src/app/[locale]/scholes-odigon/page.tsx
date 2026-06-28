@@ -31,11 +31,11 @@ export async function generateMetadata({
       pathEn: "/driving-schools",
     }),
     openGraph: {
-      title: "Όλες οι σχολές οδηγών στην Κύπρο",
-      description: "Όλες οι σχολές οδηγών σε Λευκωσία, Λεμεσό, Λάρνακα, Πάφο και Παραλίμνι. Αξιολογήσεις και ωράρια.",
-      url: siteUrl("/scholes-odigon"),
+      title,
+      description,
+      url: siteUrl(locale === "el" ? "/scholes-odigon" : "/en/driving-schools"),
       type: "website",
-      locale: "el_CY",
+      locale: locale === "el" ? "el_CY" : "en_CY",
     },
   };
 }

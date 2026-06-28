@@ -52,11 +52,11 @@ export async function generateMetadata({
       },
     },
     openGraph: {
-      title: `${author.name} - Συγγραφέας | ClickClickDrive Κύπρος`,
-      description: descriptionEl,
-      url: siteUrl(pathEl),
+      title,
+      description: lc === "el" ? author.bio_short_el : author.bio_short_en,
+      url: siteUrl(lc === "el" ? pathEl : pathEn),
       type: "profile",
-      locale: "el_CY",
+      locale: lc === "el" ? "el_CY" : "en_CY",
     },
   };
 }

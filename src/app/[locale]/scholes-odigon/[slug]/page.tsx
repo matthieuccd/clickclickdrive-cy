@@ -80,11 +80,11 @@ export async function generateMetadata({
       description,
       alternates: buildAlternates({ pathEl, pathEn }),
       openGraph: {
-        title: `Σχολές οδηγών στη(ν) ${cityLabelEl}`,
-        description: `${inCity.length} σχολές οδηγών στη(ν) ${cityLabelEl}. Αξιολογήσεις, ωράρια, τηλέφωνα.`,
-        url: siteUrl(pathEl),
+        title,
+        description,
+        url: siteUrl(locale === "el" ? pathEl : pathEn),
         type: "website",
-        locale: "el_CY",
+        locale: locale === "el" ? "el_CY" : "en_CY",
       },
     };
   }
@@ -113,11 +113,11 @@ export async function generateMetadata({
     description,
     alternates: buildAlternates({ pathEl, pathEn }),
     openGraph: {
-      title: nameEl,
-      description: `${nameEl} στη(ν) ${cityLabelEl ?? s.location.city}. Αξιολόγηση ${s.rating?.toFixed(1) ?? "-"}, τηλέφωνο, ωράριο.`,
-      url: siteUrl(pathEl),
+      title: name,
+      description,
+      url: siteUrl(locale === "el" ? pathEl : pathEn),
       type: "website",
-      locale: "el_CY",
+      locale: locale === "el" ? "el_CY" : "en_CY",
       images: ogImage ? [{ url: ogImage }] : undefined,
     },
   };
