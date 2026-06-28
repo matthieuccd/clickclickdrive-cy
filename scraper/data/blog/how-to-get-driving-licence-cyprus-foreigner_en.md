@@ -49,7 +49,7 @@ A certified translation is usually done by an official translator. The Departmen
 
 If you are unsure where your country stands, call or visit the Department before you do anything else. Getting the right information early saves you time and money. Going in unprepared can mean wasted trips and forms filled in incorrectly.
 
-{{infographic:licence-steps}}
+{{infographic:foreigner-documents}}
 
 ## What papers do you need to bring?
 
@@ -132,6 +132,8 @@ Waiting times for test slots can vary by city and by season. Nicosia tends to be
 Budget for the process taking longer than you expect. Government offices have their own timelines. If your documents are in order and you are prepared, things move reasonably well. If paperwork is missing or tests need rescheduling, it can drag on.
 
 Getting your Cyprus driving licence takes some effort, but it is a one-time process. Once you have it, you are free to drive anywhere in the Republic of Cyprus with a local licence in your wallet. The paperwork can feel tedious, but most foreigners who go through it say the organised approach makes it manageable. Start by confirming your category with the Department of Road Transport, gather your documents early, and book your lessons with a school that has a solid pass rate.
+
+{{widget:foreigner-path-checker}}
 
 ## FAQ
 

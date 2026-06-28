@@ -161,7 +161,8 @@ ARTICLES: tuple[ArticleSpec, ...] = (
             "What happens on practical test day?",
             "What does it cost and how long does it take?",
         ),
-        infographic_type="licence-steps",
+        widget_id="foreigner-path-checker",
+        infographic_type="foreigner-documents",
         internal_links_el=(
             ("/arthra/anallagi-adeias-ee-kypros", "ανταλλαγή άδειας ΕΕ"),
             ("/arthra/vretaniko-diploma-kypros", "βρετανική άδεια μετά το Brexit"),
@@ -229,7 +230,7 @@ ARTICLES: tuple[ArticleSpec, ...] = (
             "What happens at the practical test?",
             "What happens after you pass?",
         ),
-        infographic_type="licence-steps",
+        infographic_type="licence-timeline",
         internal_links_el=(
             ("/arthra/diploma-odigisis-gia-ksenous-stin-kypro", "δίπλωμα για ξένους στην Κύπρο"),
             ("/arthra/anallagi-adeias-ee-kypros", "ανταλλαγή ευρωπαϊκής άδειας"),
@@ -371,6 +372,7 @@ ARTICLES: tuple[ArticleSpec, ...] = (
             "Does driving on the left give UK drivers an advantage?",
             "What is the step-by-step process for UK citizens in Cyprus?",
         ),
+        widget_id="uk-licence-checker",
         infographic_type="uk-exchange",
         internal_links_el=(
             ("/arthra/diploma-odigisis-gia-ksenous-stin-kypro", "δίπλωμα ξένων στην Κύπρο"),
@@ -441,6 +443,7 @@ ARTICLES: tuple[ArticleSpec, ...] = (
             "What is the deadline and what happens if you miss it?",
             "What if your EU licence has already expired?",
         ),
+        widget_id="eu-exchange-checker",
         infographic_type="eu-exchange",
         internal_links_el=(
             ("/arthra/diploma-odigisis-gia-ksenous-stin-kypro", "δίπλωμα για ξένους"),
@@ -511,7 +514,7 @@ ARTICLES: tuple[ArticleSpec, ...] = (
             "Can you tow with a Category B licence in Cyprus?",
             "How long is your Cyprus Category B licence valid and when must you renew?",
         ),
-        infographic_type="licence-steps",
+        infographic_type="category-b-vehicles",
         internal_links_el=(
             ("/arthra/pws-na-vgaleis-diploma-odigisis-stin-kypro", "βήμα προς βήμα οδηγός για δίπλωμα"),
             ("/arthra/diploma-odigisis-gia-ksenous-stin-kypro", "δίπλωμα για ξένους"),
@@ -647,7 +650,7 @@ ARTICLES: tuple[ArticleSpec, ...] = (
             "with the Department."
         ),
         widget_id="price-calculator",
-        infographic_type="licence-steps",
+        infographic_type="licence-paths",
         inline_image_queries=(
             "driving instructor lesson student car cyprus",
             "computer theory test driving exam screen",

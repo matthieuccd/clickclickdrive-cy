@@ -54,7 +54,7 @@ Fees are set by the Department and can change. Do not rely on figures printed in
 
 Once your learner's licence is approved, you are in the system. You can book lessons, and when the car is moving with you at the wheel, red L plates must be displayed on the front and rear of the vehicle at all times. This is a legal requirement, not a suggestion.
 
-{{infographic:licence-steps}}
+{{infographic:licence-paths}}
 
 ## What should you expect from driving lessons?
 

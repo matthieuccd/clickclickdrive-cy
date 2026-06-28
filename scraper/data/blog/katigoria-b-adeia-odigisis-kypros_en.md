@@ -48,7 +48,7 @@ Once you have the learner's licence, you are not yet allowed to drive on your ow
 
 The learner's licence is the gateway to everything else. Without it, no driving school can officially enrol you for lessons, and you cannot book your theory test. Get this step done first.
 
-{{infographic:licence-steps}}
+{{infographic:category-b-vehicles}}
 
 The Department of Road Transport offices are open on weekdays. Go early if you can - queues build up through the morning, especially at the Nicosia headquarters. The Paralimni and Paphos offices tend to be quieter. Bring originals and photocopies of all your documents. Staff sometimes ask for both.
 

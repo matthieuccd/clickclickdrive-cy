@@ -128,6 +128,8 @@ For more general help with driving and car-related questions in Cyprus, [ClickCl
 
 Getting your licence sorted properly is one of those tasks that feels like a burden until it is done. Once you hold a valid Cypriot licence, you have an EU licence that works across the continent. That is a genuinely useful thing to have, and it is worth putting in the effort to get it right. The Department of Road Transport is straightforward to deal with if you arrive prepared and with the right paperwork. Do your homework first and the process is far less painful than it sounds.
 
+{{widget:uk-licence-checker}}
+
 ## FAQ
 
 **Does my UK driving licence automatically convert to a Cypriot one after Brexit?**

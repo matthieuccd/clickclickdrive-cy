@@ -3,7 +3,7 @@ import type { Locale } from "@/lib/types";
 const DATA = {
   el: {
     title: "Η διαδικασία για Βρετανούς οδηγούς στην Κύπρο",
-    caption: "Βάσει της διμερούς συμφωνίας Κύπρου-Ηνωμένου Βασιλείου.επιβεβαιώστε την ισχύουσα κατάσταση στο ΤΟΜ",
+    caption: "Βάσει της διμερούς συμφωνίας Κύπρου-Ηνωμένου Βασιλείου. Επιβεβαιώστε την ισχύουσα κατάσταση στο ΤΟΜ.",
     steps: [
       {
         num: "1",
@@ -29,7 +29,7 @@ const DATA = {
   },
   en: {
     title: "The process for UK drivers in Cyprus",
-    caption: "Based on the Cyprus-UK bilateral agreement.confirm current status with the Department of Road Transport",
+    caption: "Based on the Cyprus-UK bilateral agreement. Confirm current status with the Department of Road Transport.",
     steps: [
       {
         num: "1",
@@ -74,13 +74,26 @@ export function UkExchangeInfographic({ locale }: { locale: Locale }) {
         role="img"
         aria-label={d.title}
       >
+        <style>{`
+          @keyframes ukStepIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to   { opacity: 1; transform: translateY(0); }
+          }
+        `}</style>
+
         {d.steps.map((step, i) => {
           const x = GAP + i * (BOX_W + GAP);
           const y = (H - BOX_H) / 2;
           const cx = x + BOX_W / 2;
 
           return (
-            <g key={i}>
+            <g
+              key={i}
+              style={{
+                animation: "ukStepIn 0.45s ease both",
+                animationDelay: `${i * 0.18}s`,
+              }}
+            >
               <rect x={x} y={y} width={BOX_W} height={BOX_H} rx={10} fill="#ffffff" stroke="#e4e7eb" strokeWidth={1.5} />
               <circle cx={cx} cy={y + 22} r={14} fill="#f74656" />
               <text x={cx} y={y + 27} textAnchor="middle" fill="#ffffff" fontSize={13} fontWeight="700" fontFamily="system-ui, sans-serif">

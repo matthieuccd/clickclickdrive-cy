@@ -1,11 +1,18 @@
 import Image from "next/image";
 import React from "react";
 
+import { CategoryBVehiclesInfographic } from "@/components/infographics/CategoryBVehiclesInfographic";
 import { CostBreakdownInfographic } from "@/components/infographics/CostBreakdownInfographic";
 import { EuExchangeInfographic } from "@/components/infographics/EuExchangeInfographic";
+import { ForeignerDocumentsInfographic } from "@/components/infographics/ForeignerDocumentsInfographic";
+import { LicencePathsInfographic } from "@/components/infographics/LicencePathsInfographic";
 import { LicenceStepsInfographic } from "@/components/infographics/LicenceStepsInfographic";
+import { LicenceTimelineInfographic } from "@/components/infographics/LicenceTimelineInfographic";
 import { UkExchangeInfographic } from "@/components/infographics/UkExchangeInfographic";
+import { EuExchangeChecker } from "@/components/widgets/EuExchangeChecker";
+import { ForeignerPathChecker } from "@/components/widgets/ForeignerPathChecker";
 import { PriceCalculator } from "@/components/widgets/PriceCalculator";
+import { UkLicenceChecker } from "@/components/widgets/UkLicenceChecker";
 import type { Locale } from "@/lib/types";
 
 interface InjectImage {
@@ -88,6 +95,14 @@ export function BlogProse({ markdown, locale, injectImages = [] }: Props) {
         elements.push(<UkExchangeInfographic key={i} locale={locale} />);
       } else if (type === "eu-exchange") {
         elements.push(<EuExchangeInfographic key={i} locale={locale} />);
+      } else if (type === "foreigner-documents") {
+        elements.push(<ForeignerDocumentsInfographic key={i} locale={locale} />);
+      } else if (type === "licence-timeline") {
+        elements.push(<LicenceTimelineInfographic key={i} locale={locale} />);
+      } else if (type === "category-b-vehicles") {
+        elements.push(<CategoryBVehiclesInfographic key={i} locale={locale} />);
+      } else if (type === "licence-paths") {
+        elements.push(<LicencePathsInfographic key={i} locale={locale} />);
       }
       continue;
     }
@@ -119,6 +134,12 @@ export function BlogProse({ markdown, locale, injectImages = [] }: Props) {
       const id = widgetMatch[1];
       if (id === "price-calculator") {
         elements.push(<PriceCalculator key={i} locale={locale} />);
+      } else if (id === "uk-licence-checker") {
+        elements.push(<UkLicenceChecker key={i} locale={locale} />);
+      } else if (id === "eu-exchange-checker") {
+        elements.push(<EuExchangeChecker key={i} locale={locale} />);
+      } else if (id === "foreigner-path-checker") {
+        elements.push(<ForeignerPathChecker key={i} locale={locale} />);
       }
       continue;
     }
