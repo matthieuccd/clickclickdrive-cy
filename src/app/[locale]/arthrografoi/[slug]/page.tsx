@@ -142,7 +142,11 @@ export default async function AuthorPage({
             </a>
           </div>
           <p className="mt-1 text-text-muted">{title}</p>
-          <p className="mt-3 leading-relaxed text-text-secondary">{bio}</p>
+          <div className="mt-3 space-y-3 leading-relaxed text-text-secondary">
+            {bio.split("\n\n").map((paragraph, i) => (
+              <p key={i}>{paragraph}</p>
+            ))}
+          </div>
         </div>
       </div>
 

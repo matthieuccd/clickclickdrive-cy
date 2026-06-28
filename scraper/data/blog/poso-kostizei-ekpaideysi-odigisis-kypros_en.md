@@ -1,122 +1,146 @@
-Getting a driving licence in Cyprus costs more than most people expect. The official fees are just one part of the picture. Lessons, medical checks, and the real chance of a failed test all add up. Before you start, it helps to know what you are actually getting into.
+Getting a driving licence in Cyprus costs more than most people expect. The total depends on your nationality, how many tests you pass first time, and which city you learn in. Budget carefully before you start.
 
-- [The Department of Road Transport official fees](#the-department-of-road-transport-official-fees)
-- [Driving lesson costs](#driving-lesson-costs)
-- [Medical certificate and translation costs](#medical-certificate-and-translation-costs)
-- [What a failed test costs you](#what-a-failed-test-costs-you)
-- [Cost for EU citizens](#cost-for-eu-citizens)
-- [Cost for non-EU nationals](#cost-for-non-eu-nationals)
-- [How to keep your total costs down](#how-to-keep-your-total-costs-down)
+- [What are the official Department of Road Transport fees?](#what-are-the-official-department-of-road-transport-fees)
+- [How much do driving lessons cost?](#how-much-do-driving-lessons-cost)
+- [Do you need a medical certificate or translation?](#do-you-need-a-medical-certificate-or-translation)
+- [What does it cost if you fail a test?](#what-does-it-cost-if-you-fail-a-test)
+- [What does it cost EU citizens?](#what-does-it-cost-eu-citizens)
+- [What does it cost non-EU nationals?](#what-does-it-cost-non-eu-nationals)
+- [How can you keep your total costs down?](#how-can-you-keep-your-total-costs-down)
 
-## The Department of Road Transport official fees
+Cyprus has a clear process for getting a driving licence, but the price is spread across many separate steps. Some costs go to the government. Some go to your driving school. Some go to a doctor or a translator. Knowing all of them in advance stops you from getting caught out halfway through.
 
-The Department of Road Transport is the government body that handles everything to do with driving licences in Cyprus. You deal with them at almost every stage. They process your learner's licence application. They take the booking for your theory test. They take the booking for your practical test. And they issue your final licence when you pass.
+## What are the official Department of Road Transport fees?
 
-At each of those stages, there is a fee. The amounts are set by the government and can change from year to year. For that reason, you should check current fees directly with the Department of Road Transport before you budget. Do not rely on figures you find in a forum or from someone who went through the process a few years ago. Fees have changed before and they can change again.
+The Department of Road Transport sets official fees for each stage of the licensing process. You pay to apply for a learner's licence. You pay to book the theory test. You pay to book the practical test. You pay again when the full licence is issued.
 
-What you can say with confidence is that the fees cover several separate things. There is a fee to apply for a learner's licence. There is a fee to book the theory test. There is a fee to book the practical test. And there is a fee for the licence itself when you finally get it. Each of these is a separate payment, not one lump sum at the start.
+These fees are set by the government and apply across the whole Republic of Cyprus. They are not set by your driving school. You pay them directly when you submit your application or book a test slot.
 
-If you want a full picture of the process before you look at costs, the [step-by-step driving licence guide](/en/blog/how-to-get-driving-licence-cyprus-step-by-step) covers each stage in order. It is worth reading before you visit the Department, so you know what to expect.
+The amounts can change over time. The Department of Road Transport is the only reliable source for current figures. Do not rely on what a friend paid two years ago. Check current fees with the Department of Road Transport before you start the process.
 
-The Department has offices in Nicosia, Limassol, Larnaca, Paphos, and Famagusta district. The process is the same across offices, but it is always smart to call ahead and confirm appointment availability.
+What the fees cover at a glance:
 
-## Driving lesson costs
+- Learner's licence application
+- Theory test booking
+- Practical test booking
+- Full licence issue
 
-Lesson prices are not set by the government. Every driving school sets its own rates. That means prices vary between cities and between schools in the same city. There is no single answer to "how much does a lesson cost in Cyprus."
+Each of these is a separate payment. They do not come as one bundle. If you go through the process without failing anything, these official fees are a fixed and predictable part of your total cost. For a full walkthrough of the process itself, the [step-by-step driving licence guide](/en/blog/how-to-get-driving-licence-cyprus-step-by-step) explains each stage in plain language.
 
-Lessons typically last 45 minutes each. Most schools sell lessons individually or in packages. A package usually costs less per lesson than booking one at a time. But packages vary too. Some schools bundle theory support with practical driving hours. Others keep them separate.
+{{infographic:cost-breakdown}}
 
-The number of lessons you need depends on your starting point. If you have never driven before, you will need more hours than someone who has been driving in another country for years. Instructors usually give an honest assessment after the first few sessions. A rough general expectation is somewhere between 20 and 40 lessons for a complete beginner, but that is a personal estimate, not a rule.
+## How much do driving lessons cost?
 
-City matters too. Schools in Nicosia, Limassol, Larnaca, Paphos, and Paralimni all have their own pricing. If you are based in the capital, you can compare options by looking at [driving schools in Nicosia](/en/driving-schools/nicosia). If you are in the south coast, checking [driving schools in Limassol](/en/driving-schools/limassol) gives you a clearer idea of what local prices look like.
+Lesson prices in Cyprus are not set by the government. Every driving school sets its own rate. There is no national minimum or maximum. This means prices vary quite a bit depending on where you live and which school you choose.
 
-Shopping around is normal and sensible. Call at least three schools before you commit. Ask about lesson length, package prices, and whether the instructor speaks your language if that matters to you. Some schools have instructors who speak Russian, Greek, English, or other languages, which can make a real difference for learner confidence.
+A standard lesson lasts 45 minutes. Most schools charge per lesson rather than per hour. Some offer package deals if you book a block of lessons upfront. Whether a package saves you money depends on how quickly you progress.
 
-Do not just go with the cheapest option without asking questions. A school with slightly higher prices but a good pass rate may save you money overall by getting you through the test faster.
+City makes a difference too. Prices in Nicosia, Limassol, Larnaca, Paphos, and Paralimni are not the same. Schools in larger cities sometimes charge more than those in smaller towns, though this is not always the case. Local competition plays a role.
 
-## Medical certificate and translation costs
+Shopping around is completely normal. Most people call two or three schools before they commit. Ask about the per-lesson price, whether packages are available, and what happens if you need extra lessons before the test.
 
-Before you can apply for a learner's licence, you need a medical certificate. This comes from a registered doctor, not from the Department of Road Transport. The doctor checks that you meet the basic health requirements to drive. This typically includes vision and general fitness to drive.
+If you are based in the capital, comparing [driving schools in Nicosia](/en/driving-schools/nicosia) side by side is a good starting point. If you live on the coast, [driving schools in Limassol](/en/driving-schools/limassol) have their own pricing structures worth checking.
 
-The doctor charges their own fee for this. It is not a government fee. It varies by doctor and by clinic. Private GPs and specialist clinics may charge different amounts. Ask before you book the appointment so there are no surprises.
+The number of lessons you need also affects your total cost. Some learners are ready for the practical test after a modest number of sessions. Others need more. Your instructor will give you an honest opinion, but the final decision on when to test is yours.
 
-If you already hold a foreign driving licence and you need to submit it as part of your application, you may need a certified translation. This applies if the licence is not in Greek or English. The translation must be done by an approved certified translator. The translator charges their own fee for this too. The cost depends on the language and the length of the document. Some translators charge per page, others charge a flat fee for a standard licence.
+{{widget:price-calculator}}
 
-Do not use a friend who speaks the language. The Department requires certification from an approved translator. Unofficial translations will not be accepted and you will have to redo it.
+## Do you need a medical certificate or translation?
 
-Budget for both of these costs separately. They are easy to forget because they happen before you even start lessons, but they are a real part of your total spend.
+Yes, a medical certificate is required. Every applicant for a Cypriot driving licence must get one from a registered doctor. The doctor sets their own fee for this. It is not a government fee, so the price varies between clinics.
 
-## What a failed test costs you
+The certificate confirms you meet the basic health requirements for driving. Most general practitioners in Cyprus can issue one. It is usually a straightforward appointment. Book it early so it does not hold up your application.
 
-This is the part that catches people out the most. Many first-time candidates fail the practical test on their first attempt. This is not unusual. The Cyprus practical test has specific requirements and examiners apply them strictly. A small mistake can mean a fail.
+If you hold a foreign driving licence and it is not in Greek or English, you will also need a certified translation before the Department of Road Transport can process it. The translation must be done by an approved certified translator. This is not something you can do yourself, even if you speak the language fluently.
 
-When you fail, you have to rebook. And when you rebook, you pay the test booking fee again. There is no reduced rate for a second attempt. You pay the same fee as you did the first time. If you fail twice, you pay it three times in total.
+Translators charge their own rates. The price depends on the length of the document and the language involved. Get a quote before you hand anything over.
 
-The theory test can also be failed, though pass rates tend to be higher for theory than for the practical. Still, budget for the possibility of one rebook on the theory too.
+A few things to sort out before your application:
 
-The honest advice is to treat a rebook as a likely cost, not a worst-case one. If you budget for at least one extra practical test attempt and you pass first time, you have money left over. If you do not budget for it and you fail, you face an unexpected cost that can be frustrating.
+- Get your medical certificate from a registered doctor
+- Check whether your foreign licence needs translation
+- Use only an approved certified translator if a translation is needed
+- Keep copies of everything you submit
 
-Some people try to cut costs by doing the bare minimum of lessons. This often backfires. More preparation tends to mean fewer test attempts. The lesson cost you save may cost you more in rebooking fees and delayed licence.
+These steps add cost but they are not optional. Factor them into your total budget from the start. Missing either document will delay your application and cost you time, which often means money too.
 
-[ClickClickDrive Cyprus](/en) has resources to help you compare schools and understand the process before you spend anything. Using tools like that at the research stage can help you make smarter choices from the beginning.
+## What does it cost if you fail a test?
 
-## Cost for EU citizens
+Failing a test costs you money. There is no way around it. When you fail the theory test or the practical test, you have to rebook. Rebooking means paying the test fee again. Each attempt is a separate payment.
 
-If you already hold a valid driving licence issued by another EU member state, the process in Cyprus is different. You do not have to go through the full learner and test process in most cases. Instead, you can exchange your EU licence for a Cypriot one.
+This catches a lot of people off guard. Many first-time candidates do not pass the practical test on their first try. This is common. The practical test in Cyprus is detailed and examiners look for consistent, safe driving throughout the route. One mistake at the wrong moment is enough to fail.
 
-The [EU licence exchange](/en/blog/exchange-eu-licence-cyprus) process is mainly administrative. You are paying fees to the Department of Road Transport for the processing and the new licence. You are not paying for lessons. You are not paying for test bookings. That makes it significantly cheaper than going through the full process from scratch.
+It is sensible to budget for at least one rebook on the practical test before you even sit it for the first time. That way, a failed attempt does not derail your finances or your plans.
 
-There is a window period for this. If you exchange within the required time after moving to Cyprus, the process goes smoothly. If you miss the window, the rules can change and you may face more steps. Exactly how that works depends on your individual circumstances and current regulations, so check with the Department directly.
+The theory test is something most people pass more easily with good preparation. There are practice question banks available that mirror the real test format. Using them reduces your chance of failing and having to rebook.
 
-You will still need a medical certificate, as that is required regardless of how you are applying. And if your EU licence needs translation, that cost applies too. But overall, the total spend for an EU licence exchange is much lower than for someone going through the full process.
+Extra lessons between test attempts also add to your costs. Most instructors recommend at least a few sessions after a failed practical test to work on the specific issues the examiner flagged. These lessons are an extra expense on top of the rebook fee.
 
-One thing to watch for is that your EU licence must be valid and must be from a country whose licence categories are recognised in Cyprus. Most standard EU licences are, but it is worth confirming this when you contact the Department.
+Keep a running total as you go. Add each fee as it comes up. This stops the overall cost from becoming a surprise at the end of the process.
 
-## Cost for non-EU nationals
+## What does it cost EU citizens?
 
-Non-EU nationals face the most expensive route. If you do not hold an EU licence and you are not eligible for a direct exchange, you go through the full process. That means a learner's licence application, theory lessons and test, practical lessons and practical test, and then the licence itself.
+If you are an EU citizen and you already hold a valid driving licence from another EU member state, you do not need to go through the full process. Cyprus allows EU licence holders to exchange their licence for a Cypriot one.
 
-Each stage has a fee. Add them all up and the total official fees are higher than what an EU citizen pays for an exchange. On top of that, you are paying for all your driving lessons. If your foreign licence is not in Greek or English, you are also paying for a certified translation.
+The cost for EU citizens doing an exchange is mainly administrative. You pay the relevant fees to the Department of Road Transport, but you do not need to take lessons or sit the theory or practical tests. This makes the exchange route significantly cheaper than going through the full licensing process from scratch.
 
-The total cost for a non-EU national going through the full process is significantly higher than for EU citizens. Exactly how much higher depends on how many lessons you need, whether you pass tests first time, and what city you are in.
+The key condition is timing. The exchange must be done within the period set by Cypriot law. If you miss the window, you may lose the right to exchange and have to go through the full process instead. That would cost you considerably more.
 
-Some non-EU nationals hold a licence from a country that has a bilateral agreement with Cyprus. In those cases, there may be a shorter path than the full learner process. This is worth asking about when you first contact the Department. Do not assume you need the full process without checking.
+Check current fees with the Department of Road Transport for the exact amounts involved in an exchange. You may also need your medical certificate and, depending on your licence, a certified translation. So the costs are low but not zero.
 
-If you are budgeting as a non-EU national, add up: the learner's licence fee, theory test fee, practical test fee, licence fee, lesson costs for the number of hours you expect to need, the medical certificate, and translation if needed. Then add a buffer for at least one rebook. That gives you a realistic total.
+The [EU licence exchange](/en/blog/exchange-eu-licence-cyprus) guide covers the specific documents you need and how the process works in practice. Read it before you visit the Department so you arrive with everything ready.
 
-## How to keep your total costs down
+Do not assume your EU licence is valid to drive on indefinitely in Cyprus without registering it. Residency rules apply. Sorting the exchange promptly is the cheaper and simpler path.
 
-There are real ways to reduce what you spend. They involve planning, not cutting corners on safety.
+## What does it cost non-EU nationals?
 
-Start by comparing lesson prices across schools. As noted, prices are not fixed. A quick call to four or five schools in your city can reveal a meaningful price difference. Look at what is included in each package before you decide.
+Non-EU nationals face the full licensing process. There is no shortcut exchange route available to most of them. That means going through every stage - learner's licence application, theory test, practical test, and final licence issue. Each stage has its own cost.
 
-Think about packages versus individual lessons. If you know you need a lot of hours, a package usually saves money. But do not buy a very large package upfront before you have tried the school. Take a few individual lessons first to make sure you like the instructor.
+On top of the official fees, non-EU candidates almost always need a medical certificate. If their existing foreign licence is in a language other than Greek or English, a certified translation is also required. Both of these add to the total.
 
-Prepare seriously for both tests. Many people underestimate the theory test and walk in without enough preparation. Free online practice resources exist. Use them. The fee you pay to rebook a theory test is money you could have kept.
+Then there are the driving lessons. Non-EU nationals who have never driven before need a full course of lessons before they are ready to test. Even experienced drivers from outside the EU who are used to different road conditions may need more lessons than they expect to get comfortable with Cypriot roads and rules.
 
-For the practical test, listen to your instructor about readiness. A good instructor will tell you honestly when they think you are ready. If they think you need more lessons, that advice is usually worth taking. Passing first time saves you the rebook fee and gets you licensed faster.
+The practical test failure rate means most candidates also need to budget for at least one rebook. That adds the test fee again, plus the cost of any extra lessons between attempts.
 
-On the medical certificate, ask about the cost before you book. Some GPs charge significantly less than private clinics for the same certificate. If cost is a concern, shop around for the doctor too.
+When you add it all up - application fees, lesson fees, test fees, medical certificate, possible translation, and possible rebook costs - non-EU nationals typically spend significantly more than EU citizens going through the exchange route.
 
-Finally, do not delay the process once you start. Learner licences and bookings have time limits. If you let too much time pass between stages, you may have to restart parts of the process and pay fees again.
+[ClickClickDrive Cyprus](/en) can help you compare driving schools and understand the process in one place, which is useful when you are working out costs before you commit. Planning ahead makes a real difference to what you end up spending.
 
----
+## How can you keep your total costs down?
 
-Getting a driving licence in Cyprus is a multi-step process with costs at nearly every stage. The official fees are just the beginning. Lessons, medical checks, translations, and potential test rebooking all feed into the real total. The good news is that with some planning before you start, none of this should catch you off guard. Know the process, compare your options, and budget honestly for more than one test attempt. That approach puts you in a much better position from day one.
+You cannot avoid the official fees. But there are real ways to reduce the total amount you spend on the process.
+
+The biggest single saving comes from passing first time. Every failed test costs you the rebook fee plus extra lessons. Preparing thoroughly before you sit either test is the most effective thing you can do. For the theory test, use practice question banks regularly. For the practical test, do not book until your instructor is confident you are ready.
+
+A few other practical steps:
+
+- Compare lesson prices across at least two or three local schools before you sign up
+- Ask whether block bookings offer a discount
+- Sort your medical certificate early so it does not cause delays
+- Check whether your foreign licence needs translation before you apply, not after
+- Read the [step-by-step driving licence guide](/en/blog/how-to-get-driving-licence-cyprus-step-by-step) so you know every stage in advance
+
+Timing matters too. Cancelling a test slot late may mean losing the fee. Check the Department of Road Transport's cancellation rules before you book.
+
+Location is a factor as well. Lesson prices differ between cities. If you live near the border of two areas, it may be worth checking schools in both. Driving schools in Nicosia price differently from those in Paphos or Paralimni.
+
+Finally, do not rush. Taking an extra lesson or two before the test is cheaper than failing and rebooking. Slow down on the preparation side and you will likely spend less overall.
+
+Getting a driving licence in Cyprus is absolutely doable, and thousands of people complete the process every year. The costs are manageable if you go in with a clear picture of what each stage involves. Add up the official fees, get quotes from local schools, set aside money for the medical certificate and any translation, and keep a small buffer for a test rebook just in case. A bit of planning at the start saves real money by the end.
 
 ## FAQ
 
-**How much does a driving lesson cost in Cyprus?**
-There is no fixed national price for driving lessons. Schools set their own rates and prices vary by city and by school. Your best move is to call a few local schools and compare, keeping in mind that lessons typically last 45 minutes each.
+**What is the total cost of getting a driving licence in Cyprus?**
+There is no single fixed total because costs depend on your nationality, how many test attempts you need, and which driving school you use. The process involves government fees, lesson fees, a medical certificate, and possibly translation costs. Check current fees with the Department of Road Transport and get quotes from local schools to build your own estimate.
 
-**Do I need a medical certificate even if I already have a driving licence from another country?**
-Yes. A medical certificate from a registered doctor is required as part of the application process in Cyprus, regardless of whether you already hold a foreign licence. The doctor charges their own fee, so ask about the cost when you book the appointment.
+**How long does a driving lesson last in Cyprus?**
+A standard driving lesson in Cyprus lasts 45 minutes. Schools charge per lesson rather than per hour in most cases. Some schools offer discounted block bookings if you pay for several lessons upfront.
 
-**What happens if I fail the practical driving test in Cyprus?**
-You have to rebook the test and pay the test booking fee again. There is no discounted rate for a second or third attempt. Many candidates fail their first practical test in Cyprus, so it is wise to budget for at least one rebook from the start.
+**Do I have to pay again if I fail the practical test?**
+Yes. Failing either the theory test or the practical test means you pay the booking fee again for each new attempt. Many first-time candidates do not pass the practical test on their first try, so it is wise to budget for at least one rebook from the start.
 
-**Is the process cheaper for EU citizens than for non-EU nationals?**
-Yes, significantly. EU citizens can usually exchange their licence for a Cypriot one through an administrative process, paying mainly Department fees and no lesson or test costs. Non-EU nationals typically go through the full process, including lessons and multiple tests, which costs considerably more overall.
+**Can I avoid driving lessons if I already hold a foreign licence?**
+EU citizens can usually exchange their licence without sitting tests or taking lessons, as long as they do so within the required window. Non-EU nationals generally have to go through the full process, including lessons and both tests, regardless of their driving experience abroad.
 
-**Where can I find the current official fees for the driving licence process in Cyprus?**
-Fees are set by the government and can change, so you should check current amounts directly with the Department of Road Transport. Do not rely on older online sources, as the figures may be out of date.
+**Do driving lesson prices differ between cities in Cyprus?**
+Yes. Prices in Nicosia, Limassol, Larnaca, Paphos, and Paralimni are not the same. Each school sets its own rates, and local competition affects prices. Shopping around between at least two or three schools in your area before committing is a normal and sensible thing to do.

@@ -1,131 +1,135 @@
-Moving to Cyprus comes with a long to-do list. Sorting out your driving licence is one item many EU citizens push to the bottom. That is a mistake worth avoiding early.
+If you hold an EU driving licence and you have moved to Cyprus, you can keep driving legally on your home-country licence. You do not need to exchange it straight away. But there are good practical reasons why most EU residents here do make the swap at some point.
 
-- [Can you drive in Cyprus on an EU licence](#can-you-drive-in-cyprus-on-an-eu-licence)
-- [Why most EU residents choose to exchange](#why-most-eu-residents-choose-to-exchange)
-- [The exchange process step by step](#the-exchange-process-step-by-step)
-- [Documents you need to bring](#documents-you-need-to-bring)
-- [What happens to your original EU licence](#what-happens-to-your-original-eu-licence)
-- [The deadline and what happens if you miss it](#the-deadline-and-what-happens-if-you-miss-it)
-- [Exchanging when your EU licence has expired](#exchanging-when-your-eu-licence-has-expired)
+- [Can you drive in Cyprus on an EU licence?](#can-you-drive-in-cyprus-on-an-eu-licence)
+- [Why do most EU residents choose to exchange their licence?](#why-do-most-eu-residents-choose-to-exchange-their-licence)
+- [What is the exchange process step by step?](#what-is-the-exchange-process-step-by-step)
+- [What documents do you need to bring?](#what-documents-do-you-need-to-bring)
+- [What happens to your original EU licence?](#what-happens-to-your-original-eu-licence)
+- [What is the deadline and what happens if you miss it?](#what-is-the-deadline-and-what-happens-if-you-miss-it)
+- [What if your EU licence has already expired?](#what-if-your-eu-licence-has-already-expired)
 
-## Can you drive in Cyprus on an EU licence
+Moving to a new country means dealing with paperwork you did not expect. Your driving licence is one of those things that feels simple until you actually need it in a hurry. Cyprus has clear rules for EU citizens, and they are more relaxed than many people assume.
 
-The short answer is yes. If you hold a valid driving licence issued by an EU or EEA country, you can drive legally on the roads of the Republic of Cyprus. You do not need to swap it on arrival. You do not need to take any new test simply because you have moved here.
+## Can you drive in Cyprus on an EU licence?
 
-This matters because many people arrive in Cyprus unsure whether their licence is even valid. It is. Cyprus is an EU member state and it respects the mutual recognition of driving licences across the bloc. Your German, French, Greek, or any other EU licence carries the same legal weight on a Cypriot road as it does at home.
+Yes, you can. EU and EEA licence holders who live in Cyprus are allowed to drive legally on their home-country licence. There is no rule that forces you to swap it just because you have relocated here.
 
-That said, there is a difference between what is legally allowed and what is practically smart. Driving on a foreign licence in your new home country is fine on paper. In daily life, it can cause small but annoying problems. More on that shortly.
+This is worth knowing if you have just arrived and your to-do list is already long. You do not need to rush to the Department of Road Transport on your first week. Your German, French, Greek, or any other EU licence is recognised here under the same mutual recognition rules that apply across all member states.
 
-One thing to keep clear: this article is about EU licences only. If you moved from the UK after Brexit, the rules are different. You can read more about that in our guide on the [UK licence after Brexit](/en/blog/uk-licence-cyprus-after-brexit). The rules there changed when the UK left the EU, and they do not apply to the EU citizens this article is written for.
+Cyprus drives on the left, which is the biggest practical adjustment for most newcomers from mainland Europe. But your licence itself is not the problem. The road is.
 
-So if you have an EU licence and you live in Cyprus, you are legal. The question is whether staying on your home licence is actually the better choice long term.
+That said, driving legally and driving conveniently are two different things. Most EU residents who stay in Cyprus for more than a year or two end up exchanging their licence anyway. The reasons are mostly practical rather than legal. If you want a broader look at how licences work for people who move here, the [licence guide for foreigners](/en/blog/how-to-get-driving-licence-cyprus-foreigner) covers the wider picture well.
 
-## Why most EU residents choose to exchange
+One more thing to be aware of: if you hold a UK licence, the rules are different because of Brexit. The mutual recognition framework no longer applies in the same way. You can read more about that in our [UK licence after Brexit](/en/blog/uk-licence-cyprus-after-brexit) guide.
 
-Legal permission and practical convenience are two different things. Most EU residents who settle in Cyprus end up exchanging their licence within a year or two. Here is why.
+## Why do most EU residents choose to exchange their licence?
 
-Car rental is the most common pain point. Rental companies in Cyprus see a lot of tourists and short-term visitors. When a local resident presents a non-Cypriot licence, staff sometimes ask extra questions or request additional documents. A Cypriot licence removes that friction instantly.
+The legal right to keep your EU licence is real. But day-to-day life in Cyprus nudges people toward exchanging it.
 
-Local admin is another reason. Banks, insurance companies, and government offices in Cyprus use your driving licence as a standard ID document. A Cypriot licence fits their systems cleanly. A foreign EU licence can sometimes cause delays, especially if the staff member does not recognise the issuing country's format.
+The most common trigger is car rental. If you rent a car in Cyprus with a non-Cypriot licence, some rental companies ask for an International Driving Permit as well. A Cypriot licence removes that friction entirely. [ClickClickDrive Cyprus](/en) is one place where you can compare rental options, and having a local licence makes the process faster.
 
-Replacement is also simpler. If your licence is lost or stolen in Cyprus, replacing a Cypriot licence is a local process. You go to the Department of Road Transport and sort it out. Replacing a foreign licence from inside Cyprus means dealing with your home country's authority from abroad. That takes longer and costs more effort.
+Local admin is another factor. When you open a bank account, deal with insurance, or sort anything that involves showing a photo ID, a Cypriot licence is simply easier. Staff recognise it instantly. A Polish or Romanian licence is perfectly valid, but it can slow things down when the person behind the desk is not sure what they are looking at.
 
-Finally, a Cypriot licence is itself valid across all EU member states. So you do not lose any travel freedom by exchanging. You can still drive in Germany, France, Italy, or anywhere else in the EU without issue. If you are curious about how Cyprus handles licences for people who arrive without one, the [licence guide for foreigners](/en/blog/how-to-get-driving-licence-cyprus-foreigner) covers the full picture.
+Replacement is the third big reason. If you lose your EU licence while living in Cyprus, getting a replacement means contacting the authorities in your home country. That can take weeks. If you have a Cypriot licence and lose it, you deal with the local Department of Road Transport and get a new one relatively quickly.
 
-None of these reasons make exchange compulsory. But together they explain why most long-term residents decide it makes sense.
+Finally, a Cypriot licence is still an EU licence. It is valid across all member states. So you are not giving anything up in terms of travel or driving rights elsewhere in Europe.
 
-## The exchange process step by step
+## What is the exchange process step by step?
 
-The good news is that exchanging an EU licence in Cyprus is not complicated. No driving test. No theory exam. No medical unless your licence category requires one for other reasons. It is an administrative swap.
+The good news is that there are no new tests. You do not need to sit a theory exam or take a practical driving test to exchange an EU licence for a Cypriot one. The process is an administrative swap, not a new qualification.
 
-You go to one of the Department of Road Transport offices. They accept applications in Nicosia, Limassol, Larnaca, Paphos, and Paralimni. You bring your documents, submit your application, and wait for the new licence to be issued.
+Here is how it works in practice:
 
-The steps in order:
+1. Gather your documents (see the next section for the full list).
+2. Go to a Department of Road Transport office in person. Offices are in Nicosia, Limassol, Larnaca, Paphos, and Paralimni.
+3. Submit your application form along with your documents.
+4. Hand over your original EU licence. This is collected as part of the process.
+5. Wait for your Cypriot licence to be issued.
 
-1. Gather your documents before you go. The office will not process an incomplete application.
-2. Go in person to the Department of Road Transport office in your nearest city.
-3. Submit the completed application form along with all supporting documents.
-4. Pay the relevant fee. Check current fees with the Department of Road Transport, as these can change.
-5. Wait for your Cypriot licence to be issued and collected.
+The Department handles the rest. Your original licence is sent back to the country that issued it. You do not keep both.
 
-The process is straightforward compared to applying for a first licence from scratch. If you want to see how the full first-time process works, the [step-by-step licence guide](/en/blog/how-to-get-driving-licence-cyprus-step-by-step) walks through each stage in detail. The exchange is much simpler than that, but it helps to know the wider system.
+For a more detailed walkthrough of how the system works, the [step-by-step licence guide](/en/blog/how-to-get-driving-licence-cyprus-step-by-step) goes through each stage clearly. It is helpful if you want to know exactly what to expect when you walk into the office.
 
-Staff at the Department offices generally speak English. Bring originals of all documents, not just copies.
+Processing times can vary. It is worth calling your nearest office ahead of time to check current waiting times and whether you need an appointment. The Department is generally straightforward to deal with, but going prepared saves you a second trip.
 
-## Documents you need to bring
+## What documents do you need to bring?
 
-Getting your paperwork right saves you a wasted trip. The Department of Road Transport is clear about what it needs. Before you go, check that you have everything on this list.
+Getting your documents right before you go is the single best way to avoid delays. The Department will not process an incomplete application.
 
-- Your original EU driving licence. It must be valid. A photocopy is not accepted.
-- Proof of Cyprus residence. This is usually your yellow slip, which is the registration certificate issued to EU citizens who register their residence in Cyprus. An equivalent official document showing your address and residency status may also be accepted.
-- A recent passport-sized photograph. Bring more than one to be safe.
-- A completed application form. You can pick this up at the Department office or download it from the Department's website before your visit.
+You will need:
 
-That is the core list. Depending on your situation, the Department may ask for something additional, but these four items are the standard requirement for a straightforward EU licence exchange.
+- Your valid EU driving licence, original copy
+- Proof of Cyprus residence - this is usually your yellow slip (the registration certificate issued to EU citizens under the EU citizen registration process) or an equivalent official document
+- A recent passport-sized photo
+- A completed application form, which you can get from the Department of Road Transport office
 
-Do not bring only digital versions of documents. The Department works with originals. Your yellow slip, in particular, must be the physical document. If you have not yet registered as a resident of Cyprus, you will need to do that first. The yellow slip is your proof that you actually live here and are not just visiting.
+Do not bring photocopies of your licence and assume they will be accepted. The original is required because the Department takes it from you as part of the exchange.
 
-The application form is simple. It asks for personal details, your current licence information, and contact details. Fill it in fully and check it before you hand it over.
+The yellow slip is the standard proof of residence for EU citizens in Cyprus. If you have not registered yet as an EU resident, that needs to happen first. Registration is handled through the Civil Registry and Migration Department, not the road transport office.
 
-## What happens to your original EU licence
+Check current fees with the Department of Road Transport before you go. Fees can change and it is not worth assuming the amount from an old forum post is still correct.
 
-This is the part that surprises some people. When you exchange your EU licence for a Cypriot one, you do not get your original licence back. The Department of Road Transport sends it to the authority that issued it, meaning the licensing body in your home country.
+If anything on your list of documents is unclear, call the office in advance. The staff are used to dealing with people from all over Europe and can usually clarify requirements quickly.
 
-You cannot hold both a Cypriot licence and your original EU licence at the same time. That is the rule across the EU. Each person holds one licence at a time. The exchange is a transfer, not a duplication.
+## What happens to your original EU licence?
 
-For most people, this is not a problem. Your Cypriot licence is valid everywhere in the EU. You can drive in your home country on it, visit family, rent a car there, no issue. The practical difference is zero for day-to-day life.
+This is the part that surprises most people. When you exchange your EU licence for a Cypriot one, you do not get your original back. The Department of Road Transport sends it to the licensing authority in the country that issued it.
 
-Some people feel sentimental about their original licence. Others worry about what happens if they later move back to their home country. If you return home, you can exchange your Cypriot licence back for a licence from your home country, using the same mutual recognition rules in reverse. The process works in both directions.
+You cannot hold both licences. EU rules specifically prevent a person from holding a driving licence from more than one member state at the same time. Cyprus follows this rule. So once you exchange, your home-country licence is gone.
 
-If you are considering whether to exchange, and your situation is a little more complex, for example if you are driving for work or managing a vehicle fleet, speaking directly with the Department is worth doing. They can advise on your specific case without charge.
+For most people this is fine. If you are living in Cyprus long term, a Cypriot licence does everything your old one did, and it works across all EU member states. You can drive in Germany, France, Spain, or anywhere else in the EU with your Cypriot licence just as you could with your original.
 
-For general motoring information in Cyprus, [ClickClickDrive Cyprus](/) is a useful starting point for understanding how the local driving market works.
+Where it matters is if you plan to move again. Say you exchange your German licence for a Cypriot one, and then a few years later you move to Spain. You would then go through a similar exchange process in Spain with your Cypriot licence. The chain continues, but you are never without a valid EU licence.
 
-## The deadline and what happens if you miss it
+If your original EU licence had specific conditions noted on it, such as restrictions for medical reasons, those conditions carry over. They do not disappear in the exchange. The Cypriot licence will reflect what was on your original.
 
-Here is where many EU residents get caught out. There is a window after you take up residence in Cyprus during which you can exchange your EU licence without needing to take any tests. This is often called the exchange period or window period.
+## What is the deadline and what happens if you miss it?
 
-That window does not last forever. Once it closes, the situation becomes more complicated. If you try to exchange after the deadline has passed, you may be required to take tests, possibly including both a theory test and a practical driving test. That is a significant extra burden.
+There is a window period after you take up residence in Cyprus during which you can exchange your licence without needing to take any tests. This is the key deadline to be aware of.
 
-The exact length of this window can change. Rules have been updated before, and they may change again. Do not rely on information from friends who went through the process a year or two ago. Check the current deadline directly with the Department of Road Transport before you assume you still have time.
+The length of this window can change. The Department of Road Transport sets the rules, and they are the only reliable source for the current deadline. Do not rely on what a friend told you two years ago, or what you read in a Facebook group. Check directly with the Department.
 
-The safest approach is to start the exchange process as soon as you have your yellow slip and you know you are staying in Cyprus long term. Waiting to see whether you really need to do it is how people miss the window.
+If you miss the window, the situation becomes more complicated. You may be required to take tests. Exactly what is required depends on your specific situation and how long you have been in Cyprus. The Department will assess your case individually.
 
-Missing the deadline does not mean you can no longer drive. Your EU licence remains valid. But it does mean that getting a Cypriot licence, if you later decide you want one, becomes harder. You would be in a similar position to someone applying for a first Cypriot licence, which involves real testing.
+Missing the deadline does not mean you are immediately driving illegally. You can still drive on your EU licence. But your ability to exchange without tests ends when the window closes.
 
-If you are close to your deadline or unsure where you stand, go to the Department office in person. Ask directly. They will tell you exactly where you are within the rules. If you want to connect with a driving school in the meantime, you can browse [driving schools in Nicosia](/en/driving-schools/nicosia) for local options.
+If you are considering taking driving lessons or refreshing your skills for the Cypriot road system, looking at [driving schools in Nicosia](/en/driving-schools/nicosia) is a good starting point. Having local knowledge of the roads before any practical test makes a real difference.
 
-## Exchanging when your EU licence has expired
+The practical advice is simple: do not put this off indefinitely. Find out the current deadline from the Department and note it in your calendar from the date you registered as a resident.
 
-This situation needs its own section because it catches people off guard. Some EU residents arrive in Cyprus with a licence that is close to expiry. Others simply forget to renew their home-country licence while living abroad. When they finally try to exchange, the licence has already expired.
+## What if your EU licence has already expired?
 
-If your EU licence expired before you apply for the exchange, the process is more complicated. The Department of Road Transport treats an expired licence differently from a valid one. In some cases, tests may be required. The straightforward administrative swap is no longer available.
+This is where things get harder. If your EU licence has expired before you apply for the exchange, the straightforward administrative process may no longer be available to you.
 
-Lifetime licences add another layer of complexity. Some EU countries issued licences with no expiry date. These are sometimes called lifetime licences. Cyprus applies special rules to these. If you hold one, do not assume the standard exchange process applies. Check with the Department before you submit your application.
+An expired licence is not the same as a valid one, even for exchange purposes. The Department may require you to take tests - either theory, practical, or both. The exact requirements depend on your individual situation and when the licence expired.
 
-The practical advice here is simple. Do not let your EU licence expire while you are living in Cyprus if you have not yet exchanged it. Renewing a foreign licence from abroad is possible but slow. The issuing country handles renewals, not Cyprus. You may need to travel home or go through a postal process.
+The first step if your licence has expired is to contact the Department of Road Transport directly. Explain your situation and ask what is required. Do not assume you know the answer based on general information online.
 
-If your licence has already expired and you are in Cyprus, go to the Department of Road Transport and explain your situation clearly. They will assess your case. It is not the end of the road, but it will require more time and possibly more steps than a clean exchange would have.
+Some people let their home-country licence lapse because renewing it from abroad is complicated. If that is your situation, address it as soon as possible. Driving on an expired licence, regardless of where it was issued, is not legal.
 
-Staying on top of your licence status is one of those small admin tasks that saves a lot of trouble later.
+There is also a specific case worth flagging. Some EU countries used to issue lifetime licences with no expiry date. Cyprus treats these under special rules. If you hold one of these, check with the Department before you do anything else, because the rules for lifetime licences are not the same as for standard ones.
+
+The safest position is always to keep your licence valid. If it is about to expire and you have not yet exchanged it, do the exchange first while it is still valid.
+
+Getting this sorted early means less stress and fewer complications. Whatever stage you are at, the Department of Road Transport is the right place to start.
 
 ---
 
-Getting your EU licence exchanged in Cyprus is not a big job when you do it at the right time. The process is straightforward, the offices are spread across the island, and no testing is involved if you act within the window. The reasons to exchange pile up quickly once you are living here day to day. Sorting it out early means one less thing sitting on your to-do list, and one document that works cleanly in every situation you are likely to face.
+Living in Cyprus on an EU licence is straightforward if you stay on top of the admin. You have the legal right to drive on your home-country licence, and the exchange process is simpler than most people expect. No tests, no hidden traps - just paperwork. The main thing is to act before any deadlines pass and to keep your original licence valid until you have exchanged it. Get the current rules directly from the Department of Road Transport, because these things do change.
 
 ## FAQ
 
-**Do I legally have to exchange my EU driving licence when I move to Cyprus?**
-No, you are not required by law to exchange it. EU and EEA licence holders can drive legally in Cyprus on their home-country licence. However, there is a deadline for exchanging without tests, so if you want a Cypriot licence later, acting within that window matters.
+**Do I have to exchange my EU licence to drive legally in Cyprus?**
+No, you do not. EU and EEA licence holders living in Cyprus can drive legally on their home-country licence. The exchange is optional, but there are practical reasons why many residents choose to do it after settling here.
 
-**Will I need to take a driving test to exchange my EU licence for a Cypriot one?**
-No test is required if you apply within the exchange window after taking up residence. The process is an administrative swap. If you miss the deadline or your licence has expired, tests may be required, so it pays to act promptly.
+**Will I need to take a driving test to exchange my EU licence?**
+No test is required as long as you apply within the window period after taking up residence and your licence is still valid. The exchange is an administrative process. If you miss the deadline or your licence has expired, tests may then be required.
 
-**How long does the exchange process take once I submit my application?**
-The Department of Road Transport processes applications at its offices in Nicosia, Limassol, Larnaca, Paphos, and Paralimni. Processing times can vary, so ask the office directly when you submit your application for a realistic timeframe.
+**Can I keep my original EU licence after getting a Cypriot one?**
+No. When you exchange your EU licence, the Department of Road Transport sends your original back to the country that issued it. EU rules do not allow a person to hold licences from two member states at the same time.
 
-**Can I use my Cypriot licence to drive in my home country after the exchange?**
-Yes. A Cypriot licence is valid across all EU member states, so you can drive in your home country and anywhere else in the EU using it. You lose no travel freedom by exchanging.
+**Is a Cypriot driving licence valid in other EU countries?**
+Yes. A Cypriot licence is an EU driving licence and is recognised across all EU member states. If you later move to another EU country, you can exchange your Cypriot licence there through a similar process.
 
-**What happens if my EU licence expires while I am living in Cyprus before I exchange it?**
-If your licence expires before you apply, the standard exchange process may no longer apply and tests could be required. Contact the Department of Road Transport as soon as possible to understand your options in that situation.
+**What should I do if I am not sure when my window period expires?**
+Contact the Department of Road Transport directly and ask. The deadline can change and the Department is the only reliable source for the current rules. Do not rely on secondhand information from forums or social media.

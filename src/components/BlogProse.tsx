@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
+import { CostBreakdownInfographic } from "@/components/infographics/CostBreakdownInfographic";
 import { LicenceStepsInfographic } from "@/components/infographics/LicenceStepsInfographic";
 import { PriceCalculator } from "@/components/widgets/PriceCalculator";
 import type { Locale } from "@/lib/types";
@@ -79,6 +80,8 @@ export function BlogProse({ markdown, locale, injectImages = [] }: Props) {
       const type = infographicMatch[1];
       if (type === "licence-steps") {
         elements.push(<LicenceStepsInfographic key={i} locale={locale} />);
+      } else if (type === "cost-breakdown") {
+        elements.push(<CostBreakdownInfographic key={i} locale={locale} />);
       }
       continue;
     }

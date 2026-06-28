@@ -11,7 +11,7 @@ interface Props {
 export function AuthorBio({ author, locale }: Props) {
   const label = locale === "el" ? "Σχετικά με τον Συγγραφέα" : "About the Author";
   const title = locale === "el" ? author.title_el : author.title_en;
-  const bio = locale === "el" ? author.bio_el : author.bio_en;
+  const bio = locale === "el" ? author.bio_short_el : author.bio_short_en;
   const href = authorPageHref(author.slug, locale);
 
   return (

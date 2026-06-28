@@ -1,117 +1,141 @@
-Getting a driving licence in Cyprus takes time and patience, but the process is straightforward once you know the steps. Whether you just arrived or have lived here for years without a car, this guide walks you through everything from the first form to the day you pass your test.
+You can get a driving licence in Cyprus through the Department of Road Transport. The process has several steps: learner's licence, lessons with a licensed instructor, a theory test, and a practical test. Most people complete the full process in a few months.
 
-- [What you need before you start](#what-you-need-before-you-start)
-- [The learner's licence: your first step](#the-learners-licence-your-first-step)
-- [Your driving lessons](#your-driving-lessons)
-- [The theory test](#the-theory-test)
-- [The practical test](#the-practical-test)
-- [After you pass: what you need to know](#after-you-pass-what-you-need-to-know)
+- [What do you need before you start?](#what-do-you-need-before-you-start)
+- [How do you get a learner's licence?](#how-do-you-get-a-learners-licence)
+- [How many driving lessons do you need?](#how-many-driving-lessons-do-you-need)
+- [What is the theory test like?](#what-is-the-theory-test-like)
+- [What happens at the practical test?](#what-happens-at-the-practical-test)
+- [What happens after you pass?](#what-happens-after-you-pass)
 
-## What you need before you start
+Getting a driving licence in Cyprus is very doable. But it helps to know what is coming before you walk into the Department of Road Transport. The system is organised, and the staff are generally helpful. This guide walks you through every step in plain English.
 
-Before you do anything else, gather your documents. The Department of Road Transport will not process your application without the full set. Missing even one item means a wasted trip.
+## What do you need before you start?
 
-Here is what you need:
+Before anything else, you need to meet some basic requirements. The minimum age for a Category B licence - that is a standard car licence - is 18. If you are younger than that, you cannot apply yet.
+
+You also need to gather a set of documents. Cyprus has a clear list, and missing even one item means a wasted trip.
+
+Here is what you need to bring:
 
 - A valid passport or national ID card
-- Proof of residence in Cyprus. This can be a rental contract, a recent utility bill, or your yellow slip (ARC card for EU citizens) or registration certificate
+- Proof of Cyprus residence - this can be a rental contract, a utility bill, or your yellow slip (ARC)
 - A recent passport-style photo
-- A medical certificate from a registered doctor confirming you are fit to drive
+- A medical certificate from a registered doctor
 
-The medical check is simple. A general practitioner can do it. The doctor checks your eyesight and general health. Book this before you go to the Department of Road Transport, so you are not running around at the last minute.
+The medical certificate is often the one people forget. Your doctor checks basic things like eyesight. It does not take long, but book the appointment early so it does not slow you down.
 
-If you are not a Cypriot citizen, the residence document is the part that trips people up most. A utility bill in someone else's name will not work. Make sure the document shows your name and your address in Cyprus.
+This guide covers the process for people getting their first licence in Cyprus. If you already have a licence from another country, the rules are different. For those coming from EU member states, check the page on [exchanging an EU licence](/en/blog/exchange-eu-licence-cyprus) instead. If you have a UK licence and are unsure where you stand after Brexit, read the guide on [UK licence holders in Cyprus after Brexit](/en/blog/uk-licence-cyprus-after-brexit).
 
-If you already hold a driving licence from another country, the steps may be different for you. Holders of EU licences can sometimes exchange rather than sit a full test. You can read more about that in this [licence guide for foreigners](/en/blog/how-to-get-driving-licence-cyprus-foreigner). If your licence is from the UK, the rules changed after Brexit, and this article on a [UK licence after Brexit](/en/blog/uk-licence-cyprus-after-brexit) covers your situation specifically.
+One important point: this guide covers the Republic of Cyprus only. Northern Cyprus uses a completely separate system and separate authorities. Everything here applies to the south only.
 
-The minimum age for a Category B licence (that is, a standard car) is 18. There are no exceptions to this.
+The Department of Road Transport (known in Greek as Τμήμα Οδικών Μεταφορών) operates under the Ministry of Transport. It has offices in five main cities: Nicosia, Limassol, Larnaca, Paphos, and Paralimni. Go to whichever office is closest to where you live.
 
-## The learner's licence: your first step
+## How do you get a learner's licence?
 
-Once you have your documents, you go to the Department of Road Transport office in your city. The five main offices are in Nicosia, Limassol, Larnaca, Paphos, and Paralimni. You apply in person for a Learner's Licence, known in Greek as an εκπαιδευτική άδεια.
+The first real step in the process is applying for a Learner's Licence. In Greek this is called an εκπαιδευτική άδεια. You cannot book a single driving lesson until you have this in your hand.
 
-This is not the same as a full licence. It allows you to take lessons with a licensed instructor. You cannot drive alone on a Learner's Licence. You cannot take a friend out with you on it either. It is only valid while you are training in a proper dual-control car with your instructor beside you.
+You apply for it at your local Department of Road Transport office. Bring all the documents listed in the previous section. The staff will check your paperwork and process your application. Check current fees with the Department of Road Transport, as they can change.
 
-The application form is available at the Department office. Staff can help you fill it in. Bring all your documents in original form, not photocopies, unless the office specifically asks for copies. Check current fees with the Department of Road Transport, as they can change.
+Once your application is approved, you will receive your learner's licence. Keep it safe. You must carry it every time you get into a car for a lesson.
 
-Once your Learner's Licence is approved, you are officially in the system. The Department of Road Transport is part of the Ministry of Transport and handles all licences in the Republic of Cyprus. This applies only to the south. Northern Cyprus operates a completely separate system, and a licence from the north is not recognised by the Republic.
+There are rules that come with the learner's licence. The car you practise in must display red L plates - one on the front and one on the rear. These are not optional. If you are seen driving without them, it is a problem.
 
-If you want to understand how this process compares to [exchanging an EU licence](/en/blog/exchange-eu-licence-cyprus) you already hold, it is worth reading that before you commit to starting from scratch. Some people qualify for a simpler route.
+You cannot just practise with a friend or family member either. By law, lessons must take place in a dual-control car with a licensed driving instructor. Dual-control means the instructor has their own set of pedals. This is a safety requirement, and it is enforced.
 
-## Your driving lessons
+If you are new to Cyprus and want a full overview of what the licence process looks like for people from abroad, the [licence guide for foreigners in Cyprus](/en/blog/how-to-get-driving-licence-cyprus-foreigner) covers the topic in more detail.
 
-With your Learner's Licence in hand, you can now book lessons. Lessons must be with a licensed driving instructor. You cannot legally train in a private car with a friend or family member. The car must be a dual-control vehicle, meaning the instructor has their own brake and clutch pedals on the passenger side.
+The learner's licence is tied to a specific category of vehicle. For most people, that is Category B, which covers standard cars. If you later want to ride a motorbike or drive a truck, those are separate categories with their own process.
 
-The car must also display red L plates, one at the front and one at the rear, while you are training. Your school will handle this. Do not turn up in your own car and stick on plates. The rules are specific about dual-control vehicles.
+## How many driving lessons do you need?
 
-Lessons typically last 45 minutes each. How many you need depends on your experience and how quickly you pick things up. Some people need 20 lessons. Others need 40 or more. There is no fixed minimum set by law, but your instructor will tell you honestly when they think you are ready.
+Cyprus does not fix a minimum number of lessons by law. There is no rule that says you must complete 20 or 30 hours before you can take a test. The decision is between you and your instructor.
 
-Prices vary between schools and between cities. A school in Nicosia may charge differently from one in Larnaca. Shop around a little. Ask friends who have recently passed for recommendations. You can browse options for [driving schools in Nicosia](/en/driving-schools/nicosia) if that is your city.
+That said, most instructors will not recommend booking your practical test until they are confident you are ready. They know what the examiner looks for. Listen to them.
 
-Cyprus drives on the left. If you come from a country that drives on the right, allow extra time to get comfortable. Roundabouts, in particular, feel strange at first. Your instructor will cover all of this, but do not underestimate the adjustment.
+Lessons typically last 45 minutes. Prices vary depending on the driving school and the city you are in. Nicosia and Limassol tend to have more schools and more competition. Paphos and Paralimni may have fewer options but are still well served.
 
-The roads used in lessons are real public roads. There are no private training circuits. From the start, you will be driving in actual traffic, so lessons build your confidence gradually before you face the test route.
+To find a good school, ask around. Recommendations from friends or colleagues who have recently passed are worth more than a flashy website. You can also browse [driving schools in Nicosia](/en/driving-schools/nicosia) to compare local options.
 
-## The theory test
+During lessons, your instructor will cover the basics first: clutch control, steering, stopping safely. Then you move on to junctions, roundabouts, reversing, and road positioning. Remember that Cyprus drives on the left. If you have only ever driven on the right, this takes real adjustment. Your instructor will help you with it, but expect the first few lessons to feel strange.
 
-The theory test is called the γραπτή εξέταση in Greek, which simply means "written examination". It is computer-based and takes place at the Department of Road Transport office. You can sit it in either Greek or English, which is helpful if your Greek is still at the beginner stage.
+One thing many learners underestimate is how much road awareness matters. Knowing how to operate the car is just the start. Reading the road, watching for other drivers, and staying calm under pressure - these things take time to build.
 
-The test covers road signs, traffic rules, and safe driving behaviour. Questions are multiple choice. You select an answer on a screen. The system is not complicated to use, and the examiners at the office will show you how it works before you start.
+Do not rush the process. Extra lessons now are cheaper than failing the test and rebooking.
 
-To prepare, your driving school will give you a question bank or a booklet covering the material. There are also practice tests available online. Go through the signs carefully. Many people who grew up in other countries find some Cypriot road signs unfamiliar. Speed limits and distances in Cyprus are in kilometres and km/h, so make sure you are thinking in those units.
+## What is the theory test like?
 
-You must pass the theory test before you can book the practical test. If you fail, you can reseat it after a waiting period. Your school will advise you on timing. Most people who prepare properly pass on the first attempt. Do not walk in without studying. The signs section alone has a lot of material.
+Once your instructor thinks you are close to ready, it is time to book the theory test. In Greek this is called the γραπτή εξέταση, which simply means "written examination", though today it is computer-based, not pen and paper.
 
-Check current fees with the Department of Road Transport for the theory test sitting. Fees are paid at the office before you sit.
+The test covers three main areas: road signs, traffic rules, and safe driving behaviour. The questions are multiple choice. You read each question on a screen and select your answer by clicking.
 
-For a broader look at all the services offered to drivers in Cyprus, the team at [ClickClickDrive Cyprus](/en) can point you in the right direction.
+One of the better features of the Cyprus system is that the test is available in English as well as Greek. If you are not confident in Greek, you can sit the test in English. This makes a real difference for many foreigners living here.
 
-## The practical test
+You book the theory test through the Department of Road Transport. Check with your local office about availability and how far in advance you need to book.
 
-Once you have passed the theory test, you can apply to sit the practical driving test. This is booked through the Department of Road Transport, not through your driving school. Your school can help you with the paperwork, but the examiner is a government official, not your instructor.
+To prepare, most driving schools will give you access to practice question banks. These are very useful. The real test uses questions drawn from the same bank, so practising them repeatedly gives you a solid advantage. Do not skip this step.
 
-The test takes place on real public roads. There is no closed course. You will drive through actual traffic, follow road signs, handle junctions, roundabouts, and possibly a hill start. The examiner sits in the passenger seat and gives you instructions as you go. They observe your control of the vehicle, your use of mirrors, your speed, and how you handle other road users.
+The test is not designed to trick you. If you have been paying attention during your lessons and have studied the road signs, you should be in good shape. The questions are clear and the format is straightforward.
 
-Your instructor will have a good idea of which routes are used in your area. They will practise these with you in the weeks before your test. Pay attention to your mirror checks, your signal timing, and your positioning at junctions. These are the things examiners watch closely.
+If you fail, you can retake it. Check current fees with the Department of Road Transport for retake costs. There is no shame in needing a second attempt - many people do.
 
-If you make a serious error, the test ends. Minor faults are noted but do not automatically mean a fail. How many minor faults are allowed before a test is failed is something your instructor will explain based on current Department of Road Transport guidelines.
+Passing the theory test is a requirement before you can sit the practical test. You cannot swap the order.
 
-If you fail, you must wait before retaking. Your instructor will go over what went wrong and work on those areas with you before you rebook. Most people who are properly prepared pass within the first two attempts.
+## What happens at the practical test?
 
-Results are given on the day. You will know before you leave the car whether you have passed.
+The practical test is the final gate before you get your licence. It is conducted by an examiner from the Department of Road Transport, on real public roads. This is not a closed course or a car park. You drive in real traffic, with real other drivers around you.
 
-## After you pass: what you need to know
+The examiner will sit in the passenger seat. They will give you directions as you go. They are watching how you handle the car, how you interact with other road users, and whether you follow the rules.
 
-Passing your practical test is a good moment, but there are still a few things to sort out before you are fully on the road.
+Common things the examiner checks include:
 
-Your full driving licence is issued by the Department of Road Transport. You return to the office with your results paperwork and apply for the actual card. Check what documents they need at that point and whether you need more photos. Check current fees with the Department of Road Transport at this stage too.
+- Moving off and stopping safely
+- Correct use of mirrors and signals
+- Behaviour at junctions, roundabouts, and traffic lights
+- Speed management and keeping a safe following distance
+- Reversing and other manoeuvres
+- Overall road awareness
 
-The licence issued in Cyprus follows EU format, since Cyprus is an EU member state. It is valid across EU countries. If you move abroad later, you may be able to exchange it in the country you move to.
+Remember that Cyprus drives on the left, and all speeds are measured in km/h. If you are from a country that uses mph, make sure you have a clear feel for the metric system before test day.
 
-A few practical things to keep in mind once you start driving independently:
+The test usually lasts around 30 to 40 minutes, though this can vary. Your instructor cannot sit in the car during the test. It is just you and the examiner.
 
-- Cyprus drives on the left, and some junctions will still catch you off guard. Take it slowly at first.
-- Speed limits and distances are in km/h and kilometres.
-- You must carry your licence (or a valid digital version) when driving.
-- Your vehicle must be insured, taxed, and have a valid roadworthiness certificate (MOT).
+If you are nervous, that is completely normal. Most examiners are professional and calm. They are not trying to catch you out. They want to see that you can drive safely.
 
-If you are buying or renting a car now that you have your licence, take time to understand the insurance options available to you. New drivers sometimes face higher premiums in their first year. This is common across Europe, not just Cyprus.
+If you do not pass, your examiner will explain what went wrong. Use that feedback. Book more lessons with your instructor and work on the weak areas before you rebook.
 
-The Republic of Cyprus recognises licences issued by EU member states and a number of other countries. If you later bring in a family member who holds a foreign licence, the exchange or conversion rules depend on where that licence was issued.
+## What happens after you pass?
+
+Passing the practical test is a great feeling. But there are a few things that happen next before you can drive freely on your own.
+
+First, your results go back to the Department of Road Transport. They process the paperwork and issue your full Category B licence. The licence is a credit-card-sized document. It meets European Union standards because Cyprus is an EU member state.
+
+For people who are not EU citizens and want to understand how this fits with their residency status, [ClickClickDrive Cyprus](/en) has useful resources on motoring in Cyprus for expats and international residents.
+
+Your new Cyprus driving licence is valid across EU countries. If you travel to another EU state and want to drive there, your Cyprus licence is accepted. This is a genuine practical benefit.
+
+There is one thing to be aware of as a new driver. Newly licensed drivers in Cyprus are expected to display a green "A" plate (for "Άπειρος", meaning inexperienced). Check the current rules with the Department of Road Transport on how long this applies and under what conditions, as requirements can be updated.
+
+Keep your licence in good condition. If it is lost or damaged, you will need to apply for a replacement through the Department of Road Transport.
+
+If your circumstances change - you move city, change your name, or update your residency status - notify the department. Keeping your details current matters, especially if you are ever stopped by the police.
+
+Finally, passing your test is just the beginning. Driving in Cyprus takes adjustment, especially if you are new to left-hand traffic. Take your time in the early weeks. Get familiar with local roads before you head onto the motorways.
+
+Getting your Cyprus driving licence opens up the island in a real way. Public transport is limited outside the main cities, so having your own car changes daily life. The process takes effort, but it is straightforward if you follow the steps in order. Go at the right pace, choose a good instructor, and study seriously for the theory test. Most people who do those three things get through without too much trouble.
 
 ## FAQ
 
-**What documents do I need to apply for a Learner's Licence in Cyprus?**
-You need a valid passport or national ID, proof of residence in Cyprus (such as a rental contract, utility bill, or your ARC yellow slip), a recent passport-style photo, and a medical certificate from a registered doctor. Bring originals, not just photocopies, unless the office asks otherwise.
+**What is the minimum age to apply for a driving licence in Cyprus?**
+The minimum age for a Category B (car) driving licence in Cyprus is 18. You cannot apply for a learner's licence or book any lessons before you reach that age.
 
 **Can I take the theory test in English?**
-Yes. The Department of Road Transport allows you to sit the computer-based theory test in either Greek or English. This makes it accessible to most foreigners living in Cyprus who have not yet learned Greek to a high level.
+Yes. The theory test at the Department of Road Transport is available in both Greek and English. You choose your preferred language when you book. This is helpful for foreigners who are not yet confident in Greek.
 
-**How many driving lessons will I need before my practical test?**
-There is no fixed minimum number set by law. Most people need somewhere between 20 and 40 lessons, depending on their experience and how quickly they progress. Your instructor will advise you when they believe you are ready to book the test.
+**Do I need a medical certificate to get a driving licence in Cyprus?**
+Yes, a medical certificate from a registered doctor is one of the required documents. Your doctor checks basic health factors including eyesight. It is a simple appointment but book it early so it does not delay your application.
 
-**Does a driving licence from Northern Cyprus count in the Republic?**
-No. The Republic of Cyprus and Northern Cyprus operate entirely separate systems. A licence issued in Northern Cyprus is not recognised by the Republic of Cyprus authorities or by EU member states as a Cypriot licence.
+**Is my Cyprus driving licence valid in other EU countries?**
+Yes. Because Cyprus is a member of the European Union, a Cyprus driving licence meets EU standards and is accepted in other EU member states. This is useful if you travel or relocate within Europe.
 
-**What happens if I fail the practical driving test?**
-You will be told the result on the day and you will need to wait a set period before rebooking. Your instructor will review the examiner's notes with you and focus your remaining lessons on the areas where you had difficulty before your next attempt.
+**What documents do I need to apply for a learner's licence?**
+You need a valid passport or national ID card, proof of Cyprus residence (such as a rental contract, utility bill, or ARC yellow slip), a recent passport-style photo, and a medical certificate from a registered doctor. Missing any of these will delay your application.
