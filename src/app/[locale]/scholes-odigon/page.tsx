@@ -27,8 +27,9 @@ export async function generateMetadata({
     title,
     description,
     alternates: buildAlternates({
+      locale: locale as Locale,
       pathEl: "/scholes-odigon",
-      pathEn: "/driving-schools",
+      pathEn: "/en/driving-schools",
     }),
     openGraph: {
       title,

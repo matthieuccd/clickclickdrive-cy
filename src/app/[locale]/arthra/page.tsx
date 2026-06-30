@@ -29,7 +29,7 @@ export async function generateMetadata({
   return {
     title,
     description,
-    alternates: buildAlternates({ pathEl: "/arthra", pathEn: "/blog" }),
+    alternates: buildAlternates({ locale: locale as Locale, pathEl: "/arthra", pathEn: "/en/blog" }),
     openGraph: {
       title,
       description,

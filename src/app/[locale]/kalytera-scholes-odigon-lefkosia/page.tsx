@@ -29,7 +29,7 @@ export async function generateMetadata({
   return {
     title,
     description: description.slice(0, 150),
-    alternates: buildAlternates({ pathEl: CONFIG.pathEl, pathEn: CONFIG.pathEn }),
+    alternates: buildAlternates({ locale, pathEl: CONFIG.pathEl, pathEn: CONFIG.pathEn }),
     openGraph: {
       title,
       description: description.slice(0, 150),

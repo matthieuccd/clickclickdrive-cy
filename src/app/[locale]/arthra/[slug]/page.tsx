@@ -62,14 +62,14 @@ export async function generateMetadata({
       lc === "el" ? article.metaDescription_el : article.metaDescription_en;
     const pathEl = `/arthra/${article.slug_el}`;
     const pathEn = `/blog/${article.slug_en}`;
-    const canonical = siteUrl(pathEl);
+    const canonical = siteUrl(lc === "el" ? pathEl : `/en${pathEn}`);
     return {
       title,
       description,
       alternates: {
         canonical,
         languages: {
-          "x-default": canonical,
+          "x-default": siteUrl(pathEl),
           el: siteUrl(pathEl),
           en: siteUrl(`/en${pathEn}`),
         },
@@ -96,7 +96,7 @@ export async function generateMetadata({
       title,
       description,
       alternates: {
-        canonical: siteUrl(pathEl),
+        canonical: siteUrl(lc === "el" ? pathEl : `/en${pathEn}`),
         languages: {
           "x-default": siteUrl(pathEl),
           el: siteUrl(pathEl),

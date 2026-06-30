@@ -160,6 +160,29 @@ export function buildCityItemListJsonLd(
   };
 }
 
+// --- Organization (site-wide) ---------------------------------------------
+
+export function buildOrganizationJsonLd() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": `${SITE_HOST}/#organization`,
+    name: "ClickClickDrive Cyprus",
+    url: SITE_HOST,
+    logo: {
+      "@type": "ImageObject",
+      url: siteUrl("/logo.svg"),
+    },
+    contactPoint: {
+      "@type": "ContactPoint",
+      email: "info@clickclickdrive-cyprus.com",
+      contactType: "customer support",
+      areaServed: "CY",
+    },
+    sameAs: ["https://www.clickclickdrive.de"],
+  };
+}
+
 // --- WebSite + SearchAction (homepage) -----------------------------------
 
 export function buildWebSiteJsonLd(locale: Locale) {
@@ -192,15 +215,16 @@ export interface PageAlternates {
 }
 
 export function buildAlternates({
+  locale,
   pathEl,
   pathEn,
 }: {
+  locale: Locale;
   pathEl: string;
   pathEn: string;
 }): PageAlternates {
-  // Greek URL is canonical (Cyprus is a Greek-primary market).
   return {
-    canonical: siteUrl(pathEl),
+    canonical: siteUrl(locale === "el" ? pathEl : pathEn),
     languages: {
       "x-default": siteUrl(pathEl),
       el: siteUrl(pathEl),

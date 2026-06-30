@@ -44,7 +44,7 @@ export async function generateMetadata({
     title,
     description: lc === "el" ? author.bio_short_el : author.bio_short_en,
     alternates: {
-      canonical: siteUrl(pathEl),
+      canonical: siteUrl(lc === "el" ? pathEl : pathEn),
       languages: {
         "x-default": siteUrl(pathEl),
         el: siteUrl(pathEl),

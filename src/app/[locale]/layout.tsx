@@ -6,7 +6,9 @@ import { notFound } from "next/navigation";
 
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
+import { JsonLd } from "@/components/JsonLd";
 import { routing } from "@/i18n/routing";
+import { buildOrganizationJsonLd } from "@/lib/seo";
 
 import { localeConfig } from "../../../i18n.config";
 import "../globals.css";
@@ -65,6 +67,7 @@ export default async function LocaleLayout({
       className={`${mulish.variable} ${notoSansGreek.variable}`}
     >
       <body className="min-h-screen flex flex-col bg-background text-text-primary">
+        <JsonLd data={buildOrganizationJsonLd()} />
         <NextIntlClientProvider>
           <Header />
           <main className="flex-1">{children}</main>

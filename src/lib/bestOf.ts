@@ -17,7 +17,7 @@ export const BEST_OF_CITIES: Record<string, BestOfCityConfig> = {
   nicosia: {
     city: "Nicosia",
     pathEl: "/kalytera-scholes-odigon-lefkosia",
-    pathEn: "/best-driving-schools-nicosia",
+    pathEn: "/en/best-driving-schools-nicosia",
     cityEl: "Λευκωσία",
     cityElAcc: "Λευκωσία",
     cityKey: "nicosia",
@@ -25,7 +25,7 @@ export const BEST_OF_CITIES: Record<string, BestOfCityConfig> = {
   limassol: {
     city: "Limassol",
     pathEl: "/kalytera-scholes-odigon-lemesos",
-    pathEn: "/best-driving-schools-limassol",
+    pathEn: "/en/best-driving-schools-limassol",
     cityEl: "Λεμεσός",
     cityElAcc: "Λεμεσό",
     cityKey: "limassol",
@@ -33,7 +33,7 @@ export const BEST_OF_CITIES: Record<string, BestOfCityConfig> = {
   larnaca: {
     city: "Larnaca",
     pathEl: "/kalytera-scholes-odigon-larnaka",
-    pathEn: "/best-driving-schools-larnaca",
+    pathEn: "/en/best-driving-schools-larnaca",
     cityEl: "Λάρνακα",
     cityElAcc: "Λάρνακα",
     cityKey: "larnaca",
@@ -41,7 +41,7 @@ export const BEST_OF_CITIES: Record<string, BestOfCityConfig> = {
   paphos: {
     city: "Paphos",
     pathEl: "/kalytera-scholes-odigon-pafos",
-    pathEn: "/best-driving-schools-paphos",
+    pathEn: "/en/best-driving-schools-paphos",
     cityEl: "Πάφος",
     cityElAcc: "Πάφο",
     cityKey: "paphos",
@@ -49,7 +49,7 @@ export const BEST_OF_CITIES: Record<string, BestOfCityConfig> = {
   paralimni: {
     city: "Paralimni",
     pathEl: "/kalytera-scholes-odigon-paralimni",
-    pathEn: "/best-driving-schools-paralimni",
+    pathEn: "/en/best-driving-schools-paralimni",
     cityEl: "Παραλίμνι",
     cityElAcc: "Παραλίμνι",
     cityKey: "paralimni",
