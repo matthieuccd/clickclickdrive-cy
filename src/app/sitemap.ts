@@ -123,13 +123,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     });
   }
 
-  // Blog articles
+  // Blog articles — skip unpublished entries (empty publishedDate)
   for (const a of BLOG_ARTICLES) {
+    if (!a.publishedDate) continue;
     const el = `${SITE_HOST}/arthra/${a.slug_el}`;
     const en = `${SITE_HOST}/en/blog/${a.slug_en}`;
     entries.push({
       url: el,
-      lastModified: new Date(a.modifiedDate),
+      lastModified: new Date(a.modifiedDate || a.publishedDate),
       changeFrequency: "monthly",
       priority: 0.6,
       alternates: { languages: { "x-default": el, el, en } },
