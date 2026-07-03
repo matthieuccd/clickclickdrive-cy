@@ -19,6 +19,7 @@ Usage
 from __future__ import annotations
 
 import argparse
+import json as _json
 import os
 from dataclasses import dataclass
 from pathlib import Path
@@ -656,7 +657,245 @@ ARTICLES: tuple[ArticleSpec, ...] = (
             "computer theory test driving exam screen",
         ),
     ),
+    ArticleSpec(
+        id="cyprus-driving-test-2026",
+        topic_el="Εξέταση οδήγησης Κύπρος 2026: τι να περιμένεις",
+        topic_en="The Cyprus driving test 2026: what to expect",
+        title_el="Εξέταση Οδήγησης στην Κύπρο 2026: Τι να Περιμένετε",
+        title_en="The Cyprus Driving Test 2026: What to Expect",
+        audience_el=(
+            "Νέοι οδηγοί στην Κύπρο που ετοιμάζονται για τη θεωρητική ή πρακτική εξέταση "
+            "και θέλουν να ξέρουν ακριβώς τι τους περιμένει. "
+            "Στόχος: 2000+ λέξεις εκτός FAQ."
+        ),
+        audience_en=(
+            "New drivers in Cyprus preparing for the theory or practical test who want to know "
+            "exactly what to expect on the day."
+        ),
+        facts=(
+            "The Department of Road Transport (Τμήμα Οδικών Μεταφορών, ΤΟΜ), under the "
+            "Ministry of Transport, Communications and Works, administers both the theory "
+            "and practical driving tests in Cyprus.",
+            "Before sitting either test, the candidate must hold a valid Learner's Licence "
+            "(εκπαιδευτική άδεια) issued by the Department of Road Transport.",
+            "The theory test (γραπτή εξέταση) is computer-based. Candidates choose to sit "
+            "it in Greek or English.",
+            "Theory test content: road signs (πινακίδες), traffic rules and priority, and "
+            "safe driving behaviour. No set list of exact questions is published officially.",
+            "There is no officially mandated minimum number of lessons before booking the "
+            "theory test; the instructor advises when the student is ready.",
+            "After passing the theory test, the candidate books the practical test (πρακτική "
+            "εξέταση) through their driving school.",
+            "The practical test is conducted on real public roads by an official examiner "
+            "from the Department of Road Transport. The examiner sits in the car and "
+            "observes without intervening unless safety requires it.",
+            "During the practical test the candidate must drive in the instructor's "
+            "dual-control school car. L plates must be displayed front and rear.",
+            "Cyprus drives on the LEFT. The examiner checks steering, signalling, "
+            "positioning, speed control, observations at junctions, and compliance with "
+            "traffic signals and road signs.",
+            "If the candidate fails the practical test, they must wait before rebooking. "
+            "Check the current waiting period with the Department of Road Transport.",
+            "Test fees are set by the Department of Road Transport and can change. "
+            "Always confirm current amounts directly with the Department.",
+            "Both tests must be passed to obtain the full Category B driving licence.",
+        ),
+        sections_el=(
+            "Τι περιλαμβάνει η εξέταση οδήγησης στην Κύπρο;",
+            "Πότε μπορείτε να δώσετε εξέταση;",
+            "Τι ελέγχει η θεωρητική εξέταση και πώς να την περάσετε;",
+            "Τι γίνεται στην πρακτική εξέταση;",
+            "Τι έγγραφα χρειάζεστε την ημέρα της εξέτασης;",
+            "Τι γίνεται αν αποτύχετε;",
+            "Πώς να ετοιμαστείτε για επιτυχία;",
+        ),
+        sections_en=(
+            "What does the Cyprus driving test involve?",
+            "When can you sit the test?",
+            "What does the theory test cover and how do you pass?",
+            "What happens during the practical test?",
+            "What documents do you need on test day?",
+            "What happens if you fail?",
+            "How do you prepare to pass first time?",
+        ),
+        internal_links_el=(
+            ("/arthra/pws-na-vgaleis-diploma-odigisis-stin-kypro", "πώς βγάζετε εκπαιδευτική άδεια"),
+            ("/arthra/plires-odigos-diploma-odigisis-kypros", "πλήρης οδηγός διπλώματος 2026"),
+            ("/arthra/poso-kostizei-ekpaideysi-odigisis-kypros", "κόστος μαθημάτων οδήγησης"),
+            ("/scholes-odigon/lefkosia", "σχολές οδηγών στη Λευκωσία"),
+            ("/scholes-odigon/lemesos", "σχολές οδηγών στη Λεμεσό"),
+            ("/", "ClickClickDrive Κύπρος"),
+        ),
+        internal_links_en=(
+            ("/en/blog/how-to-get-driving-licence-cyprus-step-by-step", "step-by-step driving licence guide"),
+            ("/en/blog/cyprus-driving-licence-complete-guide", "complete Cyprus driving licence guide"),
+            ("/en/blog/driving-lesson-cost-cyprus", "driving lesson costs in Cyprus"),
+            ("/en/driving-schools/nicosia", "driving schools in Nicosia"),
+            ("/en/driving-schools/limassol", "driving schools in Limassol"),
+            ("/en", "ClickClickDrive Cyprus"),
+        ),
+        answer_el=(
+            "Η εξέταση οδήγησης στην Κύπρο έχει δύο μέρη: θεωρητική και πρακτική. "
+            "Η θεωρητική είναι ηλεκτρονική και γίνεται στα ελληνικά ή αγγλικά, "
+            "ενώ η πρακτική γίνεται σε δημόσιους δρόμους με εξεταστή του Τμήματος Οδικών Μεταφορών. "
+            "Και τις δύο πρέπει να τις περάσετε για να πάρετε δίπλωμα κατηγορίας Β."
+        ),
+        answer_en=(
+            "The Cyprus driving test has two parts: a computer-based theory test and an on-road "
+            "practical test. The theory test can be taken in Greek or English and covers road signs, "
+            "traffic rules, and safe driving. The practical test takes place on public roads with a "
+            "Department of Road Transport examiner, and you must pass both to get your Category B licence."
+        ),
+        widget_id="test-readiness-checker",
+        infographic_type="test-format",
+        inline_image_queries=(
+            "driving test examiner student car road",
+            "computer based theory test driving exam screen",
+        ),
+    ),
 )
+
+
+# ----------------------------------------------------------------------- auto-spec
+
+# Pool of live pages available for internal linking in auto-generated specs.
+_LINK_POOL_EN: tuple[tuple[str, str], ...] = (
+    ("/en/blog/how-to-get-driving-licence-cyprus-foreigner", "how to get a Cyprus driving licence as a foreigner"),
+    ("/en/blog/how-to-get-driving-licence-cyprus-step-by-step", "step-by-step driving licence guide"),
+    ("/en/blog/driving-lesson-cost-cyprus", "driving lesson costs in Cyprus"),
+    ("/en/blog/uk-licence-cyprus-after-brexit", "UK driving licence in Cyprus after Brexit"),
+    ("/en/blog/exchange-eu-licence-cyprus", "exchanging an EU driving licence in Cyprus"),
+    ("/en/blog/cyprus-driving-licence-categories", "Cyprus driving licence categories"),
+    ("/en/blog/cyprus-driving-licence-complete-guide", "complete Cyprus driving licence guide"),
+    ("/en/blog/cyprus-driving-test-2026", "Cyprus driving test guide"),
+    ("/en/driving-schools/nicosia", "driving schools in Nicosia"),
+    ("/en/driving-schools/limassol", "driving schools in Limassol"),
+    ("/en/driving-schools/larnaca", "driving schools in Larnaca"),
+    ("/en/driving-schools/paphos", "driving schools in Paphos"),
+    ("/en", "ClickClickDrive Cyprus"),
+)
+
+_LINK_POOL_EL: tuple[tuple[str, str], ...] = (
+    ("/arthra/diploma-odigisis-gia-ksenous-stin-kypro", "δίπλωμα οδήγησης για ξένους στην Κύπρο"),
+    ("/arthra/pws-na-vgaleis-diploma-odigisis-stin-kypro", "πώς βγάζεις δίπλωμα οδήγησης στην Κύπρο"),
+    ("/arthra/poso-kostizei-ekpaideysi-odigisis-kypros", "κόστος εκπαίδευσης οδήγησης στην Κύπρο"),
+    ("/arthra/vretaniko-diploma-kypros", "βρετανική άδεια μετά το Brexit"),
+    ("/arthra/anallagi-adeias-ee-kypros", "ανταλλαγή ευρωπαϊκής άδειας στην Κύπρο"),
+    ("/arthra/katigoria-b-adeia-odigisis-kypros", "κατηγορία Β άδεια οδήγησης"),
+    ("/arthra/plires-odigos-diploma-odigisis-kypros", "πλήρης οδηγός διπλώματος οδήγησης 2026"),
+    ("/arthra/eksetasi-odigisis-kypros-2026", "εξέταση οδήγησης Κύπρος 2026"),
+    ("/scholes-odigon/lefkosia", "σχολές οδηγών στη Λευκωσία"),
+    ("/scholes-odigon/lemesos", "σχολές οδηγών στη Λεμεσό"),
+    ("/scholes-odigon/larnaka", "σχολές οδηγών στη Λάρνακα"),
+    ("/scholes-odigon/pafos", "σχολές οδηγών στην Πάφο"),
+    ("/", "ClickClickDrive Κύπρος"),
+)
+
+
+def auto_generate_spec(article_id: str, article_data: dict, client) -> "ArticleSpec | None":
+    """Call Claude to generate an ArticleSpec for articles not in the ARTICLES tuple.
+
+    Saves a sidecar JSON so publish_next can fetch inline images without the spec
+    being in the static registry.
+    """
+    title_en = article_data.get("title_en", article_id)
+    title_el = article_data.get("title_el", title_en)
+    keyword = article_data.get("keyword", "")
+    cluster = article_data.get("cluster", "")
+    excerpt_en = article_data.get("excerpt_en", "")
+    excerpt_el = article_data.get("excerpt_el", "")
+
+    pool_en_text = "\n".join(f'  ["{p}", "{a}"]' for p, a in _LINK_POOL_EN)
+    pool_el_text = "\n".join(f'  ["{p}", "{a}"]' for p, a in _LINK_POOL_EL)
+
+    prompt = f"""Generate a structured article brief for a Cyprus driving school marketplace blog.
+
+Article ID: {article_id}
+Title EN: {title_en}
+Title EL: {title_el}
+Target keyword: {keyword}
+Topic cluster: {cluster}
+Excerpt EN: {excerpt_en}
+Excerpt EL: {excerpt_el}
+
+Output a single JSON object (no markdown fences, no explanation):
+
+{{
+  "topic_el": "<one-sentence Greek description of the article topic>",
+  "topic_en": "<one-sentence English description of the article topic>",
+  "audience_el": "<who the Greek reader is and what they need. End with: Στόχος: 2000+ λέξεις εκτός FAQ.>",
+  "audience_en": "<who the English reader is and what they need>",
+  "facts": ["<verified Cyprus-specific fact>", ... 10-12 total],
+  "sections_el": ["<H2 heading 1 in Greek>", ... exactly 7 total],
+  "sections_en": ["<H2 heading 1 in English>", ... exactly 7 total, parallel to Greek],
+  "internal_links_el": [["/path", "anchor text in Greek"], ... pick 5-6 most relevant],
+  "internal_links_en": [["/path", "anchor text in English"], ... pick 5-6 most relevant],
+  "answer_el": "<2-3 sentence direct answer in simple Greek, no em-dashes>",
+  "answer_en": "<2-3 sentence direct answer in plain English, no em-dashes>",
+  "inline_image_queries": ["<Pexels query 1>", "<Pexels query 2>"]
+}}
+
+RULES:
+- facts: true facts about the Republic of Cyprus only. No invented numbers or fees. \
+Say "check with the Department of Road Transport (ΤΟΜ)" when fees/rules may change.
+- sections: 7 headings each, phrased as questions where natural. Parallel across languages.
+- internal_links_el pool (pick 5-6 most relevant to this article):
+{pool_el_text}
+- internal_links_en pool (pick 5-6 most relevant to this article):
+{pool_en_text}
+- answers: 2-3 sentences. No em-dashes. Plain language.
+- inline_image_queries: natural Pexels queries that return photos relevant to this article.
+"""
+
+    try:
+        raw = _call_anthropic(
+            client=client,
+            model=DEFAULT_MODEL,
+            system_prompt=(
+                "You are a content strategist for a Cyprus driving school marketplace. "
+                "Output only valid JSON, nothing else."
+            ),
+            user_prompt=prompt,
+        )
+        raw = raw.strip()
+        if raw.startswith("```"):
+            raw = raw.split("\n", 1)[1].rsplit("```", 1)[0].strip()
+        data = _json.loads(raw)
+    except Exception as exc:
+        log.error("generate_blog.auto_spec_failed", id=article_id, error=str(exc))
+        return None
+
+    try:
+        spec = ArticleSpec(
+            id=article_id,
+            topic_el=data["topic_el"],
+            topic_en=data["topic_en"],
+            title_el=title_el,
+            title_en=title_en,
+            audience_el=data["audience_el"],
+            audience_en=data["audience_en"],
+            facts=tuple(data["facts"]),
+            sections_el=tuple(data["sections_el"]),
+            sections_en=tuple(data["sections_en"]),
+            internal_links_el=tuple(tuple(p) for p in data["internal_links_el"]),
+            internal_links_en=tuple(tuple(p) for p in data["internal_links_en"]),
+            answer_el=data.get("answer_el", ""),
+            answer_en=data.get("answer_en", ""),
+            inline_image_queries=tuple(data.get("inline_image_queries", [])),
+        )
+    except (KeyError, TypeError) as exc:
+        log.error("generate_blog.auto_spec_parse_failed", id=article_id, error=str(exc))
+        return None
+
+    # Write sidecar so publish_next can fetch inline images without spec being in ARTICLES.
+    BLOG_DIR.mkdir(parents=True, exist_ok=True)
+    sidecar = BLOG_DIR / f"{article_id}_auto_spec.json"
+    sidecar.write_text(
+        _json.dumps({"inline_image_queries": list(spec.inline_image_queries)}, ensure_ascii=False),
+        encoding="utf-8",
+    )
+    log.info("generate_blog.auto_spec_ok", id=article_id)
+    return spec
 
 
 # ----------------------------------------------------------------------- prompts
@@ -962,16 +1201,30 @@ def main(argv: list[str] | None = None) -> int:
     args = _parse_args(argv)
 
     articles = list(ARTICLES)
+    auto_spec_data: dict | None = None
     if args.article_id:
         articles = [a for a in articles if a.id == args.article_id]
         if not articles:
-            log.error("generate_blog.no_article", id=args.article_id)
-            return 1
+            if args.article_json:
+                try:
+                    auto_spec_data = _json.loads(args.article_json)
+                except Exception:
+                    log.error("generate_blog.bad_article_json", id=args.article_id)
+                    return 1
+            else:
+                log.error("generate_blog.no_article", id=args.article_id)
+                return 1
 
     locales: tuple[Locale, ...] = (args.locale,) if args.locale else LOCALES
     BLOG_DIR.mkdir(parents=True, exist_ok=True)
 
     client = _make_client()
+
+    if auto_spec_data is not None:
+        spec = auto_generate_spec(args.article_id, auto_spec_data, client)
+        if spec is None:
+            return 1
+        articles = [spec]
 
     done = skipped = failed = 0
     for article in articles:
@@ -1069,6 +1322,10 @@ def _parse_args(argv: list[str] | None) -> argparse.Namespace:
     p.add_argument("--locale", choices=["el", "en"], default=None)
     p.add_argument("--model", default=DEFAULT_MODEL)
     p.add_argument("--overwrite", action="store_true")
+    p.add_argument(
+        "--article-json", default=None,
+        help="Full queue article JSON; used to auto-generate a missing spec on the fly",
+    )
     return p.parse_args(argv)
 
 

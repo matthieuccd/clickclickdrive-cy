@@ -8,10 +8,12 @@ import { ForeignerDocumentsInfographic } from "@/components/infographics/Foreign
 import { LicencePathsInfographic } from "@/components/infographics/LicencePathsInfographic";
 import { LicenceStepsInfographic } from "@/components/infographics/LicenceStepsInfographic";
 import { LicenceTimelineInfographic } from "@/components/infographics/LicenceTimelineInfographic";
+import { TestFormatInfographic } from "@/components/infographics/TestFormatInfographic";
 import { UkExchangeInfographic } from "@/components/infographics/UkExchangeInfographic";
 import { EuExchangeChecker } from "@/components/widgets/EuExchangeChecker";
 import { ForeignerPathChecker } from "@/components/widgets/ForeignerPathChecker";
 import { PriceCalculator } from "@/components/widgets/PriceCalculator";
+import { TestReadinessChecker } from "@/components/widgets/TestReadinessChecker";
 import { UkLicenceChecker } from "@/components/widgets/UkLicenceChecker";
 import type { Locale } from "@/lib/types";
 
@@ -103,6 +105,8 @@ export function BlogProse({ markdown, locale, injectImages = [] }: Props) {
         elements.push(<CategoryBVehiclesInfographic key={i} locale={locale} />);
       } else if (type === "licence-paths") {
         elements.push(<LicencePathsInfographic key={i} locale={locale} />);
+      } else if (type === "test-format") {
+        elements.push(<TestFormatInfographic key={i} locale={locale} />);
       }
       continue;
     }
@@ -141,6 +145,8 @@ export function BlogProse({ markdown, locale, injectImages = [] }: Props) {
         widget = <EuExchangeChecker locale={locale} />;
       } else if (id === "foreigner-path-checker") {
         widget = <ForeignerPathChecker locale={locale} />;
+      } else if (id === "test-readiness-checker") {
+        widget = <TestReadinessChecker locale={locale} />;
       }
       if (widget) {
         const widgetLabel: Record<string, { en: string; el: string }> = {
@@ -148,6 +154,7 @@ export function BlogProse({ markdown, locale, injectImages = [] }: Props) {
           "uk-licence-checker": { en: "Do you need to sit a test?", el: "Χρειάζεστε εξετάσεις;" },
           "eu-exchange-checker": { en: "Can you exchange without tests?", el: "Ανταλλαγή χωρίς εξετάσεις;" },
           "foreigner-path-checker": { en: "Which process applies to you?", el: "Ποια διαδικασία ισχύει για εσάς;" },
+          "test-readiness-checker": { en: "Are you ready for the test?", el: "Είστε έτοιμοι για την εξέταση;" },
         };
         const widgetPillLabel = widgetLabel[id]?.[locale] ?? (locale === "el" ? "Διαδραστικό εργαλείο" : "Interactive tool");
         elements.push(

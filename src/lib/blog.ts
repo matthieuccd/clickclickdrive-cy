@@ -374,6 +374,37 @@ export const BLOG_ARTICLES: readonly BlogArticle[] = [
       "how-to-get-driving-licence-cyprus-foreigner",
     ],
   },
+  {
+    id: "cyprus-driving-test-2026",
+    slug_el: "eksetasi-odigisis-kypros-2026",
+    slug_en: "cyprus-driving-test-2026",
+    categoryId: "rules",
+    title_el: "Εξέταση Οδήγησης στην Κύπρο 2026: Τι να Περιμένετε",
+    title_en: "The Cyprus Driving Test 2026: What to Expect",
+    excerpt_el:
+      "Θεωρητική και πρακτική εξέταση οδήγησης στην Κύπρο: τι ελέγχεται, πώς κλείνετε ραντεβού και πώς να ετοιμαστείτε για επιτυχία.",
+    excerpt_en:
+      "Theory test and practical test in Cyprus: what is assessed, how to book, and how to prepare to pass first time.",
+    metaDescription_el:
+      "Εξέταση οδήγησης Κύπρος 2026: θεωρητική και πρακτική. Τι ελέγχεται, έγγραφα, και συμβουλές επιτυχίας.",
+    metaDescription_en:
+      "Cyprus driving test 2026: theory and practical. What is tested, documents needed, and tips to pass first time.",
+    heroImagePath: "/blog/cyprus-driving-test-2026/hero.jpg",
+    heroImageAlt_en: "Close-up of a student driver's hands gripping a steering wheel during a driving lesson on a city road",
+    heroImageAlt_el: "Κοντινό πλάνο χεριών εκπαιδευόμενου οδηγού στο τιμόνι κατά τη διάρκεια μαθήματος σε αστικό δρόμο",
+    heroCaption_en: "Student driver during a lesson, via Pexels.com",
+    heroCaption_el: "Εκπαιδευόμενος οδηγός κατά τη διάρκεια μαθήματος, via Pexels.com",
+    publishedDate: "",
+    modifiedDate: "",
+    author: "Matthieu Tissot",
+    authorSlug: "matthieu",
+    relatedCity: null,
+    relatedSlugs: [
+      "cyprus-driving-licence-complete-guide",
+      "how-to-get-driving-licence-cyprus-step-by-step",
+      "driving-lesson-cost-cyprus",
+    ],
+  },
 ];
 
 // --- hero image resolution -----------------------------------------------

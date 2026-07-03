@@ -85,16 +85,14 @@ def _run(cmd: list[str], **kwargs) -> subprocess.CompletedProcess:
     return subprocess.run(cmd, cwd=ROOT, **kwargs)
 
 
-def generate(article_id: str) -> None:
-    result = _run(
-        ["uv", "run", "python", "-m", "scraper.generate_blog",
-         "--article-id", article_id, "--overwrite"],
-    )
+def generate(article_id: str, article_json: str = "") -> None:
+    cmd = ["uv", "run", "python", "-m", "scraper.generate_blog",
+           "--article-id", article_id, "--overwrite"]
+    if article_json:
+        cmd += ["--article-json", article_json]
+    result = _run(cmd)
     if result.returncode != 0:
-        raise RuntimeError(
-            f"generate_blog failed for '{article_id}'. "
-            "Make sure it has a spec in scraper/generate_blog.py ARTICLES tuple."
-        )
+        raise RuntimeError(f"generate_blog failed for '{article_id}'")
 
 
 def fetch_hero(article_id: str, hero_query: str) -> None:
@@ -112,6 +110,18 @@ def fetch_inline_images(article_id: str) -> None:
     spec = _SPEC_MAP.get(article_id)
     if spec and spec.inline_image_queries:
         _fetch_inline(article_id, spec.inline_image_queries, force=True)
+        return
+    # Fall back to sidecar written by auto_generate_spec for articles not in ARTICLES.
+    sidecar = ROOT / "scraper" / "data" / "blog" / f"{article_id}_auto_spec.json"
+    if sidecar.exists():
+        try:
+            import json as _j
+            data = _j.loads(sidecar.read_text(encoding="utf-8"))
+            queries = tuple(data.get("inline_image_queries", []))
+            if queries:
+                _fetch_inline(article_id, queries, force=True)
+        except Exception:
+            pass
 
 
 def qa_check(article_id: str) -> bool:
@@ -405,7 +415,7 @@ def main(argv: list[str] | None = None) -> int:
     print("\n[1/4] Generating content...")
     if not args.dry_run:
         try:
-            generate(article["id"])
+            generate(article["id"], article_json=json.dumps(article))
         except RuntimeError as exc:
             print(f"ERROR: {exc}", file=sys.stderr)
             return 1
