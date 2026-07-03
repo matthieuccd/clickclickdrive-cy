@@ -44,6 +44,15 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
+      - name: Debug secrets
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTR }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS }}
+        run: |
+          echo "ANTHROPIC_API_KEY first 10 chars: ${ANTHROPIC_API_KEY:0:10}"
+          echo "ANTHROPIC_API_KEY length: ${#ANTHROPIC_API_KEY}"
+          echo "PEXELS_API_KEY length: ${#PEXELS_API_KEY}"
+
       - name: Run publish_next
         id: publish
         env:
