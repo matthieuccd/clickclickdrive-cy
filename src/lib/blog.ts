@@ -405,6 +405,32 @@ export const BLOG_ARTICLES: readonly BlogArticle[] = [
       "driving-lesson-cost-cyprus",
     ],
   },
+  {
+    id: "cyprus-driving-test-2026",
+    slug_el: "eksetasi-odigisis-kypros-2026",
+    slug_en: "cyprus-driving-test-2026",
+    categoryId: "practical",
+    title_el: "\u0397 \u0395\u03be\u03ad\u03c4\u03b1\u03c3\u03b7 \u039f\u03b4\u03ae\u03b3\u03b7\u03c3\u03b7\u03c2 \u03c3\u03c4\u03b7\u03bd \u039a\u03cd\u03c0\u03c1\u03bf: \u03a4\u03b9 \u03bd\u03b1 \u03a0\u03b5\u03c1\u03b9\u03bc\u03ad\u03bd\u03b5\u03c4\u03b5 \u03c4\u03bf 2026",
+    title_en: "The Cyprus Driving Test: What to Expect in 2026",
+    excerpt_el:
+      "\u03a4\u03b9 \u03b3\u03af\u03bd\u03b5\u03c4\u03b1\u03b9 \u03c4\u03b7\u03bd \u03b7\u03bc\u03ad\u03c1\u03b1 \u03c4\u03b7\u03c2 \u03c0\u03c1\u03b1\u03ba\u03c4\u03b9\u03ba\u03ae\u03c2 \u03b5\u03be\u03ad\u03c4\u03b1\u03c3\u03b7\u03c2 \u03bf\u03b4\u03ae\u03b3\u03b7\u03c3\u03b7\u03c2 \u03c3\u03c4\u03b7\u03bd \u039a\u03cd\u03c0\u03c1\u03bf.",
+    excerpt_en:
+      "What happens on the Cyprus driving test day \u2014 the route, the manoeuvres, and how the examiner scores you.",
+    metaDescription_el:
+      "\u0395\u03be\u03ad\u03c4\u03b1\u03c3\u03b7 \u03bf\u03b4\u03ae\u03b3\u03b7\u03c3\u03b7\u03c2 \u039a\u03cd\u03c0\u03c1\u03bf\u03c2 2026: \u03c4\u03b9 \u03bd\u03b1 \u03c0\u03b5\u03c1\u03b9\u03bc\u03ad\u03bd\u03b5\u03c4\u03b5, \u03b7 \u03b4\u03b9\u03b1\u03b4\u03c1\u03bf\u03bc\u03ae \u03ba\u03b1\u03b9 \u03c0\u03ce\u03c2 \u03bd\u03b1 \u03c0\u03c1\u03bf\u03b5\u03c4\u03bf\u03b9\u03bc\u03b1\u03c3\u03c4\u03b5\u03af\u03c4\u03b5.",
+    metaDescription_en:
+      "Cyprus driving test 2026: what to expect, the route, manoeuvres, and how to prepare.",
+    heroImagePath: "/blog/cyprus-driving-test-2026/hero.jpg",
+    heroImageAlt_el:
+      "\u0395\u03be\u03b5\u03c4\u03b1\u03c3\u03c4\u03ae\u03c2 \u03ba\u03b1\u03b9 \u03c5\u03c0\u03bf\u03c8\u03ae\u03c6\u03b9\u03bf\u03c2 \u03c3\u03b5 \u03b1\u03c5\u03c4\u03bf\u03ba\u03af\u03bd\u03b7\u03c4\u03bf \u03ba\u03b1\u03c4\u03ac \u03c4\u03b7\u03bd \u03b5\u03be\u03ad\u03c4\u03b1\u03c3\u03b7",
+    heroImageAlt_en: "Driving test examiner sitting in car with candidate",
+    publishedDate: "2026-07-03",
+    modifiedDate: "2026-07-03",
+    author: "ClickClickDrive Cyprus",
+    relatedCity: null,
+    relatedSlugs: [],
+  },
+
 ];
 
 // --- hero image resolution -----------------------------------------------
