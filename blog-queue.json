@@ -4,7 +4,7 @@
     "cadence_days": 2,
     "publish_mode": "auto",
     "consecutive_clean_approvals": 0,
-    "next_publish_at": "2026-07-05T10:15:00Z"
+    "next_publish_at": "2026-07-04T06:50:00Z"
   },
   "state": {
     "open_pr_number": null,
