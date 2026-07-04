@@ -431,6 +431,32 @@ export const BLOG_ARTICLES: readonly BlogArticle[] = [
     relatedSlugs: [],
   },
 
+  {
+    id: "cyprus-driving-licence-renewal",
+    slug_el: "ananeosi-adeia-odigisis-kypros",
+    slug_en: "cyprus-driving-licence-renewal",
+    categoryId: "rules",
+    title_el: "\u0391\u03bd\u03b1\u03bd\u03ad\u03c9\u03c3\u03b7 \u0386\u03b4\u03b5\u03b9\u03b1\u03c2 \u039f\u03b4\u03ae\u03b3\u03b7\u03c3\u03b7\u03c2 \u03c3\u03c4\u03b7\u03bd \u039a\u03cd\u03c0\u03c1\u03bf: \u0392\u03ae\u03bc\u03b1 \u03a0\u03c1\u03bf\u03c2 \u0392\u03ae\u03bc\u03b1",
+    title_en: "Cyprus Driving Licence Renewal: Step-by-Step",
+    excerpt_el:
+      "\u03a0\u03ce\u03c2 \u03bd\u03b1 \u03b1\u03bd\u03b1\u03bd\u03b5\u03ce\u03c3\u03b5\u03c4\u03b5 \u03c4\u03b7\u03bd \u03ac\u03b4\u03b5\u03b9\u03b1 \u03bf\u03b4\u03ae\u03b3\u03b7\u03c3\u03ae\u03c2 \u03c3\u03b1\u03c2 \u03c3\u03c4\u03b7\u03bd \u039a\u03cd\u03c0\u03c1\u03bf. \u03a0\u03cc\u03c4\u03b5 \u03bb\u03ae\u03b3\u03b5\u03b9, \u03c4\u03b9 \u03ad\u03b3\u03b3\u03c1\u03b1\u03c6\u03b1 \u03c7\u03c1\u03b5\u03b9\u03ac\u03b6\u03b5\u03c3\u03c4\u03b5.",
+    excerpt_en:
+      "How to renew your Cyprus driving licence \u2014 when it expires, what documents you need, and where to go.",
+    metaDescription_el:
+      "\u0391\u03bd\u03b1\u03bd\u03ad\u03c9\u03c3\u03b7 \u03ac\u03b4\u03b5\u03b9\u03b1\u03c2 \u03bf\u03b4\u03ae\u03b3\u03b7\u03c3\u03b7\u03c2 \u039a\u03cd\u03c0\u03c1\u03bf\u03c2. \u03a0\u03cc\u03c4\u03b5 \u03bb\u03ae\u03b3\u03b5\u03b9, \u03ad\u03b3\u03b3\u03c1\u03b1\u03c6\u03b1 \u03ba\u03b1\u03b9 \u03bf\u03b4\u03b7\u03b3\u03af\u03b5\u03c2 \u03b2\u03ae\u03bc\u03b1 \u03c0\u03c1\u03bf\u03c2 \u03b2\u03ae\u03bc\u03b1.",
+    metaDescription_en:
+      "Cyprus driving licence renewal guide. When it expires, documents needed, and how to renew step by step.",
+    heroImagePath: "/blog/cyprus-driving-licence-renewal/hero.jpg",
+    heroImageAlt_el:
+      "\u0386\u03c4\u03bf\u03bc\u03bf \u03c0\u03bf\u03c5 \u03c0\u03b1\u03c1\u03b1\u03b4\u03af\u03b4\u03b5\u03b9 \u03ad\u03b3\u03b3\u03c1\u03b1\u03c6\u03b1 \u03c3\u03b5 \u03b3\u03ba\u03b9\u03c3\u03ad \u03a4\u03bc\u03ae\u03bc\u03b1\u03c4\u03bf\u03c2 \u039f\u03b4\u03b9\u03ba\u03ce\u03bd \u039c\u03b5\u03c4\u03b1\u03c6\u03bf\u03c1\u03ce\u03bd",
+    heroImageAlt_en: "Person handing over documents at a transport office counter",
+    publishedDate: "2026-07-04",
+    modifiedDate: "2026-07-04",
+    author: "ClickClickDrive Cyprus",
+    relatedCity: null,
+    relatedSlugs: [],
+  },
+
 ];
 
 // --- hero image resolution -----------------------------------------------
