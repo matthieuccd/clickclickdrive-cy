@@ -457,6 +457,32 @@ export const BLOG_ARTICLES: readonly BlogArticle[] = [
     relatedSlugs: [],
   },
 
+  {
+    id: "cyprus-driving-licence-fees",
+    slug_el: "teli-adeia-odigisis-kypros",
+    slug_en: "cyprus-driving-licence-fees",
+    categoryId: "costs",
+    title_el: "\u03a4\u03ad\u03bb\u03b7 \u0386\u03b4\u03b5\u03b9\u03b1\u03c2 \u039f\u03b4\u03ae\u03b3\u03b7\u03c3\u03b7\u03c2 \u03c3\u03c4\u03b7\u03bd \u039a\u03cd\u03c0\u03c1\u03bf (2026)",
+    title_en: "Cyprus Driving Licence Fees and Costs (2026)",
+    excerpt_el:
+      "\u0391\u03bd\u03b1\u03bb\u03c5\u03c4\u03b9\u03ba\u03ae \u03c0\u03b1\u03c1\u03bf\u03c5\u03c3\u03af\u03b1\u03c3\u03b7 \u03ba\u03ac\u03b8\u03b5 \u03b5\u03c0\u03af\u03c3\u03b7\u03bc\u03bf\u03c5 \u03c4\u03ad\u03bb\u03bf\u03c5\u03c2 \u03b3\u03b9\u03b1 \u03ac\u03b4\u03b5\u03b9\u03b1 \u03bf\u03b4\u03ae\u03b3\u03b7\u03c3\u03b7\u03c2 \u03c3\u03c4\u03b7\u03bd \u039a\u03cd\u03c0\u03c1\u03bf \u03c4\u03bf 2026.",
+    excerpt_en:
+      "A clear breakdown of every official fee you pay when getting or renewing a Cyprus driving licence in 2026.",
+    metaDescription_el:
+      "\u03a4\u03ad\u03bb\u03b7 \u03ac\u03b4\u03b5\u03b9\u03b1\u03c2 \u03bf\u03b4\u03ae\u03b3\u03b7\u03c3\u03b7\u03c2 \u039a\u03cd\u03c0\u03c1\u03bf\u03c2 2026. \u0395\u03c0\u03af\u03c3\u03b7\u03bc\u03b1 \u03c4\u03ad\u03bb\u03b7 \u03a4\u039f\u039c, \u03ba\u03cc\u03c3\u03c4\u03bf\u03c2 \u03b5\u03be\u03b5\u03c4\u03ac\u03c3\u03b5\u03c9\u03bd \u03ba\u03b1\u03b9 \u03c3\u03c5\u03bd\u03bf\u03bb\u03b9\u03ba\u03cc \u03ba\u03cc\u03c3\u03c4\u03bf\u03c2.",
+    metaDescription_en:
+      "Cyprus driving licence fees 2026. Official DoRT fees, test costs, and how much the full process costs.",
+    heroImagePath: "/blog/cyprus-driving-licence-fees/hero.jpg",
+    heroImageAlt_el:
+      "\u0395\u03c0\u03af\u03c3\u03b7\u03bc\u03b1 \u03ad\u03bd\u03c4\u03c5\u03c0\u03b1 \u03ba\u03b1\u03b9 \u03bd\u03bf\u03bc\u03af\u03c3\u03bc\u03b1\u03c4\u03b1 \u03c3\u03b5 \u03b3\u03c1\u03b1\u03c6\u03b5\u03af\u03bf",
+    heroImageAlt_en: "Official fee documents and coins on a desk",
+    publishedDate: "2026-07-04",
+    modifiedDate: "2026-07-04",
+    author: "ClickClickDrive Cyprus",
+    relatedCity: null,
+    relatedSlugs: [],
+  },
+
 ];
 
 // --- hero image resolution -----------------------------------------------
