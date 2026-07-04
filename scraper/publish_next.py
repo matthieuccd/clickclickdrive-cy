@@ -189,6 +189,8 @@ def make_blog_ts_entry(article: dict, publish_date: str) -> str:
         "    heroImageAlt_el:",
         f"      {ts(article['hero_alt_el'])},",
         f"    heroImageAlt_en: {ts(article['hero_alt_en'])},",
+        f"    heroCaption_en: {ts(article['hero_alt_en'] + ', via Pexels.com')},",
+        f"    heroCaption_el: {ts(article['hero_alt_el'] + ', via Pexels.com')},",
         f"    publishedDate: {ts(publish_date)},",
         f"    modifiedDate: {ts(publish_date)},",
         '    author: "Matthieu Tissot",',

@@ -393,6 +393,8 @@ export const BLOG_ARTICLES: readonly BlogArticle[] = [
     heroImageAlt_el:
       "\u0395\u03be\u03b5\u03c4\u03b1\u03c3\u03c4\u03ae\u03c2 \u03ba\u03b1\u03b9 \u03c5\u03c0\u03bf\u03c8\u03ae\u03c6\u03b9\u03bf\u03c2 \u03c3\u03b5 \u03b1\u03c5\u03c4\u03bf\u03ba\u03af\u03bd\u03b7\u03c4\u03bf \u03ba\u03b1\u03c4\u03ac \u03c4\u03b7\u03bd \u03b5\u03be\u03ad\u03c4\u03b1\u03c3\u03b7",
     heroImageAlt_en: "Driving test examiner sitting in car with candidate",
+    heroCaption_en: "Driving test examiner sitting in car with candidate, via Pexels.com",
+    heroCaption_el: "\u0395\u03be\u03b5\u03c4\u03b1\u03c3\u03c4\u03ae\u03c2 \u03ba\u03b1\u03b9 \u03c5\u03c0\u03bf\u03c8\u03ae\u03c6\u03b9\u03bf\u03c2 \u03c3\u03b5 \u03b1\u03c5\u03c4\u03bf\u03ba\u03af\u03bd\u03b7\u03c4\u03bf \u03ba\u03b1\u03c4\u03ac \u03c4\u03b7\u03bd \u03b5\u03be\u03ad\u03c4\u03b1\u03c3\u03b7, via Pexels.com",
     publishedDate: "2026-07-03",
     modifiedDate: "2026-07-03",
     author: "Matthieu Tissot",
@@ -420,6 +422,8 @@ export const BLOG_ARTICLES: readonly BlogArticle[] = [
     heroImageAlt_el:
       "\u0386\u03c4\u03bf\u03bc\u03bf \u03c0\u03bf\u03c5 \u03c0\u03b1\u03c1\u03b1\u03b4\u03af\u03b4\u03b5\u03b9 \u03ad\u03b3\u03b3\u03c1\u03b1\u03c6\u03b1 \u03c3\u03b5 \u03b3\u03ba\u03b9\u03c3\u03ad \u03a4\u03bc\u03ae\u03bc\u03b1\u03c4\u03bf\u03c2 \u039f\u03b4\u03b9\u03ba\u03ce\u03bd \u039c\u03b5\u03c4\u03b1\u03c6\u03bf\u03c1\u03ce\u03bd",
     heroImageAlt_en: "Person handing over documents at a transport office counter",
+    heroCaption_en: "Person handing over documents at a transport office counter, via Pexels.com",
+    heroCaption_el: "\u0386\u03c4\u03bf\u03bc\u03bf \u03c0\u03bf\u03c5 \u03c0\u03b1\u03c1\u03b1\u03b4\u03af\u03b4\u03b5\u03b9 \u03ad\u03b3\u03b3\u03c1\u03b1\u03c6\u03b1 \u03c3\u03b5 \u03b3\u03ba\u03b9\u03c3\u03ad \u03a4\u03bc\u03ae\u03bc\u03b1\u03c4\u03bf\u03c2 \u039f\u03b4\u03b9\u03ba\u03ce\u03bd \u039c\u03b5\u03c4\u03b1\u03c6\u03bf\u03c1\u03ce\u03bd, via Pexels.com",
     publishedDate: "2026-07-04",
     modifiedDate: "2026-07-04",
     author: "Matthieu Tissot",
@@ -447,6 +451,8 @@ export const BLOG_ARTICLES: readonly BlogArticle[] = [
     heroImageAlt_el:
       "\u0395\u03c0\u03af\u03c3\u03b7\u03bc\u03b1 \u03ad\u03bd\u03c4\u03c5\u03c0\u03b1 \u03ba\u03b1\u03b9 \u03bd\u03bf\u03bc\u03af\u03c3\u03bc\u03b1\u03c4\u03b1 \u03c3\u03b5 \u03b3\u03c1\u03b1\u03c6\u03b5\u03af\u03bf",
     heroImageAlt_en: "Official fee documents and coins on a desk",
+    heroCaption_en: "Official fee documents and coins on a desk, via Pexels.com",
+    heroCaption_el: "\u0395\u03c0\u03af\u03c3\u03b7\u03bc\u03b1 \u03ad\u03bd\u03c4\u03c5\u03c0\u03b1 \u03ba\u03b1\u03b9 \u03bd\u03bf\u03bc\u03af\u03c3\u03bc\u03b1\u03c4\u03b1 \u03c3\u03b5 \u03b3\u03c1\u03b1\u03c6\u03b5\u03af\u03bf, via Pexels.com",
     publishedDate: "2026-07-04",
     modifiedDate: "2026-07-04",
     author: "Matthieu Tissot",
