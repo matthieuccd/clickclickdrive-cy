@@ -191,7 +191,8 @@ def make_blog_ts_entry(article: dict, publish_date: str) -> str:
         f"    heroImageAlt_en: {ts(article['hero_alt_en'])},",
         f"    publishedDate: {ts(publish_date)},",
         f"    modifiedDate: {ts(publish_date)},",
-        '    author: "ClickClickDrive Cyprus",',
+        '    author: "Matthieu Tissot",',
+        '    authorSlug: "matthieu",',
         f"    relatedCity: {city_ts},",
         "    relatedSlugs: [],",
         "  },",
@@ -199,13 +200,26 @@ def make_blog_ts_entry(article: dict, publish_date: str) -> str:
     return "\n".join(lines)
 
 
-def update_blog_ts(entry_ts: str) -> None:
+def update_blog_ts(entry_ts: str, article_id: str = "", publish_date: str = "") -> None:
     content = BLOG_TS_PATH.read_text(encoding="utf-8")
-    marker = "\n];"
-    idx = content.rfind(marker)
-    if idx == -1:
-        raise RuntimeError("Could not find '];\n' in blog.ts — cannot insert entry")
-    new_content = content[:idx] + "\n" + entry_ts + "\n" + content[idx:]
+    id_literal = f'id: "{article_id}"' if article_id else ""
+    if id_literal and id_literal in content:
+        # Stub entry exists — update its publishedDate and modifiedDate in place
+        import re as _re
+        pos = content.find(id_literal)
+        entry_end = content.find("\n  },", pos)
+        if entry_end == -1:
+            entry_end = content.find("\n];", pos)
+        block = content[pos:entry_end]
+        block = _re.sub(r'publishedDate: ""', f'publishedDate: "{publish_date}"', block)
+        block = _re.sub(r'modifiedDate: ""', f'modifiedDate: "{publish_date}"', block)
+        new_content = content[:pos] + block + content[entry_end:]
+    else:
+        marker = "\n];"
+        idx = content.rfind(marker)
+        if idx == -1:
+            raise RuntimeError("Could not find '];\n' in blog.ts — cannot insert entry")
+        new_content = content[:idx] + "\n" + entry_ts + "\n" + content[idx:]
     BLOG_TS_PATH.write_text(new_content, encoding="utf-8")
 
 
@@ -332,7 +346,7 @@ def publish_auto(article: dict, q: dict, dry_run: bool) -> None:
     entry_ts = make_blog_ts_entry(article, today)
 
     if not dry_run:
-        update_blog_ts(entry_ts)
+        update_blog_ts(entry_ts, article_id=article["id"], publish_date=today)
     else:
         print("(dry-run) blog.ts entry would be:")
         print(entry_ts)
