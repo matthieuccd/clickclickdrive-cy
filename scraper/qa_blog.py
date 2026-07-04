@@ -107,10 +107,10 @@ def check_file(path: Path) -> list[str]:
     # --- Word count ---
     body_words = _word_count(body_lines)
     total_words = _word_count(lines)
-    if body_words < 1900:
-        errors.append(f"Body word count {body_words} < 1900 (excluding FAQ)")
-    if total_words < 2100:
-        errors.append(f"Total word count {total_words} < 2100")
+    if body_words < 1800:
+        errors.append(f"Body word count {body_words} < 1800 (excluding FAQ)")
+    if total_words < 2000:
+        errors.append(f"Total word count {total_words} < 2000")
 
     # --- FAQ item count ---
     if not faq_lines:

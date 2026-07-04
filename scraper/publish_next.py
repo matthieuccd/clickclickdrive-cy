@@ -441,7 +441,7 @@ def main(argv: list[str] | None = None) -> int:
         if not passed:
             print("QA failed — regenerating once for a retry...")
             try:
-                generate(article["id"])
+                generate(article["id"], article_json=json.dumps(article))
             except RuntimeError as exc:
                 print(f"ERROR on retry: {exc}", file=sys.stderr)
                 return 1
