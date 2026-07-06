@@ -490,6 +490,35 @@ export const BLOG_ARTICLES: readonly BlogArticle[] = [
     relatedSlugs: [],
   },
 
+  {
+    id: "drive-cyprus-uk-licence",
+    slug_el: "odigisi-kypros-vretaniki-adeia",
+    slug_en: "drive-cyprus-uk-licence",
+    categoryId: "foreigners",
+    title_el: "\u039c\u03c0\u03bf\u03c1\u03ce \u03bd\u03b1 \u039f\u03b4\u03b7\u03b3\u03ae\u03c3\u03c9 \u03c3\u03c4\u03b7\u03bd \u039a\u03cd\u03c0\u03c1\u03bf \u03bc\u03b5 \u0392\u03c1\u03b5\u03c4\u03b1\u03bd\u03b9\u03ba\u03ae \u0386\u03b4\u03b5\u03b9\u03b1;",
+    title_en: "Can I Drive in Cyprus With a UK Licence?",
+    excerpt_el:
+      "\u039d\u03b1\u03b9 \u2014 \u03b1\u03bb\u03bb\u03ac \u03b3\u03b9\u03b1 \u03c0\u03cc\u03c3\u03bf \u03ba\u03b1\u03b9 \u03c5\u03c0\u03cc \u03c0\u03bf\u03b9\u03b5\u03c2 \u03c3\u03c5\u03bd\u03b8\u03ae\u03ba\u03b5\u03c2; \u0386\u03bc\u03b5\u03c3\u03b7 \u03b1\u03c0\u03ac\u03bd\u03c4\u03b7\u03c3\u03b7 \u03b3\u03b9\u03b1 \u03c4\u03bf\u03c5\u03c1\u03af\u03c3\u03c4\u03b5\u03c2 \u03ba\u03b1\u03b9 \u03bd\u03b5\u03bf\u03b1\u03c6\u03b9\u03c7\u03b8\u03ad\u03bd\u03c4\u03b5\u03c2.",
+    excerpt_en:
+      "Yes \u2014 but for how long, and under what conditions? Short answer for tourists and new arrivals.",
+    metaDescription_el:
+      "\u039c\u03c0\u03bf\u03c1\u03b5\u03af\u03c4\u03b5 \u03bd\u03b1 \u03bf\u03b4\u03b7\u03b3\u03ae\u03c3\u03b5\u03c4\u03b5 \u03c3\u03c4\u03b7\u03bd \u039a\u03cd\u03c0\u03c1\u03bf \u03bc\u03b5 \u03b2\u03c1\u03b5\u03c4\u03b1\u03bd\u03b9\u03ba\u03ae \u03ac\u03b4\u03b5\u03b9\u03b1; \u039d\u03b1\u03b9 \u2014 \u03bc\u03ac\u03b8\u03b5\u03c4\u03b5 \u03b3\u03b9\u03b1 \u03c0\u03cc\u03c3\u03bf \u03b9\u03c3\u03c7\u03cd\u03b5\u03b9.",
+    metaDescription_en:
+      "Can you drive in Cyprus with a UK licence? Yes \u2014 here is how long it is valid and when you must exchange.",
+    heroImagePath: "/blog/drive-cyprus-uk-licence/hero.jpg",
+    heroImageAlt_el:
+      "\u03a4\u03bf\u03c5\u03c1\u03af\u03c3\u03c4\u03b1\u03c2 \u03bf\u03b4\u03b7\u03b3\u03b5\u03af \u03b5\u03bd\u03bf\u03b9\u03ba\u03b9\u03b1\u03b6\u03cc\u03bc\u03b5\u03bd\u03bf \u03b1\u03c5\u03c4\u03bf\u03ba\u03af\u03bd\u03b7\u03c4\u03bf \u03c3\u03b5 \u03ba\u03c5\u03c0\u03c1\u03b9\u03b1\u03ba\u03cc \u03b4\u03c1\u03cc\u03bc\u03bf",
+    heroImageAlt_en: "Tourist driving a hire car on a Cyprus road",
+    heroCaption_en: "Tourist driving a hire car on a Cyprus road, via Pexels.com",
+    heroCaption_el: "\u03a4\u03bf\u03c5\u03c1\u03af\u03c3\u03c4\u03b1\u03c2 \u03bf\u03b4\u03b7\u03b3\u03b5\u03af \u03b5\u03bd\u03bf\u03b9\u03ba\u03b9\u03b1\u03b6\u03cc\u03bc\u03b5\u03bd\u03bf \u03b1\u03c5\u03c4\u03bf\u03ba\u03af\u03bd\u03b7\u03c4\u03bf \u03c3\u03b5 \u03ba\u03c5\u03c0\u03c1\u03b9\u03b1\u03ba\u03cc \u03b4\u03c1\u03cc\u03bc\u03bf, via Pexels.com",
+    publishedDate: "2026-07-06",
+    modifiedDate: "2026-07-06",
+    author: "Matthieu Tissot",
+    authorSlug: "matthieu",
+    relatedCity: null,
+    relatedSlugs: [],
+  },
+
 ];
 
 // --- hero image resolution -----------------------------------------------

@@ -1,10 +1,10 @@
 {
-  "last_publish_date": "2026-07-04",
+  "last_publish_date": "2026-07-06",
   "settings": {
     "cadence_days": 2,
     "publish_mode": "auto",
     "consecutive_clean_approvals": 0,
-    "next_publish_at": "2026-07-06T07:55:00Z"
+    "next_publish_at": "2026-07-08T09:00:00Z"
   },
   "state": {
     "open_pr_number": null,
@@ -267,7 +267,7 @@
     {
       "id": "drive-cyprus-uk-licence",
       "priority": 6,
-      "status": "pending",
+      "status": "published",
       "title_en": "Can I Drive in Cyprus With a UK Licence?",
       "title_el": "Μπορώ να Οδηγήσω στην Κύπρο με Βρετανική Άδεια;",
       "slug_en": "drive-cyprus-uk-licence",
@@ -283,7 +283,7 @@
       "meta_description_el": "Μπορείτε να οδηγήσετε στην Κύπρο με βρετανική άδεια; Ναι — μάθετε για πόσο ισχύει.",
       "hero_alt_en": "Tourist driving a hire car on a Cyprus road",
       "hero_alt_el": "Τουρίστας οδηγεί ενοικιαζόμενο αυτοκίνητο σε κυπριακό δρόμο",
-      "published_at": null,
+      "published_at": "2026-07-06",
       "pr_number": null,
       "pr_created_at": null
     },
