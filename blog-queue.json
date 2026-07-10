@@ -1,10 +1,10 @@
 {
-  "last_publish_date": "2026-07-08",
+  "last_publish_date": "2026-07-10",
   "settings": {
     "cadence_days": 2,
     "publish_mode": "auto",
     "consecutive_clean_approvals": 0,
-    "next_publish_at": "2026-07-10T10:05:00Z"
+    "next_publish_at": "2026-07-12T11:10:00Z"
   },
   "state": {
     "open_pr_number": null,
@@ -313,7 +313,7 @@
     {
       "id": "cyprus-theory-test-guide",
       "priority": 8,
-      "status": "pending",
+      "status": "published",
       "title_en": "Cyprus Theory Test: How to Prepare and Pass",
       "title_el": "Θεωρητική Εξέταση Κύπρου: Πώς να Προετοιμαστείτε και να Περάσετε",
       "slug_en": "cyprus-theory-test-guide",
@@ -329,7 +329,7 @@
       "meta_description_el": "Θεωρητική εξέταση Κύπρος: μορφή, ερωτήσεις, κράτηση και συμβουλές για να περάσετε.",
       "hero_alt_en": "Person studying for driving theory test at a computer",
       "hero_alt_el": "Άτομο που μελετά για θεωρητική εξέταση οδήγησης",
-      "published_at": null,
+      "published_at": "2026-07-10",
       "pr_number": null,
       "pr_created_at": null
     },

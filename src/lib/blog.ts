@@ -548,6 +548,35 @@ export const BLOG_ARTICLES: readonly BlogArticle[] = [
     relatedSlugs: [],
   },
 
+  {
+    id: "cyprus-theory-test-guide",
+    slug_el: "theoritiki-eksetasi-kypros-odigos",
+    slug_en: "cyprus-theory-test-guide",
+    categoryId: "theory",
+    title_el: "\u0398\u03b5\u03c9\u03c1\u03b7\u03c4\u03b9\u03ba\u03ae \u0395\u03be\u03ad\u03c4\u03b1\u03c3\u03b7 \u039a\u03cd\u03c0\u03c1\u03bf\u03c5: \u03a0\u03ce\u03c2 \u03bd\u03b1 \u03a0\u03c1\u03bf\u03b5\u03c4\u03bf\u03b9\u03bc\u03b1\u03c3\u03c4\u03b5\u03af\u03c4\u03b5 \u03ba\u03b1\u03b9 \u03bd\u03b1 \u03a0\u03b5\u03c1\u03ac\u03c3\u03b5\u03c4\u03b5",
+    title_en: "Cyprus Theory Test: How to Prepare and Pass",
+    excerpt_el:
+      "\u03a0\u03ce\u03c2 \u03bb\u03b5\u03b9\u03c4\u03bf\u03c5\u03c1\u03b3\u03b5\u03af \u03b7 \u03b8\u03b5\u03c9\u03c1\u03b7\u03c4\u03b9\u03ba\u03ae \u03b5\u03be\u03ad\u03c4\u03b1\u03c3\u03b7 \u03c3\u03c4\u03b7\u03bd \u039a\u03cd\u03c0\u03c1\u03bf, \u03c4\u03b9 \u03ba\u03b1\u03bb\u03cd\u03c0\u03c4\u03b5\u03b9 \u03ba\u03b1\u03b9 \u03c0\u03ce\u03c2 \u03bd\u03b1 \u03c0\u03c1\u03bf\u03b5\u03c4\u03bf\u03b9\u03bc\u03b1\u03c3\u03c4\u03b5\u03af\u03c4\u03b5.",
+    excerpt_en:
+      "How the Cyprus theory test works, what it covers, and how to study for it in Greek or English.",
+    metaDescription_el:
+      "\u0398\u03b5\u03c9\u03c1\u03b7\u03c4\u03b9\u03ba\u03ae \u03b5\u03be\u03ad\u03c4\u03b1\u03c3\u03b7 \u039a\u03cd\u03c0\u03c1\u03bf\u03c2: \u03bc\u03bf\u03c1\u03c6\u03ae, \u03b5\u03c1\u03c9\u03c4\u03ae\u03c3\u03b5\u03b9\u03c2, \u03ba\u03c1\u03ac\u03c4\u03b7\u03c3\u03b7 \u03ba\u03b1\u03b9 \u03c3\u03c5\u03bc\u03b2\u03bf\u03c5\u03bb\u03ad\u03c2 \u03b3\u03b9\u03b1 \u03bd\u03b1 \u03c0\u03b5\u03c1\u03ac\u03c3\u03b5\u03c4\u03b5.",
+    metaDescription_en:
+      "Cyprus theory test guide 2026. Format, questions, how to book, and tips to pass first time.",
+    heroImagePath: "/blog/cyprus-theory-test-guide/hero.jpg",
+    heroImageAlt_el:
+      "\u0386\u03c4\u03bf\u03bc\u03bf \u03c0\u03bf\u03c5 \u03bc\u03b5\u03bb\u03b5\u03c4\u03ac \u03b3\u03b9\u03b1 \u03b8\u03b5\u03c9\u03c1\u03b7\u03c4\u03b9\u03ba\u03ae \u03b5\u03be\u03ad\u03c4\u03b1\u03c3\u03b7 \u03bf\u03b4\u03ae\u03b3\u03b7\u03c3\u03b7\u03c2",
+    heroImageAlt_en: "Person studying for driving theory test at a computer",
+    heroCaption_en: "Person studying for driving theory test at a computer, via Pexels.com",
+    heroCaption_el: "\u0386\u03c4\u03bf\u03bc\u03bf \u03c0\u03bf\u03c5 \u03bc\u03b5\u03bb\u03b5\u03c4\u03ac \u03b3\u03b9\u03b1 \u03b8\u03b5\u03c9\u03c1\u03b7\u03c4\u03b9\u03ba\u03ae \u03b5\u03be\u03ad\u03c4\u03b1\u03c3\u03b7 \u03bf\u03b4\u03ae\u03b3\u03b7\u03c3\u03b7\u03c2, via Pexels.com",
+    publishedDate: "2026-07-10",
+    modifiedDate: "2026-07-10",
+    author: "Matthieu Tissot",
+    authorSlug: "matthieu",
+    relatedCity: null,
+    relatedSlugs: [],
+  },
+
 ];
 
 // --- hero image resolution -----------------------------------------------
