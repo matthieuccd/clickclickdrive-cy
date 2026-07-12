@@ -577,6 +577,35 @@ export const BLOG_ARTICLES: readonly BlogArticle[] = [
     relatedSlugs: [],
   },
 
+  {
+    id: "cyprus-road-signs-guide",
+    slug_el: "simata-troxaias-kypros-odigos",
+    slug_en: "cyprus-road-signs-guide",
+    categoryId: "theory",
+    title_el: "\u03a3\u03ae\u03bc\u03b1\u03c4\u03b1 \u03a4\u03c1\u03bf\u03c7\u03b1\u03af\u03b1\u03c2 \u039a\u03cd\u03c0\u03c1\u03bf\u03c5: \u03a0\u03bb\u03ae\u03c1\u03b7\u03c2 \u039f\u03b4\u03b7\u03b3\u03cc\u03c2 \u03b3\u03b9\u03b1 \u03c4\u03b7\u03bd \u0395\u03be\u03ad\u03c4\u03b1\u03c3\u03b7",
+    title_en: "Cyprus Road Signs: The Complete Test Guide",
+    excerpt_el:
+      "\u039a\u03ac\u03b8\u03b5 \u03ba\u03b1\u03c4\u03b7\u03b3\u03bf\u03c1\u03af\u03b1 \u03c3\u03ae\u03bc\u03b1\u03c4\u03bf\u03c2 \u03c4\u03c1\u03bf\u03c7\u03b1\u03af\u03b1\u03c2 \u03c0\u03bf\u03c5 \u03c7\u03c1\u03b5\u03b9\u03ac\u03b6\u03b5\u03c3\u03c4\u03b5 \u03b3\u03b9\u03b1 \u03c4\u03b7 \u03b8\u03b5\u03c9\u03c1\u03b7\u03c4\u03b9\u03ba\u03ae \u03b5\u03be\u03ad\u03c4\u03b1\u03c3\u03b7 \u03c3\u03c4\u03b7\u03bd \u039a\u03cd\u03c0\u03c1\u03bf.",
+    excerpt_en:
+      "Every category of Cyprus road sign you need to know for the theory test \u2014 mandatory, warning, and informational.",
+    metaDescription_el:
+      "\u03a3\u03ae\u03bc\u03b1\u03c4\u03b1 \u03c4\u03c1\u03bf\u03c7\u03b1\u03af\u03b1\u03c2 \u039a\u03cd\u03c0\u03c1\u03bf\u03c5 \u03b3\u03b9\u03b1 \u03c4\u03b7 \u03b8\u03b5\u03c9\u03c1\u03b7\u03c4\u03b9\u03ba\u03ae \u03b5\u03be\u03ad\u03c4\u03b1\u03c3\u03b7. \u038c\u03bb\u03b5\u03c2 \u03bf\u03b9 \u03ba\u03b1\u03c4\u03b7\u03b3\u03bf\u03c1\u03af\u03b5\u03c2 \u03c3\u03b7\u03bc\u03ac\u03c4\u03c9\u03bd.",
+    metaDescription_en:
+      "Cyprus road signs guide for the theory test. All sign categories with explanations.",
+    heroImagePath: "/blog/cyprus-road-signs-guide/hero.jpg",
+    heroImageAlt_el:
+      "\u03a3\u03ae\u03bc\u03b1\u03c4\u03b1 \u03c4\u03c1\u03bf\u03c7\u03b1\u03af\u03b1\u03c2 \u03c3\u03b5 \u03ba\u03cc\u03bc\u03b2\u03bf \u03c3\u03c4\u03b7\u03bd \u039a\u03cd\u03c0\u03c1\u03bf",
+    heroImageAlt_en: "Cyprus road signs at a junction",
+    heroCaption_en: "Cyprus road signs at a junction, via Pexels.com",
+    heroCaption_el: "\u03a3\u03ae\u03bc\u03b1\u03c4\u03b1 \u03c4\u03c1\u03bf\u03c7\u03b1\u03af\u03b1\u03c2 \u03c3\u03b5 \u03ba\u03cc\u03bc\u03b2\u03bf \u03c3\u03c4\u03b7\u03bd \u039a\u03cd\u03c0\u03c1\u03bf, via Pexels.com",
+    publishedDate: "2026-07-12",
+    modifiedDate: "2026-07-12",
+    author: "Matthieu Tissot",
+    authorSlug: "matthieu",
+    relatedCity: null,
+    relatedSlugs: [],
+  },
+
 ];
 
 // --- hero image resolution -----------------------------------------------

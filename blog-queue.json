@@ -1,10 +1,10 @@
 {
-  "last_publish_date": "2026-07-10",
+  "last_publish_date": "2026-07-12",
   "settings": {
     "cadence_days": 2,
     "publish_mode": "auto",
     "consecutive_clean_approvals": 0,
-    "next_publish_at": "2026-07-12T11:10:00Z"
+    "next_publish_at": "2026-07-14T12:15:00Z"
   },
   "state": {
     "open_pr_number": null,
@@ -336,7 +336,7 @@
     {
       "id": "cyprus-road-signs-guide",
       "priority": 9,
-      "status": "pending",
+      "status": "published",
       "title_en": "Cyprus Road Signs: The Complete Test Guide",
       "title_el": "Σήματα Τροχαίας Κύπρου: Πλήρης Οδηγός για την Εξέταση",
       "slug_en": "cyprus-road-signs-guide",
@@ -352,7 +352,7 @@
       "meta_description_el": "Σήματα τροχαίας Κύπρου για τη θεωρητική εξέταση. Όλες οι κατηγορίες σημάτων.",
       "hero_alt_en": "Cyprus road signs at a junction",
       "hero_alt_el": "Σήματα τροχαίας σε κόμβο στην Κύπρο",
-      "published_at": null,
+      "published_at": "2026-07-12",
       "pr_number": null,
       "pr_created_at": null
     },
