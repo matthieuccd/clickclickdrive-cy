@@ -606,6 +606,35 @@ export const BLOG_ARTICLES: readonly BlogArticle[] = [
     relatedSlugs: [],
   },
 
+  {
+    id: "cyprus-driving-licence-requirements",
+    slug_el: "proapaitimena-adeia-odigisis-kypros",
+    slug_en: "cyprus-driving-licence-requirements",
+    categoryId: "rules",
+    title_el: "\u03a0\u03c1\u03bf\u03cb\u03c0\u03bf\u03b8\u03ad\u03c3\u03b5\u03b9\u03c2 \u0386\u03b4\u03b5\u03b9\u03b1\u03c2 \u039f\u03b4\u03ae\u03b3\u03b7\u03c3\u03b7\u03c2 \u03c3\u03c4\u03b7\u03bd \u039a\u03cd\u03c0\u03c1\u03bf",
+    title_en: "Driving Licence Requirements in Cyprus",
+    excerpt_el:
+      "\u038c\u03bb\u03b5\u03c2 \u03bf\u03b9 \u03c0\u03c1\u03bf\u03cb\u03c0\u03bf\u03b8\u03ad\u03c3\u03b5\u03b9\u03c2 \u03b3\u03b9\u03b1 \u03ac\u03b4\u03b5\u03b9\u03b1 \u03bf\u03b4\u03ae\u03b3\u03b7\u03c3\u03b7\u03c2 \u03c3\u03c4\u03b7\u03bd \u039a\u03cd\u03c0\u03c1\u03bf. \u0397\u03bb\u03b9\u03ba\u03af\u03b1, \u03ad\u03b3\u03b3\u03c1\u03b1\u03c6\u03b1, \u03b9\u03b1\u03c4\u03c1\u03b9\u03ba\u03cc, \u03ba\u03b1\u03c4\u03bf\u03b9\u03ba\u03af\u03b1.",
+    excerpt_en:
+      "The full list of requirements to get a driving licence in Cyprus \u2014 age, documents, medical, and residency.",
+    metaDescription_el:
+      "\u03a0\u03c1\u03bf\u03cb\u03c0\u03bf\u03b8\u03ad\u03c3\u03b5\u03b9\u03c2 \u03ac\u03b4\u03b5\u03b9\u03b1\u03c2 \u03bf\u03b4\u03ae\u03b3\u03b7\u03c3\u03b7\u03c2 \u039a\u03cd\u03c0\u03c1\u03bf\u03c2. \u0397\u03bb\u03b9\u03ba\u03af\u03b1, \u03ad\u03b3\u03b3\u03c1\u03b1\u03c6\u03b1, \u03b9\u03b1\u03c4\u03c1\u03b9\u03ba\u03cc \u03ba\u03b1\u03b9 \u03ba\u03b1\u03c4\u03bf\u03b9\u03ba\u03af\u03b1.",
+    metaDescription_en:
+      "Driving licence requirements in Cyprus. Age, documents, medical certificate, and residency rules.",
+    heroImagePath: "/blog/cyprus-driving-licence-requirements/hero.jpg",
+    heroImageAlt_el:
+      "\u039b\u03af\u03c3\u03c4\u03b1 \u03b5\u03b3\u03b3\u03c1\u03ac\u03c6\u03c9\u03bd \u03c3\u03b5 \u03b3\u03c1\u03b1\u03c6\u03b5\u03af\u03bf",
+    heroImageAlt_en: "Checklist of documents on a desk",
+    heroCaption_en: "Checklist of documents on a desk, via Pexels.com",
+    heroCaption_el: "\u039b\u03af\u03c3\u03c4\u03b1 \u03b5\u03b3\u03b3\u03c1\u03ac\u03c6\u03c9\u03bd \u03c3\u03b5 \u03b3\u03c1\u03b1\u03c6\u03b5\u03af\u03bf, via Pexels.com",
+    publishedDate: "2026-07-14",
+    modifiedDate: "2026-07-14",
+    author: "Matthieu Tissot",
+    authorSlug: "matthieu",
+    relatedCity: null,
+    relatedSlugs: [],
+  },
+
 ];
 
 // --- hero image resolution -----------------------------------------------
