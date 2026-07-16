@@ -635,6 +635,35 @@ export const BLOG_ARTICLES: readonly BlogArticle[] = [
     relatedSlugs: [],
   },
 
+  {
+    id: "book-driving-test-cyprus",
+    slug_el: "kratisi-eksetasis-odigisis-kypros",
+    slug_en: "book-driving-test-cyprus",
+    categoryId: "practical",
+    title_el: "\u03a0\u03ce\u03c2 \u03bd\u03b1 \u039a\u03bb\u03b5\u03af\u03c3\u03b5\u03c4\u03b5 \u0395\u03be\u03ad\u03c4\u03b1\u03c3\u03b7 \u039f\u03b4\u03ae\u03b3\u03b7\u03c3\u03b7\u03c2 \u03c3\u03c4\u03b7\u03bd \u039a\u03cd\u03c0\u03c1\u03bf",
+    title_en: "How to Book Your Driving Test in Cyprus",
+    excerpt_el:
+      "\u03a0\u03ce\u03c2 \u03bd\u03b1 \u03ba\u03bb\u03b5\u03af\u03c3\u03b5\u03c4\u03b5 \u03b8\u03b5\u03c9\u03c1\u03b7\u03c4\u03b9\u03ba\u03ae \u03ba\u03b1\u03b9 \u03c0\u03c1\u03b1\u03ba\u03c4\u03b9\u03ba\u03ae \u03b5\u03be\u03ad\u03c4\u03b1\u03c3\u03b7 \u03bf\u03b4\u03ae\u03b3\u03b7\u03c3\u03b7\u03c2 \u03c3\u03c4\u03b7\u03bd \u039a\u03cd\u03c0\u03c1\u03bf.",
+    excerpt_en:
+      "How to book both the theory and practical driving tests in Cyprus \u2014 online, by phone, or in person.",
+    metaDescription_el:
+      "\u03a0\u03ce\u03c2 \u03bd\u03b1 \u03ba\u03bb\u03b5\u03af\u03c3\u03b5\u03c4\u03b5 \u03b5\u03be\u03ad\u03c4\u03b1\u03c3\u03b7 \u03bf\u03b4\u03ae\u03b3\u03b7\u03c3\u03b7\u03c2 \u03c3\u03c4\u03b7\u03bd \u039a\u03cd\u03c0\u03c1\u03bf. \u039a\u03c1\u03ac\u03c4\u03b7\u03c3\u03b7 \u03b8\u03b5\u03c9\u03c1\u03b7\u03c4\u03b9\u03ba\u03ae\u03c2 \u03ba\u03b1\u03b9 \u03c0\u03c1\u03b1\u03ba\u03c4\u03b9\u03ba\u03ae\u03c2 \u03b5\u03be\u03ad\u03c4\u03b1\u03c3\u03b7\u03c2.",
+    metaDescription_en:
+      "How to book your driving test in Cyprus. Theory and practical test booking process explained.",
+    heroImagePath: "/blog/book-driving-test-cyprus/hero.jpg",
+    heroImageAlt_el:
+      "\u0386\u03c4\u03bf\u03bc\u03bf \u03c0\u03bf\u03c5 \u03ba\u03bb\u03b5\u03af\u03bd\u03b5\u03b9 \u03c1\u03b1\u03bd\u03c4\u03b5\u03b2\u03bf\u03cd \u03c3\u03c4\u03bf\u03bd \u03c5\u03c0\u03bf\u03bb\u03bf\u03b3\u03b9\u03c3\u03c4\u03ae",
+    heroImageAlt_en: "Person booking an appointment on a computer",
+    heroCaption_en: "Person booking an appointment on a computer, via Pexels.com",
+    heroCaption_el: "\u0386\u03c4\u03bf\u03bc\u03bf \u03c0\u03bf\u03c5 \u03ba\u03bb\u03b5\u03af\u03bd\u03b5\u03b9 \u03c1\u03b1\u03bd\u03c4\u03b5\u03b2\u03bf\u03cd \u03c3\u03c4\u03bf\u03bd \u03c5\u03c0\u03bf\u03bb\u03bf\u03b3\u03b9\u03c3\u03c4\u03ae, via Pexels.com",
+    publishedDate: "2026-07-16",
+    modifiedDate: "2026-07-16",
+    author: "Matthieu Tissot",
+    authorSlug: "matthieu",
+    relatedCity: null,
+    relatedSlugs: [],
+  },
+
 ];
 
 // --- hero image resolution -----------------------------------------------
