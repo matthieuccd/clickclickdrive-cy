@@ -1,10 +1,10 @@
 {
-  "last_publish_date": "2026-07-16",
+  "last_publish_date": "2026-07-18",
   "settings": {
     "cadence_days": 2,
     "publish_mode": "auto",
     "consecutive_clean_approvals": 0,
-    "next_publish_at": "2026-07-18T14:25:00Z"
+    "next_publish_at": "2026-07-20T15:30:00Z"
   },
   "state": {
     "open_pr_number": null,
@@ -405,7 +405,7 @@
     {
       "id": "cyprus-driving-licence-renewal-over-70",
       "priority": 12,
-      "status": "pending",
+      "status": "published",
       "title_en": "Renewing Your Cyprus Driving Licence Over 70",
       "title_el": "Ανανέωση Άδειας Οδήγησης Άνω των 70 στην Κύπρο",
       "slug_en": "cyprus-driving-licence-renewal-over-70",
@@ -421,7 +421,7 @@
       "meta_description_el": "Ανανέωση άδειας οδήγησης άνω των 70 στην Κύπρο. Μικρότερη ισχύς, ιατρικοί έλεγχοι, διαδικασία.",
       "hero_alt_en": "Elderly person reviewing documents in a transport office",
       "hero_alt_el": "Ηλικιωμένο άτομο εξετάζει έγγραφα σε Τμήμα Οδικών Μεταφορών",
-      "published_at": null,
+      "published_at": "2026-07-18",
       "pr_number": null,
       "pr_created_at": null
     },

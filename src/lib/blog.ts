@@ -664,6 +664,35 @@ export const BLOG_ARTICLES: readonly BlogArticle[] = [
     relatedSlugs: [],
   },
 
+  {
+    id: "cyprus-driving-licence-renewal-over-70",
+    slug_el: "ananeosi-adeia-ano-70-kypros",
+    slug_en: "cyprus-driving-licence-renewal-over-70",
+    categoryId: "rules",
+    title_el: "\u0391\u03bd\u03b1\u03bd\u03ad\u03c9\u03c3\u03b7 \u0386\u03b4\u03b5\u03b9\u03b1\u03c2 \u039f\u03b4\u03ae\u03b3\u03b7\u03c3\u03b7\u03c2 \u0386\u03bd\u03c9 \u03c4\u03c9\u03bd 70 \u03c3\u03c4\u03b7\u03bd \u039a\u03cd\u03c0\u03c1\u03bf",
+    title_en: "Renewing Your Cyprus Driving Licence Over 70",
+    excerpt_el:
+      "\u039f\u03b4\u03b7\u03b3\u03bf\u03af \u03ac\u03bd\u03c9 \u03c4\u03c9\u03bd 70 \u03c3\u03c4\u03b7\u03bd \u039a\u03cd\u03c0\u03c1\u03bf \u03ad\u03c7\u03bf\u03c5\u03bd \u03c3\u03c5\u03bd\u03c4\u03bf\u03bc\u03cc\u03c4\u03b5\u03c1\u03b5\u03c2 \u03c0\u03b5\u03c1\u03b9\u03cc\u03b4\u03bf\u03c5\u03c2 \u03b1\u03bd\u03b1\u03bd\u03ad\u03c9\u03c3\u03b7\u03c2 \u03ba\u03b1\u03b9 \u03b5\u03c0\u03b9\u03c0\u03bb\u03ad\u03bf\u03bd \u03b5\u03bb\u03ad\u03b3\u03c7\u03bf\u03c5\u03c2.",
+    excerpt_en:
+      "Drivers over 70 in Cyprus face shorter renewal periods and extra checks. Here is what to expect.",
+    metaDescription_el:
+      "\u0391\u03bd\u03b1\u03bd\u03ad\u03c9\u03c3\u03b7 \u03ac\u03b4\u03b5\u03b9\u03b1\u03c2 \u03bf\u03b4\u03ae\u03b3\u03b7\u03c3\u03b7\u03c2 \u03ac\u03bd\u03c9 \u03c4\u03c9\u03bd 70 \u03c3\u03c4\u03b7\u03bd \u039a\u03cd\u03c0\u03c1\u03bf. \u039c\u03b9\u03ba\u03c1\u03cc\u03c4\u03b5\u03c1\u03b7 \u03b9\u03c3\u03c7\u03cd\u03c2, \u03b9\u03b1\u03c4\u03c1\u03b9\u03ba\u03bf\u03af \u03ad\u03bb\u03b5\u03b3\u03c7\u03bf\u03b9, \u03b4\u03b9\u03b1\u03b4\u03b9\u03ba\u03b1\u03c3\u03af\u03b1.",
+    metaDescription_en:
+      "Cyprus driving licence renewal over 70. Shorter validity periods, medical checks, and the renewal process.",
+    heroImagePath: "/blog/cyprus-driving-licence-renewal-over-70/hero.jpg",
+    heroImageAlt_el:
+      "\u0397\u03bb\u03b9\u03ba\u03b9\u03c9\u03bc\u03ad\u03bd\u03bf \u03ac\u03c4\u03bf\u03bc\u03bf \u03b5\u03be\u03b5\u03c4\u03ac\u03b6\u03b5\u03b9 \u03ad\u03b3\u03b3\u03c1\u03b1\u03c6\u03b1 \u03c3\u03b5 \u03a4\u03bc\u03ae\u03bc\u03b1 \u039f\u03b4\u03b9\u03ba\u03ce\u03bd \u039c\u03b5\u03c4\u03b1\u03c6\u03bf\u03c1\u03ce\u03bd",
+    heroImageAlt_en: "Elderly person reviewing documents in a transport office",
+    heroCaption_en: "Elderly person reviewing documents in a transport office, via Pexels.com",
+    heroCaption_el: "\u0397\u03bb\u03b9\u03ba\u03b9\u03c9\u03bc\u03ad\u03bd\u03bf \u03ac\u03c4\u03bf\u03bc\u03bf \u03b5\u03be\u03b5\u03c4\u03ac\u03b6\u03b5\u03b9 \u03ad\u03b3\u03b3\u03c1\u03b1\u03c6\u03b1 \u03c3\u03b5 \u03a4\u03bc\u03ae\u03bc\u03b1 \u039f\u03b4\u03b9\u03ba\u03ce\u03bd \u039c\u03b5\u03c4\u03b1\u03c6\u03bf\u03c1\u03ce\u03bd, via Pexels.com",
+    publishedDate: "2026-07-18",
+    modifiedDate: "2026-07-18",
+    author: "Matthieu Tissot",
+    authorSlug: "matthieu",
+    relatedCity: null,
+    relatedSlugs: [],
+  },
+
 ];
 
 // --- hero image resolution -----------------------------------------------
