@@ -693,6 +693,35 @@ export const BLOG_ARTICLES: readonly BlogArticle[] = [
     relatedSlugs: [],
   },
 
+  {
+    id: "international-driving-licence-cyprus",
+    slug_el: "diethnis-adeia-odigisis-kypros",
+    slug_en: "international-driving-licence-cyprus",
+    categoryId: "foreigners",
+    title_el: "\u0394\u03b9\u03b5\u03b8\u03bd\u03ae\u03c2 \u0386\u03b4\u03b5\u03b9\u03b1 \u039f\u03b4\u03ae\u03b3\u03b7\u03c3\u03b7\u03c2 \u03c3\u03c4\u03b7\u03bd \u039a\u03cd\u03c0\u03c1\u03bf: \u03a0\u03cc\u03c4\u03b5 \u03a7\u03c1\u03b5\u03b9\u03ac\u03b6\u03b5\u03c3\u03c4\u03b5 \u03bc\u03af\u03b1",
+    title_en: "International Driving Licence in Cyprus: When You Need One",
+    excerpt_el:
+      "\u03a0\u03cc\u03c4\u03b5 \u03c7\u03c1\u03b5\u03b9\u03ac\u03b6\u03b5\u03c3\u03c4\u03b5 \u03b4\u03b9\u03b5\u03b8\u03bd\u03ae \u03ac\u03b4\u03b5\u03b9\u03b1 \u03bf\u03b4\u03ae\u03b3\u03b7\u03c3\u03b7\u03c2 \u03b1\u03c0\u03cc \u03c4\u03b7\u03bd \u039a\u03cd\u03c0\u03c1\u03bf, \u03c0\u03ce\u03c2 \u03bd\u03b1 \u03c4\u03b7\u03bd \u03b1\u03c0\u03bf\u03ba\u03c4\u03ae\u03c3\u03b5\u03c4\u03b5 \u03ba\u03b1\u03b9 \u03c0\u03bf\u03b9\u03b5\u03c2 \u03c7\u03ce\u03c1\u03b5\u03c2 \u03c4\u03b7 \u03b4\u03ad\u03c7\u03bf\u03bd\u03c4\u03b1\u03b9.",
+    excerpt_en:
+      "When a Cyprus international driving permit is required, how to get one, and which countries accept it.",
+    metaDescription_el:
+      "\u0394\u03b9\u03b5\u03b8\u03bd\u03ae\u03c2 \u03ac\u03b4\u03b5\u03b9\u03b1 \u03bf\u03b4\u03ae\u03b3\u03b7\u03c3\u03b7\u03c2 \u039a\u03cd\u03c0\u03c1\u03bf\u03c2. \u03a0\u03cc\u03c4\u03b5 \u03c7\u03c1\u03b5\u03b9\u03ac\u03b6\u03b5\u03c3\u03c4\u03b5, \u03c0\u03ce\u03c2 \u03bd\u03b1 \u03ba\u03ac\u03bd\u03b5\u03c4\u03b5 \u03b1\u03af\u03c4\u03b7\u03c3\u03b7 \u03ba\u03b1\u03b9 \u03c0\u03bf\u03b9\u03b5\u03c2 \u03c7\u03ce\u03c1\u03b5\u03c2 \u03c4\u03b7 \u03b4\u03ad\u03c7\u03bf\u03bd\u03c4\u03b1\u03b9.",
+    metaDescription_en:
+      "International driving licence in Cyprus. When you need one, how to apply, and which countries accept it.",
+    heroImagePath: "/blog/international-driving-licence-cyprus/hero.jpg",
+    heroImageAlt_el:
+      "\u0394\u03b9\u03b5\u03b8\u03bd\u03ae\u03c2 \u03ac\u03b4\u03b5\u03b9\u03b1 \u03bf\u03b4\u03ae\u03b3\u03b7\u03c3\u03b7\u03c2 \u03ba\u03b1\u03b9 \u03b4\u03b9\u03b1\u03b2\u03b1\u03c4\u03ae\u03c1\u03b9\u03bf \u03c3\u03b5 \u03c7\u03ac\u03c1\u03c4\u03b7",
+    heroImageAlt_en: "International driving permit and passport on a map",
+    heroCaption_en: "International driving permit and passport on a map, via Pexels.com",
+    heroCaption_el: "\u0394\u03b9\u03b5\u03b8\u03bd\u03ae\u03c2 \u03ac\u03b4\u03b5\u03b9\u03b1 \u03bf\u03b4\u03ae\u03b3\u03b7\u03c3\u03b7\u03c2 \u03ba\u03b1\u03b9 \u03b4\u03b9\u03b1\u03b2\u03b1\u03c4\u03ae\u03c1\u03b9\u03bf \u03c3\u03b5 \u03c7\u03ac\u03c1\u03c4\u03b7, via Pexels.com",
+    publishedDate: "2026-07-20",
+    modifiedDate: "2026-07-20",
+    author: "Matthieu Tissot",
+    authorSlug: "matthieu",
+    relatedCity: null,
+    relatedSlugs: [],
+  },
+
 ];
 
 // --- hero image resolution -----------------------------------------------

@@ -1,10 +1,10 @@
 {
-  "last_publish_date": "2026-07-18",
+  "last_publish_date": "2026-07-20",
   "settings": {
     "cadence_days": 2,
     "publish_mode": "auto",
     "consecutive_clean_approvals": 0,
-    "next_publish_at": "2026-07-20T15:30:00Z"
+    "next_publish_at": "2026-07-22T16:35:00Z"
   },
   "state": {
     "open_pr_number": null,
@@ -428,7 +428,7 @@
     {
       "id": "international-driving-licence-cyprus",
       "priority": 13,
-      "status": "pending",
+      "status": "published",
       "title_en": "International Driving Licence in Cyprus: When You Need One",
       "title_el": "Διεθνής Άδεια Οδήγησης στην Κύπρο: Πότε Χρειάζεστε μία",
       "slug_en": "international-driving-licence-cyprus",
@@ -444,7 +444,7 @@
       "meta_description_el": "Διεθνής άδεια οδήγησης Κύπρος. Πότε χρειάζεστε, πώς να κάνετε αίτηση και ποιες χώρες τη δέχονται.",
       "hero_alt_en": "International driving permit and passport on a map",
       "hero_alt_el": "Διεθνής άδεια οδήγησης και διαβατήριο σε χάρτη",
-      "published_at": null,
+      "published_at": "2026-07-20",
       "pr_number": null,
       "pr_created_at": null
     },
