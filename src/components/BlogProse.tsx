@@ -9,6 +9,7 @@ import { CostBreakdownInfographic } from "@/components/infographics/CostBreakdow
 import { EuExchangeInfographic } from "@/components/infographics/EuExchangeInfographic";
 import { FeeStagesInfographic } from "@/components/infographics/FeeStagesInfographic";
 import { ForeignerDocumentsInfographic } from "@/components/infographics/ForeignerDocumentsInfographic";
+import { IdpDocumentsInfographic } from "@/components/infographics/IdpDocumentsInfographic";
 import { LicencePathsInfographic } from "@/components/infographics/LicencePathsInfographic";
 import { LicenceStepsInfographic } from "@/components/infographics/LicenceStepsInfographic";
 import { LicenceTimelineInfographic } from "@/components/infographics/LicenceTimelineInfographic";
@@ -25,6 +26,7 @@ import { CategoryFinder } from "@/components/widgets/CategoryFinder";
 import { EligibilityChecker } from "@/components/widgets/EligibilityChecker";
 import { EuExchangeChecker } from "@/components/widgets/EuExchangeChecker";
 import { ForeignerPathChecker } from "@/components/widgets/ForeignerPathChecker";
+import { IdpChecker } from "@/components/widgets/IdpChecker";
 import { PriceCalculator } from "@/components/widgets/PriceCalculator";
 import { RenewalChecker } from "@/components/widgets/RenewalChecker";
 import { SignCategoryChecker } from "@/components/widgets/SignCategoryChecker";
@@ -148,6 +150,8 @@ export function BlogProse({
         elements.push(<BookingMethodsInfographic key={i} locale={locale} />);
       } else if (type === "tourist-resident") {
         elements.push(<TouristVsResidentInfographic key={i} locale={locale} />);
+      } else if (type === "idp-documents") {
+        elements.push(<IdpDocumentsInfographic key={i} locale={locale} />);
       } else if (type === "auto" && autoInfographicData) {
         elements.push(
           <AutoInfographic key={i} locale={locale} data={autoInfographicData} />,
@@ -200,6 +204,8 @@ export function BlogProse({
         widget = <SignCategoryChecker locale={locale} />;
       } else if (id === "eligibility-checker") {
         widget = <EligibilityChecker locale={locale} />;
+      } else if (id === "idp-checker") {
+        widget = <IdpChecker locale={locale} />;
       }
       if (widget) {
         const widgetLabel: Record<string, { en: string; el: string }> = {
@@ -212,6 +218,7 @@ export function BlogProse({
           "category-finder": { en: "Which category do you need?", el: "Ποια κατηγορία χρειάζεστε;" },
           "sign-category-checker": { en: "What shape do you see?", el: "Τι σχήμα βλέπετε;" },
           "eligibility-checker": { en: "Check your eligibility", el: "Πληρείτε τις προϋποθέσεις;" },
+          "idp-checker": { en: "Do you need an IDP?", el: "Χρειάζεστε ΔΑΟ;" },
         };
         const widgetPillLabel = widgetLabel[id]?.[locale] ?? (locale === "el" ? "Διαδραστικό εργαλείο" : "Interactive tool");
         elements.push(

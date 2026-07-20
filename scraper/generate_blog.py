@@ -1616,6 +1616,93 @@ ARTICLES: tuple[ArticleSpec, ...] = (
             ("/en/driving-schools/limassol", "driving schools in Limassol"),
         ),
     ),
+    ArticleSpec(
+        id="international-driving-licence-cyprus",
+        topic_el=(
+            "Πότε χρειάζεται κάποιος Διεθνή Άδεια Οδήγησης (ΔΑΟ) από την Κύπρο, πώς να κάνει "
+            "αίτηση στο ΤΟΜ, και ποιες χώρες τη δέχονται"
+        ),
+        topic_en=(
+            "When you need an International Driving Permit (IDP) from Cyprus, how to apply for "
+            "one at TOM, and which countries accept it"
+        ),
+        title_el="Διεθνής Άδεια Οδήγησης στην Κύπρο: Πότε Χρειάζεστε μία",
+        title_en="International Driving Licence in Cyprus: When You Need One",
+        audience_el=(
+            "Κάτοχοι κυπριακής άδειας οδήγησης που ταξιδεύουν στο εξωτερικό και θέλουν να "
+            "μάθουν πότε χρειάζονται Διεθνή Άδεια Οδήγησης, πώς να κάνουν αίτηση στο ΤΟΜ, και "
+            "ποιες χώρες την αναγνωρίζουν."
+        ),
+        audience_en=(
+            "Holders of a Cyprus driving licence who are travelling abroad and want to know "
+            "when they need an International Driving Permit, how to apply for one at TOM, and "
+            "which countries recognise it."
+        ),
+        facts=(
+            "An International Driving Permit (IDP) is not a separate licence; it is a "
+            "certified, multi-language translation of a Cyprus driving licence issued by the "
+            "Department of Road Transport (TOM).",
+            "TOM issues the Cyprus IDP under the 1968 Vienna Convention on Road Traffic, and "
+            "TOM itself operates under the Ministry of Transport, Communications and Works.",
+            "An IDP is not needed to drive within EU and EEA countries, since EU member states "
+            "mutually recognise each other's driving licences.",
+            "Countries that are not party to the 1968 Vienna Convention, such as the United "
+            "States, Australia, and New Zealand, use the older 1949 Geneva Convention instead, "
+            "so IDP acceptance there varies and should be checked with TOM.",
+            "Applying for a Cyprus IDP must be done in person at a TOM district office; there "
+            "is no online or postal application, and no one else can apply on the applicant's "
+            "behalf.",
+            "TOM has district offices in Nicosia, Limassol, Larnaca, Paphos, and Famagusta in "
+            "the government-controlled area.",
+            "Required documents are a valid Cyprus driving licence, a valid passport or "
+            "national identity card, a recent passport-size photograph, and payment of the "
+            "applicable fee.",
+            "The permit is usually issued the same day once the completed documents and fee "
+            "are submitted at the district office.",
+            "The Cyprus IDP is valid for up to three years from issue, but it can never be "
+            "valid beyond the expiry date of the underlying Cyprus driving licence.",
+            "The IDP is only valid when carried together with the original Cyprus driving "
+            "licence at all times while driving abroad; it has no standalone validity.",
+            "Once an IDP expires there is no automatic renewal; a new application must follow "
+            "the same process again, with no test required.",
+        ),
+        sections_el=(
+            "Τι είναι η Διεθνής Άδεια Οδήγησης και πότε τη χρειάζεστε;",
+            "Πώς εκδίδεται η Διεθνής Άδεια Οδήγησης στην Κύπρο;",
+            "Ποια δικαιολογητικά χρειάζονται για την αίτηση στο ΤΟΜ;",
+            "Πόσο ισχύει η Κυπριακή Διεθνής Άδεια Οδήγησης;",
+            "Ποιες χώρες δέχονται τη Διεθνή Άδεια Οδήγησης από την Κύπρο;",
+            "Χρειάζεται Διεθνής Άδεια για οδήγηση στην Κύπρο ως αλλοδαπός;",
+            "Συχνές Ερωτήσεις",
+        ),
+        sections_en=(
+            "What Is an International Driving Licence and When Do You Need One?",
+            "How to Get an International Driving Permit in Cyprus",
+            "What Documents Do You Need to Apply at the Department of Road Transport?",
+            "How Long Is the Cyprus International Driving Permit Valid?",
+            "Which Countries Accept the Cyprus International Driving Permit?",
+            "Do Foreigners Need an International Driving Permit to Drive in Cyprus?",
+            "FAQ",
+        ),
+        widget_id="idp-checker",
+        infographic_type="idp-documents",
+        internal_links_el=(
+            ("/arthra/plires-odigos-diploma-odigisis-kypros", "πλήρη οδηγό διπλώματος οδήγησης 2026"),
+            ("/arthra/pws-na-vgaleis-diploma-odigisis-stin-kypro", "πώς βγάζεις δίπλωμα οδήγησης στην Κύπρο"),
+            ("/arthra/diploma-odigisis-gia-ksenous-stin-kypro", "δίπλωμα οδήγησης για ξένους στην Κύπρο"),
+            ("/arthra/anallagi-adeias-ee-kypros", "ανταλλαγή ευρωπαϊκής άδειας στην Κύπρο"),
+            ("/arthra/vretaniko-diploma-kypros", "βρετανική άδεια μετά το Brexit"),
+            ("/", "ClickClickDrive Κύπρος"),
+        ),
+        internal_links_en=(
+            ("/en/blog/cyprus-driving-licence-complete-guide", "complete Cyprus driving licence guide"),
+            ("/en/blog/how-to-get-driving-licence-cyprus-step-by-step", "step-by-step driving licence guide"),
+            ("/en/blog/how-to-get-driving-licence-cyprus-foreigner", "how to get a Cyprus driving licence as a foreigner"),
+            ("/en/blog/exchange-eu-licence-cyprus", "exchanging an EU driving licence in Cyprus"),
+            ("/en/blog/uk-licence-cyprus-after-brexit", "UK driving licence in Cyprus after Brexit"),
+            ("/en", "ClickClickDrive Cyprus"),
+        ),
+    ),
 )
 
 
@@ -1653,6 +1740,59 @@ _LINK_POOL_EL: tuple[tuple[str, str], ...] = (
     ("/scholes-odigon/pafos", "σχολές οδηγών στην Πάφο"),
     ("/", "ClickClickDrive Κύπρος"),
 )
+
+
+def _build_infographic_payload(infographic_data: dict) -> dict:
+    """Remap the flat *_el/*_en fields from auto_generate_spec()'s JSON response
+    into the per-locale nested shape the matching Auto*Infographic component
+    expects, based on infographic_data["template"].
+    """
+    template = infographic_data["template"]
+
+    def base(suffix: str) -> dict:
+        return {
+            "template": template,
+            "title": infographic_data[f"title_{suffix}"],
+            "caption": infographic_data[f"caption_{suffix}"],
+        }
+
+    payload: dict = {}
+    for suffix in ("el", "en"):
+        entry = base(suffix)
+        if template == "flow":
+            entry["items"] = [
+                {"num": item["num"], "title": item[f"title_{suffix}"], "sub": item[f"sub_{suffix}"]}
+                for item in infographic_data["items"]
+            ]
+        elif template == "compare":
+            entry["cards"] = [
+                {"accent": card["accent"], "heading": card[f"heading_{suffix}"], "body": card[f"body_{suffix}"]}
+                for card in infographic_data["cards"]
+            ]
+        elif template == "versus":
+            entry["left"] = {
+                "heading": infographic_data["left"][f"heading_{suffix}"],
+                "sub": infographic_data["left"][f"sub_{suffix}"],
+            }
+            entry["right"] = {
+                "heading": infographic_data["right"][f"heading_{suffix}"],
+                "sub": infographic_data["right"][f"sub_{suffix}"],
+            }
+        elif template == "checklist":
+            entry["items"] = [
+                {"icon": item["icon"], "label": item[f"label_{suffix}"], "sub": item[f"sub_{suffix}"]}
+                for item in infographic_data["items"]
+            ]
+        elif template == "timeline":
+            entry["milestones"] = [
+                {"label": m[f"label_{suffix}"], "sub": m[f"sub_{suffix}"]}
+                for m in infographic_data["milestones"]
+            ]
+        else:
+            raise ValueError(f"Unknown infographic template: {template!r}")
+        payload[suffix] = entry
+
+    return payload
 
 
 def auto_generate_spec(article_id: str, article_data: dict, client) -> "ArticleSpec | None":
@@ -1697,14 +1837,12 @@ Output a single JSON object (no markdown fences, no explanation):
   "answer_en": "<2-3 sentence direct answer in plain English, no em-dashes>",
   "widget_id": "<exactly one id from the WIDGET OPTIONS list below, chosen by topical fit>",
   "infographic_data": {{
+    "template": "<exactly one of: flow, compare, versus, checklist, timeline - see TEMPLATE GUIDE below>",
     "title_el": "<short Greek infographic title>",
     "title_en": "<short English infographic title>",
     "caption_el": "<one-sentence Greek caption>",
     "caption_en": "<one-sentence English caption>",
-    "items": [
-      {{"num": "1", "title_el": ["<line 1>", "<line 2, optional>"], "title_en": ["<line 1>", "<line 2, optional>"], "sub_el": ["<line 1>", "<line 2, optional>"], "sub_en": ["<line 1>", "<line 2, optional>"]}},
-      "... exactly 4 items total, num values '1' through '4', a 4-step or 4-category breakdown of the article's core process"
-    ]
+    "... PLUS exactly one of the shape-specific blocks below, matching your chosen template. Do not include fields from a different template."
   }},
   "inline_image_queries": ["<Pexels query 1>", "<Pexels query 2>"]
 }}
@@ -1717,6 +1855,36 @@ WIDGET OPTIONS (pick exactly one id for "widget_id", matched by topical fit):
 - test-readiness-checker: theory/practical test readiness self-check
 - renewal-checker: renewal age/category branching
 
+TEMPLATE GUIDE (choose the ONE that best fits this article's core content, then output ONLY that template's fields inside "infographic_data" alongside template/title/caption):
+
+1. "flow" - a sequential process with ordered steps (e.g. application steps, exam stages). Add:
+  "items": [
+    {{"num": "1", "title_el": ["line 1", "line 2 optional"], "title_en": [...], "sub_el": [...], "sub_en": [...]}},
+    "... exactly 4 items, num values 1 through 4, in order"
+  ]
+
+2. "compare" - 3 parallel categories or paths the reader might fall into, not sequential. Add:
+  "cards": [
+    {{"accent": "<hex color, pick a distinct one per card from #22c55e, #f59e0b, #354354, #4b5d70, #7a8794>", "heading_el": ["line 1", "line 2 optional"], "heading_en": [...], "body_el": [["line 1"], ["line 1", "line 2 optional"]], "body_en": [[...], [...]]}},
+    "... exactly 3 cards. body_el/body_en are each an array of 1-2 short bullet groups, each bullet group is itself an array of 1-2 short lines"
+  ]
+
+3. "versus" - exactly two contrasting options, a before/after, or a hand-over/receive scenario. Add:
+  "left": {{"heading_el": "short label", "heading_en": "short label", "sub_el": ["line 1", "line 2 optional"], "sub_en": [...]}},
+  "right": {{"heading_el": "short label", "heading_en": "short label", "sub_el": [...], "sub_en": [...]}}
+
+4. "checklist" - a list of required items, documents, or conditions, not sequential, not comparative. Add:
+  "items": [
+    {{"icon": "<single emoji>", "label_el": "short label", "label_en": "short label", "sub_el": "one short line", "sub_en": "one short line"}},
+    "... 4 to 5 items"
+  ]
+
+5. "timeline" - a chronological sequence of milestones or validity periods over time. Add:
+  "milestones": [
+    {{"label_el": "2-4 words", "label_en": "2-4 words", "sub_el": "2-5 words", "sub_en": "2-5 words"}},
+    "... 4 to 5 milestones, in chronological order. Keep these VERY short, they render on one line each"
+  ]
+
 RULES:
 - facts: true facts about the Republic of Cyprus only. No invented numbers or fees. \
 Say "check with the Department of Road Transport (ΤΟΜ)" when fees/rules may change.
@@ -1728,10 +1896,10 @@ Say "check with the Department of Road Transport (ΤΟΜ)" when fees/rules may c
 - answers: 2-3 sentences. No em-dashes. Plain language.
 - widget_id: never leave this blank. Choose the single best topical match from the \
 WIDGET OPTIONS list above. If genuinely nothing fits well, default to "price-calculator".
-- infographic_data: exactly 4 items, a 4-step or 4-category visual breakdown of the \
-article's core process. Use only facts already present in the "facts" array above. Do \
-not invent new figures, numbers, or claims that are not already stated elsewhere in \
-this JSON.
+- infographic_data: pick the template whose shape genuinely fits this article's content \
+best, not the same template every time. Use only facts already present in the "facts" \
+array above. Do not invent new figures, numbers, or claims that are not already stated \
+elsewhere in this JSON.
 - inline_image_queries: natural Pexels queries that return photos relevant to this article.
 """
 
@@ -1754,28 +1922,7 @@ this JSON.
         return None
 
     try:
-        infographic_data = data["infographic_data"]
-        infographic_items = infographic_data["items"]
-        # Remap the flat title_el/title_en/caption_el/... fields into a per-locale
-        # nested shape for the generic "auto" infographic renderer.
-        infographic_payload = {
-            "el": {
-                "title": infographic_data["title_el"],
-                "caption": infographic_data["caption_el"],
-                "items": [
-                    {"num": item["num"], "title": item["title_el"], "sub": item["sub_el"]}
-                    for item in infographic_items
-                ],
-            },
-            "en": {
-                "title": infographic_data["title_en"],
-                "caption": infographic_data["caption_en"],
-                "items": [
-                    {"num": item["num"], "title": item["title_en"], "sub": item["sub_en"]}
-                    for item in infographic_items
-                ],
-            },
-        }
+        infographic_payload = _build_infographic_payload(data["infographic_data"])
         spec = ArticleSpec(
             id=article_id,
             topic_el=data["topic_el"],

@@ -46,6 +46,8 @@ Getting your paperwork right before you walk in will save you a wasted trip. Bas
 - A recent passport-size photograph
 - Payment of the applicable fee (check current fees with the Department of Road Transport)
 
+{{infographic:idp-documents}}
+
 The photograph must meet standard passport photo requirements. Take a fresh one - do not cut up an old photo from your wallet. ΤΟΜ staff will check it.
 
 Your Cyprus driving licence must be valid at the time of application. If it is close to expiry, renew it first. The IDP cannot be valid for longer than your underlying licence, so a nearly-expired licence will give you a very short-lived IDP.
@@ -80,6 +82,8 @@ Here is where it gets slightly complicated. Some countries - notably the United 
 For the US in particular, many states accept an IDP from any country as a translation aid alongside a valid foreign licence. But the rules vary by state and by rental company. Do not assume - check with your rental company and the local transport authority before you fly.
 
 Japan, for example, accepts IDPs from many countries but has its own specific rules about which convention-based permits it accepts. Again, verify before you go.
+
+{{widget:idp-checker}}
 
 The safest approach: once you know your destination, contact ΤΟΜ and ask whether the Cyprus IDP is recognised there. You can also check with the embassy of the country you plan to visit. Doing this research before you travel beats finding out at a border crossing that your permit is not accepted.
 
