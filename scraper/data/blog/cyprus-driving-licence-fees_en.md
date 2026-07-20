@@ -23,13 +23,15 @@ Here is what the typical first-time applicant pays for a Category B (car) licenc
 - A practical test fee before you take the road test
 - A licence issuance fee when TOM prints and issues your card
 
+{{infographic:fee-stages}}
+
 You will also need a medical certificate from a registered doctor. That doctor visit is a private cost, not a TOM fee. Prices vary by clinic, so ask your doctor in advance.
 
 Because TOM fees are subject to change, always check current fees with the Department of Road Transport before you pay anything. The [complete Cyprus driving licence guide](/en/blog/cyprus-driving-licence-complete-guide) has more detail on the full process from start to finish.
 
 Cyprus issues licences in line with EU Directive 2006/126/EC. This means the card format and categories match what you would find across the EU. A Category B licence covers standard passenger cars.
 
-![Person completing a government document application at an official Cyprus office counter](blog/cyprus-driving-licence-fees/inline-1.jpg)
+![Person completing a government document application at an official Cyprus office counter](/blog/cyprus-driving-licence-fees/inline-1.jpg)
 *A first-time applicant submitting documents at a government office in Cyprus, via Pexels.com*
 
 ## How much does it cost to renew a Cyprus driving licence?
@@ -68,7 +70,7 @@ One thing people sometimes forget: booking a resit does not happen instantly. Th
 
 If your Cyprus driving licence is lost, stolen, or badly damaged, you can apply to TOM for a replacement. You pay a replacement fee. This is different from a renewal - you are not extending the validity period, you are just getting a new copy of the existing one.
 
-![Close-up of a European-format driving licence card showing categories and personal details](blog/cyprus-driving-licence-fees/inline-2.jpg)
+![Close-up of a European-format driving licence card showing categories and personal details](/blog/cyprus-driving-licence-fees/inline-2.jpg)
 *A European-format Cyprus driving licence card - losing yours means a replacement fee to get a new one, via Pexels.com*
 
 To apply for a replacement, you will generally need:
@@ -119,6 +121,8 @@ For a rough picture, your total cost has three parts:
 1. TOM government fees (application, tests, issuance, medical certificate from a doctor)
 2. Driving school lessons (set by the school, not the government)
 3. Any resit fees if you fail a test
+
+{{widget:price-calculator}}
 
 The driving school portion is usually the biggest cost. Most learners in Cyprus need between 20 and 40 hours of lessons before they are ready for the practical test, though this varies. For a detailed breakdown of what schools charge, see this guide to [driving lesson costs in Cyprus](/en/blog/driving-lesson-cost-cyprus).
 

@@ -35,6 +35,8 @@ The test draws on the Highway Code of Cyprus, which is the Κώδικας Οδι
 - **Vehicle maintenance awareness.** Basic checks such as tyres, lights, and brakes. You are not expected to be a mechanic, but you must know when a vehicle is not safe to drive.
 - **First aid basics.** What to do at the scene of an accident before emergency services arrive.
 
+{{infographic:theory-topics}}
+
 Because Cyprus drives on the left, some questions feel different from what drivers trained elsewhere expect. Junctions work slightly differently in terms of positioning. Overtaking rules apply on the right side of the vehicle. These small differences catch people out.
 
 The signs section is one area where expats often need the most work. Many signs in Cyprus are standard European signs. Others carry bilingual text in Greek and English. Either way, you need to know what each sign means and what action it demands.
@@ -106,6 +108,8 @@ Here are practical steps that work:
 4. **Revisit weak areas.** Track which question types you keep getting wrong and study those topics again.
 5. **Take another mock test near the end.** Check your progress a few days before the real exam.
 6. **Confirm the pass mark.** Know your target score before you sit down.
+
+{{widget:test-readiness-checker}}
 
 Give yourself at least two to three weeks of steady preparation. An hour a day is more effective than seven hours the night before.
 

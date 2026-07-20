@@ -289,6 +289,10 @@ def _article_files(article_id: str) -> list[Path]:
         p = base_dir / f"inline-{n}.jpg"
         if p.exists():
             files.append(p)
+    # Include the infographic spec sidecar if this article has one
+    infographic_path = BLOG_DIR / f"{article_id}_infographic.json"
+    if infographic_path.exists():
+        files.append(infographic_path)
     return files
 
 

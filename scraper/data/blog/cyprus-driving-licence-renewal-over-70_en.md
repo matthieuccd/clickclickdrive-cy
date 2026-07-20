@@ -37,6 +37,8 @@ Getting your paperwork in order before you visit a transport office saves time a
 
 The medical certificate is the part that trips people up most often. Not every doctor can issue it. The certificate must come from a practitioner who is recognised for this purpose by the Department of Road Transport. Before you book a doctor's appointment, ask the ΤΟΜ for their current approved list. That list can change, and using a doctor who is not on it means your certificate will not be accepted.
 
+{{widget:renewal-checker}}
+
 If you hold licences in more than one category - say Category B for a standard car and BE for towing a trailer - the medical certificate and the renewal application must cover each relevant category. Do not assume that renewing one category automatically covers the others.
 
 For anyone who has moved to Cyprus from another EU country and still holds a foreign licence, the process of converting it runs alongside these rules. The article on [exchanging an EU driving licence in Cyprus](/en/blog/exchange-eu-licence-cyprus) explains how that conversion works in practice.
@@ -86,6 +88,8 @@ Heart conditions, diabetes, epilepsy, and neurological conditions are all areas 
 Be honest with the doctor. Withholding information about a health condition that later causes an accident creates serious legal problems. The assessment is there to help you stay on the road safely, not to look for reasons to stop you driving.
 
 After the assessment, the doctor will complete the official medical certificate. If the outcome is clear, you take that certificate and use it in your renewal application. If the doctor has concerns, they may refer you for further specialist tests before completing the certificate.
+
+{{infographic:medical-assessment}}
 
 ## Can a licence be issued with restrictions or special conditions?
 

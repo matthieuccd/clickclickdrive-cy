@@ -20,13 +20,15 @@ At 18, you become eligible for a full Category B licence. This is the standard c
 
 There is no upper age limit for applying. Adults who have never held a licence can apply at any age, as long as they meet the other requirements.
 
+{{widget:eligibility-checker}}
+
 If you want to understand more about the different vehicle categories available in Cyprus, the [Cyprus driving licence categories](/en/blog/cyprus-driving-licence-categories) guide breaks them all down clearly.
 
 Parents of teenagers should note that the accompanied driving stage is not just a formality. It gives young drivers hours of genuine practice in real traffic. Cyprus roads can be challenging, especially in cities like Nicosia or Limassol, so this experience is genuinely useful.
 
 ## What documents do you need to apply?
 
-![Cyprus driving licence document on a desk, official EU-format licence card](blog/cyprus-driving-licence-requirements/inline-1.jpg)
+![Cyprus driving licence document on a desk, official EU-format licence card](/blog/cyprus-driving-licence-requirements/inline-1.jpg)
 *A Cyprus driving licence follows the EU standard card format, valid across all member states, via Pexels.com*
 
 Having the right paperwork ready from the start makes the whole process much smoother. Here is what first-time applicants are required to submit:
@@ -36,6 +38,8 @@ Having the right paperwork ready from the start makes the whole process much smo
 - A medical certificate confirming that you are fit to drive (more on this in the medical section below)
 - Passport-sized photographs (check the current number required with TOM)
 - Payment of the relevant application fee (check current fees with the Department of Road Transport)
+
+{{infographic:requirements-checklist}}
 
 If you are a foreign national, you will likely submit your residence permit rather than a Cyprus ID card. The document must confirm that you are legally resident in the Republic of Cyprus. Documents relating to the occupied northern part of the island are not accepted by the Republic's authorities.
 
@@ -77,7 +81,7 @@ The certificate has an expiry date, so do not get it too far in advance of your 
 
 ## What is the process for getting a provisional (learner) licence?
 
-![Young person signing an application form at a government office counter, learner driving permit](blog/cyprus-driving-licence-requirements/inline-2.jpg)
+![Young person signing an application form at a government office counter, learner driving permit](/blog/cyprus-driving-licence-requirements/inline-2.jpg)
 *Submitting your application at TOM is one of the first official steps toward getting your Cyprus driving licence, via Pexels.com*
 
 Before you can take a single driving lesson on a public road in Cyprus, you need a provisional licence. This is the official learner permit issued by the Department of Road Transport. Driving without it is illegal, even if you are in the car with a qualified supervisor.

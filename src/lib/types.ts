@@ -38,3 +38,20 @@ export interface DrivingSchool {
 }
 
 export type Locale = "el" | "en";
+
+export interface AutoInfographicItem {
+  num: string;
+  title: string[];
+  sub: string[];
+}
+
+export interface AutoInfographicContent {
+  title: string;
+  caption: string;
+  items: AutoInfographicItem[];
+}
+
+export interface AutoInfographicData {
+  el: AutoInfographicContent;
+  en: AutoInfographicContent;
+}

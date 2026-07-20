@@ -37,6 +37,8 @@ Third, your application must be submitted in Cyprus. You cannot apply remotely o
 
 The exchange covers the same vehicle categories that appear on your UK licence. If your UK licence shows category B (standard cars), you get category B on your Cyprus licence. If you hold additional categories, those should carry over too - but check the details with TOM, as each case is assessed individually. You can read more about what the different categories mean in the [Cyprus driving licence categories](/en/blog/cyprus-driving-licence-categories) guide.
 
+{{infographic:uk-licence-swap}}
+
 ## What documents do you need for the exchange?
 
 Getting your paperwork right before you visit TOM saves a lot of time. Here is what you will typically need:
@@ -79,6 +81,8 @@ That last step surprises many people. You do not get to keep your UK licence onc
 This is the question most people ask first. The honest answer is: it depends on your individual case.
 
 Cyprus handles UK licence exchanges on a case-by-case basis. In some situations, TOM will accept the exchange without requiring any test. In other cases, they may ask you to sit a theory test, a practical driving test, or both.
+
+{{widget:uk-licence-checker}}
 
 There is no published rule that says exactly which applicants must take a test. TOM assesses each application individually. Factors like the categories on your licence and your personal circumstances may influence the decision.
 

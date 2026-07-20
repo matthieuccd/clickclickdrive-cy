@@ -23,6 +23,8 @@ For tourists, things are simpler. Your UK licence is accepted while you are here
 
 For residents, the picture is more complicated. The mutual recognition rules that EU member states apply to each other do not extend to UK licences anymore. Cyprus treats UK licences in a similar way to licences from other non-EU countries when it comes to people who live here long-term.
 
+{{infographic:tourist-resident}}
+
 The standard Cypriot licence covers Category B vehicles. That is the same as a standard UK car licence - vehicles up to 3,500 kg with up to eight passenger seats. So the category you hold in the UK maps directly onto what you would hold in Cyprus.
 
 For a fuller breakdown of how the post-Brexit rules work in practice, the [UK driving licence in Cyprus after Brexit](/en/blog/uk-licence-cyprus-after-brexit) guide goes into more detail on each scenario.
@@ -65,6 +67,8 @@ What is clear is that the requirement exists. Driving on a UK licence after your
 - Fines from the police
 - Problems with your car insurance paying out
 - Complications if you are involved in an accident
+
+{{widget:uk-licence-checker}}
 
 EU nationals in Cyprus who hold licences from other EU countries do not face this pressure in the same way. Their licences are recognised under mutual recognition rules. UK nationals need to be proactive.
 

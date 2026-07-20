@@ -72,6 +72,8 @@ The Department of Road Transport (Τμήμα Οδικών Μεταφορών, Τ
 5. Pay the renewal fee at the cashier.
 6. Wait for your new licence to be produced or posted to you.
 
+{{widget:renewal-checker}}
+
 It is a good idea to phone ahead or check the Department's website for current opening hours before you go. Hours can change, and some offices operate appointment systems during busy periods.
 
 Processing times can vary. In some cases the new card is ready on the same day. In others, it may be sent to you by post. Ask the clerk when you submit your application so you know what to expect.
@@ -110,6 +112,8 @@ If you are a UK licence holder wondering how Brexit has affected your situation 
 ## Special Cases: Older Drivers and Medical Requirements
 
 The standard renewal process covers most drivers. But two groups of people may face additional steps: older drivers and holders of certain professional licence categories.
+
+{{infographic:renewal-path}}
 
 **Drivers aged 65 and over**
 

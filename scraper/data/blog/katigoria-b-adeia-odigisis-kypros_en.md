@@ -68,6 +68,8 @@ Your instructor will also guide you on when to book the theory test. Most people
 
 The theory test is called the γραπτή εξέταση. It is a written exam that covers road signs, traffic rules, and safe driving behaviour. You can take it in Greek or in English. For most foreigners living in Cyprus, English is the obvious choice.
 
+{{widget:test-readiness-checker}}
+
 The test is held at the Department of Road Transport. Your driving school will usually help you book it, or you can contact the department directly. You need your learner's licence to sit the test.
 
 The questions are multiple choice. They test whether you know what road signs mean, how to behave at junctions, what to do in an emergency, and how safe driving principles apply in real situations. The question bank is not published openly, but your driving instructor and school will have practice materials.

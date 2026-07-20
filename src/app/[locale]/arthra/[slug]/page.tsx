@@ -25,6 +25,7 @@ import {
   getArticlesByCategory,
   getCategoryById,
   loadArticleBody,
+  loadInfographicData,
   type BlogArticle,
   type BlogCategory,
 } from "@/lib/blog";
@@ -233,6 +234,7 @@ async function ArticleView({
   // Build inject-image list: image2.jpg (legacy, after H2 #4) + inline-N.jpg (after H2 #3, #5, #7)
   type InjectImg = { afterH2: number; src: string; alt: string; caption?: string };
   const injectImages: InjectImg[] = [];
+  const autoInfographicData = loadInfographicData(article.id);
 
   // image2.jpg: injected after H2 #4 for articles that don't embed images in
   // their markdown body. Articles with inline_image_queries embed images directly
@@ -471,6 +473,7 @@ async function ArticleView({
           markdown={remaining}
           locale={locale}
           injectImages={injectImages.length > 0 ? injectImages : undefined}
+          autoInfographicData={autoInfographicData}
         />
       ) : null}
 

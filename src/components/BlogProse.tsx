@@ -1,21 +1,36 @@
 import Image from "next/image";
 import React from "react";
 
+import { AutoInfographic } from "@/components/infographics/AutoInfographic";
+import { BookingMethodsInfographic } from "@/components/infographics/BookingMethodsInfographic";
 import { CategoryBVehiclesInfographic } from "@/components/infographics/CategoryBVehiclesInfographic";
+import { CategoryOverviewInfographic } from "@/components/infographics/CategoryOverviewInfographic";
 import { CostBreakdownInfographic } from "@/components/infographics/CostBreakdownInfographic";
 import { EuExchangeInfographic } from "@/components/infographics/EuExchangeInfographic";
+import { FeeStagesInfographic } from "@/components/infographics/FeeStagesInfographic";
 import { ForeignerDocumentsInfographic } from "@/components/infographics/ForeignerDocumentsInfographic";
 import { LicencePathsInfographic } from "@/components/infographics/LicencePathsInfographic";
 import { LicenceStepsInfographic } from "@/components/infographics/LicenceStepsInfographic";
 import { LicenceTimelineInfographic } from "@/components/infographics/LicenceTimelineInfographic";
+import { MedicalAssessmentInfographic } from "@/components/infographics/MedicalAssessmentInfographic";
+import { RenewalPathInfographic } from "@/components/infographics/RenewalPathInfographic";
+import { RequirementsChecklistInfographic } from "@/components/infographics/RequirementsChecklistInfographic";
+import { SignShapesInfographic } from "@/components/infographics/SignShapesInfographic";
 import { TestFormatInfographic } from "@/components/infographics/TestFormatInfographic";
+import { TheoryTopicsInfographic } from "@/components/infographics/TheoryTopicsInfographic";
+import { TouristVsResidentInfographic } from "@/components/infographics/TouristVsResidentInfographic";
 import { UkExchangeInfographic } from "@/components/infographics/UkExchangeInfographic";
+import { UkLicenceSwapInfographic } from "@/components/infographics/UkLicenceSwapInfographic";
+import { CategoryFinder } from "@/components/widgets/CategoryFinder";
+import { EligibilityChecker } from "@/components/widgets/EligibilityChecker";
 import { EuExchangeChecker } from "@/components/widgets/EuExchangeChecker";
 import { ForeignerPathChecker } from "@/components/widgets/ForeignerPathChecker";
 import { PriceCalculator } from "@/components/widgets/PriceCalculator";
+import { RenewalChecker } from "@/components/widgets/RenewalChecker";
+import { SignCategoryChecker } from "@/components/widgets/SignCategoryChecker";
 import { TestReadinessChecker } from "@/components/widgets/TestReadinessChecker";
 import { UkLicenceChecker } from "@/components/widgets/UkLicenceChecker";
-import type { Locale } from "@/lib/types";
+import type { AutoInfographicData, Locale } from "@/lib/types";
 
 interface InjectImage {
   afterH2: number;
@@ -29,9 +44,15 @@ interface Props {
   locale: Locale;
   /** Images to inject after specific H2 headings (1-indexed). */
   injectImages?: InjectImage[];
+  autoInfographicData?: AutoInfographicData;
 }
 
-export function BlogProse({ markdown, locale, injectImages = [] }: Props) {
+export function BlogProse({
+  markdown,
+  locale,
+  injectImages = [],
+  autoInfographicData,
+}: Props) {
   const injectMap = new Map<number, InjectImage>(
     injectImages.map((img) => [img.afterH2, img]),
   );
@@ -107,6 +128,30 @@ export function BlogProse({ markdown, locale, injectImages = [] }: Props) {
         elements.push(<LicencePathsInfographic key={i} locale={locale} />);
       } else if (type === "test-format") {
         elements.push(<TestFormatInfographic key={i} locale={locale} />);
+      } else if (type === "renewal-path") {
+        elements.push(<RenewalPathInfographic key={i} locale={locale} />);
+      } else if (type === "fee-stages") {
+        elements.push(<FeeStagesInfographic key={i} locale={locale} />);
+      } else if (type === "uk-licence-swap") {
+        elements.push(<UkLicenceSwapInfographic key={i} locale={locale} />);
+      } else if (type === "medical-assessment") {
+        elements.push(<MedicalAssessmentInfographic key={i} locale={locale} />);
+      } else if (type === "category-overview") {
+        elements.push(<CategoryOverviewInfographic key={i} locale={locale} />);
+      } else if (type === "theory-topics") {
+        elements.push(<TheoryTopicsInfographic key={i} locale={locale} />);
+      } else if (type === "requirements-checklist") {
+        elements.push(<RequirementsChecklistInfographic key={i} locale={locale} />);
+      } else if (type === "sign-shapes") {
+        elements.push(<SignShapesInfographic key={i} locale={locale} />);
+      } else if (type === "booking-methods") {
+        elements.push(<BookingMethodsInfographic key={i} locale={locale} />);
+      } else if (type === "tourist-resident") {
+        elements.push(<TouristVsResidentInfographic key={i} locale={locale} />);
+      } else if (type === "auto" && autoInfographicData) {
+        elements.push(
+          <AutoInfographic key={i} locale={locale} data={autoInfographicData} />,
+        );
       }
       continue;
     }
@@ -147,6 +192,14 @@ export function BlogProse({ markdown, locale, injectImages = [] }: Props) {
         widget = <ForeignerPathChecker locale={locale} />;
       } else if (id === "test-readiness-checker") {
         widget = <TestReadinessChecker locale={locale} />;
+      } else if (id === "renewal-checker") {
+        widget = <RenewalChecker locale={locale} />;
+      } else if (id === "category-finder") {
+        widget = <CategoryFinder locale={locale} />;
+      } else if (id === "sign-category-checker") {
+        widget = <SignCategoryChecker locale={locale} />;
+      } else if (id === "eligibility-checker") {
+        widget = <EligibilityChecker locale={locale} />;
       }
       if (widget) {
         const widgetLabel: Record<string, { en: string; el: string }> = {
@@ -155,6 +208,10 @@ export function BlogProse({ markdown, locale, injectImages = [] }: Props) {
           "eu-exchange-checker": { en: "Can you exchange without tests?", el: "Ανταλλαγή χωρίς εξετάσεις;" },
           "foreigner-path-checker": { en: "Which process applies to you?", el: "Ποια διαδικασία ισχύει για εσάς;" },
           "test-readiness-checker": { en: "Are you ready for the test?", el: "Είστε έτοιμοι για την εξέταση;" },
+          "renewal-checker": { en: "Check your renewal path", el: "Ελέγξτε πότε ανανεώνετε" },
+          "category-finder": { en: "Which category do you need?", el: "Ποια κατηγορία χρειάζεστε;" },
+          "sign-category-checker": { en: "What shape do you see?", el: "Τι σχήμα βλέπετε;" },
+          "eligibility-checker": { en: "Check your eligibility", el: "Πληρείτε τις προϋποθέσεις;" },
         };
         const widgetPillLabel = widgetLabel[id]?.[locale] ?? (locale === "el" ? "Διαδραστικό εργαλείο" : "Interactive tool");
         elements.push(

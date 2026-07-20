@@ -13,6 +13,8 @@ Getting a driving licence in Cyprus is very doable, but the process has several 
 
 Before you do anything else, you need to gather your documents. The Department of Road Transport will not process your application without all of them. Missing even one means a wasted trip.
 
+{{widget:price-calculator}}
+
 Here is what you need:
 
 - A valid passport or national ID card

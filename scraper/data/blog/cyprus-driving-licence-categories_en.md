@@ -16,6 +16,8 @@ Cyprus follows the EU harmonised system set out in Directive 2006/126/EC. Cyprus
 
 The categories run from AM at the lighter end, through A1, A2, and A for motorcycles, then B and BE for cars and towing, and up to C and D for heavy lorries and buses. Each step up brings a higher minimum age and, for the most part, requires you to already hold the category below it.
 
+{{infographic:category-overview}}
+
 The physical licence itself is a credit-card-format EU document. For category B and above, it is valid for ten years. For the professional categories C and D, it runs for five years and requires medical checks to renew. The Department of Road Transport (ΤΟΜ) is the authority that issues, renews, and exchanges all licences in Cyprus. They are the only reliable source for current fees and medical standards.
 
 For a broader look at the whole licensing process, the [complete Cyprus driving licence guide](/en/blog/cyprus-driving-licence-complete-guide) covers background, history, and the legal framework in more depth.
@@ -96,6 +98,8 @@ Picking the right category is simpler than the full list makes it look. Start wi
 If you want to ride a small moped for commuting in a town, category AM is enough. If you want a proper motorcycle with real engine power, plan for the A pathway and expect a few years and multiple tests before you reach unrestricted riding.
 
 For most people in Cyprus - expats, new residents, first-time drivers - category B is the answer. It covers the vast majority of cars and vans on the road. Add BE if you plan to tow anything substantial.
+
+{{widget:category-finder}}
 
 If you drive for a living or want to, the question is which vehicle your employer uses. Parcel delivery vans under 3,500 kg need only category B. A rigid lorry or an articulated truck needs C. A coach or large bus needs D.
 

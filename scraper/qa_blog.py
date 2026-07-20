@@ -55,6 +55,8 @@ _FAQ_QUESTION = re.compile(r"^\*\*.+\*\*\s*$")
 _H1 = re.compile(r"^# [^#]")
 _H3 = re.compile(r"^#{3} ")
 _EM_DASH = "—"  # —
+_IMAGE_LINK = re.compile(r"!\[[^\]]*\]\(([^)]+)\)")
+_TERMINAL_PUNCTUATION = (".", "!", "?", '"', "”", "»")
 
 
 def _detect_locale(path: Path) -> str:
@@ -126,6 +128,33 @@ def check_file(path: Path) -> list[str]:
     for phrase in banned:
         if phrase.lower() in text_lower:
             errors.append(f"Banned phrase found: {phrase!r}")
+
+    # --- Widget presence ---
+    if "{{widget:" not in text:
+        errors.append(f"No widget token found (expected {{{{widget:id}}}} somewhere in the body)")
+
+    # --- Infographic presence ---
+    if "{{infographic:" not in text:
+        errors.append(f"No infographic token found (expected {{{{infographic:type}}}} somewhere in the body)")
+
+    # --- Image path format ---
+    for match in _IMAGE_LINK.finditer(text):
+        img_path = match.group(1)
+        if not (img_path.startswith("/") or img_path.startswith("http://") or img_path.startswith("https://")):
+            errors.append(
+                f"Image path {img_path!r} is not root-relative or absolute "
+                "(next/image requires a leading '/' or a full http(s) URL)"
+            )
+
+    # --- Truncation check ---
+    non_blank = [ln.rstrip() for ln in lines if ln.strip()]
+    if non_blank:
+        last_line = non_blank[-1]
+        if last_line[-1] not in _TERMINAL_PUNCTUATION:
+            errors.append(
+                f"File appears to end mid-sentence (last line does not end in "
+                f"terminal punctuation): {last_line[-60:]!r}"
+            )
 
     return errors
 

@@ -34,6 +34,8 @@ The three categories of road signs in Cyprus look very different from each other
 
 **Informational and directional signs** are rectangular or square. Their colour depends on the type of road. Blue is common on motorways and some urban roads. Green appears on expressways and major routes. White is used for local roads and place names.
 
+{{infographic:sign-shapes}}
+
 This colour-and-shape system comes from the Vienna Convention on Road Signs and Signals. Cyprus is a signatory to that convention, which means the signs here are broadly aligned with those used across Europe. If you have driven in Greece, France, or Italy, the logic will feel familiar, even if the symbols differ slightly.
 
 Understanding this three-way split is the foundation of everything else. Get this right first, then build on it sign by sign.
@@ -140,6 +142,8 @@ Knowing what to study is half the battle. Here is a method that works for most c
 **Review mistakes immediately.** When you get a practice question wrong, do not move on. Find out why you got it wrong and study that sign again before the next session.
 
 **Test yourself on groups of similar signs.** Line up all prohibition signs and test yourself on them as a group. Then do the same for obligation signs. This helps you spot differences between signs that look similar.
+
+{{widget:sign-category-checker}}
 
 For a broader look at what the licence process involves, the [complete Cyprus driving licence guide](/en/blog/cyprus-driving-licence-complete-guide) gives you the full picture from start to finish.
 

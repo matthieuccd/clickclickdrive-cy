@@ -40,6 +40,8 @@ Here is a summary of what you need before booking:
 - Any forms or certificates your driving school provides
 - The correct test fee (check current fees with the Department of Road Transport)
 
+{{widget:test-readiness-checker}}
+
 It is worth talking to your school early about costs. Lesson prices vary, and some schools bundle test-prep sessions into their packages. You can compare [driving lesson costs in Cyprus](/en/blog/driving-lesson-cost-cyprus) to get a feel for what is typical before you commit to a school.
 
 EU nationals and expatriates should also check whether their existing foreign licence affects the process. In some cases, licence conversion rules apply. The [complete Cyprus driving licence guide](/en/blog/cyprus-driving-licence-complete-guide) has more detail on this.
@@ -55,6 +57,8 @@ You have three main ways to book it.
 **By phone.** You can call your nearest TOM district office directly. Have your learner's permit number and personal details ready. Staff will check availability and register your appointment.
 
 **In person.** Visit the TOM office in your district. Bring your learner's permit and a valid ID. A staff member will book the slot for you at the counter.
+
+{{infographic:booking-methods}}
 
 Here is the step-by-step process:
 

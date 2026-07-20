@@ -231,6 +231,7 @@ ARTICLES: tuple[ArticleSpec, ...] = (
             "What happens at the practical test?",
             "What happens after you pass?",
         ),
+        widget_id="price-calculator",
         infographic_type="licence-timeline",
         internal_links_el=(
             ("/arthra/diploma-odigisis-gia-ksenous-stin-kypro", "δίπλωμα για ξένους στην Κύπρο"),
@@ -515,6 +516,7 @@ ARTICLES: tuple[ArticleSpec, ...] = (
             "Can you tow with a Category B licence in Cyprus?",
             "How long is your Cyprus Category B licence valid and when must you renew?",
         ),
+        widget_id="test-readiness-checker",
         infographic_type="category-b-vehicles",
         internal_links_el=(
             ("/arthra/pws-na-vgaleis-diploma-odigisis-stin-kypro", "βήμα προς βήμα οδηγός για δίπλωμα"),
@@ -753,6 +755,867 @@ ARTICLES: tuple[ArticleSpec, ...] = (
             "computer based theory test driving exam screen",
         ),
     ),
+    ArticleSpec(
+        id="cyprus-driving-licence-renewal",
+        topic_el="Πώς να ανανεώσετε την άδεια οδήγησής σας στην Κύπρο, πότε λήγει και "
+        "τι έγγραφα χρειάζεστε",
+        topic_en="How to renew a Cyprus driving licence, including when it expires and "
+        "what documents you need",
+        title_el="Ανανέωση Άδειας Οδήγησης στην Κύπρο: Βήμα Προς Βήμα",
+        title_en="Cyprus Driving Licence Renewal: Step-by-Step",
+        audience_el=(
+            "Κάτοικοι Κύπρου που πλησιάζουν τη λήξη της άδειας οδήγησής τους και "
+            "θέλουν να μάθουν πότε λήγει, ποια έγγραφα χρειάζονται και πού να "
+            "απευθυνθούν."
+        ),
+        audience_en=(
+            "Cyprus residents approaching their driving licence expiry date who want "
+            "to know when it expires, what documents they need, and where to go to "
+            "renew it."
+        ),
+        facts=(
+            "Cyprus issues driving licences under EU Directive 2006/126/EC, the same "
+            "framework used across all EU member states.",
+            "A Category B licence issued to a driver aged 18 and over is generally "
+            "valid for 15 years before it needs renewal.",
+            "Professional categories like C and D follow separate validity rules; "
+            "check the specific period for your category with the Department of "
+            "Road Transport (ΤΟΜ).",
+            "The expiry date is printed on the front of the licence card, in field 4b.",
+            "Renewal is done in person at a Department of Road Transport district "
+            "office. There is no fully online renewal process at the time of writing.",
+            "Department of Road Transport district offices are located in Nicosia, "
+            "Limassol, Larnaca, Paphos, and the government-controlled area of "
+            "Famagusta.",
+            "Standard renewal documents include the current or expired licence, a "
+            "valid passport or ID, a recent passport-style photo meeting official "
+            "specifications, a completed application form, and payment of the "
+            "renewal fee.",
+            "A medical certificate is not always required for a standard Category B "
+            "renewal, but it becomes relevant for older drivers and certain "
+            "commercial categories.",
+            "Driving with an expired licence in Cyprus is a traffic offence and can "
+            "result in a fine. The exact penalty can change, so check with the "
+            "Department of Road Transport.",
+            "Drivers aged 65 and over may need to renew more frequently than the "
+            "standard cycle and may need a medical certificate from a doctor "
+            "approved by the Department of Road Transport.",
+            "Holders of Category C or D licences are subject to different validity "
+            "periods and may have mandatory medical requirements regardless of age.",
+            "A renewed Cyprus licence is automatically recognised across all EU and "
+            "EEA member states through the EU driving licence information network.",
+        ),
+        sections_el=(
+            "Πότε λήγει η άδεια οδήγησης στην Κύπρο;",
+            "Ποια έγγραφα χρειάζεστε για ανανέωση άδειας οδήγησης;",
+            "Πού και πώς υποβάλλετε αίτηση ανανέωσης;",
+            "Πόσο κοστίζει η ανανέωση άδειας οδήγησης στην Κύπρο;",
+            "Τι γίνεται αν η άδειά σας έχει ήδη λήξει;",
+            "Ειδικές περιπτώσεις: ηλικιωμένοι οδηγοί και ιατρικές απαιτήσεις",
+            "Συχνές ερωτήσεις για την ανανέωση άδειας οδήγησης στην Κύπρο",
+        ),
+        sections_en=(
+            "When Does a Cyprus Driving Licence Expire?",
+            "What Documents Do You Need to Renew Your Licence?",
+            "Where and How Do You Submit a Renewal Application?",
+            "How Much Does It Cost to Renew a Cyprus Driving Licence?",
+            "What Happens If Your Licence Has Already Expired?",
+            "Special Cases: Older Drivers and Medical Requirements",
+        ),
+        widget_id="renewal-checker",
+        infographic_type="renewal-path",
+        internal_links_el=(
+            ("/arthra/katigoria-b-adeia-odigisis-kypros", "κατηγορία Β άδεια οδήγησης"),
+            ("/arthra/anallagi-adeias-ee-kypros", "ανταλλαγή ευρωπαϊκής άδειας στην Κύπρο"),
+            ("/arthra/vretaniko-diploma-kypros", "βρετανική άδεια μετά το Brexit"),
+            ("/arthra/diploma-odigisis-gia-ksenous-stin-kypro", "δίπλωμα οδήγησης για ξένους στην Κύπρο"),
+            ("/arthra/plires-odigos-diploma-odigisis-kypros", "πλήρης οδηγός διπλώματος οδήγησης 2026"),
+            ("/", "ClickClickDrive Κύπρος"),
+        ),
+        internal_links_en=(
+            ("/en/blog/cyprus-driving-licence-complete-guide", "complete Cyprus driving licence guide"),
+            ("/en/blog/cyprus-driving-licence-categories", "Cyprus driving licence categories"),
+            ("/en/blog/exchange-eu-licence-cyprus", "exchanging an EU driving licence in Cyprus"),
+            ("/en/blog/how-to-get-driving-licence-cyprus-foreigner", "how to get a Cyprus driving licence as a foreigner"),
+            ("/en", "ClickClickDrive Cyprus"),
+            ("/en/blog/uk-licence-cyprus-after-brexit", "UK driving licence in Cyprus after Brexit"),
+        ),
+    ),
+    ArticleSpec(
+        id="cyprus-driving-licence-fees",
+        topic_el="Ανάλυση όλων των επίσημων τελών για άδεια οδήγησης στην Κύπρο το 2026",
+        topic_en="A breakdown of every official fee for a Cyprus driving licence in 2026",
+        title_el="Τέλη Άδειας Οδήγησης στην Κύπρο (2026)",
+        title_en="Cyprus Driving Licence Fees and Costs (2026)",
+        audience_el=(
+            "Άτομα που σχεδιάζουν να βγάλουν ή να ανανεώσουν άδεια οδήγησης στην "
+            "Κύπρο και θέλουν να καταλάβουν όλα τα επίσημα τέλη πριν ξεκινήσουν τη "
+            "διαδικασία."
+        ),
+        audience_en=(
+            "People planning to get or renew a Cyprus driving licence who want a "
+            "clear picture of every official fee before they start the process."
+        ),
+        facts=(
+            "Cyprus driving licence fees are paid to the Department of Road "
+            "Transport (ΤΟΜ) at different stages: application, theory test, "
+            "practical test, and licence issuance.",
+            "Fee amounts can change, so applicants should always confirm current "
+            "figures directly with the Department of Road Transport before paying.",
+            "A medical certificate from a registered doctor is a separate, private "
+            "cost, not a Department of Road Transport fee.",
+            "A standard Category B licence is valid for 15 years or until the "
+            "holder turns 70, whichever comes first.",
+            "After age 70, renewal must happen more often and requires a medical "
+            "certificate each time.",
+            "Each test, theory and practical, carries its own fee, and failing a "
+            "test means paying the fee again to resit, with no cap on the number "
+            "of attempts.",
+            "The theory test is computer-based and available in Greek or English "
+            "at an authorised Department of Road Transport centre.",
+            "A lost, stolen, or badly damaged licence can be replaced for a "
+            "separate replacement fee, generally lower than the first-issuance fee; "
+            "a police report is needed for theft or loss.",
+            "EU and EEA citizens can exchange their home-country licence for a "
+            "Cyprus one without retaking tests, though an issuance fee and medical "
+            "certificate are still required.",
+            "Non-EU citizens may qualify for a direct exchange without tests only "
+            "if their home country has a reciprocal agreement with Cyprus; "
+            "otherwise they must complete the full theory and practical test "
+            "process.",
+            "Driving school lesson fees are set independently by each school and "
+            "are separate from Department of Road Transport government fees.",
+            "Department of Road Transport offices are located in Nicosia, "
+            "Limassol, Larnaca, Paphos, and the government-controlled area of "
+            "Famagusta, and payment may also be available through the official "
+            "government portal in some cases.",
+        ),
+        sections_el=(
+            "Ποια είναι τα επίσημα κυβερνητικά τέλη για νέα άδεια οδήγησης στην Κύπρο το 2026;",
+            "Πόσο κοστίζει η ανανέωση άδειας οδήγησης στην Κύπρο;",
+            "Τι πληρώνεις για θεωρητική και πρακτική εξέταση στο ΤΟΜ;",
+            "Πόσο κοστίζει η αντικατάσταση χαμένης ή κλεμμένης άδειας οδήγησης;",
+            "Τέλη ανταλλαγής ευρωπαϊκής ή ξένης άδειας οδήγησης στην Κύπρο",
+            "Ποιο είναι το συνολικό κόστος απόκτησης άδειας οδήγησης μαζί με τα μαθήματα;",
+            "Πού και πώς πληρώνεις τα τέλη άδειας οδήγησης στην Κύπρο;",
+        ),
+        sections_en=(
+            "What are the official government fees for a new driving licence in Cyprus in 2026?",
+            "How much does it cost to renew a Cyprus driving licence?",
+            "What do you pay for the theory and practical driving test at TOM?",
+            "How much does it cost to replace a lost or stolen Cyprus driving licence?",
+            "Fees for exchanging an EU or foreign driving licence in Cyprus",
+            "What is the total cost of getting a driving licence including lessons?",
+            "Where and how do you pay Cyprus driving licence fees?",
+        ),
+        widget_id="price-calculator",
+        infographic_type="fee-stages",
+        internal_links_el=(
+            ("/arthra/plires-odigos-diploma-odigisis-kypros", "πλήρη οδηγό διπλώματος οδήγησης 2026"),
+            ("/arthra/eksetasi-odigisis-kypros-2026", "εξέταση οδήγησης Κύπρος 2026"),
+            ("/arthra/anallagi-adeias-ee-kypros", "ανταλλαγή ευρωπαϊκής άδειας στην Κύπρο"),
+            ("/arthra/diploma-odigisis-gia-ksenous-stin-kypro", "δίπλωμα οδήγησης για ξένους στην Κύπρο"),
+            ("/arthra/poso-kostizei-ekpaideysi-odigisis-kypros", "κόστος εκπαίδευσης οδήγησης στην Κύπρο"),
+            ("/arthra/pws-na-vgaleis-diploma-odigisis-stin-kypro", "πώς βγάζεις δίπλωμα οδήγησης στην Κύπρο"),
+        ),
+        internal_links_en=(
+            ("/en/blog/cyprus-driving-licence-complete-guide", "complete Cyprus driving licence guide"),
+            ("/en/blog/how-to-get-driving-licence-cyprus-step-by-step", "step-by-step driving licence guide"),
+            ("/en/blog/cyprus-driving-test-2026", "Cyprus driving test guide"),
+            ("/en/blog/exchange-eu-licence-cyprus", "exchanging an EU driving licence in Cyprus"),
+            ("/en/blog/how-to-get-driving-licence-cyprus-foreigner", "how to get a Cyprus driving licence as a foreigner"),
+            ("/en/blog/driving-lesson-cost-cyprus", "driving lesson costs in Cyprus"),
+        ),
+    ),
+    ArticleSpec(
+        id="exchange-uk-driving-licence-cyprus",
+        topic_el="Η διαδικασία ανταλλαγής βρετανικής άδειας οδήγησης με κυπριακή μετά "
+        "το Brexit",
+        topic_en="The process for exchanging a UK driving licence for a Cyprus one "
+        "after Brexit",
+        title_el="Ανταλλαγή Βρετανικής Άδειας Οδήγησης για Κυπριακή",
+        title_en="Exchanging a UK Driving Licence for a Cyprus One",
+        audience_el=(
+            "Βρετανοί κάτοικοι Κύπρου που θέλουν να ανταλλάξουν τη βρετανική τους "
+            "άδεια οδήγησης με κυπριακή και να μάθουν τη διαδικασία βήμα προς βήμα."
+        ),
+        audience_en=(
+            "UK residents in Cyprus who want to swap their UK driving licence for a "
+            "Cypriot one and need the step-by-step process explained."
+        ),
+        facts=(
+            "Since the Brexit transition period ended on 31 December 2020, UK "
+            "driving licences are no longer automatically recognised as EU licences "
+            "in Cyprus.",
+            "The UK is now treated as a third country, and the Department of Road "
+            "Transport (ΤΟΜ) handles UK licence exchanges on a case-by-case basis "
+            "rather than a guaranteed like-for-like swap.",
+            "To be eligible, the applicant's UK licence must be valid, not expired, "
+            "and the applicant must be legally resident in Cyprus with a valid "
+            "residency document, such as an MEU1 registration certificate for those "
+            "who moved before the end of 2020.",
+            "The application must be submitted in person in Cyprus. It cannot be "
+            "done remotely or through a third party.",
+            "Required documents typically include the original valid UK licence, a "
+            "certified Greek translation of it, proof of legal residence, a medical "
+            "certificate from a doctor approved in Cyprus, and photo identification.",
+            "The Department of Road Transport has offices in Nicosia, Limassol, "
+            "Larnaca, and Paphos where the exchange application can be submitted.",
+            "Whether a theory test, practical test, or both are required depends on "
+            "the individual case; there is no published rule specifying exactly "
+            "which applicants must test.",
+            "Once the exchange is complete, the original UK licence is surrendered "
+            "and sent back to the UK DVLA. The applicant does not get it back.",
+            "Exchange fees are set by the Cyprus government and can change, so "
+            "applicants should confirm current fees with the Department of Road "
+            "Transport before their appointment.",
+            "Processing takes time. Even without a test, applicants should expect a "
+            "wait of several weeks at minimum from submission to receiving the new "
+            "licence.",
+            "Applicants who do not qualify for a direct exchange may need to go "
+            "through part or all of the standard Cyprus driving licence process, "
+            "including the theory and practical tests.",
+            "The new Cyprus licence is issued in the standard EU credit-card "
+            "format and is valid across EU member states, carrying over the same "
+            "vehicle categories as the surrendered UK licence where confirmed by "
+            "the Department of Road Transport.",
+        ),
+        sections_el=(
+            "Τι άλλαξε μετά το Brexit για τους κατόχους βρετανικής άδειας στην Κύπρο;",
+            "Ποιοι δικαιούνται να ανταλλάξουν βρετανική άδεια με κυπριακή;",
+            "Ποια έγγραφα χρειάζονται για την ανταλλαγή;",
+            "Πώς γίνεται η διαδικασία βήμα προς βήμα;",
+            "Χρειάζεται εξέταση για την ανταλλαγή άδειας;",
+            "Πόσο κοστίζει και πόσο διαρκεί η διαδικασία;",
+            "Τι γίνεται αν δεν πληροίτε τις προϋποθέσεις για άμεση ανταλλαγή;",
+        ),
+        sections_en=(
+            "What changed after Brexit for UK licence holders in Cyprus?",
+            "Who is eligible to exchange a UK driving licence for a Cypriot one?",
+            "What documents do you need for the exchange?",
+            "How does the step-by-step application process work?",
+            "Do you need to take a test to exchange your licence?",
+            "How much does it cost and how long does the process take?",
+            "What happens if you do not qualify for a direct exchange?",
+        ),
+        widget_id="uk-licence-checker",
+        infographic_type="uk-licence-swap",
+        internal_links_el=(
+            ("/arthra/anallagi-adeias-ee-kypros", "ανταλλαγή ευρωπαϊκής άδειας στην Κύπρο"),
+            ("/arthra/katigoria-b-adeia-odigisis-kypros", "κατηγορία Β άδεια οδήγησης"),
+            ("/arthra/diploma-odigisis-gia-ksenous-stin-kypro", "δίπλωμα οδήγησης για ξένους στην Κύπρο"),
+            ("/arthra/eksetasi-odigisis-kypros-2026", "εξέταση οδήγησης Κύπρος 2026"),
+            ("/arthra/plires-odigos-diploma-odigisis-kypros", "πλήρη οδηγό διπλώματος οδήγησης 2026"),
+            ("/arthra/vretaniko-diploma-kypros", "βρετανική άδεια μετά το Brexit"),
+        ),
+        internal_links_en=(
+            ("/en/blog/uk-licence-cyprus-after-brexit", "UK driving licence in Cyprus after Brexit"),
+            ("/en/blog/exchange-eu-licence-cyprus", "exchanging an EU driving licence in Cyprus"),
+            ("/en/blog/cyprus-driving-licence-categories", "Cyprus driving licence categories"),
+            ("/en/blog/cyprus-driving-test-2026", "Cyprus driving test guide"),
+            ("/en/blog/how-to-get-driving-licence-cyprus-foreigner", "how to get a Cyprus driving licence as a foreigner"),
+            ("/en/blog/cyprus-driving-licence-complete-guide", "complete Cyprus driving licence guide"),
+        ),
+    ),
+    ArticleSpec(
+        id="cyprus-driving-licence-renewal-over-70",
+        topic_el="Πώς λειτουργεί η ανανέωση άδειας οδήγησης στην Κύπρο για οδηγούς άνω των 70",
+        topic_en="How Cyprus driving licence renewal works for drivers over 70",
+        title_el="Ανανέωση Άδειας Οδήγησης στην Κύπρο Άνω των 70",
+        title_en="Renewing Your Cyprus Driving Licence Over 70",
+        audience_el=(
+            "Οδηγοί στην Κύπρο που πλησιάζουν ή έχουν ξεπεράσει τα 70 και θέλουν να "
+            "καταλάβουν πώς αλλάζει η διαδικασία ανανέωσης, τι ιατρικές εξετάσεις "
+            "χρειάζονται και πόσο συχνά πρέπει να ανανεώνουν."
+        ),
+        audience_en=(
+            "Drivers in Cyprus approaching or past 70 who want to understand how the "
+            "renewal process changes, what medical checks are required, and how often "
+            "they need to renew."
+        ),
+        facts=(
+            "Cyprus applies EU Directive 2006/126/EC, which allows member states to "
+            "require more frequent renewals and medical checks for drivers past a "
+            "certain age threshold.",
+            "Once a driver turns 70, their Cyprus licence is issued for a shorter "
+            "validity period than a standard licence, and every renewal after that "
+            "requires a medical certificate.",
+            "The Department of Road Transport (ΤΟΜ) manages the renewal process, sets "
+            "requirements, and issues the licence.",
+            "Renewal documents typically include: the current licence, a valid ID or "
+            "passport, a completed medical certificate from an approved practitioner, "
+            "a recent passport-style photo, and payment of the renewal fee.",
+            "The medical certificate must come from a practitioner recognised by the "
+            "Department of Road Transport for this purpose; using a doctor who is not "
+            "on the approved list means the certificate will not be accepted.",
+            "Drivers holding more than one licence category (for example Category B "
+            "and BE) need the medical certificate and renewal application to cover "
+            "each relevant category.",
+            "Renewal applications for drivers over 70 are submitted in person at a "
+            "District Transport Office in Nicosia, Limassol, Larnaca, or Paphos.",
+            "The exact renewal interval after 70 depends on the medical assessment "
+            "outcome and what the Department of Road Transport determines for that "
+            "specific case.",
+            "Driving on an expired licence is not permitted in Cyprus; drivers must "
+            "stop driving on public roads until the new licence is issued.",
+            "The medical assessment checks vision, physical fitness (movement, "
+            "coordination, use of pedals and steering), and health conditions such as "
+            "heart disease, diabetes, epilepsy, and neurological conditions.",
+            "The Department of Road Transport can issue a licence with restrictions or "
+            "special conditions, such as a requirement to wear corrective lenses, a "
+            "restriction to certain vehicle types, a geographic restriction, a "
+            "requirement for vehicle adaptations, or a shorter validity period.",
+            "Driving in violation of a licence condition, such as driving without "
+            "required glasses, is a legal offence in Cyprus.",
+        ),
+        sections_el=(
+            "Γιατί αλλάζει η διαδικασία ανανέωσης για οδηγούς άνω των 70;",
+            "Ποια έγγραφα και ιατρικά πιστοποιητικά χρειάζεστε;",
+            "Βήμα προς βήμα: Πώς υποβάλλετε αίτηση ανανέωσης στο ΤΟΜ",
+            "Πόσο συχνά πρέπει να ανανεώνετε την άδειά σας μετά τα 70;",
+            "Τι εξετάζει ο γιατρός και τι να περιμένετε στην ιατρική αξιολόγηση",
+            "Μπορεί η άδεια να εκδοθεί με περιορισμούς ή ειδικούς όρους;",
+        ),
+        sections_en=(
+            "Why does the renewal process change for drivers over 70?",
+            "What documents and medical certificates do you need?",
+            "Step by step: how to submit your renewal application at the Department "
+            "of Road Transport",
+            "How often must you renew your licence after the age of 70?",
+            "What does the medical assessment involve and what should you expect?",
+            "Can a licence be issued with restrictions or special conditions?",
+        ),
+        widget_id="renewal-checker",
+        infographic_type="medical-assessment",
+        internal_links_el=(
+            ("/arthra/katigoria-b-adeia-odigisis-kypros", "κατηγορία Β άδεια οδήγησης"),
+            ("/arthra/plires-odigos-diploma-odigisis-kypros", "πλήρης οδηγός διπλώματος οδήγησης 2026"),
+            ("/arthra/anallagi-adeias-ee-kypros", "ανταλλαγή ευρωπαϊκής άδειας στην Κύπρο"),
+            ("/arthra/vretaniko-diploma-kypros", "βρετανική άδεια μετά το Brexit"),
+            ("/scholes-odigon/lefkosia", "σχολές οδηγών στη Λευκωσία"),
+            ("/", "ClickClickDrive Κύπρος"),
+        ),
+        internal_links_en=(
+            ("/en/blog/cyprus-driving-licence-categories", "Cyprus driving licence categories"),
+            ("/en/blog/exchange-eu-licence-cyprus", "exchanging an EU driving licence in Cyprus"),
+            ("/en/blog/uk-licence-cyprus-after-brexit", "UK driving licence in Cyprus after Brexit"),
+            ("/en/blog/cyprus-driving-licence-complete-guide", "complete Cyprus driving licence guide"),
+            ("/en/driving-schools/nicosia", "driving schools in Nicosia"),
+            ("/en", "ClickClickDrive Cyprus"),
+        ),
+    ),
+    ArticleSpec(
+        id="drive-cyprus-uk-licence",
+        topic_el=(
+            "Αν ισχύει η βρετανική άδεια οδήγησης στην Κύπρο, για πόσο καιρό και τι αλλάζει μετά το "
+            "Brexit"
+        ),
+        topic_en=(
+            "Whether a UK driving licence is valid in Cyprus, for how long, and what changes after "
+            "Brexit"
+        ),
+        title_el="Μπορώ να Οδηγήσω στην Κύπρο με Βρετανική Άδεια;",
+        title_en="Can I Drive in Cyprus With a UK Licence?",
+        audience_el=(
+            "Βρετανοί πολίτες που επισκέπτονται ή μόλις μετακόμισαν στην Κύπρο και θέλουν να μάθουν "
+            "αν ισχύει η βρετανική τους άδεια, για πόσο διάστημα, και πότε πρέπει να την "
+            "ανταλλάξουν."
+        ),
+        audience_en=(
+            "UK citizens visiting Cyprus or newly arrived as residents who want to know whether "
+            "their UK driving licence is valid, how long it lasts, and when they must exchange it."
+        ),
+        facts=(
+            "A valid UK driving licence is accepted in Cyprus for the full length of a tourist "
+            "visit, with no extra permit needed.",
+            "The UK left the EU on 31 January 2020, ending the automatic mutual recognition that UK "
+            "licences previously enjoyed as EU licences.",
+            "Residents, unlike tourists, must exchange their UK licence or obtain a Cypriot licence "
+            "within a set period after establishing residency; the exact deadline is set by the "
+            "Department of Road Transport and can change.",
+            "The Department of Road Transport, known in Cyprus as TOM (Tmima Odikis Metaforas), is "
+            "the only body that can issue a Cypriot driving licence and handles all licence "
+            "exchanges.",
+            "UK residents may need to pass a theory test, a practical test, or both to convert "
+            "their licence, depending on current TOM policy, unlike EU licence holders who exchange "
+            "without retesting.",
+            "The standard Cypriot licence category (Category B) covers vehicles up to 3,500 kg with "
+            "up to eight passenger seats, the same scope as a standard UK car licence.",
+            "TOM offices for licence exchange are located in the main towns including Nicosia, "
+            "Limassol, Larnaca, and Paphos.",
+            "An International Driving Permit issued by the UK Post Office is recognised in Cyprus "
+            "but does not replace the UK licence and does not remove the requirement to exchange it "
+            "once the resident window expires.",
+            "Driving on a lapsed licence entitlement in Cyprus can lead to fines and can jeopardise "
+            "insurance payouts if an accident occurs.",
+            "Cyprus drives on the left, the same as the UK, which makes the physical adjustment "
+            "easier for UK drivers than in most other EU countries.",
+            "Using a mobile phone while driving is illegal in Cyprus and carries fines; seatbelts "
+            "are compulsory for all occupants.",
+            "Whether someone counts as a resident rather than a tourist is a legal status, and "
+            "insurance cover depends on matching the correct status.",
+        ),
+        sections_el=(
+            "Ισχύει η βρετανική άδεια οδήγησης στην Κύπρο;",
+            "Τι αλλάζει μετά το Brexit για κατοίκους;",
+            "Για πόσο καιρό μπορώ να οδηγώ ως τουρίστας;",
+            "Πότε πρέπει να ανταλλάξω ή να βγάλω κυπριακή άδεια;",
+            "Ποια είναι η διαδικασία ανταλλαγής στο ΤΟΜ;",
+            "Χρειάζομαι Διεθνές Δίπλωμα Οδήγησης στην Κύπρο;",
+            "Επόμενα βήματα: σχολές οδηγών και πρακτικές συμβουλές",
+        ),
+        sections_en=(
+            "Is a UK Driving Licence Valid in Cyprus?",
+            "What Changes After Brexit for Residents?",
+            "How Long Can I Drive in Cyprus as a Tourist?",
+            "When Must I Exchange or Obtain a Cypriot Licence?",
+            "What Is the Exchange Process at the Department of Road Transport?",
+            "Do I Need an International Driving Permit in Cyprus?",
+            "Next Steps: Driving Schools and Practical Tips",
+        ),
+        widget_id="uk-licence-checker",
+        infographic_type="tourist-resident",
+        internal_links_el=(
+            ("/arthra/plires-odigos-diploma-odigisis-kypros", "πλήρη οδηγό διπλώματος οδήγησης 2026"),
+            ("/arthra/anallagi-adeias-ee-kypros", "ανταλλαγή ευρωπαϊκής άδειας στην Κύπρο"),
+            ("/arthra/vretaniko-diploma-kypros", "βρετανική άδεια μετά το Brexit"),
+            ("/arthra/diploma-odigisis-gia-ksenous-stin-kypro", "δίπλωμα οδήγησης για ξένους στην Κύπρο"),
+            ("/arthra/pws-na-vgaleis-diploma-odigisis-stin-kypro", "πώς βγάζεις δίπλωμα οδήγησης στην Κύπρο"),
+            ("/scholes-odigon/lefkosia", "σχολές οδηγών στη Λευκωσία"),
+        ),
+        internal_links_en=(
+            ("/en/blog/uk-licence-cyprus-after-brexit", "UK driving licence in Cyprus after Brexit"),
+            ("/en/blog/exchange-eu-licence-cyprus", "exchanging an EU driving licence in Cyprus"),
+            ("/en/blog/how-to-get-driving-licence-cyprus-foreigner", "how to get a Cyprus driving licence as a foreigner"),
+            ("/en/blog/how-to-get-driving-licence-cyprus-step-by-step", "step-by-step driving licence guide"),
+            ("/en/blog/cyprus-driving-licence-complete-guide", "complete Cyprus driving licence guide"),
+            ("/en/driving-schools/limassol", "driving schools in Limassol"),
+        ),
+    ),
+    ArticleSpec(
+        id="cyprus-driving-licence-categories",
+        topic_el="Οι κατηγορίες άδειας οδήγησης στην Κύπρο, από μοτοποδήλατα έως φορτηγά και λεωφορεία",
+        topic_en="The driving licence categories in Cyprus, from mopeds to trucks and buses",
+        title_el="Κατηγορίες Άδειας Οδήγησης στην Κύπρο (Α έως Δ)",
+        title_en="Cyprus Driving Licence Categories Explained (A to D)",
+        audience_el=(
+            "Άτομα στην Κύπρο που θέλουν να καταλάβουν ποια κατηγορία άδειας χρειάζονται, τα "
+            "ηλικιακά όρια, και πώς να αποκτήσουν ή να αναβαθμίσουν την άδειά τους."
+        ),
+        audience_en=(
+            "People in Cyprus who want to understand which driving licence category they need, the "
+            "age limits, and how to get or upgrade their licence."
+        ),
+        facts=(
+            "Cyprus follows the EU harmonised licence category system set out in Directive "
+            "2006/126/EC, fully transposed into national law.",
+            "Categories run from AM (mopeds) through A1, A2, and A (motorcycles), to B and BE (cars "
+            "and trailers), up to C and D (lorries and buses).",
+            "Category B, the standard car licence, covers vehicles up to 3,500 kg with no more than "
+            "eight passenger seats; the minimum age is 18.",
+            "Category BE lets a Category B holder tow a trailer where the trailer exceeds 750 kg "
+            "and the combined vehicle-plus-trailer weight exceeds 3,500 kg.",
+            "Category AM covers mopeds and light quadricycles up to 45 km/h from age 16; Category "
+            "A1 covers motorcycles up to 125cc and 11 kW, also from age 16; Category A2 covers "
+            "motorcycles up to 35 kW from age 18.",
+            "Full Category A, the unrestricted motorcycle licence, is reached either via "
+            "progressive access (holding A2 for at least two years, from age 20) or direct access "
+            "(testing straight for A at age 24).",
+            "Category C covers lorries over 3,500 kg, with C1 for 3,500 to 7,500 kg; Category D "
+            "covers buses with more than eight passenger seats, with D1 for minibuses of nine to "
+            "sixteen seats; both require already holding Category B.",
+            "For Category B and above, the licence is valid for ten years; for professional "
+            "Categories C and D it is valid for five years and renewal requires a medical "
+            "examination.",
+            "The Department of Road Transport (TOM) is the sole authority that issues, renews, and "
+            "exchanges all driving licence categories in Cyprus.",
+            "Professional lorry and bus drivers also need a Driver Certificate of Professional "
+            "Competence under EU law, a separate qualification alongside the licence category.",
+            "Holders of an EU-issued licence can exchange it for a Cyprus licence without retaking "
+            "tests, since the process is mainly paperwork.",
+            "Upgrading from one category to another, such as from B to C, does not require "
+            "repeating the full process; only the theory and practical tests for the new category "
+            "are needed, and the existing licence stays valid throughout.",
+        ),
+        sections_el=(
+            "Ποιες είναι οι κατηγορίες άδειας οδήγησης στην Κύπρο;",
+            "Κατηγορίες AM, A1 και A2: Μοτοποδήλατα και μικρές μοτοσυκλέτες",
+            "Κατηγορία Α: Η πλήρης άδεια μοτοσυκλέτας",
+            "Κατηγορία Β και ΒΕ: Αυτοκίνητα και ρυμουλκά",
+            "Κατηγορίες C και D: Φορτηγά, λεωφορεία και επαγγελματικές άδειες",
+            "Πώς να επιλέξεις την κατάλληλη κατηγορία για τις ανάγκες σου;",
+            "Τι επόμενα βήματα να κάνεις για να αποκτήσεις ή να αναβαθμίσεις την άδειά σου στην "
+            "Κύπρο",
+        ),
+        sections_en=(
+            "What are the driving licence categories in Cyprus?",
+            "Categories AM, A1 and A2: Mopeds and smaller motorcycles",
+            "Category A: The full motorcycle licence",
+            "Category B and BE: Cars and trailers",
+            "Categories C and D: Trucks, buses, and professional licences",
+            "How to choose the right category for your needs",
+            "Next steps to get or upgrade your licence in Cyprus",
+        ),
+        widget_id="category-finder",
+        infographic_type="category-overview",
+        internal_links_el=(
+            ("/arthra/pws-na-vgaleis-diploma-odigisis-stin-kypro", "πώς βγάζεις δίπλωμα οδήγησης στην Κύπρο"),
+            ("/arthra/eksetasi-odigisis-kypros-2026", "εξέταση οδήγησης Κύπρος 2026"),
+            ("/arthra/katigoria-b-adeia-odigisis-kypros", "κατηγορία Β άδεια οδήγησης"),
+            ("/arthra/anallagi-adeias-ee-kypros", "ανταλλαγή ευρωπαϊκής άδειας στην Κύπρο"),
+            ("/arthra/poso-kostizei-ekpaideysi-odigisis-kypros", "κόστος εκπαίδευσης οδήγησης στην Κύπρο"),
+            ("/arthra/plires-odigos-diploma-odigisis-kypros", "πλήρη οδηγό διπλώματος οδήγησης 2026"),
+        ),
+        internal_links_en=(
+            ("/en/blog/cyprus-driving-licence-complete-guide", "complete Cyprus driving licence guide"),
+            ("/en/blog/driving-lesson-cost-cyprus", "driving lesson costs in Cyprus"),
+            ("/en/blog/cyprus-driving-test-2026", "Cyprus driving test guide"),
+            ("/en/blog/how-to-get-driving-licence-cyprus-step-by-step", "step-by-step driving licence guide"),
+            ("/en/blog/exchange-eu-licence-cyprus", "exchanging an EU driving licence in Cyprus"),
+            ("/en/blog/how-to-get-driving-licence-cyprus-foreigner", "how to get a Cyprus driving licence as a foreigner"),
+        ),
+    ),
+    ArticleSpec(
+        id="cyprus-theory-test-guide",
+        topic_el="Πώς λειτουργεί η θεωρητική εξέταση οδήγησης στην Κύπρο και πώς να προετοιμαστείτε",
+        topic_en="How the Cyprus driving theory test works and how to prepare to pass it",
+        title_el="Θεωρητική Εξέταση Κύπρου: Πώς να Προετοιμαστείτε και να Περάσετε",
+        title_en="Cyprus Theory Test: How to Prepare and Pass",
+        audience_el=(
+            "Υποψήφιοι οδηγοί στην Κύπρο, συμπεριλαμβανομένων ξένων κατοίκων, που ετοιμάζονται για "
+            "τη θεωρητική εξέταση και θέλουν να μάθουν τι καλύπτει, πώς να κλείσουν ραντεβού, και "
+            "πώς να μελετήσουν στα ελληνικά ή στα αγγλικά."
+        ),
+        audience_en=(
+            "Learner drivers in Cyprus, including foreign residents, preparing for the theory test "
+            "who want to know what it covers, how to book it, and how to study in Greek or English."
+        ),
+        facts=(
+            "The theory test is run by the Department of Road Transport (TOM), which sits under the "
+            "Ministry of Transport, Communications and Works.",
+            "Anyone applying for a first Cyprus driving licence must pass the theory test, "
+            "including foreign residents and people who have driven for years in another country.",
+            "Candidates need a provisional driving licence, obtained through TOM, before they can "
+            "book the theory test.",
+            "The test is computer-based, multiple-choice, and sat at an official TOM examination "
+            "centre; results are generally available quickly.",
+            "The test is offered in both Greek and English, with the same questions and pass mark "
+            "in both languages.",
+            "Theory test content is drawn entirely from the Highway Code of Cyprus and covers road "
+            "signs and markings, traffic rules, safe driving behaviour, basic vehicle maintenance "
+            "awareness, and first aid basics.",
+            "TOM runs official theory test examination centres in the four main cities: Nicosia, "
+            "Limassol, Larnaca, and Paphos.",
+            "Candidates must bring valid ID to the exam: a Cyprus identity card for Cypriots and EU "
+            "nationals, or a passport plus residence document for non-EU foreign nationals.",
+            "Cyprus drives on the left, a legacy of British colonial rule, and the theory test "
+            "reflects left-hand traffic rules throughout, including junction and overtaking "
+            "questions.",
+            "Candidates who fail must wait a specified period, set by TOM, before they can book a "
+            "retake, and must pay the exam fee again.",
+            "There is no limit on the number of retake attempts, though each attempt costs time and "
+            "money.",
+            "A theory test pass certificate is valid for a set period during which the candidate "
+            "must complete practical training and pass the practical test.",
+        ),
+        sections_el=(
+            "Τι είναι η θεωρητική εξέταση στην Κύπρο και ποιος πρέπει να τη δώσει;",
+            "Ποια θέματα καλύπτει η εξέταση;",
+            "Πώς είναι δομημένη η εξέταση και τι βαθμολογία χρειάζεστε για να περάσετε;",
+            "Πού και πώς κλείνετε ραντεβού για τη θεωρητική εξέταση;",
+            "Ποια υλικά μελέτης υπάρχουν στα ελληνικά και στα αγγλικά;",
+            "Πώς να προετοιμαστείτε αποτελεσματικά: συμβουλές και στρατηγικές;",
+            "Τι γίνεται αν αποτύχετε και πώς να επανεξεταστείτε;",
+        ),
+        sections_en=(
+            "What is the Cyprus theory test and who needs to take it?",
+            "What topics does the theory test cover?",
+            "How is the test structured and what score do you need to pass?",
+            "Where and how do you book the theory test?",
+            "What study materials are available in Greek and English?",
+            "How to prepare effectively: tips and strategies",
+            "What happens if you fail and how do you retake the test?",
+        ),
+        widget_id="test-readiness-checker",
+        infographic_type="theory-topics",
+        internal_links_el=(
+            ("/arthra/diploma-odigisis-gia-ksenous-stin-kypro", "δίπλωμα οδήγησης για ξένους στην Κύπρο"),
+            ("/arthra/pws-na-vgaleis-diploma-odigisis-stin-kypro", "βγάζεις δίπλωμα οδήγησης στην Κύπρο"),
+            ("/arthra/katigoria-b-adeia-odigisis-kypros", "κατηγορία Β άδεια οδήγησης"),
+            ("/arthra/plires-odigos-diploma-odigisis-kypros", "πλήρης οδηγός διπλώματος οδήγησης 2026"),
+            ("/arthra/poso-kostizei-ekpaideysi-odigisis-kypros", "κοστίζει η εκπαίδευση οδήγησης στην Κύπρο"),
+            ("/arthra/eksetasi-odigisis-kypros-2026", "εξέταση οδήγησης Κύπρος 2026"),
+        ),
+        internal_links_en=(
+            ("/en/blog/how-to-get-driving-licence-cyprus-step-by-step", "step-by-step driving licence guide"),
+            ("/en/blog/cyprus-driving-licence-complete-guide", "complete Cyprus driving licence guide"),
+            ("/en/blog/cyprus-driving-test-2026", "Cyprus driving test guide"),
+            ("/en/blog/how-to-get-driving-licence-cyprus-foreigner", "how to get a Cyprus driving licence as a foreigner"),
+            ("/en/blog/driving-lesson-cost-cyprus", "driving lesson costs in Cyprus"),
+            ("/en/blog/cyprus-driving-licence-categories", "Cyprus driving licence categories"),
+        ),
+    ),
+    ArticleSpec(
+        id="cyprus-road-signs-guide",
+        topic_el="Τα σήματα τροχαίας της Κύπρου που χρειάζεστε να γνωρίζετε για τη θεωρητική εξέταση",
+        topic_en="The Cyprus road signs you need to know for the theory test",
+        title_el="Σήματα Τροχαίας Κύπρου: Πλήρης Οδηγός για την Εξέταση",
+        title_en="Cyprus Road Signs: The Complete Test Guide",
+        audience_el=(
+            "Υποψήφιοι οδηγοί στην Κύπρο που προετοιμάζονται για το τμήμα σημάτων τροχαίας της "
+            "θεωρητικής εξέτασης και θέλουν να μάθουν τις κατηγορίες σημάτων και πώς να τις "
+            "μελετήσουν."
+        ),
+        audience_en=(
+            "Learner drivers in Cyprus preparing for the road signs section of the theory test who "
+            "want to understand the sign categories and how to study them effectively."
+        ),
+        facts=(
+            "The Cyprus theory test question bank tests sign recognition heavily, and the "
+            "Department of Road Transport (TOM) sets the questions.",
+            "Cyprus road signs fall into three shape-and-colour categories: mandatory (circular, "
+            "red border or blue background), warning (triangular with a red border), and "
+            "informational or directional (rectangular or square).",
+            "Mandatory signs with a red border on white tell drivers what they must not do, such as "
+            "no entry or speed limits; mandatory signs with a blue background tell drivers what "
+            "they must do, such as turn left or keep right.",
+            "The Stop sign in Cyprus is the international octagonal red design with the word STOP "
+            "in white, requiring a complete stop even if the junction looks clear; the Give Way "
+            "sign is an inverted triangle with a red border.",
+            "Warning signs are triangular with a red border and a white or yellow background, "
+            "placed a set distance before a hazard so drivers have time to react.",
+            "Informational and directional signs are rectangular or square; colour depends on road "
+            "type, with blue on motorways and some urban roads, green on expressways and major "
+            "routes, and white on local roads and place names.",
+            "Cyprus road signs follow the Vienna Convention on Road Signs and Signals, so they are "
+            "broadly aligned with signs used across Europe, though small differences exist from "
+            "other countries' versions.",
+            "Because Cyprus drives on the left, a legacy of British colonial rule, directional sign "
+            "layouts and junction sign placement differ from what drivers from right-hand-traffic "
+            "countries expect.",
+            "Place names and directional signs on major roads and tourist areas commonly appear in "
+            "both Greek and English.",
+            "Common exam mistakes include confusing similar-looking mandatory and warning signs, "
+            "ignoring supplementary plates beneath a sign, assuming a sign means the same as in the "
+            "candidate's home country, and overlooking blue obligation signs.",
+            "Some warning signs carry a smaller supplementary plate below them giving extra detail, "
+            "such as the distance to the hazard, and these plates are also tested.",
+            "The Department of Road Transport publishes official study materials and sample "
+            "questions, organised by sign category, as the primary study resource for the theory "
+            "test.",
+        ),
+        sections_el=(
+            "Γιατί είναι τόσο σημαντικά τα σήματα τροχαίας για τη θεωρητική εξέταση στην Κύπρο;",
+            "Ποια είναι η διαφορά μεταξύ υποχρεωτικών, προειδοποιητικών και πληροφοριακών σημάτων;",
+            "Υποχρεωτικά σήματα: ποια πρέπει να γνωρίζεις απέξω;",
+            "Προειδοποιητικά σήματα: πώς αναγνωρίζεις τους κινδύνους στον δρόμο;",
+            "Πληροφοριακά και κατευθυντήρια σήματα: πώς σε καθοδηγούν στον δρόμο;",
+            "Συνηθισμένα λάθη υποψηφίων οδηγών στα σήματα τροχαίας στην Κύπρο",
+            "Πώς να προετοιμαστείς αποτελεσματικά για τα σήματα στη θεωρητική εξέταση;",
+        ),
+        sections_en=(
+            "Why are road signs so important for the Cyprus theory test?",
+            "What is the difference between mandatory, warning, and informational signs?",
+            "Mandatory signs: which ones do you need to know by heart?",
+            "Warning signs: how do you recognise road hazards ahead?",
+            "Informational and directional signs: how do they guide you on the road?",
+            "Common mistakes candidates make on road signs in the Cyprus theory test",
+            "How to study road signs effectively for the theory test?",
+        ),
+        widget_id="sign-category-checker",
+        infographic_type="sign-shapes",
+        internal_links_el=(
+            ("/arthra/pws-na-vgaleis-diploma-odigisis-stin-kypro", "πώς βγάζεις δίπλωμα οδήγησης στην Κύπρο"),
+            ("/arthra/katigoria-b-adeia-odigisis-kypros", "κατηγορία Β άδεια οδήγησης"),
+            ("/arthra/eksetasi-odigisis-kypros-2026", "εξέταση οδήγησης Κύπρος 2026"),
+            ("/scholes-odigon/lefkosia", "σχολές οδηγών στη Λευκωσία"),
+            ("/scholes-odigon/lemesos", "σχολές οδηγών στη Λεμεσό"),
+            ("/arthra/plires-odigos-diploma-odigisis-kypros", "πλήρη οδηγό διπλώματος οδήγησης 2026"),
+        ),
+        internal_links_en=(
+            ("/en/blog/cyprus-driving-test-2026", "Cyprus driving test guide"),
+            ("/en/blog/cyprus-driving-licence-categories", "Cyprus driving licence categories"),
+            ("/en/blog/how-to-get-driving-licence-cyprus-step-by-step", "step-by-step driving licence guide"),
+            ("/en/driving-schools/nicosia", "driving schools in Nicosia"),
+            ("/en/driving-schools/limassol", "driving schools in Limassol"),
+            ("/en/blog/cyprus-driving-licence-complete-guide", "complete Cyprus driving licence guide"),
+        ),
+    ),
+    ArticleSpec(
+        id="cyprus-driving-licence-requirements",
+        topic_el=(
+            "Όλες οι προϋποθέσεις για να αποκτήσετε άδεια οδήγησης στην Κύπρο, από ηλικία έως "
+            "ιατρικό πιστοποιητικό"
+        ),
+        topic_en=(
+            "All the requirements to get a driving licence in Cyprus, from age to medical "
+            "certificate"
+        ),
+        title_el="Προϋποθέσεις Άδειας Οδήγησης στην Κύπρο",
+        title_en="Driving Licence Requirements in Cyprus",
+        audience_el=(
+            "Έφηβοι, γονείς, και νεοαφιχθέντες ξένοι κάτοικοι στην Κύπρο που θέλουν να μάθουν την "
+            "ελάχιστη ηλικία, τα απαιτούμενα έγγραφα, και τις προϋποθέσεις κατοικίας και υγείας "
+            "πριν κάνουν αίτηση."
+        ),
+        audience_en=(
+            "Teenagers, parents, and newly arrived foreign residents in Cyprus who want to know the "
+            "minimum age, required documents, and residency and medical requirements before "
+            "applying."
+        ),
+        facts=(
+            "Applicants can start the licensing process at age 17 with a provisional licence for "
+            "accompanied driving, supervised by a driver holding a full Cyprus licence; a full, "
+            "independently-driven Category B licence requires age 18.",
+            "There is no upper age limit for applying for a first driving licence in Cyprus.",
+            "First-time applicants must submit a valid Cyprus ID card or residence permit, a "
+            "completed TOM application form, a medical certificate, passport-sized photographs, and "
+            "the application fee.",
+            "Cyprus only issues driving licences to legal residents; a tourist visa or visitor "
+            "stamp does not qualify, and documents relating to the north of the island are not "
+            "accepted by the Republic's authorities.",
+            "Third-country nationals need a valid residence permit issued by the Migration "
+            "Department of Cyprus, not just a passport stamp.",
+            "Every first-time applicant must submit a medical certificate from a registered doctor "
+            "in Cyprus; the eyesight standard follows EU Directive 2006/126/EC, and corrective "
+            "lenses can be noted as a licence condition.",
+            "Foreign medical certificates from another country are not accepted; the certificate "
+            "has an expiry date, so it should not be obtained too far in advance.",
+            "Before taking any driving lesson on a public road, a learner needs a provisional "
+            "licence issued by the Department of Road Transport; driving without it is illegal even "
+            "with a qualified supervisor present.",
+            "All practical lessons must be taken at an officially registered driving school with a "
+            "licensed instructor; informal practice with a family member does not count toward "
+            "official lesson hours.",
+            "EU citizens who already hold a valid licence from another EU member state can often "
+            "exchange it for a Cyprus licence without retaking the theory or practical tests; "
+            "non-EU nationals generally must complete the full licensing process.",
+            "TOM has district offices in Nicosia, Limassol, Larnaca, Paphos, and Famagusta; "
+            "applications must be submitted in person, since postal or fully online applications "
+            "are not currently available for first-time applicants.",
+            "Driving on a provisional licence without a qualified supervising driver is illegal and "
+            "can lead to a fine or points on the licence record.",
+        ),
+        sections_el=(
+            "Ποια είναι η ελάχιστη ηλικία για άδεια οδήγησης στην Κύπρο;",
+            "Ποια έγγραφα χρειάζεσαι για να κάνεις αίτηση;",
+            "Τι ισχύει για την κατοικία και τη νομιμότητα παραμονής;",
+            "Ποιες είναι οι ιατρικές προϋποθέσεις;",
+            "Ποια είναι η διαδικασία απόκτησης προσωρινής άδειας;",
+            "Διαφέρουν οι προϋποθέσεις για ΕΕ και τρίτες χώρες;",
+            "Πού υποβάλλεις την αίτησή σου και ποια είναι τα επόμενα βήματα;",
+        ),
+        sections_en=(
+            "What is the minimum age to get a driving licence in Cyprus?",
+            "What documents do you need to apply?",
+            "What are the residency and legal status requirements?",
+            "What are the medical fitness requirements?",
+            "What is the process for getting a provisional (learner) licence?",
+            "Do requirements differ for EU citizens and non-EU nationals?",
+            "Where do you submit your application and what are the next steps?",
+        ),
+        widget_id="eligibility-checker",
+        infographic_type="requirements-checklist",
+        internal_links_el=(
+            ("/arthra/katigoria-b-adeia-odigisis-kypros", "κατηγορία Β άδεια οδήγησης"),
+            ("/arthra/pws-na-vgaleis-diploma-odigisis-stin-kypro", "πώς βγάζεις δίπλωμα οδήγησης στην Κύπρο"),
+            ("/arthra/diploma-odigisis-gia-ksenous-stin-kypro", "δίπλωμα οδήγησης για ξένους στην Κύπρο"),
+            ("/arthra/poso-kostizei-ekpaideysi-odigisis-kypros", "κόστος εκπαίδευσης οδήγησης στην Κύπρο"),
+            ("/arthra/anallagi-adeias-ee-kypros", "ανταλλαγή ευρωπαϊκής άδειας στην Κύπρο"),
+            ("/arthra/plires-odigos-diploma-odigisis-kypros", "πλήρη οδηγό διπλώματος οδήγησης 2026"),
+        ),
+        internal_links_en=(
+            ("/en/blog/cyprus-driving-licence-categories", "Cyprus driving licence categories"),
+            ("/en/blog/how-to-get-driving-licence-cyprus-step-by-step", "step-by-step driving licence guide"),
+            ("/en/blog/how-to-get-driving-licence-cyprus-foreigner", "how to get a Cyprus driving licence as a foreigner"),
+            ("/en/blog/driving-lesson-cost-cyprus", "driving lesson costs in Cyprus"),
+            ("/en/blog/exchange-eu-licence-cyprus", "exchanging an EU driving licence in Cyprus"),
+            ("/en/blog/cyprus-driving-licence-complete-guide", "complete Cyprus driving licence guide"),
+        ),
+    ),
+    ArticleSpec(
+        id="book-driving-test-cyprus",
+        topic_el="Πώς να κλείσετε θεωρητική και πρακτική εξέταση οδήγησης στην Κύπρο, βήμα προς βήμα",
+        topic_en="How to book your theory and practical driving test in Cyprus, step by step",
+        title_el="Πώς να Κλείσετε Εξέταση Οδήγησης στην Κύπρο",
+        title_en="How to Book Your Driving Test in Cyprus",
+        audience_el=(
+            "Υποψήφιοι οδηγοί στην Κύπρο που έχουν ολοκληρώσει την εκπαίδευσή τους και θέλουν να "
+            "μάθουν πώς να κλείσουν εξέταση, πού γίνονται οι εξετάσεις, και τι να κάνουν αν "
+            "χρειαστεί αναβολή ή επανάληψη."
+        ),
+        audience_en=(
+            "Learner drivers in Cyprus who have completed their training and want to know how to "
+            "book a test, where tests are held, and what to do if they need to reschedule or "
+            "retake."
+        ),
+        facts=(
+            "Driving tests in Cyprus are run by the Department of Road Transport (TOM), which sits "
+            "under the Ministry of Transport, Communications and Works.",
+            "TOM operates district offices in Nicosia, Limassol, Larnaca, and Paphos, and "
+            "candidates are normally assigned to the test centre nearest to where they live or "
+            "where their driving school operates.",
+            "Before booking either test, a candidate needs a valid learner's permit issued by TOM "
+            "and must have completed the minimum required training hours at a licensed driving "
+            "school.",
+            "Tests can be booked three ways: through a driving school, by phone to the local TOM "
+            "district office, or in person at a TOM office.",
+            "The theory test is a multiple-choice exam drawn from TOM's official question bank "
+            "covering road signs, traffic rules, and safe driving behaviour, sat at a computer "
+            "terminal, with results usually given the same day.",
+            "The practical test takes place on public roads near the TOM test centre, with an "
+            "examiner assessing manoeuvres, control, observation, and rule application.",
+            "To book the practical test, a candidate needs their theory test pass certificate in "
+            "addition to their learner's permit and ID.",
+            "If a candidate fails the theory test, TOM sets a mandatory waiting period before a "
+            "retake can be booked; failing the practical test requires completing additional "
+            "training hours before rebooking is possible.",
+            "Rescheduling before a test should be done with as much notice as possible, since late "
+            "cancellations may affect the fee refund.",
+            "The test fee must be paid again for every rebooking, whether after a fail or a missed "
+            "appointment.",
+            "Cyprus's official digital services platform sometimes offers transport-related "
+            "services online, but online booking availability for driving tests can change and "
+            "should be confirmed directly with TOM.",
+            "Northern Cyprus is not covered by TOM or the Republic of Cyprus government; candidates "
+            "living in the government-controlled areas must use the TOM centres in Nicosia, "
+            "Limassol, Larnaca, or Paphos.",
+        ),
+        sections_el=(
+            "Ποιος είναι υπεύθυνος για τις εξετάσεις οδήγησης στην Κύπρο;",
+            "Ποιες προϋποθέσεις πρέπει να πληροίτε πριν κλείσετε εξέταση;",
+            "Πώς να κλείσετε θεωρητική εξέταση: βήμα προς βήμα",
+            "Πώς να κλείσετε πρακτική εξέταση: βήμα προς βήμα",
+            "Πού γίνονται οι εξετάσεις ανά πόλη στην Κύπρο;",
+            "Τι κάνετε αν χρειαστεί να αναβάλετε ή να επαναλάβετε εξέταση;",
+        ),
+        sections_en=(
+            "Who is responsible for driving tests in Cyprus?",
+            "What are the requirements before you can book a test?",
+            "How to book your theory test: step by step",
+            "How to book your practical test: step by step",
+            "Where are driving tests held across Cyprus?",
+            "What to do if you need to reschedule or retake a test",
+        ),
+        widget_id="test-readiness-checker",
+        infographic_type="booking-methods",
+        internal_links_el=(
+            ("/arthra/plires-odigos-diploma-odigisis-kypros", "πλήρη οδηγό διπλώματος οδήγησης 2026"),
+            ("/arthra/pws-na-vgaleis-diploma-odigisis-kypros", "δίπλωμα οδήγησης στην Κύπρο"),
+            ("/arthra/poso-kostizei-ekpaideysi-odigisis-kypros", "κόστος εκπαίδευσης οδήγησης στην Κύπρο"),
+            ("/arthra/eksetasi-odigisis-kypros-2026", "εξέταση οδήγησης Κύπρος 2026"),
+            ("/scholes-odigon/lefkosia", "σχολές οδηγών στη Λευκωσία"),
+            ("/scholes-odigon/lemesos", "σχολές οδηγών στη Λεμεσό"),
+        ),
+        internal_links_en=(
+            ("/en/blog/how-to-get-driving-licence-cyprus-step-by-step", "step-by-step driving licence guide"),
+            ("/en/blog/driving-lesson-cost-cyprus", "driving lesson costs in Cyprus"),
+            ("/en/blog/cyprus-driving-licence-complete-guide", "complete Cyprus driving licence guide"),
+            ("/en/blog/cyprus-driving-test-2026", "Cyprus driving test guide"),
+            ("/en/driving-schools/nicosia", "driving schools in Nicosia"),
+            ("/en/driving-schools/limassol", "driving schools in Limassol"),
+        ),
+    ),
 )
 
 
@@ -832,8 +1695,27 @@ Output a single JSON object (no markdown fences, no explanation):
   "internal_links_en": [["/path", "anchor text in English"], ... pick 5-6 most relevant],
   "answer_el": "<2-3 sentence direct answer in simple Greek, no em-dashes>",
   "answer_en": "<2-3 sentence direct answer in plain English, no em-dashes>",
+  "widget_id": "<exactly one id from the WIDGET OPTIONS list below, chosen by topical fit>",
+  "infographic_data": {{
+    "title_el": "<short Greek infographic title>",
+    "title_en": "<short English infographic title>",
+    "caption_el": "<one-sentence Greek caption>",
+    "caption_en": "<one-sentence English caption>",
+    "items": [
+      {{"num": "1", "title_el": ["<line 1>", "<line 2, optional>"], "title_en": ["<line 1>", "<line 2, optional>"], "sub_el": ["<line 1>", "<line 2, optional>"], "sub_en": ["<line 1>", "<line 2, optional>"]}},
+      "... exactly 4 items total, num values '1' through '4', a 4-step or 4-category breakdown of the article's core process"
+    ]
+  }},
   "inline_image_queries": ["<Pexels query 1>", "<Pexels query 2>"]
 }}
+
+WIDGET OPTIONS (pick exactly one id for "widget_id", matched by topical fit):
+- price-calculator: cost/fees estimate via lesson count and price sliders
+- uk-licence-checker: UK licence eligibility/test branching
+- eu-exchange-checker: EU licence exchange eligibility branching
+- foreigner-path-checker: which foreigner process applies
+- test-readiness-checker: theory/practical test readiness self-check
+- renewal-checker: renewal age/category branching
 
 RULES:
 - facts: true facts about the Republic of Cyprus only. No invented numbers or fees. \
@@ -844,6 +1726,12 @@ Say "check with the Department of Road Transport (ΤΟΜ)" when fees/rules may c
 - internal_links_en pool (pick 5-6 most relevant to this article):
 {pool_en_text}
 - answers: 2-3 sentences. No em-dashes. Plain language.
+- widget_id: never leave this blank. Choose the single best topical match from the \
+WIDGET OPTIONS list above. If genuinely nothing fits well, default to "price-calculator".
+- infographic_data: exactly 4 items, a 4-step or 4-category visual breakdown of the \
+article's core process. Use only facts already present in the "facts" array above. Do \
+not invent new figures, numbers, or claims that are not already stated elsewhere in \
+this JSON.
 - inline_image_queries: natural Pexels queries that return photos relevant to this article.
 """
 
@@ -866,6 +1754,28 @@ Say "check with the Department of Road Transport (ΤΟΜ)" when fees/rules may c
         return None
 
     try:
+        infographic_data = data["infographic_data"]
+        infographic_items = infographic_data["items"]
+        # Remap the flat title_el/title_en/caption_el/... fields into a per-locale
+        # nested shape for the generic "auto" infographic renderer.
+        infographic_payload = {
+            "el": {
+                "title": infographic_data["title_el"],
+                "caption": infographic_data["caption_el"],
+                "items": [
+                    {"num": item["num"], "title": item["title_el"], "sub": item["sub_el"]}
+                    for item in infographic_items
+                ],
+            },
+            "en": {
+                "title": infographic_data["title_en"],
+                "caption": infographic_data["caption_en"],
+                "items": [
+                    {"num": item["num"], "title": item["title_en"], "sub": item["sub_en"]}
+                    for item in infographic_items
+                ],
+            },
+        }
         spec = ArticleSpec(
             id=article_id,
             topic_el=data["topic_el"],
@@ -881,6 +1791,14 @@ Say "check with the Department of Road Transport (ΤΟΜ)" when fees/rules may c
             internal_links_en=tuple(tuple(p) for p in data["internal_links_en"]),
             answer_el=data.get("answer_el", ""),
             answer_en=data.get("answer_en", ""),
+            # widget_id must never be blank; the prompt instructs the model to
+            # default to "price-calculator" when nothing else fits.
+            widget_id=data["widget_id"],
+            # infographic_type stays "auto" for auto-drafted articles: the real
+            # per-locale content lives in the {article_id}_infographic.json
+            # sidecar below, since infographic_type must otherwise be unique
+            # per bespoke component.
+            infographic_type="auto",
             inline_image_queries=tuple(data.get("inline_image_queries", [])),
         )
     except (KeyError, TypeError) as exc:
@@ -894,6 +1812,15 @@ Say "check with the Department of Road Transport (ΤΟΜ)" when fees/rules may c
         _json.dumps({"inline_image_queries": list(spec.inline_image_queries)}, ensure_ascii=False),
         encoding="utf-8",
     )
+
+    # Write the infographic sidecar (separate from the _auto_spec.json sidecar
+    # above) so the generic "auto" infographic renderer has per-locale content.
+    infographic_sidecar = BLOG_DIR / f"{article_id}_infographic.json"
+    infographic_sidecar.write_text(
+        _json.dumps(infographic_payload, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+
     log.info("generate_blog.auto_spec_ok", id=article_id)
     return spec
 

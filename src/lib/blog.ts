@@ -1,7 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 
-import type { CyprusCity, Locale } from "./types";
+import type { AutoInfographicData, CyprusCity, Locale } from "./types";
 
 /**
  * Blog data layer. The article *body* is Markdown produced by the Python
@@ -855,5 +855,17 @@ export function loadArticleBody(
     return fs.readFileSync(file, "utf8");
   } catch {
     return null;
+  }
+}
+
+export function loadInfographicData(
+  articleId: string,
+): AutoInfographicData | undefined {
+  const file = path.join(BLOG_CONTENT_DIR, `${articleId}_infographic.json`);
+  if (!fs.existsSync(file)) return undefined;
+  try {
+    return JSON.parse(fs.readFileSync(file, "utf8")) as AutoInfographicData;
+  } catch {
+    return undefined;
   }
 }
