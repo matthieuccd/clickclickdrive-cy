@@ -722,6 +722,35 @@ export const BLOG_ARTICLES: readonly BlogArticle[] = [
     relatedSlugs: [],
   },
 
+  {
+    id: "cyprus-driving-licence-application-form",
+    slug_el: "aitisi-adeia-odigisis-kypros",
+    slug_en: "cyprus-driving-licence-application-form",
+    categoryId: "rules",
+    title_el: "\u0391\u03af\u03c4\u03b7\u03c3\u03b7 \u0386\u03b4\u03b5\u03b9\u03b1\u03c2 \u039f\u03b4\u03ae\u03b3\u03b7\u03c3\u03b7\u03c2 \u039a\u03cd\u03c0\u03c1\u03bf\u03c5: \u03a0\u03ce\u03c2 \u03bd\u03b1 \u03c4\u03b7 \u03a3\u03c5\u03bc\u03c0\u03bb\u03b7\u03c1\u03ce\u03c3\u03b5\u03c4\u03b5",
+    title_en: "Cyprus Driving Licence Application Form: How to Fill It In",
+    excerpt_el:
+      "\u039f\u03b4\u03b7\u03b3\u03cc\u03c2 \u03b3\u03b9\u03b1 \u03c4\u03b7 \u03c3\u03c5\u03bc\u03c0\u03bb\u03ae\u03c1\u03c9\u03c3\u03b7 \u03c4\u03b7\u03c2 \u03b1\u03af\u03c4\u03b7\u03c3\u03b7\u03c2 \u03ac\u03b4\u03b5\u03b9\u03b1\u03c2 \u03bf\u03b4\u03ae\u03b3\u03b7\u03c3\u03b7\u03c2 \u03c3\u03c4\u03b7\u03bd \u039a\u03cd\u03c0\u03c1\u03bf. \u039a\u03ac\u03b8\u03b5 \u03c0\u03b5\u03b4\u03af\u03bf \u03b5\u03be\u03b7\u03b3\u03b5\u03af\u03c4\u03b1\u03b9.",
+    excerpt_en:
+      "A plain-language walkthrough of the Cyprus driving licence application form \u2014 every field explained.",
+    metaDescription_el:
+      "\u0391\u03af\u03c4\u03b7\u03c3\u03b7 \u03ac\u03b4\u03b5\u03b9\u03b1\u03c2 \u03bf\u03b4\u03ae\u03b3\u03b7\u03c3\u03b7\u03c2 \u039a\u03cd\u03c0\u03c1\u03bf\u03c5: \u03ba\u03ac\u03b8\u03b5 \u03c0\u03b5\u03b4\u03af\u03bf \u03b5\u03be\u03b7\u03b3\u03b5\u03af\u03c4\u03b1\u03b9. \u03a0\u03ce\u03c2 \u03bd\u03b1 \u03c4\u03b7 \u03c3\u03c5\u03bc\u03c0\u03bb\u03b7\u03c1\u03ce\u03c3\u03b5\u03c4\u03b5 \u03c3\u03c9\u03c3\u03c4\u03ac.",
+    metaDescription_en:
+      "Cyprus driving licence application form explained field by field. How to fill it in correctly.",
+    heroImagePath: "/blog/cyprus-driving-licence-application-form/hero.jpg",
+    heroImageAlt_el:
+      "\u03a7\u03ad\u03c1\u03b9 \u03c3\u03c5\u03bc\u03c0\u03bb\u03b7\u03c1\u03ce\u03bd\u03b5\u03b9 \u03b5\u03c0\u03af\u03c3\u03b7\u03bc\u03b7 \u03b1\u03af\u03c4\u03b7\u03c3\u03b7",
+    heroImageAlt_en: "Hand filling in an official application form",
+    heroCaption_en: "Hand filling in an official application form, via Pexels.com",
+    heroCaption_el: "\u03a7\u03ad\u03c1\u03b9 \u03c3\u03c5\u03bc\u03c0\u03bb\u03b7\u03c1\u03ce\u03bd\u03b5\u03b9 \u03b5\u03c0\u03af\u03c3\u03b7\u03bc\u03b7 \u03b1\u03af\u03c4\u03b7\u03c3\u03b7, via Pexels.com",
+    publishedDate: "2026-07-22",
+    modifiedDate: "2026-07-22",
+    author: "Matthieu Tissot",
+    authorSlug: "matthieu",
+    relatedCity: null,
+    relatedSlugs: [],
+  },
+
 ];
 
 // --- hero image resolution -----------------------------------------------

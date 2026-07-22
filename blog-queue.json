@@ -1,10 +1,10 @@
 {
-  "last_publish_date": "2026-07-20",
+  "last_publish_date": "2026-07-22",
   "settings": {
     "cadence_days": 2,
     "publish_mode": "auto",
     "consecutive_clean_approvals": 0,
-    "next_publish_at": "2026-07-22T16:35:00Z"
+    "next_publish_at": "2026-07-24T17:40:00Z"
   },
   "state": {
     "open_pr_number": null,
@@ -451,7 +451,7 @@
     {
       "id": "cyprus-driving-licence-application-form",
       "priority": 14,
-      "status": "pending",
+      "status": "published",
       "title_en": "Cyprus Driving Licence Application Form: How to Fill It In",
       "title_el": "Αίτηση Άδειας Οδήγησης Κύπρου: Πώς να τη Συμπληρώσετε",
       "slug_en": "cyprus-driving-licence-application-form",
@@ -467,7 +467,7 @@
       "meta_description_el": "Αίτηση άδειας οδήγησης Κύπρου: κάθε πεδίο εξηγείται. Πώς να τη συμπληρώσετε σωστά.",
       "hero_alt_en": "Hand filling in an official application form",
       "hero_alt_el": "Χέρι συμπληρώνει επίσημη αίτηση",
-      "published_at": null,
+      "published_at": "2026-07-22",
       "pr_number": null,
       "pr_created_at": null
     },

@@ -1,0 +1,66 @@
+{
+  "el": {
+    "template": "checklist",
+    "title": "Έγγραφα για την Αίτηση Άδειας Οδήγησης",
+    "caption": "Ετοιμάστε αυτά τα έγγραφα πριν επισκεφθείτε το ΤΟΜ για να εξοικονομήσετε χρόνο.",
+    "items": [
+      {
+        "icon": "🪪",
+        "label": "Ταυτότητα ή Διαβατήριο",
+        "sub": "Κυπριακή ταυτότητα ή έγκυρο διαβατήριο"
+      },
+      {
+        "icon": "📷",
+        "label": "Δύο Φωτογραφίες",
+        "sub": "Πρόσφατες, διαβατηρίου μεγέθους"
+      },
+      {
+        "icon": "🏠",
+        "label": "Απόδειξη Διαμονής",
+        "sub": "Διεύθυνση συνήθους κατοικίας στην Κύπρο"
+      },
+      {
+        "icon": "🩺",
+        "label": "Ιατρική Βεβαίωση",
+        "sub": "Απαιτείται για ορισμένες κατηγορίες, ελέγξτε με ΤΟΜ"
+      },
+      {
+        "icon": "📄",
+        "label": "Υπάρχουσα Άδεια Οδήγησης",
+        "sub": "Δηλώστε όλες τις ξένες ή κυπριακές άδειες"
+      }
+    ]
+  },
+  "en": {
+    "template": "checklist",
+    "title": "Documents for Your Driving Licence Application",
+    "caption": "Gather these items before visiting a ΤΟΜ district office to save time.",
+    "items": [
+      {
+        "icon": "🪪",
+        "label": "Identity Card or Passport",
+        "sub": "Cypriot ID card or valid passport"
+      },
+      {
+        "icon": "📷",
+        "label": "Two Passport Photos",
+        "sub": "Recent passport-sized photographs"
+      },
+      {
+        "icon": "🏠",
+        "label": "Proof of Residence",
+        "sub": "Cyprus address of ordinary residence"
+      },
+      {
+        "icon": "🩺",
+        "label": "Medical Certificate",
+        "sub": "Required for certain categories, check with ΤΟΜ"
+      },
+      {
+        "icon": "📄",
+        "label": "Any Existing Driving Licence",
+        "sub": "Declare all foreign or Cyprus licences held"
+      }
+    ]
+  }
+}
