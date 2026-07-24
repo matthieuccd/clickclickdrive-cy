@@ -751,6 +751,35 @@ export const BLOG_ARTICLES: readonly BlogArticle[] = [
     relatedSlugs: [],
   },
 
+  {
+    id: "north-cyprus-vs-republic-driving-licence",
+    slug_el: "voria-kypros-dimokratia-adeia-odigisis",
+    slug_en: "north-cyprus-vs-republic-driving-licence",
+    categoryId: "foreigners",
+    title_el: "\u0392\u03cc\u03c1\u03b5\u03b9\u03b1 \u039a\u03cd\u03c0\u03c1\u03bf\u03c2 vs \u039a\u03c5\u03c0\u03c1\u03b9\u03b1\u03ba\u03ae \u0394\u03b7\u03bc\u03bf\u03ba\u03c1\u03b1\u03c4\u03af\u03b1: \u0386\u03b4\u03b5\u03b9\u03b1 \u039f\u03b4\u03ae\u03b3\u03b7\u03c3\u03b7\u03c2",
+    title_en: "North Cyprus vs Republic of Cyprus Driving Licence",
+    excerpt_el:
+      "\u03a4\u03b1 \u03b4\u03cd\u03bf \u03c3\u03c5\u03c3\u03c4\u03ae\u03bc\u03b1\u03c4\u03b1 \u03b4\u03b5\u03bd \u03b5\u03af\u03bd\u03b1\u03b9 \u03b5\u03bd\u03b1\u03bb\u03bb\u03ac\u03be\u03b9\u03bc\u03b1. \u03a4\u03b9 \u03ba\u03b1\u03bb\u03cd\u03c0\u03c4\u03b5\u03b9 \u03ba\u03ac\u03b8\u03b5 \u03ac\u03b4\u03b5\u03b9\u03b1 \u03ba\u03b1\u03b9 \u03c4\u03b9 \u03b9\u03c3\u03c7\u03cd\u03b5\u03b9 \u03b1\u03bd \u03b4\u03b9\u03b1\u03c3\u03c7\u03af\u03c3\u03b5\u03c4\u03b5 \u03c4\u03b7 \u03b4\u03b9\u03b1\u03c7\u03c9\u03c1\u03b9\u03c3\u03c4\u03b9\u03ba\u03ae \u03b3\u03c1\u03b1\u03bc\u03bc\u03ae.",
+    excerpt_en:
+      "The two systems are not interchangeable. Here is what each licence covers and what to know if you cross between them.",
+    metaDescription_el:
+      "\u0392\u03cc\u03c1\u03b5\u03b9\u03b1 \u039a\u03cd\u03c0\u03c1\u03bf\u03c2 vs \u039a\u03c5\u03c0\u03c1\u03b9\u03b1\u03ba\u03ae \u0394\u03b7\u03bc\u03bf\u03ba\u03c1\u03b1\u03c4\u03af\u03b1: \u03b4\u03cd\u03bf \u03be\u03b5\u03c7\u03c9\u03c1\u03b9\u03c3\u03c4\u03ac \u03c3\u03c5\u03c3\u03c4\u03ae\u03bc\u03b1\u03c4\u03b1 \u03b1\u03b4\u03b5\u03b9\u03ce\u03bd \u03bf\u03b4\u03ae\u03b3\u03b7\u03c3\u03b7\u03c2.",
+    metaDescription_en:
+      "North Cyprus vs Republic of Cyprus driving licence \u2014 two separate systems explained clearly.",
+    heroImagePath: "/blog/north-cyprus-vs-republic-driving-licence/hero.jpg",
+    heroImageAlt_el:
+      "\u03a7\u03ac\u03c1\u03c4\u03b7\u03c2 \u039a\u03cd\u03c0\u03c1\u03bf\u03c5 \u03c0\u03bf\u03c5 \u03b4\u03b5\u03af\u03c7\u03bd\u03b5\u03b9 \u03c4\u03b7 \u03b4\u03b9\u03b1\u03af\u03c1\u03b5\u03c3\u03b7",
+    heroImageAlt_en: "Map of Cyprus showing the divided island",
+    heroCaption_en: "Map of Cyprus showing the divided island, via Pexels.com",
+    heroCaption_el: "\u03a7\u03ac\u03c1\u03c4\u03b7\u03c2 \u039a\u03cd\u03c0\u03c1\u03bf\u03c5 \u03c0\u03bf\u03c5 \u03b4\u03b5\u03af\u03c7\u03bd\u03b5\u03b9 \u03c4\u03b7 \u03b4\u03b9\u03b1\u03af\u03c1\u03b5\u03c3\u03b7, via Pexels.com",
+    publishedDate: "2026-07-24",
+    modifiedDate: "2026-07-24",
+    author: "Matthieu Tissot",
+    authorSlug: "matthieu",
+    relatedCity: null,
+    relatedSlugs: [],
+  },
+
 ];
 
 // --- hero image resolution -----------------------------------------------

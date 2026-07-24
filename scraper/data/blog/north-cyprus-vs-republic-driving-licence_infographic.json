@@ -1,0 +1,40 @@
+{
+  "el": {
+    "template": "versus",
+    "title": "Βόρεια Κύπρος vs Κυπριακή Δημοκρατία: Άδεια Οδήγησης",
+    "caption": "Τα δύο συστήματα άδειας οδήγησης διαφέρουν ριζικά ως προς τη διεθνή αναγνώριση και τη νομική ισχύ.",
+    "left": {
+      "heading": "Βόρεια Κύπρος",
+      "sub": [
+        "Αναγνωρίζεται μόνο από την Τουρκία",
+        "Δεν ισχύει στην ΕΕ ή διεθνώς"
+      ]
+    },
+    "right": {
+      "heading": "Κυπριακή Δημοκρατία",
+      "sub": [
+        "Αναγνωρίζεται σε όλη την ΕΕ",
+        "Εκδίδεται από τον ΤΟΜ σε μορφή ΕΕ"
+      ]
+    }
+  },
+  "en": {
+    "template": "versus",
+    "title": "North Cyprus vs Republic of Cyprus: Driving Licence",
+    "caption": "The two driving licence systems differ fundamentally in international recognition and legal validity.",
+    "left": {
+      "heading": "North Cyprus",
+      "sub": [
+        "Recognised only by Turkey",
+        "Not valid in the EU or internationally"
+      ]
+    },
+    "right": {
+      "heading": "Republic of Cyprus",
+      "sub": [
+        "Recognised across all 27 EU states",
+        "Issued by ΤΟΜ in EU credit-card format"
+      ]
+    }
+  }
+}
