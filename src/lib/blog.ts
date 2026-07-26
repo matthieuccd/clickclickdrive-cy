@@ -780,6 +780,35 @@ export const BLOG_ARTICLES: readonly BlogArticle[] = [
     relatedSlugs: [],
   },
 
+  {
+    id: "how-much-learn-drive-cyprus",
+    slug_el: "kostos-mathimata-odigisis-kypros",
+    slug_en: "how-much-learn-drive-cyprus",
+    categoryId: "costs",
+    title_el: "\u03a0\u03cc\u03c3\u03bf \u039a\u03bf\u03c3\u03c4\u03af\u03b6\u03b5\u03b9 \u03bd\u03b1 \u039c\u03ac\u03b8\u03b5\u03c4\u03b5 \u039f\u03b4\u03ae\u03b3\u03b7\u03c3\u03b7 \u03c3\u03c4\u03b7\u03bd \u039a\u03cd\u03c0\u03c1\u03bf",
+    title_en: "How Much Does It Cost to Learn to Drive in Cyprus",
+    excerpt_el:
+      "\u03a4\u03b9 \u03b8\u03b1 \u03c0\u03bb\u03b7\u03c1\u03ce\u03c3\u03b5\u03c4\u03b5 \u03b3\u03b9\u03b1 \u03bc\u03b1\u03b8\u03ae\u03bc\u03b1\u03c4\u03b1, \u03b5\u03be\u03b5\u03c4\u03ac\u03c3\u03b5\u03b9\u03c2 \u03ba\u03b1\u03b9 \u03b4\u03b9\u03bf\u03b9\u03ba\u03b7\u03c4\u03b9\u03ba\u03ac \u03c4\u03ad\u03bb\u03b7 \u03b3\u03b9\u03b1 \u03bd\u03b1 \u03bc\u03ac\u03b8\u03b5\u03c4\u03b5 \u03bf\u03b4\u03ae\u03b3\u03b7\u03c3\u03b7 \u03c3\u03c4\u03b7\u03bd \u039a\u03cd\u03c0\u03c1\u03bf.",
+    excerpt_en:
+      "What you will pay for lessons, tests, and admin fees when learning to drive in Cyprus \u2014 and how to keep costs down.",
+    metaDescription_el:
+      "\u039a\u03cc\u03c3\u03c4\u03bf\u03c2 \u03b5\u03ba\u03bc\u03ac\u03b8\u03b7\u03c3\u03b7\u03c2 \u03bf\u03b4\u03ae\u03b3\u03b7\u03c3\u03b7\u03c2 \u03c3\u03c4\u03b7\u03bd \u039a\u03cd\u03c0\u03c1\u03bf 2026. \u03a4\u03b9\u03bc\u03ad\u03c2 \u03bc\u03b1\u03b8\u03b7\u03bc\u03ac\u03c4\u03c9\u03bd, \u03c4\u03ad\u03bb\u03b7 \u03b5\u03be\u03b5\u03c4\u03ac\u03c3\u03b5\u03c9\u03bd, \u03c3\u03c5\u03bd\u03bf\u03bb\u03b9\u03ba\u03cc \u03ba\u03cc\u03c3\u03c4\u03bf\u03c2.",
+    metaDescription_en:
+      "How much does it cost to learn to drive in Cyprus in 2026. Lesson prices, test fees, and total cost.",
+    heroImagePath: "/blog/how-much-learn-drive-cyprus/hero.jpg",
+    heroImageAlt_el:
+      "\u039d\u03bf\u03bc\u03af\u03c3\u03bc\u03b1\u03c4\u03b1 \u03ba\u03b1\u03b9 \u03c7\u03b1\u03c1\u03c4\u03bf\u03bd\u03bf\u03bc\u03af\u03c3\u03bc\u03b1\u03c4\u03b1 \u03b4\u03af\u03c0\u03bb\u03b1 \u03c3\u03b5 \u03c6\u03c5\u03bb\u03bb\u03ac\u03b4\u03b9\u03bf \u03c3\u03c7\u03bf\u03bb\u03ae\u03c2 \u03bf\u03b4\u03b7\u03b3\u03ce\u03bd",
+    heroImageAlt_en: "Coins and banknotes next to a driving school brochure",
+    heroCaption_en: "Coins and banknotes next to a driving school brochure, via Pexels.com",
+    heroCaption_el: "\u039d\u03bf\u03bc\u03af\u03c3\u03bc\u03b1\u03c4\u03b1 \u03ba\u03b1\u03b9 \u03c7\u03b1\u03c1\u03c4\u03bf\u03bd\u03bf\u03bc\u03af\u03c3\u03bc\u03b1\u03c4\u03b1 \u03b4\u03af\u03c0\u03bb\u03b1 \u03c3\u03b5 \u03c6\u03c5\u03bb\u03bb\u03ac\u03b4\u03b9\u03bf \u03c3\u03c7\u03bf\u03bb\u03ae\u03c2 \u03bf\u03b4\u03b7\u03b3\u03ce\u03bd, via Pexels.com",
+    publishedDate: "2026-07-26",
+    modifiedDate: "2026-07-26",
+    author: "Matthieu Tissot",
+    authorSlug: "matthieu",
+    relatedCity: null,
+    relatedSlugs: [],
+  },
+
 ];
 
 // --- hero image resolution -----------------------------------------------

@@ -1,0 +1,104 @@
+{
+  "el": {
+    "template": "flow",
+    "title": "Τα 4 Στάδια Κόστους για το Δίπλωμα Οδήγησης στην Κύπρο",
+    "caption": "Κάθε στάδιο έχει τα δικά του έξοδα που πρέπει να υπολογίσετε από την αρχή.",
+    "items": [
+      {
+        "num": "1",
+        "title": [
+          "Άδεια Μαθητευόμενου",
+          "και Ιατρικό"
+        ],
+        "sub": [
+          "Τέλος αίτησης ΤΟΜ",
+          "Ιατρικό πιστοποιητικό"
+        ]
+      },
+      {
+        "num": "2",
+        "title": [
+          "Μαθήματα Οδήγησης",
+          "και Κώδικας"
+        ],
+        "sub": [
+          "Πακέτο ή ανά ώρα",
+          "Μαθήματα θεωρίας"
+        ]
+      },
+      {
+        "num": "3",
+        "title": [
+          "Εξετάσεις",
+          "Θεωρία και Πρακτική"
+        ],
+        "sub": [
+          "Τέλος θεωρητικής εξέτασης",
+          "Τέλος πρακτικής εξέτασης"
+        ]
+      },
+      {
+        "num": "4",
+        "title": [
+          "Πρώτες Βοήθειες",
+          "και Έκδοση Άδειας"
+        ],
+        "sub": [
+          "Υποχρεωτικό πιστοποιητικό",
+          "Διοικητικό τέλος ΤΟΜ"
+        ]
+      }
+    ]
+  },
+  "en": {
+    "template": "flow",
+    "title": "The 4 Cost Stages of Getting a Cyprus Driving Licence",
+    "caption": "Each stage carries its own fees that you should budget for from the start.",
+    "items": [
+      {
+        "num": "1",
+        "title": [
+          "Learner Permit",
+          "and Medical"
+        ],
+        "sub": [
+          "TOM application fee",
+          "Medical certificate cost"
+        ]
+      },
+      {
+        "num": "2",
+        "title": [
+          "Driving Lessons",
+          "and Theory Prep"
+        ],
+        "sub": [
+          "Package or per-lesson rate",
+          "Theory course included or extra"
+        ]
+      },
+      {
+        "num": "3",
+        "title": [
+          "Theory and Practical",
+          "Test Fees"
+        ],
+        "sub": [
+          "Theory test fee",
+          "Practical test fee"
+        ]
+      },
+      {
+        "num": "4",
+        "title": [
+          "First Aid Course",
+          "and Licence Card"
+        ],
+        "sub": [
+          "Compulsory certificate",
+          "TOM administrative fee"
+        ]
+      }
+    ]
+  }
+}
