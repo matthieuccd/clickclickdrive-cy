@@ -1,0 +1,66 @@
+{
+  "el": {
+    "template": "checklist",
+    "title": "Τι Καλύπτει ο Κώδικας Οδικής Κυκλοφορίας",
+    "caption": "Οι βασικές ενότητες του επίσημου βιβλίου που πρέπει να μελετήσετε πριν από τη θεωρητική εξέταση.",
+    "items": [
+      {
+        "icon": "🚦",
+        "label": "Οδικά σήματα και σηματοδότες",
+        "sub": "Υποχρεωτικά, προειδοποιητικά και πληροφοριακά σήματα"
+      },
+      {
+        "icon": "⚡",
+        "label": "Όρια ταχύτητας",
+        "sub": "100 αυτοκινητόδρομος, 80 αγροτικός, 50 αστικός δρόμος"
+      },
+      {
+        "icon": "🍷",
+        "label": "Όριο αλκοόλ",
+        "sub": "0,5 mg/ml για έμπειρους, 0,2 mg/ml για νέους οδηγούς"
+      },
+      {
+        "icon": "🔄",
+        "label": "Κανόνες προτεραιότητας",
+        "sub": "Κόμβοι, κυκλική κίνηση και κανόνες οδήγησης αριστερά"
+      },
+      {
+        "icon": "🔧",
+        "label": "Ασφάλεια οχήματος",
+        "sub": "Έλεγχοι πριν την οδήγηση και χρήση εξοπλισμού ασφαλείας"
+      }
+    ]
+  },
+  "en": {
+    "template": "checklist",
+    "title": "What the Highway Code Covers",
+    "caption": "The key sections of the official book you must study before sitting the theory test.",
+    "items": [
+      {
+        "icon": "🚦",
+        "label": "Road signs and traffic signals",
+        "sub": "Mandatory, warning, and informational signs"
+      },
+      {
+        "icon": "⚡",
+        "label": "Speed limits",
+        "sub": "100 motorway, 80 rural roads, 50 built-up areas"
+      },
+      {
+        "icon": "🍷",
+        "label": "Alcohol limits",
+        "sub": "0.5 mg/ml experienced drivers, 0.2 mg/ml new drivers"
+      },
+      {
+        "icon": "🔄",
+        "label": "Right-of-way rules",
+        "sub": "Junctions, roundabouts, and left-hand driving rules"
+      },
+      {
+        "icon": "🔧",
+        "label": "Vehicle safety checks",
+        "sub": "Pre-drive checks and use of safety equipment"
+      }
+    ]
+  }
+}

@@ -809,6 +809,35 @@ export const BLOG_ARTICLES: readonly BlogArticle[] = [
     relatedSlugs: [],
   },
 
+  {
+    id: "cyprus-highway-code-book",
+    slug_el: "kodikas-odikis-kykloforias-kypros",
+    slug_en: "cyprus-highway-code-book",
+    categoryId: "theory",
+    title_el: "\u039f \u039a\u03ce\u03b4\u03b9\u03ba\u03b1\u03c2 \u039f\u03b4\u03b9\u03ba\u03ae\u03c2 \u039a\u03c5\u03ba\u03bb\u03bf\u03c6\u03bf\u03c1\u03af\u03b1\u03c2 \u039a\u03cd\u03c0\u03c1\u03bf\u03c5: \u03a4\u03b9 \u03bd\u03b1 \u039c\u03b5\u03bb\u03b5\u03c4\u03ae\u03c3\u03b5\u03c4\u03b5",
+    title_en: "The Cyprus Highway Code Book: What to Study",
+    excerpt_el:
+      "\u03a4\u03b9 \u03ba\u03b1\u03bb\u03cd\u03c0\u03c4\u03b5\u03b9 \u03bf \u039a\u03ce\u03b4\u03b9\u03ba\u03b1\u03c2 \u039f\u03b4\u03b9\u03ba\u03ae\u03c2 \u039a\u03c5\u03ba\u03bb\u03bf\u03c6\u03bf\u03c1\u03af\u03b1\u03c2 \u039a\u03cd\u03c0\u03c1\u03bf\u03c5, \u03c0\u03bf\u03cd \u03bd\u03b1 \u03c4\u03bf\u03bd \u03b2\u03c1\u03b5\u03af\u03c4\u03b5 \u03ba\u03b1\u03b9 \u03c0\u03bf\u03b9\u03b5\u03c2 \u03b5\u03bd\u03cc\u03c4\u03b7\u03c4\u03b5\u03c2 \u03b5\u03af\u03bd\u03b1\u03b9 \u03c3\u03b7\u03bc\u03b1\u03bd\u03c4\u03b9\u03ba\u03ad\u03c2.",
+    excerpt_en:
+      "What the Cyprus highway code book covers, where to get it, and which sections matter most for the theory test.",
+    metaDescription_el:
+      "\u039a\u03ce\u03b4\u03b9\u03ba\u03b1\u03c2 \u03bf\u03b4\u03b9\u03ba\u03ae\u03c2 \u03ba\u03c5\u03ba\u03bb\u03bf\u03c6\u03bf\u03c1\u03af\u03b1\u03c2 \u039a\u03cd\u03c0\u03c1\u03bf\u03c5. \u03a4\u03b9 \u03bd\u03b1 \u03bc\u03b5\u03bb\u03b5\u03c4\u03ae\u03c3\u03b5\u03c4\u03b5 \u03b3\u03b9\u03b1 \u03c4\u03b7 \u03b8\u03b5\u03c9\u03c1\u03b7\u03c4\u03b9\u03ba\u03ae \u03b5\u03be\u03ad\u03c4\u03b1\u03c3\u03b7.",
+    metaDescription_en:
+      "Cyprus highway code book guide. What to study for the theory test and where to get the official book.",
+    heroImagePath: "/blog/cyprus-highway-code-book/hero.jpg",
+    heroImageAlt_el:
+      "\u0391\u03bd\u03bf\u03b9\u03c7\u03c4\u03cc\u03c2 \u03ba\u03ce\u03b4\u03b9\u03ba\u03b1\u03c2 \u03bf\u03b4\u03b9\u03ba\u03ae\u03c2 \u03ba\u03c5\u03ba\u03bb\u03bf\u03c6\u03bf\u03c1\u03af\u03b1\u03c2 \u03c3\u03b5 \u03b3\u03c1\u03b1\u03c6\u03b5\u03af\u03bf",
+    heroImageAlt_en: "Open highway code book on a desk",
+    heroCaption_en: "Open highway code book on a desk, via Pexels.com",
+    heroCaption_el: "\u0391\u03bd\u03bf\u03b9\u03c7\u03c4\u03cc\u03c2 \u03ba\u03ce\u03b4\u03b9\u03ba\u03b1\u03c2 \u03bf\u03b4\u03b9\u03ba\u03ae\u03c2 \u03ba\u03c5\u03ba\u03bb\u03bf\u03c6\u03bf\u03c1\u03af\u03b1\u03c2 \u03c3\u03b5 \u03b3\u03c1\u03b1\u03c6\u03b5\u03af\u03bf, via Pexels.com",
+    publishedDate: "2026-07-28",
+    modifiedDate: "2026-07-28",
+    author: "Matthieu Tissot",
+    authorSlug: "matthieu",
+    relatedCity: null,
+    relatedSlugs: [],
+  },
+
 ];
 
 // --- hero image resolution -----------------------------------------------
