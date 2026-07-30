@@ -1,10 +1,10 @@
 {
-  "last_publish_date": "2026-07-28",
+  "last_publish_date": "2026-07-30",
   "settings": {
     "cadence_days": 2,
     "publish_mode": "auto",
     "consecutive_clean_approvals": 0,
-    "next_publish_at": "2026-07-30T20:55:00Z"
+    "next_publish_at": "2026-08-01T22:00:00Z"
   },
   "state": {
     "open_pr_number": null,
@@ -543,7 +543,7 @@
     {
       "id": "cyprus-driving-licence-number",
       "priority": 18,
-      "status": "pending",
+      "status": "published",
       "title_en": "Cyprus Driving Licence Number Explained",
       "title_el": "Ο Αριθμός Άδειας Οδήγησης Κύπρου Εξηγείται",
       "slug_en": "cyprus-driving-licence-number",
@@ -559,7 +559,7 @@
       "meta_description_el": "Αριθμός άδειας οδήγησης Κύπρου: τι σημαίνει κάθε πεδίο και πού να βρείτε τον αριθμό σας.",
       "hero_alt_en": "Close-up of a Cyprus driving licence card showing the number field",
       "hero_alt_el": "Κοντινό πλάνο κυπριακής άδειας οδήγησης με τον αριθμό",
-      "published_at": null,
+      "published_at": "2026-07-30",
       "pr_number": null,
       "pr_created_at": null
     },

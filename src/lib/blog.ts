@@ -838,6 +838,35 @@ export const BLOG_ARTICLES: readonly BlogArticle[] = [
     relatedSlugs: [],
   },
 
+  {
+    id: "cyprus-driving-licence-number",
+    slug_el: "arithmos-adeia-odigisis-kypros",
+    slug_en: "cyprus-driving-licence-number",
+    categoryId: "rules",
+    title_el: "\u039f \u0391\u03c1\u03b9\u03b8\u03bc\u03cc\u03c2 \u0386\u03b4\u03b5\u03b9\u03b1\u03c2 \u039f\u03b4\u03ae\u03b3\u03b7\u03c3\u03b7\u03c2 \u039a\u03cd\u03c0\u03c1\u03bf\u03c5 \u0395\u03be\u03b7\u03b3\u03b5\u03af\u03c4\u03b1\u03b9",
+    title_en: "Cyprus Driving Licence Number Explained",
+    excerpt_el:
+      "\u03a4\u03b9 \u03c3\u03b7\u03bc\u03b1\u03af\u03bd\u03bf\u03c5\u03bd \u03bf\u03b9 \u03b1\u03c1\u03b9\u03b8\u03bc\u03bf\u03af \u03ba\u03b1\u03b9 \u03c4\u03b1 \u03b3\u03c1\u03ac\u03bc\u03bc\u03b1\u03c4\u03b1 \u03c3\u03c4\u03b7\u03bd \u03ba\u03c5\u03c0\u03c1\u03b9\u03b1\u03ba\u03ae \u03ac\u03b4\u03b5\u03b9\u03b1 \u03bf\u03b4\u03ae\u03b3\u03b7\u03c3\u03b7\u03c2 \u03ba\u03b1\u03b9 \u03c0\u03bf\u03cd \u03bd\u03b1 \u03b2\u03c1\u03b5\u03af\u03c4\u03b5 \u03c4\u03bf\u03bd \u03b1\u03c1\u03b9\u03b8\u03bc\u03cc \u03c3\u03b1\u03c2.",
+    excerpt_en:
+      "What the numbers and letters on your Cyprus driving licence card mean \u2014 and how to find your licence number.",
+    metaDescription_el:
+      "\u0391\u03c1\u03b9\u03b8\u03bc\u03cc\u03c2 \u03ac\u03b4\u03b5\u03b9\u03b1\u03c2 \u03bf\u03b4\u03ae\u03b3\u03b7\u03c3\u03b7\u03c2 \u039a\u03cd\u03c0\u03c1\u03bf\u03c5: \u03c4\u03b9 \u03c3\u03b7\u03bc\u03b1\u03af\u03bd\u03b5\u03b9 \u03ba\u03ac\u03b8\u03b5 \u03c0\u03b5\u03b4\u03af\u03bf \u03ba\u03b1\u03b9 \u03c0\u03bf\u03cd \u03bd\u03b1 \u03b2\u03c1\u03b5\u03af\u03c4\u03b5 \u03c4\u03bf\u03bd \u03b1\u03c1\u03b9\u03b8\u03bc\u03cc \u03c3\u03b1\u03c2.",
+    metaDescription_en:
+      "Cyprus driving licence number explained. What each field means and how to find your licence number.",
+    heroImagePath: "/blog/cyprus-driving-licence-number/hero.jpg",
+    heroImageAlt_el:
+      "\u039a\u03bf\u03bd\u03c4\u03b9\u03bd\u03cc \u03c0\u03bb\u03ac\u03bd\u03bf \u03ba\u03c5\u03c0\u03c1\u03b9\u03b1\u03ba\u03ae\u03c2 \u03ac\u03b4\u03b5\u03b9\u03b1\u03c2 \u03bf\u03b4\u03ae\u03b3\u03b7\u03c3\u03b7\u03c2 \u03bc\u03b5 \u03c4\u03bf\u03bd \u03b1\u03c1\u03b9\u03b8\u03bc\u03cc",
+    heroImageAlt_en: "Close-up of a Cyprus driving licence card showing the number field",
+    heroCaption_en: "Close-up of a Cyprus driving licence card showing the number field, via Pexels.com",
+    heroCaption_el: "\u039a\u03bf\u03bd\u03c4\u03b9\u03bd\u03cc \u03c0\u03bb\u03ac\u03bd\u03bf \u03ba\u03c5\u03c0\u03c1\u03b9\u03b1\u03ba\u03ae\u03c2 \u03ac\u03b4\u03b5\u03b9\u03b1\u03c2 \u03bf\u03b4\u03ae\u03b3\u03b7\u03c3\u03b7\u03c2 \u03bc\u03b5 \u03c4\u03bf\u03bd \u03b1\u03c1\u03b9\u03b8\u03bc\u03cc, via Pexels.com",
+    publishedDate: "2026-07-30",
+    modifiedDate: "2026-07-30",
+    author: "Matthieu Tissot",
+    authorSlug: "matthieu",
+    relatedCity: null,
+    relatedSlugs: [],
+  },
+
 ];
 
 // --- hero image resolution -----------------------------------------------

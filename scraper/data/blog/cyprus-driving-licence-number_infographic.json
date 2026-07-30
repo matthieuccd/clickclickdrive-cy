@@ -1,0 +1,116 @@
+{
+  "el": {
+    "template": "compare",
+    "title": "Τα βασικά πεδία της κυπριακής άδειας οδήγησης",
+    "caption": "Τα πεδία 1-5 φέρουν τα προσωπικά στοιχεία, το πεδίο 5 τον μοναδικό αριθμό άδειας και τα πεδία 9-11 τις κατηγορίες οχημάτων.",
+    "cards": [
+      {
+        "accent": "#22c55e",
+        "heading": [
+          "Πεδία 1-3",
+          "Προσωπικά στοιχεία"
+        ],
+        "body": [
+          [
+            "Επώνυμο (1)",
+            "Όνομα (2)"
+          ],
+          [
+            "Ημερομηνία και τόπος γέννησης (3)"
+          ]
+        ]
+      },
+      {
+        "accent": "#f59e0b",
+        "heading": [
+          "Πεδία 4α-5",
+          "Έκδοση και αριθμός"
+        ],
+        "body": [
+          [
+            "Ημ. έκδοσης (4α)",
+            "Ημ. λήξης (4β)",
+            "Αρχή έκδοσης ΤΟΜ (4γ)"
+          ],
+          [
+            "Μοναδικός αριθμός άδειας (5)"
+          ]
+        ]
+      },
+      {
+        "accent": "#354354",
+        "heading": [
+          "Πεδία 9-11",
+          "Κατηγορίες οχημάτων"
+        ],
+        "body": [
+          [
+            "Εξουσιοδοτημένες κατηγορίες (9)",
+            "π.χ. B, A, AM"
+          ],
+          [
+            "Ημ. πρώτης έκδοσης (10)",
+            "Ημ. λήξης κατηγορίας (11)"
+          ]
+        ]
+      }
+    ]
+  },
+  "en": {
+    "template": "compare",
+    "title": "Key Fields on Your Cyprus Driving Licence",
+    "caption": "Fields 1-5 carry personal details, field 5 holds the unique licence number, and fields 9-11 show vehicle categories.",
+    "cards": [
+      {
+        "accent": "#22c55e",
+        "heading": [
+          "Fields 1-3",
+          "Personal Details"
+        ],
+        "body": [
+          [
+            "Surname (1)",
+            "Given name(s) (2)"
+          ],
+          [
+            "Date and place of birth (3)"
+          ]
+        ]
+      },
+      {
+        "accent": "#f59e0b",
+        "heading": [
+          "Fields 4a-5",
+          "Issue and Number"
+        ],
+        "body": [
+          [
+            "Date of issue (4a)",
+            "Expiry date (4b)",
+            "Issuing authority TOM (4c)"
+          ],
+          [
+            "Unique licence number (5)"
+          ]
+        ]
+      },
+      {
+        "accent": "#354354",
+        "heading": [
+          "Fields 9-11",
+          "Vehicle Categories"
+        ],
+        "body": [
+          [
+            "Authorised categories (9)",
+            "e.g. B, A, AM"
+          ],
+          [
+            "Date of first issue (10)",
+            "Category expiry date (11)"
+          ]
+        ]
+      }
+    ]
+  }
+}
