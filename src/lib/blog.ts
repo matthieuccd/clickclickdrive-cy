@@ -867,6 +867,35 @@ export const BLOG_ARTICLES: readonly BlogArticle[] = [
     relatedSlugs: [],
   },
 
+  {
+    id: "driving-cyprus-foreign-eu-licence",
+    slug_el: "odigisi-kypros-kseniki-ee-adeia",
+    slug_en: "driving-cyprus-foreign-eu-licence",
+    categoryId: "foreigners",
+    title_el: "\u039f\u03b4\u03ae\u03b3\u03b7\u03c3\u03b7 \u03c3\u03c4\u03b7\u03bd \u039a\u03cd\u03c0\u03c1\u03bf \u03bc\u03b5 \u039e\u03ad\u03bd\u03b7 \u03ae \u0395\u03c5\u03c1\u03c9\u03c0\u03b1\u03ca\u03ba\u03ae \u0386\u03b4\u03b5\u03b9\u03b1",
+    title_en: "Driving in Cyprus With a Foreign or EU Licence",
+    excerpt_el:
+      "\u03a4\u03b9 \u03bc\u03c0\u03bf\u03c1\u03bf\u03cd\u03bd \u03ba\u03b1\u03b9 \u03c4\u03b9 \u03b4\u03b5\u03bd \u03bc\u03c0\u03bf\u03c1\u03bf\u03cd\u03bd \u03bd\u03b1 \u03ba\u03ac\u03bd\u03bf\u03c5\u03bd \u03ba\u03ac\u03c4\u03bf\u03c7\u03bf\u03b9 \u03be\u03ad\u03bd\u03b7\u03c2 \u03ae \u03b5\u03c5\u03c1\u03c9\u03c0\u03b1\u03ca\u03ba\u03ae\u03c2 \u03ac\u03b4\u03b5\u03b9\u03b1\u03c2 \u03c3\u03c4\u03b7\u03bd \u039a\u03cd\u03c0\u03c1\u03bf.",
+    excerpt_en:
+      "What foreign and EU licence holders can and cannot do when driving in Cyprus \u2014 and when you must switch.",
+    metaDescription_el:
+      "\u039f\u03b4\u03ae\u03b3\u03b7\u03c3\u03b7 \u03c3\u03c4\u03b7\u03bd \u039a\u03cd\u03c0\u03c1\u03bf \u03bc\u03b5 \u03be\u03ad\u03bd\u03b7 \u03ae \u03b5\u03c5\u03c1\u03c9\u03c0\u03b1\u03ca\u03ba\u03ae \u03ac\u03b4\u03b5\u03b9\u03b1. \u039a\u03b1\u03bd\u03cc\u03bd\u03b5\u03c2, \u03c7\u03c1\u03bf\u03bd\u03b9\u03ba\u03ac \u03cc\u03c1\u03b9\u03b1 \u03ba\u03b1\u03b9 \u03c0\u03cc\u03c4\u03b5 \u03c7\u03c1\u03b5\u03b9\u03ac\u03b6\u03b5\u03c3\u03c4\u03b5 \u03ba\u03c5\u03c0\u03c1\u03b9\u03b1\u03ba\u03ae.",
+    metaDescription_en:
+      "Driving in Cyprus with a foreign or EU licence. Rules, time limits, and when you need a Cypriot licence.",
+    heroImagePath: "/blog/driving-cyprus-foreign-eu-licence/hero.jpg",
+    heroImageAlt_el:
+      "\u039e\u03ad\u03bd\u03b7 \u03ac\u03b4\u03b5\u03b9\u03b1 \u03bf\u03b4\u03ae\u03b3\u03b7\u03c3\u03b7\u03c2 \u03c3\u03b5 \u03ba\u03ac\u03b8\u03b9\u03c3\u03bc\u03b1 \u03b1\u03c5\u03c4\u03bf\u03ba\u03b9\u03bd\u03ae\u03c4\u03bf\u03c5 \u03c3\u03c4\u03b7\u03bd \u039a\u03cd\u03c0\u03c1\u03bf",
+    heroImageAlt_en: "Foreign driving licence on a car seat in Cyprus",
+    heroCaption_en: "Foreign driving licence on a car seat in Cyprus, via Pexels.com",
+    heroCaption_el: "\u039e\u03ad\u03bd\u03b7 \u03ac\u03b4\u03b5\u03b9\u03b1 \u03bf\u03b4\u03ae\u03b3\u03b7\u03c3\u03b7\u03c2 \u03c3\u03b5 \u03ba\u03ac\u03b8\u03b9\u03c3\u03bc\u03b1 \u03b1\u03c5\u03c4\u03bf\u03ba\u03b9\u03bd\u03ae\u03c4\u03bf\u03c5 \u03c3\u03c4\u03b7\u03bd \u039a\u03cd\u03c0\u03c1\u03bf, via Pexels.com",
+    publishedDate: "2026-08-01",
+    modifiedDate: "2026-08-01",
+    author: "Matthieu Tissot",
+    authorSlug: "matthieu",
+    relatedCity: null,
+    relatedSlugs: [],
+  },
+
 ];
 
 // --- hero image resolution -----------------------------------------------

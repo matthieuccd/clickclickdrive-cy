@@ -1,0 +1,116 @@
+{
+  "el": {
+    "template": "compare",
+    "title": "Ποιοι κανόνες ισχύουν για την άδειά σας στην Κύπρο;",
+    "caption": "Τρεις κατηγορίες κατόχων άδειας και τι ισχύει για κάθε μία κατά την οδήγηση στην Κύπρο.",
+    "cards": [
+      {
+        "accent": "#22c55e",
+        "heading": [
+          "Άδεια ΕΕ / ΕΟΧ"
+        ],
+        "body": [
+          [
+            "Ισχύει χωρίς ανταλλαγή",
+            "για μη κατοίκους"
+          ],
+          [
+            "Ανταλλαγή απαιτείται",
+            "μετά τη μόνιμη εγκατάσταση"
+          ]
+        ]
+      },
+      {
+        "accent": "#f59e0b",
+        "heading": [
+          "Βρετανική Άδεια",
+          "(μετά το Brexit)"
+        ],
+        "body": [
+          [
+            "Δεν αντιμετωπίζεται",
+            "ως ευρωπαϊκή πλέον"
+          ],
+          [
+            "Ισχύουν κανόνες",
+            "τρίτης χώρας"
+          ]
+        ]
+      },
+      {
+        "accent": "#354354",
+        "heading": [
+          "Άδεια Τρίτης Χώρας",
+          "+ ΔΔΟ"
+        ],
+        "body": [
+          [
+            "Έγκυρο έως 12 μήνες",
+            "από είσοδο στην Κύπρο"
+          ],
+          [
+            "Επικοινωνήστε με ΤΟΜ",
+            "για ανταλλαγή ή εξέταση"
+          ]
+        ]
+      }
+    ]
+  },
+  "en": {
+    "template": "compare",
+    "title": "Which Rules Apply to Your Licence in Cyprus?",
+    "caption": "Three licence-holder categories and what applies to each when driving in Cyprus.",
+    "cards": [
+      {
+        "accent": "#22c55e",
+        "heading": [
+          "EU / EEA Licence"
+        ],
+        "body": [
+          [
+            "Valid without exchange",
+            "for non-residents"
+          ],
+          [
+            "Exchange required",
+            "after establishing residence"
+          ]
+        ]
+      },
+      {
+        "accent": "#f59e0b",
+        "heading": [
+          "UK Licence",
+          "(post-Brexit)"
+        ],
+        "body": [
+          [
+            "No longer treated",
+            "as an EU licence"
+          ],
+          [
+            "Third-country rules",
+            "now apply"
+          ]
+        ]
+      },
+      {
+        "accent": "#354354",
+        "heading": [
+          "Third-Country Licence",
+          "+ IDP"
+        ],
+        "body": [
+          [
+            "Valid up to 12 months",
+            "from date of entry"
+          ],
+          [
+            "Contact ΤΟΜ",
+            "for exchange or test path"
+          ]
+        ]
+      }
+    ]
+  }
+}
