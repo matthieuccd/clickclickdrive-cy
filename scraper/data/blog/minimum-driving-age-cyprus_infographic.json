@@ -1,0 +1,56 @@
+{
+  "el": {
+    "template": "timeline",
+    "title": "Ηλικίες Άδειας Οδήγησης στην Κύπρο",
+    "caption": "Από τα 16 ως τα 24, κάθε ηλικία ανοίγει νέες κατηγορίες άδειας οδήγησης στην Κύπρο.",
+    "milestones": [
+      {
+        "label": "16 ετών",
+        "sub": "AM, A1, B1"
+      },
+      {
+        "label": "18 ετών",
+        "sub": "B, A2, C1"
+      },
+      {
+        "label": "20 ετών",
+        "sub": "Α (προοδευτική πρόσβαση)"
+      },
+      {
+        "label": "21 ετών",
+        "sub": "C, D1, D"
+      },
+      {
+        "label": "24 ετών",
+        "sub": "Α (άμεση πρόσβαση)"
+      }
+    ]
+  },
+  "en": {
+    "template": "timeline",
+    "title": "Cyprus Driving Licence Ages at a Glance",
+    "caption": "From age 16 to 24, each milestone unlocks new driving licence categories in Cyprus.",
+    "milestones": [
+      {
+        "label": "Age 16",
+        "sub": "AM, A1, B1"
+      },
+      {
+        "label": "Age 18",
+        "sub": "B, A2, C1"
+      },
+      {
+        "label": "Age 20",
+        "sub": "A (progressive access)"
+      },
+      {
+        "label": "Age 21",
+        "sub": "C, D1, D"
+      },
+      {
+        "label": "Age 24",
+        "sub": "A (direct access)"
+      }
+    ]
+  }
+}

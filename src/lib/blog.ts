@@ -896,6 +896,35 @@ export const BLOG_ARTICLES: readonly BlogArticle[] = [
     relatedSlugs: [],
   },
 
+  {
+    id: "minimum-driving-age-cyprus",
+    slug_el: "elaxisti-ilikia-odigisis-kypros",
+    slug_en: "minimum-driving-age-cyprus",
+    categoryId: "rules",
+    title_el: "\u0395\u03bb\u03ac\u03c7\u03b9\u03c3\u03c4\u03b7 \u0397\u03bb\u03b9\u03ba\u03af\u03b1 \u039f\u03b4\u03ae\u03b3\u03b7\u03c3\u03b7\u03c2 \u03c3\u03c4\u03b7\u03bd \u039a\u03cd\u03c0\u03c1\u03bf \u03b1\u03bd\u03ac \u039a\u03b1\u03c4\u03b7\u03b3\u03bf\u03c1\u03af\u03b1",
+    title_en: "Minimum Driving Age in Cyprus by Category",
+    excerpt_el:
+      "\u0395\u03bb\u03ac\u03c7\u03b9\u03c3\u03c4\u03b7 \u03b7\u03bb\u03b9\u03ba\u03af\u03b1 \u03b3\u03b9\u03b1 \u03ba\u03ac\u03b8\u03b5 \u03ba\u03b1\u03c4\u03b7\u03b3\u03bf\u03c1\u03af\u03b1 \u03ac\u03b4\u03b5\u03b9\u03b1\u03c2 \u03bf\u03b4\u03ae\u03b3\u03b7\u03c3\u03b7\u03c2 \u03c3\u03c4\u03b7\u03bd \u039a\u03cd\u03c0\u03c1\u03bf. \u0391\u03c0\u03cc \u03bc\u03bf\u03c4\u03bf\u03c0\u03bf\u03b4\u03ae\u03bb\u03b1\u03c4\u03b1 \u03c3\u03c4\u03b1 16 \u03c9\u03c2 \u03b2\u03b1\u03c1\u03ad\u03b1 \u03bf\u03c7\u03ae\u03bc\u03b1\u03c4\u03b1.",
+    excerpt_en:
+      "Minimum ages for every driving licence category in Cyprus \u2014 from mopeds at 16 to heavy vehicles at 21.",
+    metaDescription_el:
+      "\u0395\u03bb\u03ac\u03c7\u03b9\u03c3\u03c4\u03b7 \u03b7\u03bb\u03b9\u03ba\u03af\u03b1 \u03bf\u03b4\u03ae\u03b3\u03b7\u03c3\u03b7\u03c2 \u039a\u03cd\u03c0\u03c1\u03bf\u03c2 \u03b1\u03bd\u03ac \u03ba\u03b1\u03c4\u03b7\u03b3\u03bf\u03c1\u03af\u03b1. 16 \u03b3\u03b9\u03b1 \u0391\u039c, 18 \u03b3\u03b9\u03b1 \u0392, 21 \u03b3\u03b9\u03b1 \u0393 \u03ba\u03b1\u03b9 \u0394.",
+    metaDescription_en:
+      "Minimum driving age in Cyprus by licence category. Age 16 for AM, 18 for B, 21 for C and D.",
+    heroImagePath: "/blog/minimum-driving-age-cyprus/hero.jpg",
+    heroImageAlt_el:
+      "\u039d\u03ad\u03bf \u03ac\u03c4\u03bf\u03bc\u03bf \u03c0\u03b1\u03af\u03c1\u03bd\u03b5\u03b9 \u03ba\u03bb\u03b5\u03b9\u03b4\u03b9\u03ac \u03b1\u03c5\u03c4\u03bf\u03ba\u03b9\u03bd\u03ae\u03c4\u03bf\u03c5 \u03b3\u03b9\u03b1 \u03c0\u03c1\u03ce\u03c4\u03b7 \u03c6\u03bf\u03c1\u03ac",
+    heroImageAlt_en: "Young person getting car keys for the first time",
+    heroCaption_en: "Young person getting car keys for the first time, via Pexels.com",
+    heroCaption_el: "\u039d\u03ad\u03bf \u03ac\u03c4\u03bf\u03bc\u03bf \u03c0\u03b1\u03af\u03c1\u03bd\u03b5\u03b9 \u03ba\u03bb\u03b5\u03b9\u03b4\u03b9\u03ac \u03b1\u03c5\u03c4\u03bf\u03ba\u03b9\u03bd\u03ae\u03c4\u03bf\u03c5 \u03b3\u03b9\u03b1 \u03c0\u03c1\u03ce\u03c4\u03b7 \u03c6\u03bf\u03c1\u03ac, via Pexels.com",
+    publishedDate: "2026-08-04",
+    modifiedDate: "2026-08-04",
+    author: "Matthieu Tissot",
+    authorSlug: "matthieu",
+    relatedCity: null,
+    relatedSlugs: [],
+  },
+
 ];
 
 // --- hero image resolution -----------------------------------------------
