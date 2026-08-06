@@ -1,10 +1,10 @@
 {
-  "last_publish_date": "2026-08-04",
+  "last_publish_date": "2026-08-06",
   "settings": {
     "cadence_days": 2,
     "publish_mode": "auto",
     "consecutive_clean_approvals": 0,
-    "next_publish_at": "2026-08-06T00:10:00Z"
+    "next_publish_at": "2026-08-08T01:15:00Z"
   },
   "state": {
     "open_pr_number": null,
@@ -612,7 +612,7 @@
     {
       "id": "how-choose-driving-school-cyprus",
       "priority": 21,
-      "status": "pending",
+      "status": "published",
       "title_en": "How to Choose a Driving School in Cyprus",
       "title_el": "Πώς να Επιλέξετε Σχολή Οδηγών στην Κύπρο",
       "slug_en": "how-choose-driving-school-cyprus",
@@ -628,7 +628,7 @@
       "meta_description_el": "Πώς να επιλέξετε σχολή οδηγών στην Κύπρο. Τι να ελέγξετε πριν εγγραφείτε.",
       "hero_alt_en": "Student shaking hands with driving instructor outside a driving school",
       "hero_alt_el": "Μαθητής χαιρετά εκπαιδευτή έξω από σχολή οδηγών",
-      "published_at": null,
+      "published_at": "2026-08-06",
       "pr_number": null,
       "pr_created_at": null
     },

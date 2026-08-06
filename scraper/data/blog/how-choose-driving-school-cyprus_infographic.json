@@ -1,0 +1,66 @@
+{
+  "el": {
+    "template": "checklist",
+    "title": "Τι να Ελέγξετε Πριν Επιλέξετε Σχολή Οδηγών",
+    "caption": "Χρησιμοποιήστε αυτή τη λίστα για να συγκρίνετε σχολές οδηγών στην Κύπρο πριν εγγραφείτε.",
+    "items": [
+      {
+        "icon": "📋",
+        "label": "Άδεια ΤΟΜ",
+        "sub": "Βεβαιωθείτε ότι η σχολή είναι αδειοδοτημένη από το Τμήμα Οδικών Μεταφορών"
+      },
+      {
+        "icon": "✅",
+        "label": "Ποσοστό Επιτυχίας",
+        "sub": "Ζητήστε από τη σχολή να σας δώσει το δικό της ποσοστό επιτυχίας"
+      },
+      {
+        "icon": "👨‍🏫",
+        "label": "Προσόντα Εκπαιδευτή",
+        "sub": "Ελέγξτε ότι ο εκπαιδευτής έχει έγκυρη άδεια από το ΤΟΜ"
+      },
+      {
+        "icon": "💶",
+        "label": "Τι Περιλαμβάνει η Τιμή",
+        "sub": "Ρωτήστε αν θεωρητικά, πρακτικά και τέλη εξέτασης είναι στο πακέτο"
+      },
+      {
+        "icon": "🌍",
+        "label": "Γλώσσα Διδασκαλίας",
+        "sub": "Επιλέξτε σχολή που προσφέρει μαθήματα στη γλώσσα σας"
+      }
+    ]
+  },
+  "en": {
+    "template": "checklist",
+    "title": "What to Check Before Choosing a Driving School",
+    "caption": "Use this checklist to compare Cyprus driving schools before you commit.",
+    "items": [
+      {
+        "icon": "📋",
+        "label": "TOM Licence",
+        "sub": "Confirm the school is licensed by the Department of Road Transport"
+      },
+      {
+        "icon": "✅",
+        "label": "Pass Rate",
+        "sub": "Ask the school to share its own reported pass rate"
+      },
+      {
+        "icon": "👨‍🏫",
+        "label": "Instructor Credentials",
+        "sub": "Check the instructor holds a valid TOM instructor licence"
+      },
+      {
+        "icon": "💶",
+        "label": "What the Price Includes",
+        "sub": "Ask if theory, practical lessons, and test fees are bundled"
+      },
+      {
+        "icon": "🌍",
+        "label": "Language of Instruction",
+        "sub": "Choose a school that teaches in a language you are comfortable with"
+      }
+    ]
+  }
+}
