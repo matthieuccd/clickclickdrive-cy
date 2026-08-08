@@ -954,6 +954,35 @@ export const BLOG_ARTICLES: readonly BlogArticle[] = [
     relatedSlugs: [],
   },
 
+  {
+    id: "motorcycle-licence-cyprus",
+    slug_el: "diploma-motosykletas-kypros",
+    slug_en: "motorcycle-licence-cyprus",
+    categoryId: "rules",
+    title_el: "\u03a0\u03ce\u03c2 \u03bd\u03b1 \u0392\u03b3\u03ac\u03bb\u03b5\u03c4\u03b5 \u0394\u03af\u03c0\u03bb\u03c9\u03bc\u03b1 \u039c\u03bf\u03c4\u03bf\u03c3\u03c5\u03ba\u03bb\u03ad\u03c4\u03b1\u03c2 \u03c3\u03c4\u03b7\u03bd \u039a\u03cd\u03c0\u03c1\u03bf (\u0391, \u03911, \u03912, \u0391\u039c)",
+    title_en: "How to Get a Motorcycle Licence in Cyprus (A, A1, A2, AM)",
+    excerpt_el:
+      "\u039f\u03b9 \u03c4\u03ad\u03c3\u03c3\u03b5\u03c1\u03b9\u03c2 \u03ba\u03b1\u03c4\u03b7\u03b3\u03bf\u03c1\u03af\u03b5\u03c2 \u03bc\u03bf\u03c4\u03bf\u03c3\u03c5\u03ba\u03bb\u03ad\u03c4\u03b1\u03c2 \u03c3\u03c4\u03b7\u03bd \u039a\u03cd\u03c0\u03c1\u03bf. \u0391\u039c, \u03911, \u03912 \u03ba\u03b1\u03b9 \u0391 \u03ba\u03b1\u03b9 \u03c0\u03ce\u03c2 \u03bd\u03b1 \u03c0\u03c1\u03bf\u03c7\u03c9\u03c1\u03ae\u03c3\u03b5\u03c4\u03b5 \u03bc\u03b5\u03c4\u03b1\u03be\u03cd \u03c4\u03bf\u03c5\u03c2.",
+    excerpt_en:
+      "The four motorcycle licence categories in Cyprus explained \u2014 AM, A1, A2, and A \u2014 and how to progress between them.",
+    metaDescription_el:
+      "\u0394\u03af\u03c0\u03bb\u03c9\u03bc\u03b1 \u03bc\u03bf\u03c4\u03bf\u03c3\u03c5\u03ba\u03bb\u03ad\u03c4\u03b1\u03c2 \u03c3\u03c4\u03b7\u03bd \u039a\u03cd\u03c0\u03c1\u03bf. \u039a\u03b1\u03c4\u03b7\u03b3\u03bf\u03c1\u03af\u03b5\u03c2 \u0391\u039c, \u03911, \u03912, \u0391 \u03bc\u03b5 \u03b7\u03bb\u03b9\u03ba\u03b9\u03b1\u03ba\u03ad\u03c2 \u03b1\u03c0\u03b1\u03b9\u03c4\u03ae\u03c3\u03b5\u03b9\u03c2.",
+    metaDescription_en:
+      "Motorcycle licence in Cyprus. Categories AM, A1, A2, A explained with age requirements and how to apply.",
+    heroImagePath: "/blog/motorcycle-licence-cyprus/hero.jpg",
+    heroImageAlt_el:
+      "\u0391\u03bd\u03b1\u03b2\u03ac\u03c4\u03b7\u03c2 \u03bc\u03bf\u03c4\u03bf\u03c3\u03c5\u03ba\u03bb\u03ad\u03c4\u03b1\u03c2 \u03c3\u03b5 \u03ba\u03c5\u03c0\u03c1\u03b9\u03b1\u03ba\u03cc \u03b4\u03c1\u03cc\u03bc\u03bf",
+    heroImageAlt_en: "Motorcycle rider on a Cyprus road",
+    heroCaption_en: "Motorcycle rider on a Cyprus road, via Pexels.com",
+    heroCaption_el: "\u0391\u03bd\u03b1\u03b2\u03ac\u03c4\u03b7\u03c2 \u03bc\u03bf\u03c4\u03bf\u03c3\u03c5\u03ba\u03bb\u03ad\u03c4\u03b1\u03c2 \u03c3\u03b5 \u03ba\u03c5\u03c0\u03c1\u03b9\u03b1\u03ba\u03cc \u03b4\u03c1\u03cc\u03bc\u03bf, via Pexels.com",
+    publishedDate: "2026-08-08",
+    modifiedDate: "2026-08-08",
+    author: "Matthieu Tissot",
+    authorSlug: "matthieu",
+    relatedCity: null,
+    relatedSlugs: [],
+  },
+
 ];
 
 // --- hero image resolution -----------------------------------------------

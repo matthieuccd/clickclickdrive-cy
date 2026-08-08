@@ -1,0 +1,56 @@
+{
+  "el": {
+    "template": "timeline",
+    "title": "Από ΑΜ στην Πλήρη Άδεια Α: Χρονολόγιο",
+    "caption": "Τα ελάχιστα ηλικιακά ορόσημα για την απόκτηση κάθε κατηγορίας μοτοσυκλέτας στην Κύπρο.",
+    "milestones": [
+      {
+        "label": "Ηλικία 16: ΑΜ",
+        "sub": "Μοφά έως 45 km/h"
+      },
+      {
+        "label": "Ηλικία 16: Α1",
+        "sub": "Μοτοσυκλέτες έως 125cc"
+      },
+      {
+        "label": "Ηλικία 18: Α2",
+        "sub": "Έως 35 kW ισχύς"
+      },
+      {
+        "label": "Ηλικία 21: Α (προοδευτικά)",
+        "sub": "2 χρόνια με Α2"
+      },
+      {
+        "label": "Ηλικία 24: Α (άμεσα)",
+        "sub": "Χωρίς προϋπόθεση Α2"
+      }
+    ]
+  },
+  "en": {
+    "template": "timeline",
+    "title": "From AM to Full A Licence: A Timeline",
+    "caption": "The minimum age milestones for each motorcycle licence category in Cyprus.",
+    "milestones": [
+      {
+        "label": "Age 16: AM",
+        "sub": "Mopeds up to 45 km/h"
+      },
+      {
+        "label": "Age 16: A1",
+        "sub": "Motorcycles up to 125cc"
+      },
+      {
+        "label": "Age 18: A2",
+        "sub": "Up to 35 kW power"
+      },
+      {
+        "label": "Age 21: A (progressive)",
+        "sub": "2 years holding A2"
+      },
+      {
+        "label": "Age 24: A (direct)",
+        "sub": "Without prior A2 required"
+      }
+    ]
+  }
+}
