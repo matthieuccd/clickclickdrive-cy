@@ -1,10 +1,10 @@
 {
-  "last_publish_date": "2026-08-08",
+  "last_publish_date": "2026-08-10",
   "settings": {
     "cadence_days": 2,
     "publish_mode": "auto",
     "consecutive_clean_approvals": 0,
-    "next_publish_at": "2026-08-10T02:20:00Z"
+    "next_publish_at": "2026-08-12T03:25:00Z"
   },
   "state": {
     "open_pr_number": null,
@@ -658,7 +658,7 @@
     {
       "id": "a2-motorcycle-licence-cyprus",
       "priority": 23,
-      "status": "pending",
+      "status": "published",
       "title_en": "The A2 Motorcycle Licence in Cyprus Explained",
       "title_el": "Η Άδεια Μοτοσυκλέτας Α2 στην Κύπρο",
       "slug_en": "a2-motorcycle-licence-cyprus",
@@ -674,7 +674,7 @@
       "meta_description_el": "Άδεια μοτοσυκλέτας Α2 Κύπρος. Ελάχιστη ηλικία 19, όρια ισχύος και αναβάθμιση σε Α.",
       "hero_alt_en": "Young rider on a mid-size motorcycle",
       "hero_alt_el": "Νέος αναβάτης σε μεσαίου μεγέθους μοτοσυκλέτα",
-      "published_at": null,
+      "published_at": "2026-08-10",
       "pr_number": null,
       "pr_created_at": null
     },

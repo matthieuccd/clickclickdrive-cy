@@ -983,6 +983,35 @@ export const BLOG_ARTICLES: readonly BlogArticle[] = [
     relatedSlugs: [],
   },
 
+  {
+    id: "a2-motorcycle-licence-cyprus",
+    slug_el: "adeia-motosykletas-a2-kypros",
+    slug_en: "a2-motorcycle-licence-cyprus",
+    categoryId: "rules",
+    title_el: "\u0397 \u0386\u03b4\u03b5\u03b9\u03b1 \u039c\u03bf\u03c4\u03bf\u03c3\u03c5\u03ba\u03bb\u03ad\u03c4\u03b1\u03c2 \u03912 \u03c3\u03c4\u03b7\u03bd \u039a\u03cd\u03c0\u03c1\u03bf",
+    title_en: "The A2 Motorcycle Licence in Cyprus Explained",
+    excerpt_el:
+      "\u0397 \u03ba\u03b1\u03c4\u03b7\u03b3\u03bf\u03c1\u03af\u03b1 \u03912 \u03c3\u03c4\u03b7\u03bd \u039a\u03cd\u03c0\u03c1\u03bf. \u03a4\u03b9 \u03bc\u03bf\u03c4\u03bf\u03c3\u03c5\u03ba\u03bb\u03ad\u03c4\u03b5\u03c2 \u03ba\u03b1\u03bb\u03cd\u03c0\u03c4\u03b5\u03b9, \u03b7 \u03b5\u03bb\u03ac\u03c7\u03b9\u03c3\u03c4\u03b7 \u03b7\u03bb\u03b9\u03ba\u03af\u03b1 \u03ba\u03b1\u03b9 \u03c0\u03ce\u03c2 \u03bd\u03b1 \u03b1\u03bd\u03b1\u03b2\u03b1\u03b8\u03bc\u03b9\u03c3\u03c4\u03b5\u03af\u03c4\u03b5 \u03c3\u03b5 \u0391.",
+    excerpt_en:
+      "The A2 category in Cyprus \u2014 what bikes it covers, the minimum age, and how to upgrade to a full A licence.",
+    metaDescription_el:
+      "\u0386\u03b4\u03b5\u03b9\u03b1 \u03bc\u03bf\u03c4\u03bf\u03c3\u03c5\u03ba\u03bb\u03ad\u03c4\u03b1\u03c2 \u03912 \u039a\u03cd\u03c0\u03c1\u03bf\u03c2. \u0395\u03bb\u03ac\u03c7\u03b9\u03c3\u03c4\u03b7 \u03b7\u03bb\u03b9\u03ba\u03af\u03b1 19, \u03cc\u03c1\u03b9\u03b1 \u03b9\u03c3\u03c7\u03cd\u03bf\u03c2 \u03ba\u03b1\u03b9 \u03b1\u03bd\u03b1\u03b2\u03ac\u03b8\u03bc\u03b9\u03c3\u03b7 \u03c3\u03b5 \u0391.",
+    metaDescription_en:
+      "A2 motorcycle licence Cyprus. Age 19 minimum, power limits, and how to progress to a full A licence.",
+    heroImagePath: "/blog/a2-motorcycle-licence-cyprus/hero.jpg",
+    heroImageAlt_el:
+      "\u039d\u03ad\u03bf\u03c2 \u03b1\u03bd\u03b1\u03b2\u03ac\u03c4\u03b7\u03c2 \u03c3\u03b5 \u03bc\u03b5\u03c3\u03b1\u03af\u03bf\u03c5 \u03bc\u03b5\u03b3\u03ad\u03b8\u03bf\u03c5\u03c2 \u03bc\u03bf\u03c4\u03bf\u03c3\u03c5\u03ba\u03bb\u03ad\u03c4\u03b1",
+    heroImageAlt_en: "Young rider on a mid-size motorcycle",
+    heroCaption_en: "Young rider on a mid-size motorcycle, via Pexels.com",
+    heroCaption_el: "\u039d\u03ad\u03bf\u03c2 \u03b1\u03bd\u03b1\u03b2\u03ac\u03c4\u03b7\u03c2 \u03c3\u03b5 \u03bc\u03b5\u03c3\u03b1\u03af\u03bf\u03c5 \u03bc\u03b5\u03b3\u03ad\u03b8\u03bf\u03c5\u03c2 \u03bc\u03bf\u03c4\u03bf\u03c3\u03c5\u03ba\u03bb\u03ad\u03c4\u03b1, via Pexels.com",
+    publishedDate: "2026-08-10",
+    modifiedDate: "2026-08-10",
+    author: "Matthieu Tissot",
+    authorSlug: "matthieu",
+    relatedCity: null,
+    relatedSlugs: [],
+  },
+
 ];
 
 // --- hero image resolution -----------------------------------------------

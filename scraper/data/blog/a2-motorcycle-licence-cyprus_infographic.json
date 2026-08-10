@@ -1,0 +1,56 @@
+{
+  "el": {
+    "template": "timeline",
+    "title": "Το Μονοπάτι Αδειοδότησης Μοτοσυκλέτας στην Κύπρο",
+    "caption": "Από τα 18 έτη έως την πλήρη άδεια Α, βήμα-βήμα σύμφωνα με την κυπριακή νομοθεσία.",
+    "milestones": [
+      {
+        "label": "Ηλικία 18 ετών",
+        "sub": "Επιλέξιμος για Α2"
+      },
+      {
+        "label": "Εκπαίδευση ΜΒΤ",
+        "sub": "Σε αδειοδοτημένη σχολή"
+      },
+      {
+        "label": "Θεωρία και Πρακτική",
+        "sub": "Εξετάσεις στο ΤΟΜ"
+      },
+      {
+        "label": "Κατηγορία Α2",
+        "sub": "Έως 35 kW, 2+ χρόνια"
+      },
+      {
+        "label": "Αναβάθμιση σε Α",
+        "sub": "Πρακτική εξέταση μόνο"
+      }
+    ]
+  },
+  "en": {
+    "template": "timeline",
+    "title": "Cyprus Motorcycle Licence Progression Path",
+    "caption": "From age 18 to a full Category A licence, step by step under Cyprus law.",
+    "milestones": [
+      {
+        "label": "Age 18",
+        "sub": "Eligible for A2"
+      },
+      {
+        "label": "MBT Training",
+        "sub": "At a licensed school"
+      },
+      {
+        "label": "Theory and Practical",
+        "sub": "Tests at TOM"
+      },
+      {
+        "label": "A2 Licence Held",
+        "sub": "Up to 35 kW, 2+ years"
+      },
+      {
+        "label": "Upgrade to Full A",
+        "sub": "Practical test only"
+      }
+    ]
+  }
+}
