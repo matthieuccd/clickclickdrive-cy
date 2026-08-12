@@ -1,0 +1,96 @@
+{
+  "el": {
+    "template": "flow",
+    "title": "Πώς να αποκτήσετε εκπαιδευτική άδεια στην Κύπρο",
+    "caption": "Τέσσερα βήματα για να εκδώσετε την εκπαιδευτική άδεια οδήγησης πριν ξεκινήσετε μαθήματα.",
+    "items": [
+      {
+        "num": "1",
+        "title": [
+          "Ιατρικές εξετάσεις"
+        ],
+        "sub": [
+          "Επισκεφθείτε γιατρό για ιατρικό πιστοποιητικό",
+          "και οφθαλμίατρο για εξέταση όρασης"
+        ]
+      },
+      {
+        "num": "2",
+        "title": [
+          "Συγκέντρωση εγγράφων"
+        ],
+        "sub": [
+          "Ταυτότητα ή διαβατήριο, φωτογραφίες",
+          "ιατρικό και οφθαλμολογικό πιστοποιητικό"
+        ]
+      },
+      {
+        "num": "3",
+        "title": [
+          "Υποβολή αίτησης στο ΤΟΜ"
+        ],
+        "sub": [
+          "Επισκεφθείτε το επαρχιακό γραφείο ΤΟΜ",
+          "υποβάλετε αίτηση και πληρώστε το τέλος"
+        ]
+      },
+      {
+        "num": "4",
+        "title": [
+          "Έναρξη μαθημάτων"
+        ],
+        "sub": [
+          "Με την εκπαιδευτική άδεια ανά χείρας",
+          "επιλέξτε σχολή οδηγών και ξεκινήστε"
+        ]
+      }
+    ]
+  },
+  "en": {
+    "template": "flow",
+    "title": "How to Get a Cyprus Provisional Driving Licence",
+    "caption": "Four steps to obtain your provisional driving licence before lessons begin.",
+    "items": [
+      {
+        "num": "1",
+        "title": [
+          "Medical checks"
+        ],
+        "sub": [
+          "Visit a doctor for a medical certificate",
+          "and an eye specialist for a vision test"
+        ]
+      },
+      {
+        "num": "2",
+        "title": [
+          "Gather documents"
+        ],
+        "sub": [
+          "ID or passport, passport photos",
+          "medical and eye test certificates"
+        ]
+      },
+      {
+        "num": "3",
+        "title": [
+          "Apply at TOM office"
+        ],
+        "sub": [
+          "Visit your local TOM district office",
+          "submit the form and pay the fee"
+        ]
+      },
+      {
+        "num": "4",
+        "title": [
+          "Start lessons"
+        ],
+        "sub": [
+          "With your provisional licence in hand",
+          "choose a driving school and begin lessons"
+        ]
+      }
+    ]
+  }
+}

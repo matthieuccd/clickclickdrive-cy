@@ -1012,6 +1012,35 @@ export const BLOG_ARTICLES: readonly BlogArticle[] = [
     relatedSlugs: [],
   },
 
+  {
+    id: "cyprus-provisional-driving-licence",
+    slug_el: "ekpaideutiki-adeia-odigisis-kypros",
+    slug_en: "cyprus-provisional-driving-licence",
+    categoryId: "rules",
+    title_el: "\u0395\u03ba\u03c0\u03b1\u03b9\u03b4\u03b5\u03c5\u03c4\u03b9\u03ba\u03ae \u0386\u03b4\u03b5\u03b9\u03b1 \u039f\u03b4\u03ae\u03b3\u03b7\u03c3\u03b7\u03c2 \u03c3\u03c4\u03b7\u03bd \u039a\u03cd\u03c0\u03c1\u03bf: \u03a0\u03ce\u03c2 \u03bd\u03b1 \u039a\u03ac\u03bd\u03b5\u03c4\u03b5 \u0391\u03af\u03c4\u03b7\u03c3\u03b7",
+    title_en: "Cyprus Provisional Driving Licence: How to Apply",
+    excerpt_el:
+      "\u03a0\u03ce\u03c2 \u03bd\u03b1 \u03ba\u03ac\u03bd\u03b5\u03c4\u03b5 \u03b1\u03af\u03c4\u03b7\u03c3\u03b7 \u03b3\u03b9\u03b1 \u03b5\u03ba\u03c0\u03b1\u03b9\u03b4\u03b5\u03c5\u03c4\u03b9\u03ba\u03ae \u03ac\u03b4\u03b5\u03b9\u03b1 \u03bf\u03b4\u03ae\u03b3\u03b7\u03c3\u03b7\u03c2 \u03c3\u03c4\u03b7\u03bd \u039a\u03cd\u03c0\u03c1\u03bf. \u03a4\u03bf \u03c0\u03c1\u03ce\u03c4\u03bf \u03b2\u03ae\u03bc\u03b1 \u03c0\u03c1\u03b9\u03bd \u03be\u03b5\u03ba\u03b9\u03bd\u03ae\u03c3\u03bf\u03c5\u03bd \u03c4\u03b1 \u03bc\u03b1\u03b8\u03ae\u03bc\u03b1\u03c4\u03b1.",
+    excerpt_en:
+      "How to apply for a learner's licence (\u03b5\u03ba\u03c0\u03b1\u03b9\u03b4\u03b5\u03c5\u03c4\u03b9\u03ba\u03ae \u03ac\u03b4\u03b5\u03b9\u03b1) in Cyprus \u2014 the first step before lessons begin.",
+    metaDescription_el:
+      "\u0395\u03ba\u03c0\u03b1\u03b9\u03b4\u03b5\u03c5\u03c4\u03b9\u03ba\u03ae \u03ac\u03b4\u03b5\u03b9\u03b1 \u03bf\u03b4\u03ae\u03b3\u03b7\u03c3\u03b7\u03c2 \u039a\u03cd\u03c0\u03c1\u03bf\u03c2. \u03a0\u03ce\u03c2 \u03bd\u03b1 \u03ba\u03ac\u03bd\u03b5\u03c4\u03b5 \u03b1\u03af\u03c4\u03b7\u03c3\u03b7, \u03ad\u03b3\u03b3\u03c1\u03b1\u03c6\u03b1 \u03ba\u03b1\u03b9 \u03ba\u03b1\u03bd\u03cc\u03bd\u03b5\u03c2 \u03b3\u03b9\u03b1 \u03c4\u03b1 L.",
+    metaDescription_en:
+      "Cyprus provisional driving licence (learner's licence). How to apply, documents needed, and what the L plate rules are.",
+    heroImagePath: "/blog/cyprus-provisional-driving-licence/hero.jpg",
+    heroImageAlt_el:
+      "\u0391\u03c5\u03c4\u03bf\u03ba\u03af\u03bd\u03b7\u03c4\u03bf \u03bc\u03b5 \u03ba\u03cc\u03ba\u03ba\u03b9\u03bd\u03b1 L \u03c3\u03b5 \u03ba\u03c5\u03c0\u03c1\u03b9\u03b1\u03ba\u03cc \u03b4\u03c1\u03cc\u03bc\u03bf",
+    heroImageAlt_en: "Car with red L plates on a Cyprus road",
+    heroCaption_en: "Car with red L plates on a Cyprus road, via Pexels.com",
+    heroCaption_el: "\u0391\u03c5\u03c4\u03bf\u03ba\u03af\u03bd\u03b7\u03c4\u03bf \u03bc\u03b5 \u03ba\u03cc\u03ba\u03ba\u03b9\u03bd\u03b1 L \u03c3\u03b5 \u03ba\u03c5\u03c0\u03c1\u03b9\u03b1\u03ba\u03cc \u03b4\u03c1\u03cc\u03bc\u03bf, via Pexels.com",
+    publishedDate: "2026-08-12",
+    modifiedDate: "2026-08-12",
+    author: "Matthieu Tissot",
+    authorSlug: "matthieu",
+    relatedCity: null,
+    relatedSlugs: [],
+  },
+
 ];
 
 // --- hero image resolution -----------------------------------------------

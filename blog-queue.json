@@ -1,10 +1,10 @@
 {
-  "last_publish_date": "2026-08-10",
+  "last_publish_date": "2026-08-12",
   "settings": {
     "cadence_days": 2,
     "publish_mode": "auto",
     "consecutive_clean_approvals": 0,
-    "next_publish_at": "2026-08-12T03:25:00Z"
+    "next_publish_at": "2026-08-14T04:30:00Z"
   },
   "state": {
     "open_pr_number": null,
@@ -681,7 +681,7 @@
     {
       "id": "cyprus-provisional-driving-licence",
       "priority": 24,
-      "status": "pending",
+      "status": "published",
       "title_en": "Cyprus Provisional Driving Licence: How to Apply",
       "title_el": "Εκπαιδευτική Άδεια Οδήγησης στην Κύπρο: Πώς να Κάνετε Αίτηση",
       "slug_en": "cyprus-provisional-driving-licence",
@@ -697,7 +697,7 @@
       "meta_description_el": "Εκπαιδευτική άδεια οδήγησης Κύπρος. Πώς να κάνετε αίτηση, έγγραφα και κανόνες για τα L.",
       "hero_alt_en": "Car with red L plates on a Cyprus road",
       "hero_alt_el": "Αυτοκίνητο με κόκκινα L σε κυπριακό δρόμο",
-      "published_at": null,
+      "published_at": "2026-08-12",
       "pr_number": null,
       "pr_created_at": null
     },
