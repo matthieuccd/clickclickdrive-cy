@@ -1,0 +1,104 @@
+{
+  "el": {
+    "template": "flow",
+    "title": "4 Βήματα για να Περάσετε την Εξέταση Οδήγησης στην Κύπρο",
+    "caption": "Ακολουθήστε αυτά τα τέσσερα βήματα για να μεγιστοποιήσετε τις πιθανότητες επιτυχίας σας στην πρακτική εξέταση.",
+    "items": [
+      {
+        "num": "1",
+        "title": [
+          "Αποκτήστε Μαθητική Άδεια",
+          "μετά τη γραπτή εξέταση"
+        ],
+        "sub": [
+          "Περάστε τη θεωρητική εξέταση (ΤΟΜ)",
+          "και εκδώστε μαθητική άδεια"
+        ]
+      },
+      {
+        "num": "2",
+        "title": [
+          "Εκπαιδευτείτε σε Αδειοδοτημένη",
+          "Σχολή Οδηγών"
+        ],
+        "sub": [
+          "Ολοκληρώστε τις απαιτούμενες ώρες",
+          "με εγκεκριμένο εκπαιδευτή"
+        ]
+      },
+      {
+        "num": "3",
+        "title": [
+          "Εξασκηθείτε στις Διαδρομές",
+          "και τα Κρίσιμα Σημεία"
+        ],
+        "sub": [
+          "Εστιάστε σε κόμβους, στρογγυλόβους",
+          "και ρουτίνα καθρέπτη-σήματος-ελιγμού"
+        ]
+      },
+      {
+        "num": "4",
+        "title": [
+          "Κάντε την Εξέταση",
+          "με Σιγουριά"
+        ],
+        "sub": [
+          "Ο εξεταστής αξιολογεί ασφάλεια",
+          "και συνέπεια σε όλη τη διαδρομή"
+        ]
+      }
+    ]
+  },
+  "en": {
+    "template": "flow",
+    "title": "4 Steps to Pass Your Cyprus Driving Test",
+    "caption": "Follow these four steps to maximise your chances of passing the practical driving test first time.",
+    "items": [
+      {
+        "num": "1",
+        "title": [
+          "Get Your Learner Permit",
+          "after passing the theory test"
+        ],
+        "sub": [
+          "Pass the theory test with ΤΟΜ",
+          "then obtain your learner permit"
+        ]
+      },
+      {
+        "num": "2",
+        "title": [
+          "Train at a Licensed",
+          "Driving School"
+        ],
+        "sub": [
+          "Complete required lesson hours",
+          "with an accredited instructor"
+        ]
+      },
+      {
+        "num": "3",
+        "title": [
+          "Practise Test Routes",
+          "and Key Manoeuvres"
+        ],
+        "sub": [
+          "Focus on junctions, roundabouts",
+          "and mirror-signal-manoeuvre routine"
+        ]
+      },
+      {
+        "num": "4",
+        "title": [
+          "Take the Test",
+          "with Confidence"
+        ],
+        "sub": [
+          "Examiner assesses safety",
+          "and consistency throughout the route"
+        ]
+      }
+    ]
+  }
+}

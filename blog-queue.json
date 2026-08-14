@@ -1,10 +1,10 @@
 {
-  "last_publish_date": "2026-08-12",
+  "last_publish_date": "2026-08-14",
   "settings": {
     "cadence_days": 2,
     "publish_mode": "auto",
     "consecutive_clean_approvals": 0,
-    "next_publish_at": "2026-08-14T04:30:00Z"
+    "next_publish_at": "2026-08-16T05:35:00Z"
   },
   "state": {
     "open_pr_number": null,
@@ -704,7 +704,7 @@
     {
       "id": "pass-driving-test-cyprus-first-time",
       "priority": 25,
-      "status": "pending",
+      "status": "published",
       "title_en": "How to Pass Your Driving Test in Cyprus First Time",
       "title_el": "Πώς να Περάσετε την Εξέταση Οδήγησης στην Κύπρο με την Πρώτη",
       "slug_en": "pass-driving-test-cyprus-first-time",
@@ -720,7 +720,7 @@
       "meta_description_el": "Πώς να περάσετε την εξέταση οδήγησης στην Κύπρο με την πρώτη. Τι ψάχνει ο εξεταστής.",
       "hero_alt_en": "Happy candidate holding driving test pass certificate",
       "hero_alt_el": "Χαρούμενος υποψήφιος κρατά πιστοποιητικό επιτυχίας",
-      "published_at": null,
+      "published_at": "2026-08-14",
       "pr_number": null,
       "pr_created_at": null
     },
