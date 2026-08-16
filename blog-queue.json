@@ -1,10 +1,10 @@
 {
-  "last_publish_date": "2026-08-14",
+  "last_publish_date": "2026-08-16",
   "settings": {
     "cadence_days": 2,
     "publish_mode": "auto",
     "consecutive_clean_approvals": 0,
-    "next_publish_at": "2026-08-16T05:35:00Z"
+    "next_publish_at": "2026-08-18T06:40:00Z"
   },
   "state": {
     "open_pr_number": null,
@@ -727,7 +727,7 @@
     {
       "id": "lost-cyprus-driving-licence",
       "priority": 26,
-      "status": "pending",
+      "status": "published",
       "title_en": "What to Do If You Lose Your Cyprus Driving Licence",
       "title_el": "Τι να Κάνετε αν Χάσετε την Κυπριακή Άδεια Οδήγησής Σας",
       "slug_en": "lost-cyprus-driving-licence",
@@ -743,7 +743,7 @@
       "meta_description_el": "Χάσατε την κυπριακή άδεια οδήγησής σας; Πώς να τη δηλώσετε και να πάρετε αντίγραφο.",
       "hero_alt_en": "Empty wallet where a driving licence should be",
       "hero_alt_el": "Άδειο πορτοφόλι χωρίς άδεια οδήγησης",
-      "published_at": null,
+      "published_at": "2026-08-16",
       "pr_number": null,
       "pr_created_at": null
     },

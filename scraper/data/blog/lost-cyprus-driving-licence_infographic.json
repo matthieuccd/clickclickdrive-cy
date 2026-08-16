@@ -1,0 +1,66 @@
+{
+  "el": {
+    "template": "checklist",
+    "title": "Έγγραφα για Αντικατάσταση Άδειας",
+    "caption": "Αυτά είναι τα έγγραφα που πρέπει να έχετε μαζί σας όταν επισκεφθείτε τον ΤΟΜ για αντικατάσταση χαμένης άδειας.",
+    "items": [
+      {
+        "icon": "🚔",
+        "label": "Αστυνομική δήλωση",
+        "sub": "Αριθμός αναφοράς απώλειας ή κλοπής"
+      },
+      {
+        "icon": "🪪",
+        "label": "Έγκυρη ταυτότητα ή διαβατήριο",
+        "sub": "Εθνική ταυτότητα ή διαβατήριο σε ισχύ"
+      },
+      {
+        "icon": "📷",
+        "label": "Φωτογραφία διαβατηρίου",
+        "sub": "Πρόσφατη έγχρωμη φωτογραφία"
+      },
+      {
+        "icon": "📋",
+        "label": "Συμπληρωμένη αίτηση",
+        "sub": "Διαθέσιμη στα γραφεία ΤΟΜ ή online"
+      },
+      {
+        "icon": "💳",
+        "label": "Πληρωμή τέλους",
+        "sub": "Επιβεβαιώστε το ποσό με τον ΤΟΜ"
+      }
+    ]
+  },
+  "en": {
+    "template": "checklist",
+    "title": "Documents for Licence Replacement",
+    "caption": "These are the documents you must bring to a TOM district office when applying for a replacement lost driving licence.",
+    "items": [
+      {
+        "icon": "🚔",
+        "label": "Police report",
+        "sub": "Reference number for loss or theft"
+      },
+      {
+        "icon": "🪪",
+        "label": "Valid ID or passport",
+        "sub": "National ID card or valid passport"
+      },
+      {
+        "icon": "📷",
+        "label": "Passport-sized photo",
+        "sub": "Recent colour photograph"
+      },
+      {
+        "icon": "📋",
+        "label": "Completed application form",
+        "sub": "Available at TOM offices or online"
+      },
+      {
+        "icon": "💳",
+        "label": "Replacement fee payment",
+        "sub": "Confirm current amount with TOM"
+      }
+    ]
+  }
+}

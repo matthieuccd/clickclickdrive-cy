@@ -1070,6 +1070,35 @@ export const BLOG_ARTICLES: readonly BlogArticle[] = [
     relatedSlugs: [],
   },
 
+  {
+    id: "lost-cyprus-driving-licence",
+    slug_el: "xasate-adeia-odigisis-kypros",
+    slug_en: "lost-cyprus-driving-licence",
+    categoryId: "rules",
+    title_el: "\u03a4\u03b9 \u03bd\u03b1 \u039a\u03ac\u03bd\u03b5\u03c4\u03b5 \u03b1\u03bd \u03a7\u03ac\u03c3\u03b5\u03c4\u03b5 \u03c4\u03b7\u03bd \u039a\u03c5\u03c0\u03c1\u03b9\u03b1\u03ba\u03ae \u0386\u03b4\u03b5\u03b9\u03b1 \u039f\u03b4\u03ae\u03b3\u03b7\u03c3\u03ae\u03c2 \u03a3\u03b1\u03c2",
+    title_en: "What to Do If You Lose Your Cyprus Driving Licence",
+    excerpt_el:
+      "\u0392\u03ae\u03bc\u03b1 \u03c0\u03c1\u03bf\u03c2 \u03b2\u03ae\u03bc\u03b1: \u03c0\u03ce\u03c2 \u03bd\u03b1 \u03b4\u03b7\u03bb\u03ce\u03c3\u03b5\u03c4\u03b5 \u03c4\u03b7\u03bd \u03b1\u03c0\u03ce\u03bb\u03b5\u03b9\u03b1 \u03c4\u03b7\u03c2 \u03ba\u03c5\u03c0\u03c1\u03b9\u03b1\u03ba\u03ae\u03c2 \u03ac\u03b4\u03b5\u03b9\u03b1\u03c2 \u03bf\u03b4\u03ae\u03b3\u03b7\u03c3\u03ae\u03c2 \u03c3\u03b1\u03c2 \u03ba\u03b1\u03b9 \u03bd\u03b1 \u03c0\u03ac\u03c1\u03b5\u03c4\u03b5 \u03b1\u03bd\u03c4\u03af\u03b3\u03c1\u03b1\u03c6\u03bf.",
+    excerpt_en:
+      "Step-by-step: how to report a lost Cyprus driving licence and get a replacement from the Department of Road Transport.",
+    metaDescription_el:
+      "\u03a7\u03ac\u03c3\u03b1\u03c4\u03b5 \u03c4\u03b7\u03bd \u03ba\u03c5\u03c0\u03c1\u03b9\u03b1\u03ba\u03ae \u03ac\u03b4\u03b5\u03b9\u03b1 \u03bf\u03b4\u03ae\u03b3\u03b7\u03c3\u03ae\u03c2 \u03c3\u03b1\u03c2; \u03a0\u03ce\u03c2 \u03bd\u03b1 \u03c4\u03b7 \u03b4\u03b7\u03bb\u03ce\u03c3\u03b5\u03c4\u03b5 \u03ba\u03b1\u03b9 \u03bd\u03b1 \u03c0\u03ac\u03c1\u03b5\u03c4\u03b5 \u03b1\u03bd\u03c4\u03af\u03b3\u03c1\u03b1\u03c6\u03bf.",
+    metaDescription_en:
+      "Lost your Cyprus driving licence? Here is how to report it and get a replacement card quickly.",
+    heroImagePath: "/blog/lost-cyprus-driving-licence/hero.jpg",
+    heroImageAlt_el:
+      "\u0386\u03b4\u03b5\u03b9\u03bf \u03c0\u03bf\u03c1\u03c4\u03bf\u03c6\u03cc\u03bb\u03b9 \u03c7\u03c9\u03c1\u03af\u03c2 \u03ac\u03b4\u03b5\u03b9\u03b1 \u03bf\u03b4\u03ae\u03b3\u03b7\u03c3\u03b7\u03c2",
+    heroImageAlt_en: "Empty wallet where a driving licence should be",
+    heroCaption_en: "Empty wallet where a driving licence should be, via Pexels.com",
+    heroCaption_el: "\u0386\u03b4\u03b5\u03b9\u03bf \u03c0\u03bf\u03c1\u03c4\u03bf\u03c6\u03cc\u03bb\u03b9 \u03c7\u03c9\u03c1\u03af\u03c2 \u03ac\u03b4\u03b5\u03b9\u03b1 \u03bf\u03b4\u03ae\u03b3\u03b7\u03c3\u03b7\u03c2, via Pexels.com",
+    publishedDate: "2026-08-16",
+    modifiedDate: "2026-08-16",
+    author: "Matthieu Tissot",
+    authorSlug: "matthieu",
+    relatedCity: null,
+    relatedSlugs: [],
+  },
+
 ];
 
 // --- hero image resolution -----------------------------------------------
