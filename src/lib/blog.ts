@@ -1099,6 +1099,35 @@ export const BLOG_ARTICLES: readonly BlogArticle[] = [
     relatedSlugs: [],
   },
 
+  {
+    id: "medical-form-cyprus-driving-licence",
+    slug_el: "iatriko-pistopoiitiko-adeia-odigisis-kypros",
+    slug_en: "medical-form-cyprus-driving-licence",
+    categoryId: "rules",
+    title_el: "\u03a4\u03bf \u0399\u03b1\u03c4\u03c1\u03b9\u03ba\u03cc \u03a0\u03b9\u03c3\u03c4\u03bf\u03c0\u03bf\u03b9\u03b7\u03c4\u03b9\u03ba\u03cc (\u03a0\u03b1\u03b8\u03bf\u03bb\u03cc\u03b3\u03bf\u03c5) \u03b3\u03b9\u03b1 \u0386\u03b4\u03b5\u03b9\u03b1 \u039f\u03b4\u03ae\u03b3\u03b7\u03c3\u03b7\u03c2 \u03c3\u03c4\u03b7\u03bd \u039a\u03cd\u03c0\u03c1\u03bf",
+    title_en: "The Medical (Pathologist) Form for a Cyprus Driving Licence",
+    excerpt_el:
+      "\u03a4\u03b9 \u03b5\u03af\u03bd\u03b1\u03b9 \u03c4\u03bf \u03c0\u03b9\u03c3\u03c4\u03bf\u03c0\u03bf\u03b9\u03b7\u03c4\u03b9\u03ba\u03cc \u03c0\u03b1\u03b8\u03bf\u03bb\u03cc\u03b3\u03bf\u03c5, \u03c0\u03bf\u03b9\u03bf\u03c2 \u03b3\u03b9\u03b1\u03c4\u03c1\u03cc\u03c2 \u03bc\u03c0\u03bf\u03c1\u03b5\u03af \u03bd\u03b1 \u03c4\u03bf \u03c5\u03c0\u03bf\u03b3\u03c1\u03ac\u03c8\u03b5\u03b9 \u03ba\u03b1\u03b9 \u03c0\u03cc\u03c4\u03b5 \u03c4\u03bf \u03c7\u03c1\u03b5\u03b9\u03ac\u03b6\u03b5\u03c3\u03c4\u03b5.",
+    excerpt_en:
+      "What the pathologist's certificate is, which doctor can sign it, and when you need it for your Cyprus licence.",
+    metaDescription_el:
+      "\u0399\u03b1\u03c4\u03c1\u03b9\u03ba\u03cc \u03c0\u03b9\u03c3\u03c4\u03bf\u03c0\u03bf\u03b9\u03b7\u03c4\u03b9\u03ba\u03cc \u03b3\u03b9\u03b1 \u03ac\u03b4\u03b5\u03b9\u03b1 \u03bf\u03b4\u03ae\u03b3\u03b7\u03c3\u03b7\u03c2 \u039a\u03cd\u03c0\u03c1\u03bf\u03c2. \u03a0\u03bf\u03b9\u03bf\u03c2 \u03b3\u03b9\u03b1\u03c4\u03c1\u03cc\u03c2, \u03c4\u03b9 \u03b5\u03bb\u03ad\u03b3\u03c7\u03b5\u03b9 \u03ba\u03b1\u03b9 \u03c0\u03cc\u03c4\u03b5 \u03c7\u03c1\u03b5\u03b9\u03ac\u03b6\u03b5\u03c4\u03b1\u03b9.",
+    metaDescription_en:
+      "Medical form for a Cyprus driving licence. Which doctor to see, what they check, and when it is required.",
+    heroImagePath: "/blog/medical-form-cyprus-driving-licence/hero.jpg",
+    heroImageAlt_el:
+      "\u0393\u03b9\u03b1\u03c4\u03c1\u03cc\u03c2 \u03c5\u03c0\u03bf\u03b3\u03c1\u03ac\u03c6\u03b5\u03b9 \u03b9\u03b1\u03c4\u03c1\u03b9\u03ba\u03cc \u03c0\u03b9\u03c3\u03c4\u03bf\u03c0\u03bf\u03b9\u03b7\u03c4\u03b9\u03ba\u03cc",
+    heroImageAlt_en: "Doctor signing a medical certificate form",
+    heroCaption_en: "Doctor signing a medical certificate form, via Pexels.com",
+    heroCaption_el: "\u0393\u03b9\u03b1\u03c4\u03c1\u03cc\u03c2 \u03c5\u03c0\u03bf\u03b3\u03c1\u03ac\u03c6\u03b5\u03b9 \u03b9\u03b1\u03c4\u03c1\u03b9\u03ba\u03cc \u03c0\u03b9\u03c3\u03c4\u03bf\u03c0\u03bf\u03b9\u03b7\u03c4\u03b9\u03ba\u03cc, via Pexels.com",
+    publishedDate: "2026-08-18",
+    modifiedDate: "2026-08-18",
+    author: "Matthieu Tissot",
+    authorSlug: "matthieu",
+    relatedCity: null,
+    relatedSlugs: [],
+  },
+
 ];
 
 // --- hero image resolution -----------------------------------------------

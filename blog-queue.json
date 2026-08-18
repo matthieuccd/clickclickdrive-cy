@@ -1,10 +1,10 @@
 {
-  "last_publish_date": "2026-08-16",
+  "last_publish_date": "2026-08-18",
   "settings": {
     "cadence_days": 2,
     "publish_mode": "auto",
     "consecutive_clean_approvals": 0,
-    "next_publish_at": "2026-08-18T06:40:00Z"
+    "next_publish_at": "2026-08-20T07:45:00Z"
   },
   "state": {
     "open_pr_number": null,
@@ -750,7 +750,7 @@
     {
       "id": "medical-form-cyprus-driving-licence",
       "priority": 27,
-      "status": "pending",
+      "status": "published",
       "title_en": "The Medical (Pathologist) Form for a Cyprus Driving Licence",
       "title_el": "Το Ιατρικό Πιστοποιητικό (Παθολόγου) για Άδεια Οδήγησης στην Κύπρο",
       "slug_en": "medical-form-cyprus-driving-licence",
@@ -766,7 +766,7 @@
       "meta_description_el": "Ιατρικό πιστοποιητικό για άδεια οδήγησης Κύπρος. Ποιος γιατρός, τι ελέγχει και πότε χρειάζεται.",
       "hero_alt_en": "Doctor signing a medical certificate form",
       "hero_alt_el": "Γιατρός υπογράφει ιατρικό πιστοποιητικό",
-      "published_at": null,
+      "published_at": "2026-08-18",
       "pr_number": null,
       "pr_created_at": null
     },

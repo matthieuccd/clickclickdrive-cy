@@ -1,0 +1,96 @@
+{
+  "el": {
+    "template": "flow",
+    "title": "Βήματα για το Ιατρικό Πιστοποιητικό Οδήγησης",
+    "caption": "Ακολουθήστε αυτά τα τέσσερα βήματα για να εξασφαλίσετε το ιατρικό πιστοποιητικό παθολόγου και να προχωρήσετε στην αίτησή σας στο ΤΟΜ.",
+    "items": [
+      {
+        "num": "1",
+        "title": [
+          "Λήψη εντύπου",
+          "από το ΤΟΜ"
+        ],
+        "sub": [
+          "Παραλάβετε το επίσημο ιατρικό έντυπο από το Τμήμα Οδικών Μεταφορών ή από τον ιστότοπό του"
+        ]
+      },
+      {
+        "num": "2",
+        "title": [
+          "Επίσκεψη σε",
+          "εγγεγραμμένο παθολόγο"
+        ],
+        "sub": [
+          "Επισκεφθείτε παθολόγο εγγεγραμμένο στο Συμβούλιο Εγγραφής Ιατρών Κύπρου, δημόσιο ή ιδιωτικό"
+        ]
+      },
+      {
+        "num": "3",
+        "title": [
+          "Ολοκλήρωση",
+          "ιατρικής εξέτασης"
+        ],
+        "sub": [
+          "Ο γιατρός ελέγχει την όρασή σας, το ιστορικό υγείας σας και συμπληρώνει και υπογράφει το έντυπο"
+        ]
+      },
+      {
+        "num": "4",
+        "title": [
+          "Υποβολή στο ΤΟΜ",
+          "με τα υπόλοιπα έγγραφα"
+        ],
+        "sub": [
+          "Καταθέστε το υπογεγραμμένο πιστοποιητικό μαζί με την αίτησή σας, φωτογραφίες και ταυτότητα στο ΤΟΜ"
+        ]
+      }
+    ]
+  },
+  "en": {
+    "template": "flow",
+    "title": "Steps to Get Your Driving Medical Certificate",
+    "caption": "Follow these four steps to obtain your pathologist's medical certificate and proceed with your application at the Department of Road Transport.",
+    "items": [
+      {
+        "num": "1",
+        "title": [
+          "Collect the form",
+          "from the DRT"
+        ],
+        "sub": [
+          "Pick up the official medical form from the Department of Road Transport or download it from their website"
+        ]
+      },
+      {
+        "num": "2",
+        "title": [
+          "Visit a registered",
+          "pathologist"
+        ],
+        "sub": [
+          "See a pathologist registered with the Cyprus Medical Council, either private or at a public hospital"
+        ]
+      },
+      {
+        "num": "3",
+        "title": [
+          "Complete the",
+          "medical examination"
+        ],
+        "sub": [
+          "The doctor checks your vision and medical history, then completes and signs the official form"
+        ]
+      },
+      {
+        "num": "4",
+        "title": [
+          "Submit to the DRT",
+          "with remaining documents"
+        ],
+        "sub": [
+          "Hand in the signed certificate together with your application form, photos, and identity document at the DRT"
+        ]
+      }
+    ]
+  }
+}
