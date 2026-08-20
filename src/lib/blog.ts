@@ -1128,6 +1128,35 @@ export const BLOG_ARTICLES: readonly BlogArticle[] = [
     relatedSlugs: [],
   },
 
+  {
+    id: "countries-cyprus-accepts-licence-exchange",
+    slug_el: "xores-anagnorizei-kypros-anallagi-adeia",
+    slug_en: "countries-cyprus-accepts-licence-exchange",
+    categoryId: "foreigners",
+    title_el: "\u03a0\u03bf\u03b9\u03b5\u03c2 \u03a7\u03ce\u03c1\u03b5\u03c2 \u0391\u03bd\u03b1\u03b3\u03bd\u03c9\u03c1\u03af\u03b6\u03b5\u03b9 \u03b7 \u039a\u03cd\u03c0\u03c1\u03bf\u03c2 \u03b3\u03b9\u03b1 \u0391\u03bd\u03c4\u03b1\u03bb\u03bb\u03b1\u03b3\u03ae \u0386\u03b4\u03b5\u03b9\u03b1\u03c2",
+    title_en: "Which Countries Cyprus Accepts for Licence Exchange",
+    excerpt_el:
+      "\u03a0\u03bb\u03ae\u03c1\u03b7\u03c2 \u03bb\u03af\u03c3\u03c4\u03b1 \u03c7\u03c9\u03c1\u03ce\u03bd \u03c4\u03c9\u03bd \u03bf\u03c0\u03bf\u03af\u03c9\u03bd \u03c4\u03b9\u03c2 \u03ac\u03b4\u03b5\u03b9\u03b5\u03c2 \u03b4\u03ad\u03c7\u03b5\u03c4\u03b1\u03b9 \u03b7 \u039a\u03cd\u03c0\u03c1\u03bf\u03c2 \u03b3\u03b9\u03b1 \u03b1\u03bd\u03c4\u03b1\u03bb\u03bb\u03b1\u03b3\u03ae \u03ba\u03b1\u03b9 \u03c4\u03b9 \u03ba\u03ac\u03bd\u03bf\u03c5\u03bd \u03bf\u03b9 \u03c5\u03c0\u03cc\u03bb\u03bf\u03b9\u03c0\u03bf\u03b9.",
+    excerpt_en:
+      "The full list of countries whose licences Cyprus accepts for direct exchange \u2014 and what third-country holders must do.",
+    metaDescription_el:
+      "\u03a0\u03bf\u03b9\u03b5\u03c2 \u03c7\u03ce\u03c1\u03b5\u03c2 \u03b1\u03bd\u03b1\u03b3\u03bd\u03c9\u03c1\u03af\u03b6\u03b5\u03b9 \u03b7 \u039a\u03cd\u03c0\u03c1\u03bf\u03c2 \u03b3\u03b9\u03b1 \u03b1\u03bd\u03c4\u03b1\u03bb\u03bb\u03b1\u03b3\u03ae \u03ac\u03b4\u03b5\u03b9\u03b1\u03c2. \u03a0\u03bb\u03ae\u03c1\u03b7\u03c2 \u03bb\u03af\u03c3\u03c4\u03b1 \u03ba\u03b1\u03b9 \u03c4\u03b9 \u03b3\u03af\u03bd\u03b5\u03c4\u03b1\u03b9 \u03b1\u03bd \u03b7 \u03c7\u03ce\u03c1\u03b1 \u03c3\u03b1\u03c2 \u03b4\u03b5\u03bd \u03b5\u03af\u03bd\u03b1\u03b9.",
+    metaDescription_en:
+      "Which countries Cyprus accepts for driving licence exchange. Full list and what to do if your country is not on it.",
+    heroImagePath: "/blog/countries-cyprus-accepts-licence-exchange/hero.jpg",
+    heroImageAlt_el:
+      "\u03a0\u03b1\u03b3\u03ba\u03cc\u03c3\u03bc\u03b9\u03bf\u03c2 \u03c7\u03ac\u03c1\u03c4\u03b7\u03c2 \u03bc\u03b5 \u03c3\u03b7\u03bc\u03b1\u03af\u03b5\u03c2 \u03c7\u03c9\u03c1\u03ce\u03bd \u03b3\u03b9\u03b1 \u03b1\u03bd\u03c4\u03b1\u03bb\u03bb\u03b1\u03b3\u03ae \u03ac\u03b4\u03b5\u03b9\u03b1\u03c2",
+    heroImageAlt_en: "World map with country flags representing licence exchange",
+    heroCaption_en: "World map with country flags representing licence exchange, via Pexels.com",
+    heroCaption_el: "\u03a0\u03b1\u03b3\u03ba\u03cc\u03c3\u03bc\u03b9\u03bf\u03c2 \u03c7\u03ac\u03c1\u03c4\u03b7\u03c2 \u03bc\u03b5 \u03c3\u03b7\u03bc\u03b1\u03af\u03b5\u03c2 \u03c7\u03c9\u03c1\u03ce\u03bd \u03b3\u03b9\u03b1 \u03b1\u03bd\u03c4\u03b1\u03bb\u03bb\u03b1\u03b3\u03ae \u03ac\u03b4\u03b5\u03b9\u03b1\u03c2, via Pexels.com",
+    publishedDate: "2026-08-20",
+    modifiedDate: "2026-08-20",
+    author: "Matthieu Tissot",
+    authorSlug: "matthieu",
+    relatedCity: null,
+    relatedSlugs: [],
+  },
+
 ];
 
 // --- hero image resolution -----------------------------------------------

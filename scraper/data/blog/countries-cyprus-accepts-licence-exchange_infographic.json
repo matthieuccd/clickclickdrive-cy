@@ -1,0 +1,116 @@
+{
+  "el": {
+    "template": "compare",
+    "title": "Τρεις κατηγορίες κατόχων ξένης άδειας στην Κύπρο",
+    "caption": "Η διαδρομή σου εξαρτάται από τη χώρα έκδοσης της άδειάς σου.",
+    "cards": [
+      {
+        "accent": "#22c55e",
+        "heading": [
+          "ΕΕ / ΕΟΧ",
+          "Άμεση Ανταλλαγή"
+        ],
+        "body": [
+          [
+            "Χωρίς εξετάσεις"
+          ],
+          [
+            "Υποβολή αίτησης στο ΤΟΜ",
+            "με έγκυρη άδεια παραμονής"
+          ]
+        ]
+      },
+      {
+        "accent": "#f59e0b",
+        "heading": [
+          "Τρίτες Χώρες",
+          "Διμερής Συμφωνία"
+        ],
+        "body": [
+          [
+            "Αυστραλία, Καναδάς, Ισραήλ,",
+            "Ιαπωνία και άλλες"
+          ],
+          [
+            "Ενδέχεται να απαιτείται",
+            "θεωρητική εξέταση"
+          ]
+        ]
+      },
+      {
+        "accent": "#354354",
+        "heading": [
+          "Λοιπές Τρίτες Χώρες",
+          "Πλήρης Διαδικασία"
+        ],
+        "body": [
+          [
+            "Θεωρητικές και πρακτικές",
+            "εξετάσεις από την αρχή"
+          ],
+          [
+            "Υποχρεωτικά μαθήματα",
+            "σε αδειοδοτημένη σχολή"
+          ]
+        ]
+      }
+    ]
+  },
+  "en": {
+    "template": "compare",
+    "title": "Three Categories of Foreign Licence Holders in Cyprus",
+    "caption": "Your route depends entirely on which country issued your licence.",
+    "cards": [
+      {
+        "accent": "#22c55e",
+        "heading": [
+          "EU / EEA",
+          "Direct Exchange"
+        ],
+        "body": [
+          [
+            "No tests required"
+          ],
+          [
+            "Apply at the local ΤΟΜ",
+            "office with residence permit"
+          ]
+        ]
+      },
+      {
+        "accent": "#f59e0b",
+        "heading": [
+          "Third Countries",
+          "Bilateral Agreement"
+        ],
+        "body": [
+          [
+            "Australia, Canada, Israel,",
+            "Japan and others"
+          ],
+          [
+            "Theory test may still",
+            "be required"
+          ]
+        ]
+      },
+      {
+        "accent": "#354354",
+        "heading": [
+          "Other Third Countries",
+          "Full Process"
+        ],
+        "body": [
+          [
+            "Theory and practical",
+            "tests from scratch"
+          ],
+          [
+            "Mandatory lessons at",
+            "a licensed driving school"
+          ]
+        ]
+      }
+    ]
+  }
+}

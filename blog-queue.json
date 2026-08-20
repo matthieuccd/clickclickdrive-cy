@@ -1,10 +1,10 @@
 {
-  "last_publish_date": "2026-08-18",
+  "last_publish_date": "2026-08-20",
   "settings": {
     "cadence_days": 2,
     "publish_mode": "auto",
     "consecutive_clean_approvals": 0,
-    "next_publish_at": "2026-08-20T07:45:00Z"
+    "next_publish_at": "2026-08-22T08:50:00Z"
   },
   "state": {
     "open_pr_number": null,
@@ -773,7 +773,7 @@
     {
       "id": "countries-cyprus-accepts-licence-exchange",
       "priority": 28,
-      "status": "pending",
+      "status": "published",
       "title_en": "Which Countries Cyprus Accepts for Licence Exchange",
       "title_el": "Ποιες Χώρες Αναγνωρίζει η Κύπρος για Ανταλλαγή Άδειας",
       "slug_en": "countries-cyprus-accepts-licence-exchange",
@@ -789,7 +789,7 @@
       "meta_description_el": "Ποιες χώρες αναγνωρίζει η Κύπρος για ανταλλαγή άδειας. Πλήρης λίστα και τι γίνεται αν η χώρα σας δεν είναι.",
       "hero_alt_en": "World map with country flags representing licence exchange",
       "hero_alt_el": "Παγκόσμιος χάρτης με σημαίες χωρών για ανταλλαγή άδειας",
-      "published_at": null,
+      "published_at": "2026-08-20",
       "pr_number": null,
       "pr_created_at": null
     },
