@@ -14,7 +14,22 @@ The page component renders an H1 from `title_el` / `title_en` in the BlogArticle
 
 ### 1.2 Author Micro-Credit (Top)
 
-Immediately below the H1, the page renders a row containing: a 22×22 px circular author photo, the publish date in locale format, and the author's name as an anchor link pointing to `#author-bio`. This links the top of the article to the full author card at the bottom so readers can verify the author's credentials at any point. This is rendered entirely from metadata (`authorSlug`, `publishedDate`, `author`); the markdown body does not control it.
+Immediately below the H1, the page renders a row containing: a 22×22 px circular author photo, "Published <date>" (plus "Updated <date>" when the article has a later `modifiedDate`, see 1.2.1), and the author's name as an anchor link pointing to `#author-bio`. This links the top of the article to the full author card at the bottom so readers can verify the author's credentials at any point. This is rendered entirely from metadata (`authorSlug`, `publishedDate`, `author`); the markdown body does not control it.
+
+### 1.2.1 Published and Modified Dates
+
+Each `BlogArticle` entry in `src/lib/blog.ts` has two date fields, both `YYYY-MM-DD` and read as UTC calendar days:
+
+- `publishedDate` is set when the article goes live.
+- `modifiedDate` is **optional**. Leave it out unless the article gets a meaningful edit: corrected facts, updated fees or rules, new sections. Do not set it for typo fixes, reformatting, or image swaps. Never copy `publishedDate` into it.
+
+What the fields drive, from one helper (`getArticleDates` in `src/lib/dates.ts`):
+
+- The header shows "Published <date>", and "Updated <date>" only when `modifiedDate` is later than `publishedDate` (compared by day).
+- Article JSON-LD: `datePublished` is `publishedDate`; `dateModified` is `modifiedDate` when it is later, otherwise `publishedDate`.
+- `sitemap.xml`: the article's `<lastmod>` is the same `dateModified` value.
+
+Entries created by the publishing pipeline carry `modifiedDate` equal to `publishedDate`. That is harmless (it shows no "Updated" label); set a real later date only when you make a meaningful edit.
 
 ### 1.3 Summary Box ("At a Glance")
 

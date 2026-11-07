@@ -4,6 +4,7 @@ import { setRequestLocale } from "next-intl/server";
 import { JsonLd } from "@/components/JsonLd";
 import { Link } from "@/i18n/navigation";
 import {
+  bestOfDates,
   heroImagePath,
   loadBestOfContent,
   rankedSchools,
@@ -89,12 +90,15 @@ export async function BestOfCityPage({ config, locale }: Props) {
     })),
   };
 
+  const dates = bestOfDates(config, locale);
+
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: title,
-    datePublished: "2026-06-20",
-    dateModified: "2026-06-20",
+    // Git-derived (lib/bestOf.ts); omitted when history is unavailable.
+    ...(dates.published ? { datePublished: dates.published } : {}),
+    ...(dates.modified ? { dateModified: dates.modified } : {}),
     author: { "@type": "Organization", name: "ClickClickDrive Cyprus" },
     publisher: {
       "@type": "Organization",

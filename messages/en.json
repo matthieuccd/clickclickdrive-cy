@@ -54,7 +54,9 @@
     "emptyCategory": "No articles in this category yet.",
     "previous": "Previous article",
     "next": "Next article",
-    "bodyMissing": "This article is being edited."
+    "bodyMissing": "This article is being edited.",
+    "published": "Published",
+    "updated": "Updated"
   },
   "cities": {
     "all": "All cities",

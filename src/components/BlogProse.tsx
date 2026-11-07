@@ -33,6 +33,7 @@ import { SignCategoryChecker } from "@/components/widgets/SignCategoryChecker";
 import { TestReadinessChecker } from "@/components/widgets/TestReadinessChecker";
 import { UkLicenceChecker } from "@/components/widgets/UkLicenceChecker";
 import type { AutoInfographicData, Locale } from "@/lib/types";
+import { videoIdFromBlock } from "@/lib/videos";
 
 interface InjectImage {
   afterH2: number;
@@ -161,9 +162,9 @@ export function BlogProse({
     }
 
     // Video token: {{video:youtube_id}}
-    const videoMatch = block.match(/^\{\{video:([^}]+)\}\}$/);
-    if (videoMatch) {
-      const youtubeId = videoMatch[1];
+    // Token syntax is shared with the sitemap and VideoObject schema (lib/videos.ts).
+    const youtubeId = videoIdFromBlock(block);
+    if (youtubeId) {
       elements.push(
         <div
           key={i}

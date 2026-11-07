@@ -30,8 +30,10 @@ import {
   type BlogCategory,
 } from "@/lib/blog";
 import { getAuthorBySlug, authorPageHref } from "@/lib/authors";
+import { formatDay, getArticleDates } from "@/lib/dates";
 import { SITE_HOST, siteUrl } from "@/lib/seo";
 import type { Locale } from "@/lib/types";
+import { buildVideoObjectJsonLd, getArticleVideos } from "@/lib/videos";
 
 export function generateStaticParams({
   params,
@@ -260,14 +262,17 @@ async function ArticleView({
   const heroUrl = siteUrl(article.heroImagePath);
   const description = locale === "el" ? article.metaDescription_el : article.metaDescription_en;
 
+  const dates = getArticleDates(article);
+  const videos = getArticleVideos(article, locale);
+
   const articleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: title,
     description,
     image: [heroUrl],
-    datePublished: article.publishedDate,
-    dateModified: article.modifiedDate,
+    datePublished: dates.published ?? undefined,
+    dateModified: dates.lastModified ?? undefined,
     author: author
       ? {
           "@type": "Person",
@@ -343,15 +348,13 @@ async function ArticleView({
     })),
   } : null;
 
-  const dateLabel = new Date(article.publishedDate).toLocaleDateString(
-    locale === "el" ? "el-CY" : "en-CY",
-    { day: "numeric", month: "long", year: "numeric" },
-  );
-
   return (
     <article className="mx-auto max-w-3xl px-4 py-10 sm:px-6 sm:py-14">
       <JsonLd data={articleJsonLd} />
       <JsonLd data={breadcrumbJsonLd} />
+      {videos.map((v) => (
+        <JsonLd key={v.id} data={buildVideoObjectJsonLd(v)} />
+      ))}
       {faqJsonLd && <JsonLd data={faqJsonLd} />}
       {howToJsonLd && <JsonLd data={howToJsonLd} />}
 
@@ -405,7 +408,24 @@ async function ArticleView({
             />
           )}
           <span>
-            {dateLabel} ·{" "}
+            {dates.published && (
+              <>
+                {t("blog.published")}{" "}
+                <time dateTime={dates.published}>
+                  {formatDay(dates.published, locale)}
+                </time>{" "}
+                ·{" "}
+              </>
+            )}
+            {dates.updated && (
+              <>
+                {t("blog.updated")}{" "}
+                <time dateTime={dates.updated}>
+                  {formatDay(dates.updated, locale)}
+                </time>{" "}
+                ·{" "}
+              </>
+            )}
             {author ? (
               <a href="#author-bio" className="hover:text-brand hover:underline">
                 {article.author}

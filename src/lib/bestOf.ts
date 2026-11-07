@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 
+import { firstCommitDay, lastModifiedDay, schoolsDataFile } from "@/lib/gitDates";
 import { getSchoolsByCity } from "@/lib/schools";
 import type { CyprusCity, DrivingSchool, Locale } from "@/lib/types";
 
@@ -111,4 +112,40 @@ export function heroImagePath(cityKey: string): string | null {
 export function schoolPhotoPath(schoolId: string): string | null {
   const abs = path.join(process.cwd(), "public", "schools", schoolId, "1.jpg");
   return fs.existsSync(abs) ? `/schools/${schoolId}/1.jpg` : null;
+}
+
+// --- dates ------------------------------------------------------------------
+
+/**
+ * Files whose history defines a best-of page's dates: its own page file, the
+ * shared template, the schools data behind the ranking, and the generated
+ * copy for this locale. The sitemap `lastmod` and the Article JSON-LD both use
+ * this list, so they agree.
+ */
+export function bestOfSourceFiles(
+  config: BestOfCityConfig,
+  locale: Locale,
+): string[] {
+  return [
+    `src/app/[locale]${config.pathEl}/page.tsx`,
+    "src/components/BestOfCityPage.tsx",
+    schoolsDataFile(),
+    `scraper/data/best-of/${config.cityKey}_${locale}.json`,
+  ];
+}
+
+/**
+ * Git-derived dates (null when git history is unavailable, e.g. a shallow
+ * clone): published = first commit of the page's generated copy, modified =
+ * newest commit across `bestOfSourceFiles`.
+ */
+export function bestOfDates(
+  config: BestOfCityConfig,
+  locale: Locale,
+): { published: string | null; modified: string | null } {
+  const files = bestOfSourceFiles(config, locale);
+  return {
+    published: firstCommitDay(files[files.length - 1]),
+    modified: lastModifiedDay(files),
+  };
 }
