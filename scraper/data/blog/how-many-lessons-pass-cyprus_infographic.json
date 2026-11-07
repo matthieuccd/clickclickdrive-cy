@@ -1,0 +1,56 @@
+{
+  "el": {
+    "template": "timeline",
+    "title": "Τα Στάδια της Εκμάθησης Οδήγησης",
+    "caption": "Η σειρά μένει ίδια για όλους, ενώ ο χρόνος σε κάθε στάδιο διαφέρει.",
+    "milestones": [
+      {
+        "label": "Χειριστήρια και βασικά",
+        "sub": "Ξεκίνημα, σταμάτημα"
+      },
+      {
+        "label": "Ήσυχοι δρόμοι",
+        "sub": "Διασταυρώσεις, σήματα"
+      },
+      {
+        "label": "Πολλή κίνηση",
+        "sub": "Κυκλικοί κόμβοι, λωρίδες"
+      },
+      {
+        "label": "Δοκιμαστική εξέταση",
+        "sub": "Οδήγηση χωρίς υποδείξεις"
+      },
+      {
+        "label": "Έτοιμοι για εξέταση",
+        "sub": "Συμφωνεί ο εκπαιδευτής"
+      }
+    ]
+  },
+  "en": {
+    "template": "timeline",
+    "title": "The Stages of Learning to Drive",
+    "caption": "The order is the same for everyone, while the time spent on each stage differs.",
+    "milestones": [
+      {
+        "label": "Controls and basics",
+        "sub": "Moving off, stopping"
+      },
+      {
+        "label": "Quiet roads",
+        "sub": "Junctions, signals"
+      },
+      {
+        "label": "Busy traffic",
+        "sub": "Roundabouts, lane changes"
+      },
+      {
+        "label": "Mock test",
+        "sub": "Drive without prompts"
+      },
+      {
+        "label": "Test ready",
+        "sub": "Instructor agrees"
+      }
+    ]
+  }
+}

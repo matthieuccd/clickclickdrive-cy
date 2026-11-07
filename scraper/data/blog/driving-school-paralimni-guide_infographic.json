@@ -1,0 +1,104 @@
+{
+  "el": {
+    "template": "flow",
+    "title": "Η Διαδρομή προς το Δίπλωμα Οδήγησης για Κατοίκους Παραλιμνίου και Αγίας Νάπας",
+    "caption": "Τέσσερα βήματα από τα πρώτα έγγραφα μέχρι την πλήρη άδεια.",
+    "items": [
+      {
+        "num": "1",
+        "title": [
+          "Νόμιμη διαμονή",
+          "και έγγραφα"
+        ],
+        "sub": [
+          "Ταυτότητα ή διαβατήριο",
+          "Ιατρική και οφθαλμολογική"
+        ]
+      },
+      {
+        "num": "2",
+        "title": [
+          "Εκπαιδευτική άδεια",
+          "από τα 17"
+        ],
+        "sub": [
+          "Αίτηση αυτοπροσώπως",
+          "Στο γραφείο του ΤΟΜ"
+        ]
+      },
+      {
+        "num": "3",
+        "title": [
+          "Μαθήματα",
+          "και θεωρία"
+        ],
+        "sub": [
+          "Αυτοκίνητο διπλών χειριστηρίων",
+          "Θεωρία στα ελληνικά ή αγγλικά"
+        ]
+      },
+      {
+        "num": "4",
+        "title": [
+          "Πρακτική εξέταση",
+          "και πλήρης άδεια"
+        ],
+        "sub": [
+          "Την κλείνει η σχολή",
+          "Κατηγορία B από τα 18"
+        ]
+      }
+    ]
+  },
+  "en": {
+    "template": "flow",
+    "title": "The Route to a Licence for Paralimni and Ayia Napa Residents",
+    "caption": "Four steps from your first documents to a full licence.",
+    "items": [
+      {
+        "num": "1",
+        "title": [
+          "Legal residence",
+          "and documents"
+        ],
+        "sub": [
+          "ID or passport",
+          "Medical and eye test"
+        ]
+      },
+      {
+        "num": "2",
+        "title": [
+          "Provisional licence",
+          "from age 17"
+        ],
+        "sub": [
+          "Apply in person",
+          "At a TOM district office"
+        ]
+      },
+      {
+        "num": "3",
+        "title": [
+          "Lessons",
+          "and theory test"
+        ],
+        "sub": [
+          "Dual-control car",
+          "Theory in Greek or English"
+        ]
+      },
+      {
+        "num": "4",
+        "title": [
+          "Practical test",
+          "and full licence"
+        ],
+        "sub": [
+          "Your school books it",
+          "Category B from age 18"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "el": {
+    "template": "checklist",
+    "title": "5 Ερωτήσεις Πριν Κλείσετε Σχολή στη Λάρνακα",
+    "caption": "Σημειώστε τις απαντήσεις από κάθε σχολή και συγκρίνετε όμοια με όμοια.",
+    "items": [
+      {
+        "icon": "🗣️",
+        "label": "Γλώσσα Μαθημάτων",
+        "sub": "Σε ποιες γλώσσες διδάσκουν οι εκπαιδευτές"
+      },
+      {
+        "icon": "🚗",
+        "label": "Χειροκίνητο ή Αυτόματο",
+        "sub": "Και τι σημαίνει για το δίπλωμά σας"
+      },
+      {
+        "icon": "⏱️",
+        "label": "Διάρκεια και Παραλαβή",
+        "sub": "Πόση ώρα και αν σας παίρνει από το σπίτι"
+      },
+      {
+        "icon": "🏁",
+        "label": "Αυτοκίνητο Εξέτασης",
+        "sub": "Ποιος το παρέχει την ημέρα της εξέτασης"
+      },
+      {
+        "icon": "💶",
+        "label": "Πακέτο και Ακυρώσεις",
+        "sub": "Ανά μάθημα ή πακέτο, και κανόνας αλλαγών"
+      }
+    ]
+  },
+  "en": {
+    "template": "checklist",
+    "title": "5 Questions to Ask Before You Book in Larnaca",
+    "caption": "Write down each school's answers and compare like with like.",
+    "items": [
+      {
+        "icon": "🗣️",
+        "label": "Language of Lessons",
+        "sub": "Which languages the instructors teach in"
+      },
+      {
+        "icon": "🚗",
+        "label": "Manual or Automatic",
+        "sub": "And what it means for your licence"
+      },
+      {
+        "icon": "⏱️",
+        "label": "Lesson Length and Pick-up",
+        "sub": "How long, and if they collect you"
+      },
+      {
+        "icon": "🏁",
+        "label": "Test Day Car",
+        "sub": "Who provides the car on test day"
+      },
+      {
+        "icon": "💶",
+        "label": "Package and Cancellations",
+        "sub": "Per lesson or package, and rebooking rules"
+      }
+    ]
+  }
+}

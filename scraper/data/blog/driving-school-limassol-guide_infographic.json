@@ -1,0 +1,110 @@
+{
+  "el": {
+    "template": "compare",
+    "title": "Τρεις Τρόποι Τιμολόγησης Μαθημάτων",
+    "caption": "Ζητήστε γραπτή προσφορά και συγκρίνετε τα ίδια στοιχεία σε κάθε σχολή.",
+    "cards": [
+      {
+        "accent": "#22c55e",
+        "heading": [
+          "Ανά Μάθημα"
+        ],
+        "body": [
+          [
+            "Ελευθερία να σταματήσετε",
+            "Καμία δέσμευση"
+          ],
+          [
+            "Δεν υπάρχει σταθερό σύνολο"
+          ]
+        ]
+      },
+      {
+        "accent": "#f59e0b",
+        "heading": [
+          "Πακέτο",
+          "Μαθημάτων"
+        ],
+        "body": [
+          [
+            "Συνήθως χαμηλότερη τιμή",
+            "ανά μάθημα"
+          ],
+          [
+            "Ρωτήστε για μαθήματα",
+            "που περισσεύουν"
+          ]
+        ]
+      },
+      {
+        "accent": "#354354",
+        "heading": [
+          "Προσφορά για",
+          "Όλο το Πρόγραμμα"
+        ],
+        "body": [
+          [
+            "Εύκολος προϋπολογισμός"
+          ],
+          [
+            "Ζητήστε λίστα ανά στοιχείο"
+          ]
+        ]
+      }
+    ]
+  },
+  "en": {
+    "template": "compare",
+    "title": "Three Ways Schools Price Lessons",
+    "caption": "Ask for a written quote and compare the same items at every school.",
+    "cards": [
+      {
+        "accent": "#22c55e",
+        "heading": [
+          "Per Lesson"
+        ],
+        "body": [
+          [
+            "Freedom to stop",
+            "No commitment"
+          ],
+          [
+            "No fixed total"
+          ]
+        ]
+      },
+      {
+        "accent": "#f59e0b",
+        "heading": [
+          "Lesson",
+          "Package"
+        ],
+        "body": [
+          [
+            "Often a lower price",
+            "per lesson"
+          ],
+          [
+            "Ask about lessons",
+            "left over"
+          ]
+        ]
+      },
+      {
+        "accent": "#354354",
+        "heading": [
+          "Full-Course",
+          "Quote"
+        ],
+        "body": [
+          [
+            "Easy to budget"
+          ],
+          [
+            "Ask for an item list"
+          ]
+        ]
+      }
+    ]
+  }
+}

@@ -46,8 +46,16 @@ export interface BlogArticle {
   heroCaption_el: string;
   /** Per supplementary image metadata, keyed by filename without extension: "image2", "inline-1", "inline-2" */
   imageCredits?: Record<string, ImageCredit>;
+  /** `YYYY-MM-DD`, UTC. Set when the article goes live. */
   publishedDate: string;
-  modifiedDate: string;
+  /**
+   * Optional `YYYY-MM-DD`, UTC. Set ONLY on a meaningful edit (corrected facts,
+   * new sections, updated figures), never for typo fixes or reformatting.
+   * Absent means "never meaningfully edited". The page shows "Updated" only
+   * when this is later than `publishedDate`; schema `dateModified` and the
+   * sitemap `lastmod` fall back to `publishedDate` when it is absent.
+   */
+  modifiedDate?: string;
   author: string;
   authorSlug: string;
   relatedCity: CyprusCity | null;
@@ -1151,6 +1159,122 @@ export const BLOG_ARTICLES: readonly BlogArticle[] = [
     heroCaption_el: "\u03a0\u03b1\u03b3\u03ba\u03cc\u03c3\u03bc\u03b9\u03bf\u03c2 \u03c7\u03ac\u03c1\u03c4\u03b7\u03c2 \u03bc\u03b5 \u03c3\u03b7\u03bc\u03b1\u03af\u03b5\u03c2 \u03c7\u03c9\u03c1\u03ce\u03bd \u03b3\u03b9\u03b1 \u03b1\u03bd\u03c4\u03b1\u03bb\u03bb\u03b1\u03b3\u03ae \u03ac\u03b4\u03b5\u03b9\u03b1\u03c2, via Pexels.com",
     publishedDate: "2026-08-20",
     modifiedDate: "2026-08-20",
+    author: "Matthieu Tissot",
+    authorSlug: "matthieu",
+    relatedCity: null,
+    relatedSlugs: [],
+  },
+
+  {
+    id: "driving-school-larnaca-guide",
+    slug_el: "scholes-odigon-larnaka-odigos",
+    slug_en: "driving-school-larnaca-guide",
+    categoryId: "rules",
+    title_el: "\u03a3\u03c7\u03bf\u03bb\u03ad\u03c2 \u039f\u03b4\u03b7\u03b3\u03ce\u03bd \u03c3\u03c4\u03b7 \u039b\u03ac\u03c1\u03bd\u03b1\u03ba\u03b1: \u03a0\u03ce\u03c2 \u03bd\u03b1 \u0395\u03c0\u03b9\u03bb\u03ad\u03be\u03b5\u03c4\u03b5 \u03ba\u03b1\u03b9 \u03bd\u03b1 \u0392\u03b3\u03ac\u03bb\u03b5\u03c4\u03b5 \u0394\u03af\u03c0\u03bb\u03c9\u03bc\u03b1",
+    title_en: "Driving Schools in Larnaca: How to Choose One and Get Your Licence",
+    excerpt_el:
+      "\u03a0\u03ce\u03c2 \u03bd\u03b1 \u03b5\u03c0\u03b9\u03bb\u03ad\u03be\u03b5\u03c4\u03b5 \u03c3\u03c7\u03bf\u03bb\u03ae \u03bf\u03b4\u03b7\u03b3\u03ce\u03bd \u03c3\u03c4\u03b7 \u039b\u03ac\u03c1\u03bd\u03b1\u03ba\u03b1, \u03c4\u03b9 \u03bd\u03b1 \u03c1\u03c9\u03c4\u03ae\u03c3\u03b5\u03c4\u03b5 \u03c0\u03c1\u03b9\u03bd \u03ba\u03bb\u03b5\u03af\u03c3\u03b5\u03c4\u03b5 \u03ba\u03b1\u03b9 \u03c0\u03ce\u03c2 \u03bb\u03b5\u03b9\u03c4\u03bf\u03c5\u03c1\u03b3\u03b5\u03af \u03b7 \u03b4\u03b9\u03b1\u03b4\u03b9\u03ba\u03b1\u03c3\u03af\u03b1 \u03c4\u03bf\u03c0\u03b9\u03ba\u03ac.",
+    excerpt_en:
+      "How to pick a driving school in Larnaca, what to ask before you book, and how the licence process works locally.",
+    metaDescription_el:
+      "\u03a3\u03c7\u03bf\u03bb\u03ad\u03c2 \u03bf\u03b4\u03b7\u03b3\u03ce\u03bd \u03c3\u03c4\u03b7 \u039b\u03ac\u03c1\u03bd\u03b1\u03ba\u03b1: \u03c0\u03ce\u03c2 \u03bd\u03b1 \u03b5\u03c0\u03b9\u03bb\u03ad\u03be\u03b5\u03c4\u03b5, \u03c4\u03b9 \u03bd\u03b1 \u03c1\u03c9\u03c4\u03ae\u03c3\u03b5\u03c4\u03b5 \u03ba\u03b1\u03b9 \u03c0\u03ce\u03c2 \u03bd\u03b1 \u03b2\u03b3\u03ac\u03bb\u03b5\u03c4\u03b5 \u03b4\u03af\u03c0\u03bb\u03c9\u03bc\u03b1.",
+    metaDescription_en:
+      "Driving schools in Larnaca: how to choose, what to ask, and how to get your licence locally.",
+    heroImagePath: "/blog/driving-school-larnaca-guide/hero.jpg",
+    heroImageAlt_el:
+      "\u03a0\u03b1\u03c1\u03b1\u03bb\u03af\u03b1 \u039b\u03ac\u03c1\u03bd\u03b1\u03ba\u03b1\u03c2 \u03bc\u03b5 \u03c6\u03bf\u03af\u03bd\u03b9\u03ba\u03b5\u03c2 \u03ba\u03b1\u03b9 \u03b4\u03c1\u03cc\u03bc\u03bf",
+    heroImageAlt_en: "Larnaca palm tree promenade with road",
+    heroCaption_en: "Larnaca palm tree promenade with road, via Pexels.com",
+    heroCaption_el: "\u03a0\u03b1\u03c1\u03b1\u03bb\u03af\u03b1 \u039b\u03ac\u03c1\u03bd\u03b1\u03ba\u03b1\u03c2 \u03bc\u03b5 \u03c6\u03bf\u03af\u03bd\u03b9\u03ba\u03b5\u03c2 \u03ba\u03b1\u03b9 \u03b4\u03c1\u03cc\u03bc\u03bf, via Pexels.com",
+    publishedDate: "2026-11-07",
+    modifiedDate: "2026-11-07",
+    author: "Matthieu Tissot",
+    authorSlug: "matthieu",
+    relatedCity: "Larnaca",
+    relatedSlugs: [],
+  },
+
+  {
+    id: "driving-school-limassol-guide",
+    slug_el: "scholes-odigon-lemesos-odigos",
+    slug_en: "driving-school-limassol-guide",
+    categoryId: "rules",
+    title_el: "\u03a3\u03c7\u03bf\u03bb\u03ad\u03c2 \u039f\u03b4\u03b7\u03b3\u03ce\u03bd \u03c3\u03c4\u03b7 \u039b\u03b5\u03bc\u03b5\u03c3\u03cc: \u03a4\u03b9\u03bc\u03ad\u03c2 \u039c\u03b1\u03b8\u03b7\u03bc\u03ac\u03c4\u03c9\u03bd, \u03a0\u03b1\u03ba\u03ad\u03c4\u03b1 \u03ba\u03b1\u03b9 \u03a0\u03ce\u03c2 \u03bd\u03b1 \u0395\u03c0\u03b9\u03bb\u03ad\u03be\u03b5\u03c4\u03b5",
+    title_en: "Driving Schools in Limassol: Lesson Prices, Packages and How to Choose",
+    excerpt_el:
+      "\u03a0\u03ce\u03c2 \u03bb\u03b5\u03b9\u03c4\u03bf\u03c5\u03c1\u03b3\u03bf\u03cd\u03bd \u03bf\u03b9 \u03c4\u03b9\u03bc\u03ad\u03c2 \u03ba\u03b1\u03b9 \u03c4\u03b1 \u03c0\u03b1\u03ba\u03ad\u03c4\u03b1 \u03bc\u03b1\u03b8\u03b7\u03bc\u03ac\u03c4\u03c9\u03bd \u03c3\u03c4\u03b9\u03c2 \u03c3\u03c7\u03bf\u03bb\u03ad\u03c2 \u03bf\u03b4\u03b7\u03b3\u03ce\u03bd \u03c4\u03b7\u03c2 \u039b\u03b5\u03bc\u03b5\u03c3\u03bf\u03cd \u03ba\u03b1\u03b9 \u03c0\u03ce\u03c2 \u03bd\u03b1 \u03c4\u03b9\u03c2 \u03c3\u03c5\u03b3\u03ba\u03c1\u03af\u03bd\u03b5\u03c4\u03b5.",
+    excerpt_en:
+      "How lesson prices and packages work at Limassol driving schools, what affects the price, and how to compare schools.",
+    metaDescription_el:
+      "\u03a3\u03c7\u03bf\u03bb\u03ad\u03c2 \u03bf\u03b4\u03b7\u03b3\u03ce\u03bd \u03c3\u03c4\u03b7 \u039b\u03b5\u03bc\u03b5\u03c3\u03cc: \u03c0\u03ce\u03c2 \u03bb\u03b5\u03b9\u03c4\u03bf\u03c5\u03c1\u03b3\u03bf\u03cd\u03bd \u03bf\u03b9 \u03c4\u03b9\u03bc\u03ad\u03c2 \u03ba\u03b1\u03b9 \u03c4\u03b1 \u03c0\u03b1\u03ba\u03ad\u03c4\u03b1 \u03ba\u03b1\u03b9 \u03c0\u03ce\u03c2 \u03bd\u03b1 \u03c3\u03c5\u03b3\u03ba\u03c1\u03af\u03bd\u03b5\u03c4\u03b5 \u03c3\u03c7\u03bf\u03bb\u03ad\u03c2.",
+    metaDescription_en:
+      "Driving schools in Limassol: how lesson prices and packages work, and how to compare schools.",
+    heroImagePath: "/blog/driving-school-limassol-guide/hero.jpg",
+    heroImageAlt_el:
+      "\u03a0\u03b1\u03c1\u03b1\u03bb\u03b9\u03b1\u03ba\u03cc\u03c2 \u03c0\u03b5\u03b6\u03cc\u03b4\u03c1\u03bf\u03bc\u03bf\u03c2 \u03bc\u03b5 \u03c6\u03bf\u03af\u03bd\u03b9\u03ba\u03b5\u03c2 \u03ba\u03b1\u03b9 \u03bb\u03b9\u03bc\u03ac\u03bd\u03b9 \u03bc\u03b5 \u03c3\u03ba\u03ac\u03c6\u03b7 \u03c3\u03c4\u03b7\u03bd \u03b1\u03ba\u03c4\u03ae \u03c4\u03b7\u03c2 \u039a\u03cd\u03c0\u03c1\u03bf\u03c5",
+    heroImageAlt_en: "Palm-lined seafront promenade and harbour with boats on the Cyprus coast",
+    heroCaption_en: "Palm-lined seafront promenade and harbour with boats on the Cyprus coast, via Pexels.com",
+    heroCaption_el: "\u03a0\u03b1\u03c1\u03b1\u03bb\u03b9\u03b1\u03ba\u03cc\u03c2 \u03c0\u03b5\u03b6\u03cc\u03b4\u03c1\u03bf\u03bc\u03bf\u03c2 \u03bc\u03b5 \u03c6\u03bf\u03af\u03bd\u03b9\u03ba\u03b5\u03c2 \u03ba\u03b1\u03b9 \u03bb\u03b9\u03bc\u03ac\u03bd\u03b9 \u03bc\u03b5 \u03c3\u03ba\u03ac\u03c6\u03b7 \u03c3\u03c4\u03b7\u03bd \u03b1\u03ba\u03c4\u03ae \u03c4\u03b7\u03c2 \u039a\u03cd\u03c0\u03c1\u03bf\u03c5, via Pexels.com",
+    publishedDate: "2026-11-07",
+    modifiedDate: "2026-11-07",
+    author: "Matthieu Tissot",
+    authorSlug: "matthieu",
+    relatedCity: "Limassol",
+    relatedSlugs: [],
+  },
+
+  {
+    id: "driving-school-paralimni-guide",
+    slug_el: "scholes-odigon-paralimni-odigos",
+    slug_en: "driving-school-paralimni-guide",
+    categoryId: "rules",
+    title_el: "\u03a3\u03c7\u03bf\u03bb\u03ad\u03c2 \u039f\u03b4\u03b7\u03b3\u03ce\u03bd \u03c3\u03c4\u03bf \u03a0\u03b1\u03c1\u03b1\u03bb\u03af\u03bc\u03bd\u03b9 \u03ba\u03b1\u03b9 \u03c4\u03b7\u03bd \u0391\u03b3\u03af\u03b1 \u039d\u03ac\u03c0\u03b1: \u03a4\u03bf\u03c0\u03b9\u03ba\u03cc\u03c2 \u039f\u03b4\u03b7\u03b3\u03cc\u03c2",
+    title_en: "Driving Schools in Paralimni and Ayia Napa: A Local Guide",
+    excerpt_el:
+      "\u03a0\u03ce\u03c2 \u03bd\u03b1 \u03b5\u03c0\u03b9\u03bb\u03ad\u03be\u03b5\u03c4\u03b5 \u03c3\u03c7\u03bf\u03bb\u03ae \u03bf\u03b4\u03b7\u03b3\u03ce\u03bd \u03c3\u03c4\u03bf \u03a0\u03b1\u03c1\u03b1\u03bb\u03af\u03bc\u03bd\u03b9 \u03ba\u03b1\u03b9 \u03c4\u03b7\u03bd \u0391\u03b3\u03af\u03b1 \u039d\u03ac\u03c0\u03b1, \u03c4\u03b9 \u03bd\u03b1 \u03c1\u03c9\u03c4\u03ae\u03c3\u03b5\u03c4\u03b5 \u03c0\u03c1\u03b9\u03bd \u03ba\u03bb\u03b5\u03af\u03c3\u03b5\u03c4\u03b5 \u03ba\u03b1\u03b9 \u03c0\u03ce\u03c2 \u03bb\u03b5\u03b9\u03c4\u03bf\u03c5\u03c1\u03b3\u03b5\u03af \u03b7 \u03b4\u03b9\u03b1\u03b4\u03b9\u03ba\u03b1\u03c3\u03af\u03b1 \u03c3\u03c4\u03b7\u03bd \u03b5\u03c0\u03b1\u03c1\u03c7\u03af\u03b1 \u0391\u03bc\u03bc\u03bf\u03c7\u03ce\u03c3\u03c4\u03bf\u03c5.",
+    excerpt_en:
+      "How to choose a driving school in Paralimni and Ayia Napa, what to ask before you book, and how the licence process works in the Famagusta district.",
+    metaDescription_el:
+      "\u03a3\u03c7\u03bf\u03bb\u03ad\u03c2 \u03bf\u03b4\u03b7\u03b3\u03ce\u03bd \u03c3\u03c4\u03bf \u03a0\u03b1\u03c1\u03b1\u03bb\u03af\u03bc\u03bd\u03b9 \u03ba\u03b1\u03b9 \u03c4\u03b7\u03bd \u0391\u03b3\u03af\u03b1 \u039d\u03ac\u03c0\u03b1: \u03c0\u03ce\u03c2 \u03bd\u03b1 \u03b5\u03c0\u03b9\u03bb\u03ad\u03be\u03b5\u03c4\u03b5, \u03c4\u03b9 \u03bd\u03b1 \u03c1\u03c9\u03c4\u03ae\u03c3\u03b5\u03c4\u03b5 \u03ba\u03b1\u03b9 \u03c0\u03ce\u03c2 \u03bd\u03b1 \u03b2\u03b3\u03ac\u03bb\u03b5\u03c4\u03b5 \u03b4\u03af\u03c0\u03bb\u03c9\u03bc\u03b1.",
+    metaDescription_en:
+      "Driving schools in Paralimni and Ayia Napa: how to choose, what to ask, and how to get your licence locally.",
+    heroImagePath: "/blog/driving-school-paralimni-guide/hero.jpg",
+    heroImageAlt_el:
+      "\u0391\u03c3\u03b2\u03b5\u03c3\u03c4\u03bf\u03bb\u03b9\u03b8\u03b9\u03ba\u03ad\u03c2 \u03b8\u03b1\u03bb\u03b1\u03c3\u03c3\u03b9\u03bd\u03ad\u03c2 \u03c3\u03c0\u03b7\u03bb\u03b9\u03ad\u03c2 \u03ba\u03b1\u03b9 \u03ba\u03b1\u03b8\u03b1\u03c1\u03ac \u03b3\u03b1\u03bb\u03ac\u03b6\u03b9\u03b1 \u03bd\u03b5\u03c1\u03ac \u03c3\u03c4\u03b7\u03bd \u03b1\u03ba\u03c4\u03ae \u03c4\u03b7\u03c2 \u039a\u03cd\u03c0\u03c1\u03bf\u03c5",
+    heroImageAlt_en: "Limestone sea caves and clear blue water along the Cyprus coast",
+    heroCaption_en: "Limestone sea caves and clear blue water along the Cyprus coast, via Pexels.com",
+    heroCaption_el: "\u0391\u03c3\u03b2\u03b5\u03c3\u03c4\u03bf\u03bb\u03b9\u03b8\u03b9\u03ba\u03ad\u03c2 \u03b8\u03b1\u03bb\u03b1\u03c3\u03c3\u03b9\u03bd\u03ad\u03c2 \u03c3\u03c0\u03b7\u03bb\u03b9\u03ad\u03c2 \u03ba\u03b1\u03b9 \u03ba\u03b1\u03b8\u03b1\u03c1\u03ac \u03b3\u03b1\u03bb\u03ac\u03b6\u03b9\u03b1 \u03bd\u03b5\u03c1\u03ac \u03c3\u03c4\u03b7\u03bd \u03b1\u03ba\u03c4\u03ae \u03c4\u03b7\u03c2 \u039a\u03cd\u03c0\u03c1\u03bf\u03c5, via Pexels.com",
+    publishedDate: "2026-11-07",
+    modifiedDate: "2026-11-07",
+    author: "Matthieu Tissot",
+    authorSlug: "matthieu",
+    relatedCity: "Paralimni",
+    relatedSlugs: [],
+  },
+
+  {
+    id: "how-many-lessons-pass-cyprus",
+    slug_el: "posa-mathimata-odigisis-kypros",
+    slug_en: "how-many-lessons-pass-cyprus",
+    categoryId: "costs",
+    title_el: "\u03a0\u03cc\u03c3\u03b1 \u039c\u03b1\u03b8\u03ae\u03bc\u03b1\u03c4\u03b1 \u039f\u03b4\u03ae\u03b3\u03b7\u03c3\u03b7\u03c2 \u03a7\u03c1\u03b5\u03b9\u03ac\u03b6\u03b5\u03c3\u03c4\u03b5 \u03c3\u03c4\u03b7\u03bd \u039a\u03cd\u03c0\u03c1\u03bf; \u038f\u03c1\u03b5\u03c2, \u03a0\u03c1\u03bf\u03cb\u03c0\u03bf\u03bb\u03bf\u03b3\u03b9\u03c3\u03bc\u03cc\u03c2 \u03ba\u03b1\u03b9 \u03a0\u03c1\u03cc\u03bf\u03b4\u03bf\u03c2",
+    title_en: "How Many Driving Lessons Do You Need in Cyprus? Hours, Budget and Progress",
+    excerpt_el:
+      "\u03a4\u03b9 \u03ba\u03b1\u03b8\u03bf\u03c1\u03af\u03b6\u03b5\u03b9 \u03c0\u03cc\u03c3\u03b1 \u03bc\u03b1\u03b8\u03ae\u03bc\u03b1\u03c4\u03b1 \u03c7\u03c1\u03b5\u03b9\u03ac\u03b6\u03b5\u03c3\u03c4\u03b5, \u03c0\u03ce\u03c2 \u03bd\u03b1 \u03c5\u03c0\u03bf\u03bb\u03bf\u03b3\u03af\u03c3\u03b5\u03c4\u03b5 \u03c4\u03bf\u03bd \u03b4\u03b9\u03ba\u03cc \u03c3\u03b1\u03c2 \u03b1\u03c1\u03b9\u03b8\u03bc\u03cc \u03ba\u03b1\u03b9 \u03c0\u03ce\u03c2 \u03b3\u03af\u03bd\u03b5\u03c4\u03b1\u03b9 \u03c0\u03c1\u03bf\u03cb\u03c0\u03bf\u03bb\u03bf\u03b3\u03b9\u03c3\u03bc\u03cc\u03c2.",
+    excerpt_en:
+      "What decides how many lessons you need, how to estimate your own number, and how that turns into a budget.",
+    metaDescription_el:
+      "\u03a0\u03cc\u03c3\u03b1 \u03bc\u03b1\u03b8\u03ae\u03bc\u03b1\u03c4\u03b1 \u03bf\u03b4\u03ae\u03b3\u03b7\u03c3\u03b7\u03c2 \u03c7\u03c1\u03b5\u03b9\u03ac\u03b6\u03b5\u03c3\u03c4\u03b5 \u03c3\u03c4\u03b7\u03bd \u039a\u03cd\u03c0\u03c1\u03bf: \u03c4\u03b9 \u03ba\u03b1\u03b8\u03bf\u03c1\u03af\u03b6\u03b5\u03b9 \u03c4\u03bf\u03bd \u03b1\u03c1\u03b9\u03b8\u03bc\u03cc, \u03c0\u03ce\u03c2 \u03bd\u03b1 \u03c4\u03bf\u03bd \u03c5\u03c0\u03bf\u03bb\u03bf\u03b3\u03af\u03c3\u03b5\u03c4\u03b5 \u03ba\u03b1\u03b9 \u03c0\u03ce\u03c2 \u03bd\u03b1 \u03ba\u03ac\u03bd\u03b5\u03c4\u03b5 \u03c0\u03c1\u03bf\u03cb\u03c0\u03bf\u03bb\u03bf\u03b3\u03b9\u03c3\u03bc\u03cc.",
+    metaDescription_en:
+      "How many driving lessons you need in Cyprus: what decides the number, how to estimate it, and how to budget.",
+    heroImagePath: "/blog/how-many-lessons-pass-cyprus/hero.jpg",
+    heroImageAlt_el:
+      "\u039d\u03b5\u03b1\u03c1\u03cc\u03c2 \u03bf\u03b4\u03b7\u03b3\u03cc\u03c2 \u03ba\u03c1\u03b1\u03c4\u03ac \u03c4\u03bf \u03c4\u03b9\u03bc\u03cc\u03bd\u03b9 \u03b5\u03bd\u03ce \u03ad\u03bd\u03b1\u03c2 \u03ac\u03bd\u03c4\u03c1\u03b1\u03c2 \u03c3\u03ba\u03cd\u03b2\u03b5\u03b9 \u03c3\u03c4\u03bf \u03c0\u03b1\u03c1\u03ac\u03b8\u03c5\u03c1\u03bf \u03c4\u03bf\u03c5 \u03b1\u03c5\u03c4\u03bf\u03ba\u03b9\u03bd\u03ae\u03c4\u03bf\u03c5",
+    heroImageAlt_en: "Young driver gripping a steering wheel while a man leans in at the car window",
+    heroCaption_en: "Young driver gripping a steering wheel while a man leans in at the car window, via Pexels.com",
+    heroCaption_el: "\u039d\u03b5\u03b1\u03c1\u03cc\u03c2 \u03bf\u03b4\u03b7\u03b3\u03cc\u03c2 \u03ba\u03c1\u03b1\u03c4\u03ac \u03c4\u03bf \u03c4\u03b9\u03bc\u03cc\u03bd\u03b9 \u03b5\u03bd\u03ce \u03ad\u03bd\u03b1\u03c2 \u03ac\u03bd\u03c4\u03c1\u03b1\u03c2 \u03c3\u03ba\u03cd\u03b2\u03b5\u03b9 \u03c3\u03c4\u03bf \u03c0\u03b1\u03c1\u03ac\u03b8\u03c5\u03c1\u03bf \u03c4\u03bf\u03c5 \u03b1\u03c5\u03c4\u03bf\u03ba\u03b9\u03bd\u03ae\u03c4\u03bf\u03c5, via Pexels.com",
+    publishedDate: "2026-11-07",
+    modifiedDate: "2026-11-07",
     author: "Matthieu Tissot",
     authorSlug: "matthieu",
     relatedCity: null,
